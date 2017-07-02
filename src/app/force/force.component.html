@@ -1,4 +1,6 @@
-<h1>Force</h1>
+<h1 class="title">Force</h1>
+<hr/>
+
 <p-tabMenu [model]="items"></p-tabMenu>
 <p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'">
   <p-header>List of Abilities</p-header>
