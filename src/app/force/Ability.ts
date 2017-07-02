@@ -7,5 +7,6 @@ export interface Ability {
       duration: string
       target: string[]
       range: string
+      damage: string
       description: string
 }

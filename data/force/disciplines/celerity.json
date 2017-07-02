@@ -4,7 +4,6 @@
     "order":"Sentinel",
     "focus":"While focused on this discipline, your walking speed increases by 10 feet.",
     "abilities":[{
-      "discipline":"Celerity",
       "name":"Rapid Step",
       "cost":"1-7",
       "conc":false,
@@ -12,9 +11,9 @@
       "duration":"turn",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As a bonus action, you increase your walking speed by 10 feet per force point spent until the end of the current turn. If you have a climbing or swimming speed, this increase applies to that speed as well."
     }, {
-      "discipline":"Celerity",
       "name":"Agile Defense",
       "cost":"2",
       "conc":false,
@@ -22,9 +21,9 @@
       "duration":"",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As a bonus action, you take the Dodge action."
     }, {
-      "discipline":"Celerity",
       "name":"Blur of Motion",
       "cost":"2",
       "conc":false,
@@ -32,9 +31,9 @@
       "duration":"turn",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As an action, you cause yourself to be invisible during any of your movement during the current turn."
     }, {
-      "discipline":"Celerity",
       "name":"Surge of Speed",
       "cost":"2",
       "conc":false,
@@ -42,9 +41,9 @@
       "duration":"turn",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As a bonus action, you gain two benefits until the end of the current turn: you don’t provoke opportunity attacks, and you have a climbing speed equal to your walking speed."
     }, {
-      "discipline":"Celerity",
       "name":"Surge of Action",
       "cost":"5",
       "conc":false,
@@ -52,6 +51,7 @@
       "duration":"",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As a bonus action, you can Dash or make one weapon attack."
     }]
 }

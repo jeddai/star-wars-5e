@@ -4,7 +4,6 @@
     "order":"",
     "focus":"",
     "abilities":[{
-      "discipline":"",
       "name":"",
       "cost":"",
       "conc":false,
@@ -12,9 +11,9 @@
       "duration":"",
       "target":[],
       "range":"",
+      "damage":"",
       "description":""
     }, {
-      "discipline":"",
       "name":"",
       "cost":"",
       "conc":false,
@@ -22,9 +21,9 @@
       "duration":"",
       "target":[],
       "range":"",
+      "damage":"",
       "description":""
     }, {
-      "discipline":"",
       "name":"",
       "cost":"",
       "conc":false,
@@ -32,9 +31,9 @@
       "duration":"",
       "target":[],
       "range":"",
+      "damage":"",
       "description":""
     }, {
-      "discipline":"",
       "name":"",
       "cost":"",
       "conc":false,
@@ -42,6 +41,7 @@
       "duration":"",
       "target":[],
       "range":"",
+      "damage":"",
       "description":""
     }]
 }

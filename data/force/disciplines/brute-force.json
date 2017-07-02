@@ -4,7 +4,6 @@
     "order":"Guardian",
     "focus":"While focused on this discipline, you have advantage on Strength (Athletics) checks.",
     "abilities":[{
-      "discipline":"Brute Force",
       "name":"Brute Strike",
       "cost":"1-7",
       "conc":false,
@@ -12,9 +11,9 @@
       "duration":"",
       "target":["self"],
       "range":"",
-      "description":"As a bonus action, you gain a bonus to your next damage roll against a target you hit with a melee attack during the current turn. The bonus equals +1d6 per force point spent, and the bonus damage is the same type as the attack. If the attack has more than one damage type, you choose which one to use for the bonus damage."
+      "damage":"nd6",
+      "description":"As a bonus action, you gain a bonus to your next damage roll against a target you hit with a melee attack during the current turn. The bonus equals 1d6 per force point spent, and the bonus damage is the same type as the attack. If the attack has more than one damage type, you choose which one to use for the bonus damage."
     }, {
-      "discipline":"Brute Force",
       "name":"Knock Back",
       "cost":"1-7",
       "conc":false,
@@ -22,9 +21,9 @@
       "duration":"",
       "target":["creature"],
       "range":"",
+      "damage":"nd6 bludgeoning",
       "description":"When you hit a target with a melee attack, you can activate this ability as a reaction. The target must succeed on a Strength saving throw or be knocked 10 feet away from you per force point spent. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes 1d6 bludgeoning damage per force point spent."
     }, {
-      "discipline":"Brute Force",
       "name":"Mighty Leap",
       "cost":"1-7",
       "conc":false,
@@ -32,9 +31,9 @@
       "duration":"",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As part of your movement, you jump in any direction up to 20 feet per force point spent."
     }, {
-      "discipline":"Brute Force",
       "name":"Feat of Strength",
       "cost":"2",
       "conc":false,
@@ -42,6 +41,7 @@
       "duration":"round",
       "target":["self"],
       "range":"",
+      "damage":"",
       "description":"As a bonus action, you gain a +5 bonus to Strength checks until the end of your next turn."
     }]
 }

@@ -1,0 +1,47 @@
+{
+    "name":"Crown of Rage",
+    "description":"You place a mote of pure fury within a creature’s mind, causing its bloodlust to overcome its senses and for it to act as you wish it to.",
+    "order":"Guardian",
+    "focus":"While you are focused on this discipline, any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.",
+    "abilities":[{
+      "name":"Primal Fury",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"nd6 psychic",
+      "description":"As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw or take 1d6 psychic damage per force point spent on this ability and immediately use its reaction to move its speed in a straight line toward its nearest enemy. The save automatically succeeds if the target is immune to being charmed."
+    }, {
+      "name":"Fighting Words",
+      "cost":"2",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"10 mins",
+      "target":["creature"],
+      "range":"",
+      "damage":"",
+      "description":"If you spend 1 minute conversing with a creature, you can attempt to leave a simmering violence in its mind. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw to resist feeling violent urges against one creature you describe to it or name. The save automatically succeeds if the target is immune to being charmed. On a failed save, the target attacks the chosen creature if it sees that creature before your concentration ends, using weapons or spells against a creature it was already hostile toward or unarmed strikes against an ally or a creature it was neutral toward. Once the fight starts, it continues to attack for 5 rounds before this effect ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage from any creature other than the one it has been incited against. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will."
+    }, {
+      "name":"Mindless Courage",
+      "cost":"2",
+      "conc":false,
+      "casting_time":"bonus",
+      "duration":"round",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"",
+      "description":"You cause a creature's bloodlust to overcome its sense of preservation. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until the end of your next turn, it can’t willingly move unless its movement brings it closer to its nearest enemy that it can see. The save automatically succeeds if the target is immune to being charmed."
+    }, {
+      "name":"Punishing Fury",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"",
+      "description":"You cause a creature's rage to grow so hot that it attacks without heeding its own safety. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until your concentration ends, any creature within 5 feet of it can use a reaction to make a melee attack against it whenever the target makes a melee attack. The save automatically succeeds if the target is immune to being charmed."
+    }]
+}

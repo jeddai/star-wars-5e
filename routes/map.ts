@@ -11,7 +11,7 @@ var filePath = path.join(__dirname, '../data');
 var router = express.Router();
 
 router.get('/data', (req, res, next) => {
-  var fullPath = filePath + '/planets';
+  var fullPath: string = filePath + '/planets';
   var obj: ForceDirectedGraphData = {
     nodes: [],
     links: []

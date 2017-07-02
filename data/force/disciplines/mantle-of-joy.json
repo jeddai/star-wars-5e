@@ -1,0 +1,47 @@
+{
+    "name":"",
+    "description":"",
+    "order":"",
+    "focus":"",
+    "abilities":[{
+      "name":"",
+      "cost":"",
+      "conc":false,
+      "casting_time":"",
+      "duration":"",
+      "target":[],
+      "range":"",
+      "damage":"",
+      "description":""
+    }, {
+      "name":"",
+      "cost":"",
+      "conc":false,
+      "casting_time":"",
+      "duration":"",
+      "target":[],
+      "range":"",
+      "damage":"",
+      "description":""
+    }, {
+      "name":"",
+      "cost":"",
+      "conc":false,
+      "casting_time":"",
+      "duration":"",
+      "target":[],
+      "range":"",
+      "damage":"",
+      "description":""
+    }, {
+      "name":"",
+      "cost":"",
+      "conc":false,
+      "casting_time":"",
+      "duration":"",
+      "target":[],
+      "range":"",
+      "damage":"",
+      "description":""
+    }]
+}

@@ -6,6 +6,7 @@
   <p-header>List of Abilities</p-header>
   <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
   <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="order" header="Force Order" [sortable]="true" [filter]="true"></p-column>
   <p-column field="cost" header="Force Points"></p-column>
   <p-column field="casting_time" header="Casting Time"></p-column>
   <p-column field="duration" header="Duration"></p-column>
@@ -18,6 +19,9 @@
           <div class="ui-grid-col-4">
             <div class="ui-grid-row">
               <div class="label">Discipline: {{ ability.discipline }}</div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="label">Force Order: {{ ability.order }}</div>
             </div>
             <div class="ui-grid-row">
               <div class="label">Cost: {{ ability.cost }} force points</div>
@@ -51,6 +55,7 @@
     </div>
   </ng-template>
 </p-dataTable>
+
 <div *ngIf="activeItem == 'selector'" style="padding: 5px 5px 5px 5px;">
   <p-multiSelect [options]="selectDisciplines" [(ngModel)]="selectedDisciplines"></p-multiSelect>
   <div class="ui-grid ui-grid-responsive" *ngFor="let discipline of disciplines">

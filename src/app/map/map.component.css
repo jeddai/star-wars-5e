@@ -13,3 +13,7 @@ svg {
   border-color: #000;
   border-radius: .5em;
 }
+
+.ui-grid-row > .ui-grid-col-6 {
+  padding: 5px;
+}

@@ -1,0 +1,37 @@
+{
+    "name":"Force Arrow",
+    "description":"You imbue a ranged weapon with a strange semblance of sentience, allowing it to unerringly find its mark.",
+    "order":"Sentinel",
+    "focus":"While you are focused on this discipline, any attack roll you make for a ranged weapon attack ignores disadvantage. If disadvantage would normally apply to the roll, that roll also can’t benefit from advantage.",
+    "abilities":[{
+      "name":"Speed Dart",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"bonus",
+      "duration":"turn",
+      "target":["self"],
+      "range":"touch",
+      "damage":"nd8 radiant",
+      "description":"As a bonus action, you imbue one ranged weapon you hold with force power. The next attack you make with it that hits before the end of the current turn deals an extra 1d8 radiant damage per force point spent."
+    }, {
+      "name":"Seeking Missile",
+      "cost":"2",
+      "conc":false,
+      "casting_time":"reaction",
+      "duration":"instant",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a reaction when you miss with a ranged weapon attack, you can repeat the attack roll against the same target."
+    }, {
+      "name":"Faithful Archer",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a bonus action, you imbue a ranged weapon with a limited sentience. Until your concentration ends, you can make an extra attack with the weapon at the start of each of your turns (no action required). If it is a thrown weapon, it returns to your grasp each time you make any attack with it."
+    }]
+}

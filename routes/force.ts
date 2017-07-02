@@ -18,8 +18,14 @@ router.get('/get-disciplines', function (req, res) {
   fs.readdir(fullPath, (err, data) => {
     if (err) obj.Error = err.toString();
     data.forEach((discipline) => {
-      if(discipline != 'template.json')
-        obj.Response.push(JSON.parse(fs.readFileSync(fullPath + '/' + discipline, 'utf8')));
+      if(discipline.includes('.json')) {
+        var currDiscipline = JSON.parse(fs.readFileSync(fullPath + '/' + discipline, 'utf8'));
+        currDiscipline.abilities.forEach((a) => {
+          a.discipline = currDiscipline.name;
+          a.order = currDiscipline.order;
+        });
+        obj.Response.push(currDiscipline);
+      }
     })
     return res.send(obj);
   });

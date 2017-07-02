@@ -1,0 +1,47 @@
+{
+    "name":"Force Restoration",
+    "description":"You wield force energy to cure wounds and restore health to yourself and others.",
+    "order":"Consular",
+    "focus":"While focused on this discipline, you can use a bonus action to touch a creature that has 0 hit points and stabilize it.",
+    "abilities":[{
+      "name":"Mend Wounds",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"nd8 HP",
+      "description":"As an action, you can spend points to restore hit points to one creature you touch. The creature regains 1d8 hit points per point spent."
+    }, {
+      "name":"Restore Health",
+      "cost":"3",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"",
+      "description":"As an action, you touch one creature and remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. Alternatively, you remove one disease from the creature."
+    }, {
+      "name":"Restore Life",
+      "cost":"5",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"",
+      "description":"As an action, you touch one creature that has died within the last minute. The creature returns to life with 1 hit point. This ability can’t return to life a creature that has died of old age, nor can it restore a creature missing any vital body parts."
+    }, {
+      "name":"Restore Vigor",
+      "cost":"7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"",
+      "description":"As an action, you can touch one creature and choose one of the following: remove any reductions to one of its ability scores, remove one effect that reduces its hit point maximum, or reduce its exhaustion level by one."
+    }]
+}

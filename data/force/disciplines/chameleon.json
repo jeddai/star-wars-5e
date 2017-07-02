@@ -1,0 +1,37 @@
+{
+    "name":"Chameleon",
+    "description":"You create a screen of psychic power that distorts your appearance, allowing you to blend into the background or even turn invisible.",
+    "order":"Adept",
+    "focus":"While focused on this discipline, you have advantage on Dexterity (Stealth) checks.",
+    "abilities":[{
+      "name":"Chameleon",
+      "cost":"2",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"turn",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As an action, you can attempt to hide even if you fail to meet the requirements needed to do so. At the end of the current turn, you remain hidden only if you then meet the normal requirements for hiding."
+    }, {
+      "name":"Step from Sight",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a bonus action, cloak yourself from sight. You can target one additional creature for every additional force point you spend on this ability. The added targets must be visible to you and within 60 feet of you. Each target turns invisible and remains so until your concentration ends or until immediately after it targets, damages, or otherwise affects any creature with an attack, a spell, or another ability."
+    }, {
+      "name":"Enduring Invisibility",
+      "cost":"7",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a bonus action, you turn invisible and remain so until your concentration ends."
+    }]
+}
