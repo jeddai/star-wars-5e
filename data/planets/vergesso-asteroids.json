@@ -1,0 +1,13 @@
+{
+  "name": "Vergesso Asteroids",
+  "region": "Outer Rim Territories",
+  "sector": "Bajic",
+  "system": "Lybeya",
+  "capital": "",
+  "inhabitants": ["Humans", "Dianoga"],
+  "climate": "Asteroid",
+  "coordinates": "P-18",
+  "hyperspace": [],
+  "alignment": [],
+  "active": true
+}

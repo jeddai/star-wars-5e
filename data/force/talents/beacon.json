@@ -1,0 +1,7 @@
+{
+    "name":"Beacon",
+    "description":"As a bonus action, you cause bright light to radiate from your body in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action.",
+    "range":"Self",
+    "damage":false,
+    "save":false
+}

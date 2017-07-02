@@ -1,0 +1,16 @@
+{
+  "name": "Sullust",
+  "region": "Outer Rim Territories",
+  "sector": "Brema",
+  "system": "Sullust",
+  "capital": "Byllurun",
+  "inhabitants": ["Sullustans"],
+  "climate": "Volcanic",
+  "coordinates": "M-17",
+  "hyperspace": [{
+    "distance": 150,
+    "planet": "Thyferra"
+  }],
+  "alignment": [],
+  "active": true
+}

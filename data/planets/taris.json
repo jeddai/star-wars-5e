@@ -1,0 +1,13 @@
+{
+  "name": "Taris",
+  "region": "Outer Rim Territories",
+  "sector": "Ojoster",
+  "system": "Taris",
+  "capital": "Ecumenopolis",
+  "inhabitants": ["Nekghoul"],
+  "climate": "City",
+  "coordinates": "N-7",
+  "hyperspace": [],
+  "alignment": ["Republic"],
+  "active": true
+}

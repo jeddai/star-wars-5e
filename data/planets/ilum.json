@@ -1,0 +1,10 @@
+{
+  "name": "Ilum",
+  "region": "Unknown Regions",
+  "system": "Ilum",
+  "climate": "Frozen",
+  "coordinates": "G-7",
+  "hyperspace": [],
+  "alignment": ["Jedi"],
+  "active": true
+}

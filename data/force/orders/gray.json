@@ -1,0 +1,25 @@
+{
+    "name":"Gray",
+    "description":"The Order of the Gray uses the force to its absolute limits. Followers of this order are known as Grays. They use force energy to modify their bodies, strengthening them against attack and turning themselves into living weapons. Their mastery of the force form grants them their name, for Grays are the balance between light and dark.",
+    "abilities":[{
+      "name":"Bonus Disciplines",
+      "description":"At 1st level, you learn two additional force disciplines of your choice. They can be chosen from any discipline.",
+      "level":1
+    },{
+      "name":"Immortal Durability",
+      "description":"Starting at 1st level, your hit point maximum increases by 1 per force wielder level. In addition, while you aren’t wearing armor or wielding a shield, your base AC equals 10 + your Dexterity modifier + your Constitution modifier.",
+      "level":1
+    },{
+      "name":"Force Resilience",
+      "description":"Starting at 3rd level, your force energy grants you extraordinary fortitude. At the start of each of your turns, you gain temporary hit points equal to your Intelligence modifier (minimum of 0) if you have at least 1 hit point.",
+      "level":3
+    },{
+      "name":"Surge of Health",
+      "description":"Starting at 6th level, you can draw on your focus to escape death’s grasp. As a reaction when you take damage, you can halve that damage against you. Your focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest. You can’t use this feature if you can’t use your focus.",
+      "level":6
+    },{
+      "name":"Immortal Will",
+      "description":"Starting at 14th level, you can draw on your reserves of force power to survive beyond death. At the end of your turn while at 0 hit points, you can spend 5 force points to immediately regain a number of hit points equal to your force wielder level + your Constitution modifier.",
+      "level":14
+    }]
+}

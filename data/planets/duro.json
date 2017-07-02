@@ -1,0 +1,16 @@
+{
+  "name": "Duro",
+  "region": "Core Worlds",
+  "sector": "Corellian",
+  "system": "Duro",
+  "capital": "Bburru Station",
+  "inhabitants": ["Duros"],
+  "climate": "Temperate",
+  "coordinates": "M-11",
+  "hyperspace": [{
+    "distance": 60,
+    "planet": "Fondor"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

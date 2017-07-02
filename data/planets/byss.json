@@ -1,0 +1,25 @@
+{
+  "name": "Byss",
+  "region": "Deep Core",
+  "sector": "Deep Core Security Zone",
+  "system": "Beshqek System",
+  "capital": "Imperial Citadel",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "K-11",
+  "hyperspace": [{
+    "distance": 30,
+    "planet": "Coruscant"
+  }, {
+    "distance": 50,
+    "planet": "Corellia"
+  }, {
+    "distance": 60,
+    "planet": "Kuat"
+  }, {
+    "distance": 30,
+    "planet": "Empress Teta"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

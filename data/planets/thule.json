@@ -1,0 +1,13 @@
+{
+  "name": "Thule",
+  "region": "Outer Rim Territories",
+  "sector": "Esstran",
+  "system": "Thurra",
+  "capital": "Hurom",
+  "inhabitants": ["Humans", "Sith"],
+  "climate": "Arid",
+  "coordinates": "Q-5",
+  "hyperspace": [],
+  "alignment": ["Sith"],
+  "active": true
+}

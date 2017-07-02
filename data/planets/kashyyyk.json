@@ -1,0 +1,22 @@
+{
+  "name": "Kashyyyk",
+  "region": "Mid Rim",
+  "sector": "Mytaranor",
+  "system": "Kashyyyk",
+  "capital": "Rwookrrorro",
+  "climate": "Forest",
+  "coordinates": "P-9",
+  "inhabitants": ["Wookiees", "Terentatek"],
+  "alignment": ["Republic"],
+  "active": true,
+  "hyperspace": [{
+    "planet": "Trandosha",
+    "distance": 15
+  }, {
+    "planet": "Umbara",
+    "distance": 70
+  }, {
+    "planet": "Nal Hutta/Nar Shaddaa",
+    "distance": 80
+  }]
+}

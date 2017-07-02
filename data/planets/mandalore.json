@@ -1,0 +1,16 @@
+{
+  "name": "Mandalore",
+  "region": "Outer Rim Territories",
+  "sector": "Mandalore",
+  "system": "Mandalore",
+  "capital": "Keldabe",
+  "inhabitants": ["Humans", "Taung"],
+  "climate": "Forest",
+  "coordinates": "O-7",
+  "hyperspace": [{
+    "distance": 50,
+    "planet": "Taris"
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

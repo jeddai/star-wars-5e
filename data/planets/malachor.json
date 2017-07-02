@@ -1,0 +1,15 @@
+{
+  "name": "Malachor",
+  "inhabitants": ["Humans"],
+  "hyperspace": [{
+    "planet": "Thule",
+    "distance": 200
+  }],
+  "alignment": ["Mando'ade"],
+  "region": "Outer Rim Territories",
+  "sector": "Chorlian",
+  "system": "Malachor",
+  "climate": "Arid",
+  "coordinates": "S-4",
+  "active": true
+}

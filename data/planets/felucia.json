@@ -1,0 +1,19 @@
+{
+  "name": "Felucia",
+  "region": "Outer Rim Territories",
+  "sector": "Thanium Worlds",
+  "system": "Felucia",
+  "capital": "Kway Teow",
+  "inhabitants": ["Sith"],
+  "climate": "Forest",
+  "coordinates": "R-6",
+  "hyperspace": [{
+    "planet": "Yavin IV",
+    "distance": 50
+  }, {
+    "planet": "Rhen Var",
+    "distance": 20
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

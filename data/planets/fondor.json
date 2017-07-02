@@ -1,0 +1,19 @@
+{
+  "name": "Fondor",
+  "region": "Colonies",
+  "sector": "Tapani",
+  "system": "Fondor",
+  "capital": "Fondor City",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "L-13",
+  "hyperspace": [{
+    "distance": 40,
+    "planet": "Thyferra"
+  }, {
+    "distance": 180,
+    "planet": "Sullust"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

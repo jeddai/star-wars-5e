@@ -1,0 +1,19 @@
+{
+  "name": "Wayland",
+  "region": "Outer Rim Territories",
+  "sector": "Ojoster",
+  "system": "Wayland",
+  "capital": "Nystao",
+  "inhabitants": ["Humans", "Noghri"],
+  "climate": "Temperate",
+  "coordinates": "N-7",
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 30
+  }, {
+    "planet": "Mandalore",
+    "distance": 30
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

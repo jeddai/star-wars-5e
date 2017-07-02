@@ -1,0 +1,19 @@
+{
+  "name": "Muunilinst",
+  "region": "Outer Rim Territories",
+  "sector": "Obtrexta",
+  "system": "Muunilinst",
+  "capital": "Harnaidan",
+  "inhabitants": ["Muuns", "Sullustans", "Humans", "Bothans", "Rakata"],
+  "climate": "Temperate",
+  "coordinates": "K-4",
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 100
+  }, {
+    "planet": "Mygeeto",
+    "distance": 30
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

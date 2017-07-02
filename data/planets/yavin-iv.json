@@ -1,0 +1,13 @@
+{
+  "name": "Yavin IV",
+  "region": "Outer Rim Territories",
+  "sector": "Gordian Reach",
+  "system": "Yavin",
+  "capital": "",
+  "inhabitants": ["Sith"],
+  "climate": "Forest",
+  "coordinates": "P-6",
+  "hyperspace": [],
+  "alignment": ["Sith"],
+  "active": true
+}

@@ -1,0 +1,15 @@
+.links line {
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+svg {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  border-radius: .5em;
+}

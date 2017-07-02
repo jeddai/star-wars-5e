@@ -1,0 +1,19 @@
+{
+  "name": "Jedha",
+  "region": "Mid Rim",
+  "sector": "Terrabe",
+  "system": "Jedha",
+  "capital": "Jedha City",
+  "climate": "Arid",
+  "inhabitants": ["Humans"],
+  "alignment": ["Jedi"],
+  "active": true,
+  "coordinates": "Q-8",
+  "hyperspace": [{
+    "planet": "Kashyyyk",
+    "distance": 80
+  }, {
+    "planet": "Umbara",
+    "distance": 80
+  }]
+}

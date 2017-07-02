@@ -1,0 +1,22 @@
+{
+  "name": "Cato Neimoidia",
+  "region": "Colonies",
+  "sector": "",
+  "system": "Cato Neimoidia",
+  "capital": "",
+  "inhabitants": ["Neimoidians"],
+  "climate": "Moist",
+  "coordinates": "N-11",
+  "hyperspace": [{
+    "distance": 10,
+    "planet": "Rendili"
+  }, {
+    "distance": 25,
+    "planet": "Corellia"
+  }, {
+    "planet": "Manaan",
+    "distance": 100
+  }],
+  "alignment": [],
+  "active": true
+}

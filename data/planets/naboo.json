@@ -1,0 +1,25 @@
+{
+  "name": "Naboo",
+  "region": "Mid Rim",
+  "sector": "Chommell",
+  "system": "Naboo",
+  "capital": "Theed",
+  "inhabitants": ["Humans", "Gungans"],
+  "climate": "Temperate",
+  "coordinates": "O-17",
+  "hyperspace": [{
+    "distance": 90,
+    "planet": "Tatooine"
+  }, {
+    "distance": 60,
+    "planet": "Sullust"
+  }, {
+    "distance": 120,
+    "planet": "Utapau"
+  }, {
+    "distance": 80,
+    "planet": "Vergesso Asteroids"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

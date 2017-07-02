@@ -1,0 +1,19 @@
+{
+  "name": "Dac",
+  "region": "Outer Rim Territories",
+  "sector": "Calamari",
+  "system": "Calamari",
+  "capital": "Coral City",
+  "inhabitants": ["Mon Calamari", "Quarren"],
+  "climate": "Water",
+  "coordinates": "U-6",
+  "hyperspace": [{
+    "planet": "Rhen Var",
+    "distance": 150
+  }, {
+    "planet": "Malachor",
+    "distance": 150
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

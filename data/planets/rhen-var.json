@@ -1,0 +1,16 @@
+{
+  "name": "Rhen Var",
+  "region": "Outer Rim Territories",
+  "sector": "Thanium Worlds",
+  "system": "Tobali",
+  "capital": "",
+  "inhabitants": [],
+  "climate": "Frozen",
+  "coordinates": "R-6",
+  "hyperspace": [{
+    "planet": "Yavin IV",
+    "distance": 70
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

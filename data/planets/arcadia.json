@@ -1,0 +1,22 @@
+{
+  "name": "Arcadia",
+  "region": "Core Worlds",
+  "sector": "Corellian",
+  "system": "Arcan",
+  "capital": "",
+  "inhabitants": ["Humans", "Rodians", "Duros", "Jawas"],
+  "climate": "Volcanic",
+  "coordinates": "M-10",
+  "hyperspace": [{
+    "distance": 15,
+    "planet": "Corellia"
+  }, {
+    "distance": 50,
+    "planet": "Kuat"
+  }, {
+    "distance": 20,
+    "planet": "Duro"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

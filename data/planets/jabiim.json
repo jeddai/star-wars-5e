@@ -1,0 +1,19 @@
+{
+  "name": "Jabiim",
+  "region": "Outer Rim Territories",
+  "sector": "Phelleem",
+  "system": "Jabiim",
+  "capital": "Choal",
+  "inhabitants": ["Jabiimi"],
+  "climate": "Temperate",
+  "coordinates": "S-7",
+  "hyperspace": [{
+    "planet": "Rhen Var",
+    "distance": 100
+  }, {
+    "distance": 40,
+    "planet": "Teth"
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

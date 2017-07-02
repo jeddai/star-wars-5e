@@ -1,0 +1,13 @@
+{
+  "name": "Thyferra",
+  "region": "Inner Rim",
+  "sector": "Jaso",
+  "system": "Polith",
+  "capital": "Xozhixi",
+  "inhabitants": ["Human"],
+  "climate": "Tropical",
+  "coordinates": "L-14",
+  "hyperspace": [],
+  "alignment": [],
+  "active": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Csilla",
+  "region": "Unknown Regions",
+  "sector": "Chiss Space",
+  "system": "Csilla",
+  "capital": "Csaplar",
+  "climate": "Frozen",
+  "coordinates": "F-8",
+  "inhabitants": ["Chiss"],
+  "alignment": ["Chiss Ascendancy"],
+  "active": true,
+  "hyperspace": [{
+    "planet": "Ilum",
+    "distance": 60
+  }]
+}

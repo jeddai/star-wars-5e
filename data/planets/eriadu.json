@@ -1,0 +1,28 @@
+{
+  "name": "Eriadu",
+  "region": "Outer Rim Territories",
+  "sector": "Seswenna",
+  "system": "Eriadu",
+  "capital": "Eriadu City",
+  "inhabitants": ["Humans"],
+  "climate": "Polluted",
+  "coordinates": "M-18",
+  "hyperspace": [{
+    "distance": 80,
+    "planet": "Polis Massa"
+  }, {
+    "distance": 70,
+    "planet": "Mustafar"
+  }, {
+    "distance": 20,
+    "planet": "Sullust"
+  }, {
+    "distance": 60,
+    "planet": "Utapau"
+  }, {
+    "distance": 600,
+    "planet": "Taris"
+  }],
+  "alignment": [],
+  "active": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Rendili",
+  "region": "Core Worlds",
+  "sector": "",
+  "system": "Rendili",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "M-11",
+  "hyperspace": [],
+  "alignment": ["Republic"],
+  "active": true
+}

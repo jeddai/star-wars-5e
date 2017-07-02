@@ -1,0 +1,16 @@
+{
+  "name": "Hoth",
+  "region": "Outer Rim Territories",
+  "sector": "Anoat",
+  "system": "Hoth",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "climate": "Frozen",
+  "coordinates": "K-18",
+  "hyperspace": [{
+    "distance": 40,
+    "planet": "Mustafar"
+  }],
+  "alignment": [],
+  "active": true
+}

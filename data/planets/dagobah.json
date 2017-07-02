@@ -1,0 +1,22 @@
+{
+  "name": "Dagobah",
+  "region": "Outer Rim Territories",
+  "sector": "Sluis",
+  "system": "Dagobah",
+  "capital": "",
+  "inhabitants": [],
+  "climate": "Murky",
+  "coordinates": "M-19",
+  "hyperspace": [{
+    "distance": 40,
+    "planet": "Utapau"
+  }, {
+    "distance": 50,
+    "planet": "Eriadu"
+  }, {
+    "planet": "Naboo",
+    "distance": 70
+  }],
+  "alignment": [],
+  "active": true
+}

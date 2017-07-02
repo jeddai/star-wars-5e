@@ -1,0 +1,19 @@
+{
+  "name": "Bothawui",
+  "region": "Outer Rim Territories",
+  "sector": "Sanbra",
+  "system": "Bothawui",
+  "capital": "Prosperity",
+  "inhabitants": ["Bothans"],
+  "climate": "Dry",
+  "coordinates": "O-17",
+  "hyperspace": [{
+    "distance": 60,
+    "planet": "Tatooine"
+  }, {
+    "distance": 80,
+    "planet": "Ryloth"
+  }],
+  "alignment": [],
+  "active": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Mustafar",
+  "region": "Outer Rim Territories",
+  "sector": "Atravis",
+  "system": "Mustafar",
+  "capital": "Fralideja",
+  "inhabitants": ["Mustafarians"],
+  "climate": "Hot",
+  "coordinates": "L-19",
+  "hyperspace": [],
+  "alignment": ["Black Sun"],
+  "active": true
+}

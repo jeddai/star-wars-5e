@@ -1,0 +1,22 @@
+{
+  "name": "Empress Teta",
+  "region": "Deep Core",
+  "sector": "Koros",
+  "system": "Empress Teta",
+  "capital": "Cinnagar",
+  "inhabitants": ["Humans"],
+  "climate": "City",
+  "coordinates": "L-10",
+  "hyperspace": [{
+    "planet": "Mandalore",
+    "distance": 400
+  }, {
+    "planet": "Korriban",
+    "distance": 600
+  }, {
+    "planet": "Yavin IV",
+    "distance": 480
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

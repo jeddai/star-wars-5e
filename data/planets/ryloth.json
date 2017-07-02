@@ -1,0 +1,16 @@
+{
+  "name": "Ryloth",
+  "region": "Outer Rim Territories",
+  "sector": "Gaulus",
+  "system": "Ryloth",
+  "capital": "Kala'uun",
+  "inhabitants": ["Twi-Lek"],
+  "climate": "Arid",
+  "coordinates": "R-17",
+  "hyperspace": [{
+    "distance": 30,
+    "planet": "Tatooine"
+  }],
+  "alignment": ["Black Sun"],
+  "active": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Trandosha",
+  "region": "Mid Rim",
+  "sector": "Mytaranor",
+  "system": "Kashyyyk",
+  "capital": "Hsskhor",
+  "climate": "Arid",
+  "coordinates": "P-9",
+  "inhabitants": ["Trandoshans"],
+  "alignment": ["Black Sun"],
+  "active": true
+}

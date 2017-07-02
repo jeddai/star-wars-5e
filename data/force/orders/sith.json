@@ -1,0 +1,25 @@
+{
+    "name":"Sith",
+    "description":"Force wielders of the Order of the Sith keep their minds in a strange, rarified state. They seek to accumulate as much power as possible, as they quest to unravel the mysteries of the multiverse and seek the underlying structure of all things. At the same time, they perceive a bizarre, living web of power they call the noosphere. Sith, as their name indicates, delight in travel, exploration, and discovery. They desire to accumulate as much power as possible, and the pursuit of secrets and hidden lore can become an obsession for them.",
+    "abilities":[{
+      "name":"Bonus Disciplines",
+      "description":"At 1st level, you learn two additional force disciplines of your choice. They must be chosen from among the Sith disciplines.",
+      "level":1
+    },{
+      "name":"Breadth of Knowledge",
+      "description":"At 1st level, you gain the ability to extend your knowledge. When you finish a long rest, you gain two proficiencies of your choice: two tools, two skills, or one of each. You can replace one or both of these selections with languages. This benefit lasts until you finish a long rest.",
+      "level":1
+    },{
+      "name":"Elemental Attunement",
+      "description":"Starting at 3rd level, when a creature’s resistance reduces the damage dealt by a force discipline of yours, you can spend 1 force point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your force limit.",
+      "level":3
+    },{
+      "name":"Force Surge",
+      "description":"Starting at 6th level, you can overload your focus to unleash a devastating lightning attack. Using an action, you release force energy from your fingertips that manifests itself into a cone of lightning. The cone travels 15ft, and any creature caught in the cone must make a Dexterity saving throw or take 3d10 lightning damage. A creature that saves the throw takes half damage. Your focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest. The number of damage die increases at level 10 to 5d10, and at level 18 to 7d10. At level 14, if a creature fails the save, it is stunned for one round. You can’t use this feature if you can’t use your focus.",
+      "level":6
+    },{
+      "name":"Cutting Resonance",
+      "description":"At 14th level, you gain the ability to infuse your weapon attacks with force energy. Once on each of your turns when you hit a creature with a weapon, you can deal an extra 2d8 force damage to the target. This extra damage can only be applied once per turn.",
+      "level":14
+    }]
+}

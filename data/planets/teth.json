@@ -1,0 +1,13 @@
+{
+  "name": "Teth",
+  "region": "Outer Rim Territories",
+  "sector": "Baxel",
+  "system": "Teth",
+  "capital": "Inner Teth",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "U-12",
+  "hyperspace": [],
+  "alignment": ["Sith"],
+  "active": true
+}

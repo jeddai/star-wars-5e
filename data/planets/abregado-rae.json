@@ -1,0 +1,28 @@
+{
+  "name": "Abregado-Rae",
+  "region": "Core Worlds",
+  "sector": "",
+  "system": "Abregado",
+  "capital": "Abregado-Rae Spaceport",
+  "inhabitants": ["Gados"],
+  "climate": "Temperate",
+  "coordinates": "K-13",
+  "hyperspace": [{
+    "distance": 50,
+    "planet": "Duro"
+  }, {
+    "distance": 20,
+    "planet": "Thyferra"
+  }, {
+    "distance": 20,
+    "planet": "Fondor"
+  }, {
+    "distance": 40,
+    "planet": "Byss"
+  }, {
+    "distance": 200,
+    "planet": "Sullust"
+  }],
+  "alignment": [],
+  "active": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Kuat",
+  "region": "Core Worlds",
+  "sector": "Kuat",
+  "system": "Kuat",
+  "capital": "Kuat City",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "M-10",
+  "hyperspace": [{
+    "planet": "Rendili",
+    "distance": 50
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

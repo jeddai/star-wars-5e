@@ -1,0 +1,25 @@
+{
+  "name": "Alderaan",
+  "region": "Core Worlds",
+  "sector": "Alderaan",
+  "system": "Alderaan",
+  "capital": "Oroboro",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "M-10",
+  "hyperspace": [{
+    "distance": 30,
+    "planet": "Coruscant"
+  }, {
+    "distance": 15,
+    "planet": "Kuat"
+  }, {
+    "distance": 50,
+    "planet": "Corellia"
+  }, {
+    "distance": 35,
+    "planet": "Empress Teta"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Mygeeto",
+  "region": "Outer Rim Territories",
+  "sector": "Albarrio",
+  "system": "Mygeeto",
+  "capital": "Jygat",
+  "inhabitants": ["Muuns"],
+  "climate": "Frozen",
+  "coordinates": "K-5",
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 80
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

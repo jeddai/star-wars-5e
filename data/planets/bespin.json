@@ -1,0 +1,28 @@
+{
+  "name": "Bespin",
+  "region": "Outer Rim Territories",
+  "sector": "Anoat",
+  "system": "Bespin",
+  "capital": "Cloud City",
+  "inhabitants": ["Ugnaughts", "Humans", "Aqualish"],
+  "climate": "Gas",
+  "coordinates": "K-18",
+  "hyperspace": [{
+    "distance": 15,
+    "planet": "Hoth"
+  }, {
+    "distance": 40,
+    "planet": "Mustafar"
+  }, {
+    "distance": 60,
+    "planet": "Polis Massa"
+  }, {
+    "distance": 250,
+    "planet": "Corellia"
+  }, {
+    "planet": "Bestine",
+    "distance": 120
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

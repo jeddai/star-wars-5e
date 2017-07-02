@@ -1,0 +1,22 @@
+{
+  "name": "Korriban",
+  "region": "Outer Rim Territories",
+  "sector": "Esstran",
+  "system": "Horuset",
+  "capital": "Dreshdae",
+  "inhabitants": ["Humans", "Sith", "Rakata"],
+  "climate": "Arid",
+  "coordinates": "R-5",
+  "hyperspace": [{
+    "planet": "Mandalore",
+    "distance": 200
+  }, {
+    "planet": "Thule",
+    "distance": 30
+  }, {
+    "planet": "Yavin IV",
+    "distance": 120
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

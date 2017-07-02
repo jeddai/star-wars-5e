@@ -1,0 +1,19 @@
+{
+  "name": "Malastare",
+  "region": "Mid Rim",
+  "sector": "Dustig",
+  "system": "Malastare",
+  "capital": "Pixelito",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "N-16",
+  "hyperspace": [{
+    "distance": 50,
+    "planet": "Naboo"
+  }, {
+    "distance": 40,
+    "planet": "Sullust"
+  }],
+  "alignment": ["Black Sun"],
+  "active": true
+}

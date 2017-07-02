@@ -1,0 +1,19 @@
+{
+  "name": "Dathomir",
+  "region": "Outer Rim Territories",
+  "sector": "Quelii",
+  "system": "Dathomir",
+  "capital": "Aurilia",
+  "inhabitants": ["Zabrak", "Dathomirians"],
+  "climate": "Temperate",
+  "coordinates": "O-6",
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 40
+  }, {
+    "planet": "Mandalore",
+    "distance": 40
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

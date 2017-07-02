@@ -1,0 +1,11 @@
+{
+  "name": "Umbara",
+  "region": "Expansion Region",
+  "sector": "Ghost Nebula",
+  "system": "Umbara",
+  "climate": "Temperate",
+  "coordinates": "P-10",
+  "inhabitants": ["Umbarans"],
+  "alignment": ["Republic"],
+  "active": true
+}

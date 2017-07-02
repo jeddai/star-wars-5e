@@ -1,0 +1,19 @@
+{
+  "name": "Dantooine",
+  "region": "Outer Rim Territories",
+  "sector": "Raioballo",
+  "system": "Dantooine",
+  "capital": "Garang",
+  "inhabitants": ["Humans"],
+  "climate": "Temperate",
+  "coordinates": "L-4",
+  "hyperspace": [{
+    "planet": "Mygeeto",
+    "distance": 40
+  }, {
+    "planet": "Muunilinst",
+    "distance": 30
+  }],
+  "alignment": ["Sith"],
+  "active": true
+}

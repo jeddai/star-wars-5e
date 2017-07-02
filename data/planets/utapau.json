@@ -1,0 +1,16 @@
+{
+  "name": "Utapau",
+  "region": "Outer Rim Territories",
+  "sector": "Tarabba",
+  "system": "Utapau",
+  "capital": "Pau City",
+  "inhabitants": ["Pau'ans", "Utai"],
+  "climate": "Arid",
+  "coordinates": "N-19",
+  "hyperspace": [{
+    "distance": 80,
+    "planet": "Vergesso Asteroids"
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

@@ -1,0 +1,67 @@
+<h1>Force</h1>
+<p-tabMenu [model]="items"></p-tabMenu>
+<p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'">
+  <p-header>List of Abilities</p-header>
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="cost" header="Force Points"></p-column>
+  <p-column field="casting_time" header="Casting Time"></p-column>
+  <p-column field="duration" header="Duration"></p-column>
+  <p-column field="range" header="Range/Area"></p-column>
+  <ng-template let-ability pTemplate="rowexpansion">
+    <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
+      <div class="ui-g-2"></div>
+      <div class="ui-g-8">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-4">
+            <div class="ui-grid-row">
+              <div class="label">Discipline: {{ ability.discipline }}</div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="label">Cost: {{ ability.cost }} force points</div>
+            </div>
+          </div>
+          <div class="ui-grid-col-4">
+            <div class="ui-grid-row">
+              <div class="label">Target: {{ ability.target }}</div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="label">Range: {{ ability.range }}</div>
+            </div>
+          </div>
+          <div class="ui-grid-col-4">
+            <div class="ui-grid-row">
+              <div class="label">Casting Time: {{ ability.casting_time }}</div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="label">Concentration: {{ ability.conc ? 'Yes':'No' }}</div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="label">Duration: {{ ability.duration }}</div>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="ui-grid-row">
+          {{ ability.description }}
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-dataTable>
+<div *ngIf="activeItem == 'selector'" style="padding: 5px 5px 5px 5px;">
+  <p-multiSelect [options]="selectDisciplines" [(ngModel)]="selectedDisciplines"></p-multiSelect>
+  <div class="ui-grid ui-grid-responsive" *ngFor="let discipline of disciplines">
+    <div class="panel-padding" *ngIf="selectedDisciplines.includes(discipline.name)">
+      <p-panel [toggleable]="true">
+        <p-header>
+          {{ discipline.name }} | <small>{{ discipline.order }}</small>
+        </p-header>
+        <p>{{ discipline.description }}</p>
+        <hr/>
+        <p><strong>Focus:</strong> {{ discipline.focus }}</p>
+        <p *ngFor="let ability of discipline.abilities"><strong>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}):</strong> {{ability.description }}</p>
+      </p-panel>
+    </div>
+  </div>
+</div>

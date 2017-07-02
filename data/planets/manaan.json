@@ -1,0 +1,14 @@
+{
+  "name": "Manaan",
+  "region": "Inner Rim",
+  "system": "Pyrshak",
+  "capital": "Ahto City",
+  "climate": "Water",
+  "coordinates": "O-11",
+  "hyperspace": [{
+    "planet": "Umbara",
+    "distance": 90
+  }],
+  "active": true,
+  "inhabitants": ["Aqualish"]
+}

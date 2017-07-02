@@ -1,0 +1,13 @@
+{
+  "name": "Tatooine",
+  "region": "Outer Rim Territories",
+  "sector": "Arkanis",
+  "system": "Tatoo",
+  "capital": "Bestine",
+  "inhabitants": ["Human"],
+  "climate": "Arid",
+  "coordinates": "R-16",
+  "hyperspace": [],
+  "alignment": ["Black Sun"],
+  "active": true
+}
