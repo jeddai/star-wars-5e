@@ -1,3 +1,7 @@
+export class URL {
+  public static api = 'http://localhost:3000';
+}
+
 export class Colors {
   public static climateColors = {
       Arid: '#fd8',

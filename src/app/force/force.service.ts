@@ -3,9 +3,11 @@ import { Http } from '@angular/http';
 import { DisciplineResponse } from './DisciplineResponse';
 import 'rxjs/Rx';
 
+import { URL } from '../Constants';
+
 @Injectable()
 export class ForceService {
-  private readonly disciplineEndpoint: string = "http://localhost:3000/force/get-disciplines";
+  private readonly disciplineEndpoint: string = URL.api + "/force/get-disciplines";
 
   constructor(private http: Http) {}
   public GetDisciplines(): Promise <DisciplineResponse> {

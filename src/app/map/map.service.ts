@@ -3,9 +3,11 @@ import { Http } from '@angular/http';
 import { ForceDirectedGraphResponse } from './ForceDirectedGraphResponse';
 import 'rxjs/Rx';
 
+import { URL } from '../Constants';
+
 @Injectable()
 export class MapService {
-  private readonly forceDirectedGraphEndpoint: string = "http://localhost:3000/map/data";
+  private readonly forceDirectedGraphEndpoint: string = URL.api + "/map/data";
 
   constructor(private http: Http) {}
   public GetActivePlanets(): Promise <ForceDirectedGraphResponse> {
