@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as _ from 'lodash';
 
 import { CarousingRolls } from './CarousingRolls';
 import { CarousingResult } from './CarousingResult';
@@ -33,9 +34,9 @@ export class CarousingComponent {
     }
     var result = CarousingRolls[this.numPlayers][randomNumber];
     if(this.numPlayers !== 1) {
-      var arr = this.shuffle(this.players);
+      var arr = this.shuffle(_.cloneDeep(this.players));
       for(i = 1; i <= this.numPlayers; i++) {
-        result = result.replaceAll("&" + i, arr[i - 1]);
+        result = this.replaceAll(result, "&" + i, arr[i - 1]);
       }
     }
     if(result.search("{") !== -1) {
@@ -62,6 +63,14 @@ export class CarousingComponent {
       "resultNumber": randomNumber + 1,
       "maxNumber": CarousingRolls[this.numPlayers].length
     };
+  }
+
+  private replaceAll(str, search, replacement): string {
+    return str.split(search).join(replacement);
+  }
+
+  private random(number): number {
+    return Math.floor(Math.random() * number);
   }
 
   private rollDice(dice, number): number {

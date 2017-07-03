@@ -122,20 +122,20 @@ export class CarousingRolls {
 
   public static "2" = [
     "&1 and &2 wake up together in bed, wearing wedding rings. In addition, you find a marriage certificate with your names on it. &1 has taken &2's last name.",
-    "&1 and &2 wake up together in bed. {['Wearing each other\\'s clothes.', 'Naked.'][random(2)]}",
-    "&1 and &2 wake up together {['in a hotel room you have never seen before','on their ship','in a booth in Rehal\\'s cantina'][random(3)]}, handcuffed to each other. {['You cannot find a key.', 'After searching, you can find a key.'][random(2)]}",
-    "In his/her drunken stupor, and after &2 passed out, &1 took all of &2's clothes and hid them {['in the ship somewhere','in the nearest Rehal\\'s Cantina'][random(2)]}.",
-    "&1 and &2 have drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][random(6)]}."
+    "&1 and &2 wake up together in bed. {['Wearing each other\\'s clothes.', 'Naked.'][this.random(2)]}",
+    "&1 and &2 wake up together {['in a hotel room you have never seen before','on their ship','in a booth in Rehal\\'s cantina'][this.random(3)]}, handcuffed to each other. {['You cannot find a key.', 'After searching, you can find a key.'][this.random(2)]}",
+    "In his/her drunken stupor, and after &2 passed out, &1 took all of &2's clothes and hid them {['in the ship somewhere','in the nearest Rehal\\'s Cantina'][this.random(2)]}.",
+    "&1 and &2 have drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][this.random(6)]}."
   ]
 
   public static "3" = [
-    "&1, &2, and &3 wake up together in bed. &1 is {['littlest','biggest'][random(2)]} spoon.",
-    "&1, &2, and &3 have all drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][random(6)]}.",
-    "After &1 passed out, &2 and &3 took all of his/her belongings and hid them {['in the ship somewhere','in the nearest Rehal\\'s Cantina'][random(2)]}."
+    "&1, &2, and &3 wake up together in bed. &1 is {['littlest','biggest'][this.random(2)]} spoon.",
+    "&1, &2, and &3 have all drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][this.random(6)]}.",
+    "After &1 passed out, &2 and &3 took all of his/her belongings and hid them {['in the ship somewhere','in the nearest Rehal\\'s Cantina'][this.random(2)]}."
   ]
   
   public static "4" = [
-    "&1, &2, and &3 have all drunkenly placed a 1d10 × 90(~90d10~)cr bounty on &4's head, to be brought to them. {['Alive', 'Dead'][random(2)]}.",
-    "&1, &2, &3, and &4 have all drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][random(6)]}."
+    "&1, &2, and &3 have all drunkenly placed a 1d10 × 90(~90d10~)cr bounty on &4's head, to be brought to them. {['Alive', 'Dead'][this.random(2)]}.",
+    "&1, &2, &3, and &4 have all drunkenly accepted a cargo mission for your group from the {['Sith','Black Sun','Mandalorians','Chiss','Jedi','Republic'][this.random(6)]}."
   ]
 }
