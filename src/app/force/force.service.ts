@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import { DisciplineResponse } from './DisciplineResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../Constants';
+import { URL } from '../URL';
 
 @Injectable()
 export class ForceService {

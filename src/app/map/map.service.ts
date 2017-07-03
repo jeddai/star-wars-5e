@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import { ForceDirectedGraphResponse } from './ForceDirectedGraphResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../Constants';
+import { URL } from '../URL';
 
 @Injectable()
 export class MapService {

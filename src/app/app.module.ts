@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AccordionModule, ButtonModule, DataTableModule, DropdownModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
+import { AccordionModule, ButtonModule, DataTableModule, DropdownModule, InputTextModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { CarousingComponent } from './carousing/carousing.component';
@@ -36,6 +36,7 @@ import { MapService } from './map/map.service';
     DropdownModule,
     FormsModule,
     HttpModule,
+    InputTextModule,
     MultiSelectModule,
     PanelModule,
     SharedModule,

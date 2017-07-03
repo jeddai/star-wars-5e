@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 import { ForceDirectedGraphData } from './ForceDirectedGraphData';
 import { ForceDirectedNode } from './ForceDirectedNode';
 import { MapService } from './map.service';
-import { Colors } from '../Constants';
+import { Colors } from '../Colors';
 
 const baseLineColor = '#aaa',
       highlightLineColor = '#777',
