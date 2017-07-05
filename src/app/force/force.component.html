@@ -2,7 +2,7 @@
 <hr/>
 
 <p-tabMenu [model]="items"></p-tabMenu>
-<p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'">
+<p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'" [rows]="10" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
   <p-header>List of Abilities</p-header>
   <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
   <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true"></p-column>
@@ -64,7 +64,7 @@
         <p-header>
           {{ discipline.name }} | <small>{{ discipline.order }}</small>
         </p-header>
-        <p>{{ discipline.description }}</p>
+        <p [innerHtml]="discipline.description"></p>
         <hr/>
         <p><strong>Focus:</strong> {{ discipline.focus }}</p>
         <p *ngFor="let ability of discipline.abilities"><strong>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}):</strong> {{ability.description }}</p>

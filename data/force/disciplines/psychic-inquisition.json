@@ -32,7 +32,7 @@
       "target":["creature"],
       "range":"30ft",
       "damage":"",
-      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails.\\nWith one failed saving throw, you learn its key memories from the past 12 hours. With two failed saving throws, you learn its key memories from the past 24 hours. With three failed saving throws, you learn its key memories from the past 48 hours."
+      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails.<br/><br/>With one failed saving throw, you learn its key memories from the past 12 hours. With two failed saving throws, you learn its key memories from the past 24 hours. With three failed saving throws, you learn its key memories from the past 48 hours."
     }, {
       "name":"Phantom Idea",
       "cost":"6",
@@ -42,6 +42,6 @@
       "target":["creature"],
       "range":"30ft",
       "damage":"",
-      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you plant a memory or an idea in it, which lasts for a number of hours based on the number of saving throws it fails. You choose whether the idea or memory is trivial (such as “I had porridge for breakfast” or “Ale is the worst”) or personality-defining (“I failed to save my village from orc marauders and am therefore a coward” or “Magic is a scourge, so I renounce it”).\\nWith one failed saving throw, the idea or memory lasts for the next 4 hours. With two failed saving throws, it lasts for 24 hours. With three failed saving throws, it lasts for 48 hours."
+      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you plant a memory or an idea in it, which lasts for a number of hours based on the number of saving throws it fails. You choose whether the idea or memory is trivial (such as “I had porridge for breakfast” or “Ale is the worst”) or personality-defining (“I failed to save my village from orc marauders and am therefore a coward” or “Magic is a scourge, so I renounce it”).<br/><br/>With one failed saving throw, the idea or memory lasts for the next 4 hours. With two failed saving throws, it lasts for 24 hours. With three failed saving throws, it lasts for 48 hours."
     }]
 }

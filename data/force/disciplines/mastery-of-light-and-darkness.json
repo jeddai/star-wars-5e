@@ -42,6 +42,6 @@
       "target":["creature"],
       "range":"60ft",
       "damage":"1 + nd6 radiant",
-      "description":"As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\\nYou can increase this effect’s damage by 1d6 per each additional force point spent on it."
+      "description":"As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br/><br/>You can increase this effect’s damage by 1d6 per each additional force point spent on it."
     }]
 }
