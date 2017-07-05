@@ -1,0 +1,15 @@
+{
+  "name":"Gauntlet of Kressh the Younger",
+  "description":"The Gauntlet of Kressh the Younger was a Sith artifact created during the time of the old Sith Empire by the Sith Lord Ludo Kressh to make his son, Elcho, invincible. An exceptionally powerful artifact, the gauntlet prevents the user from being touched unless he/she wishes to. Your AC becomes 25 and your saving throw bonuses become +15, and none of them can be raised or lowered in any way.\\n If an attack is made against you or you have to make a saving throw to avoid damage and either the attack does not hit or you succeed the saving throw, the attacker/caster takes 2d10 lightning damage, and is pushed 10ft away from you.",
+  "type": "armor",
+  "sub_type": "gauntlets",
+  "rarity": "legendary",
+  "attunement": true,
+  "notes": "Set: AC, Saving Throw Bonus",
+  "tags": [
+    "armor",
+    "damage",
+    "ac",
+    "saving throw"
+  ]
+}

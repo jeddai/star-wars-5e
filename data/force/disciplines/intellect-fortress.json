@@ -1,47 +1,37 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Intellect Fortress",
+    "description":"You forge an indomitable wall of force energy around your mind—one that allows you to launch counterattacks against your opponents.",
+    "order":"Adept",
+    "focus":"While focused on this discipline, you gain resistance to psychic damage.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Psychic Backlash",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"reaction",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"sight",
+      "damage":"2d10 psychic",
+      "description":"As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Psychic Parry",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
+      "casting_time":"reaction",
+      "duration":"instant",
+      "target":["self"],
       "range":"",
       "damage":"",
-      "description":""
+      "description":"As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each force point you spend on this ability. You can use this ability after rolling the die but before suffering the results."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Psychic Redoubt",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"10 mins",
+      "target":["creatures"],
+      "range":"30ft",
       "damage":"",
-      "description":""
-    }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "description":"As an action, you create a field of protective psychic energy. Choose any number of creatures within 30 feet of you. Until your concentration ends, each target has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws."
     }]
 }

@@ -1,47 +1,37 @@
 {
     "name":"Force Weapon",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "description":"You have learned how to channel force energy into your attacks, lending them devastating power.",
+    "order":"Guardian",
+    "focus":"Whenever you focus on this discipline, choose one weapon you’re holding or your unarmed strike. When you attack with it while focused on this discipline, its damage is psychic and magical, rather than its normal damage type. Until you reach 6th level as a force wielder, you don’t add your Strength or Dexterity modifier to the psychic attack’s damage rolls.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Ethereal Weapon",
+      "cost":"1",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"bonus",
+      "duration":"turn",
+      "target":["item"],
+      "range":"touch",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you temporarily transform one weapon you’re holding or your unarmed strike into pure force energy. The next attack you make with it before the end of your turn ignores the target’s armor, requiring no attack roll. Instead, the target makes a Dexterity saving throw against this discipline. On a failed save, the target takes the attack’s normal damage and suffers its additional effects. On a successful save, the target takes half damage from the attack but suffers no additional effects that would normally be imposed on a hit."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Lethal Strike",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"bonus",
+      "duration":"turn",
+      "target":["item"],
+      "range":"touch",
+      "damage":"nd10 psychic",
+      "description":"As a bonus action, you imbue a weapon you’re holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 psychic damage per point spent."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Augmented Weapon",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"10 mins",
+      "target":["item"],
+      "range":"touch",
       "damage":"",
-      "description":""
-    }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "description":"As a bonus action, touch one simple or martial weapon. Until your concentration ends, that weapon becomes a magic weapon with a +3 bonus to its attack and damage rolls."
     }]
 }

@@ -1,47 +1,37 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Iron Durability",
+    "description":"You transform your body to become a living metal, allowing you to shrug off attacks that would cripple weaker creatures.",
+    "order":"Sentinel",
+    "focus":"While focused on this discipline, you gain a +1 bonus to AC.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Iron Hide",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
+      "casting_time":"reaction",
+      "duration":"round",
+      "target":["self"],
       "range":"",
       "damage":"",
-      "description":""
+      "description":"As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each force point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Steel Hide",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
+      "casting_time":"bonus",
+      "duration":"round",
+      "target":["self"],
       "range":"",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage until the end of your next turn."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
+      "name":"Iron Resistance",
+      "cost":"7",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 hour",
+      "target":["self"],
       "range":"",
       "damage":"",
-      "description":""
-    }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "description":"As an action, you gain resistance to bludgeoning, piercing, or slashing damage (your choice), which lasts until your concentration ends."
     }]
 }

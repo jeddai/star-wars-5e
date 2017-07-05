@@ -1,28 +1,34 @@
-# StarWars
+# Star Wars 5e
+This application is my attempt at making a compendium/web tool for those utilizing my Star Wars 5e conversion. It is a simple web application with quite a few useful features, including a force-directed graph/map of the Star Wars universe, a carousing generator, a magic items/force ability/monster compendium and look-up tool, and a combat tracker.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+## Installing
+Simply download git repo, `cd` into it, and do an npm install:
 
-## Development server
+```
+npm install
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Running
+You can run the application locally by doing one of the following:
 
-## Code scaffolding
+### Multiple Servers
+One way to run the application is with multiple servers (or on one computer with multiple terminal windows).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Terminal 1:
+```
+npm run start-client
+```
 
-## Build
+Terminal 2:
+```
+npm start
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### XAMMP
+If you are using a tool like XAMMP to serve a folder, use these instructions. First, run the build tool packaged with the Angular CLI.
 
-## Running unit tests
+```
+node_modules/@angular/cli/bin/ng build --prod
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+When you have completed this, you should see a folder titled `dist` in the main application folder. This folder should become your web app root. You should then run `npm start` and navigate to your XAMMP instance and it should be working fine!
