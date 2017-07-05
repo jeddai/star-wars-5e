@@ -1,0 +1,13 @@
+{
+  "name":"Mandalorian Armor",
+  "description":"This suit of armor was forged in the Mandalorian war forges. While you're wearing it, any critical hit against you becomes a normal hit.",
+  "type": "armor",
+  "sub_type": "light, medium",
+  "rarity": "uncommon",
+  "attunement": false,
+  "notes": "Immunity: Critical Hits, Combat, Warding",
+  "tags": [
+    "combat",
+    "warding"
+  ]
+}

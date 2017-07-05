@@ -1,0 +1,12 @@
+{
+  "name":"Muur Talisman",
+  "description":"",
+  "type": "wondrous item",
+  "sub_type": "talisman",
+  "rarity": "artifact",
+  "attunement": false,
+  "notes": "",
+  "tags": [
+    ""
+  ]
+}

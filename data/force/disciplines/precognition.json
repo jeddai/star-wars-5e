@@ -10,7 +10,7 @@
       "casting_time":"bonus",
       "duration":"1 min",
       "target":["self"],
-      "range":"self",
+      "range":"",
       "damage":"1d4",
       "description":"As a bonus action, you open yourself to receive momentary insights that improve your odds of success; until your concentration ends, whenever you make an attack roll, a saving throw, or an ability check, you roll a d4 and add it to the total."
     }, {

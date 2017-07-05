@@ -21,6 +21,51 @@ export class ForceComponent implements OnInit {
   selectDisciplines: SelectItem[] = [];
   selectedDisciplines: string[] = ['Adaptive Body'];
 
+  castingTimeOptions: SelectItem[] = [{
+      label: 'All',
+      value: null
+    }, {
+      label:'Action', 
+      value: 'action'
+    }, {
+      label:'Bonus Action',
+      value: 'bonus'
+    }, {
+      label:'Instant',
+      value: 'instant'
+    }, {
+      label:'Reaction',
+      value: 'reaction'
+    }
+  ];
+
+  rangeOptions: SelectItem[] = [{
+      label: 'All',
+      value: null
+    }, {
+      label:'30ft',
+      value: '30ft'
+    }, {
+      label:'60ft',
+      value: '60ft'
+    }, {
+      label:'90ft',
+      value: '90ft'
+    }, {
+      label:'120ft',
+      value: '120ft'
+    }, {
+      label:'Telepathy',
+      value: 'telepathy'
+    }, {
+      label:'Touch',
+      value: 'touch'
+    }, {
+      label:'Sight',
+      value: 'sight'
+    }
+  ];
+
   ngOnInit() {
     this.forceService
     .GetDisciplines()
@@ -39,6 +84,8 @@ export class ForceComponent implements OnInit {
     })
     .catch(e => console.log(e));
 
+    this.selectedDisciplines = !!localStorage.disciplines ? localStorage.disciplines.split(',') : ['Adaptive Body'];
+
     this.items = [
       {label: 'Select Disciplines', icon: 'fa-list-ol', command: () => {
         this.activeItem = 'selector';
@@ -49,5 +96,9 @@ export class ForceComponent implements OnInit {
     ];
 
     this.activeItem = 'selector';
+  }
+
+  public saveSelectedDisciplines(): void {
+    localStorage.setItem('disciplines', this.selectedDisciplines.toString());
   }
 }

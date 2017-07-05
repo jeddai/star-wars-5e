@@ -13,9 +13,13 @@ import { CombatComponent } from './combat/combat.component';
 import { ForceComponent } from './force/force.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
+import { MagicalItemComponent } from './magical-items/magical-item.component';
+
+import { CapitalizePipe } from './magical-items/capitalize.pipe';
 
 import { ForceService } from './force/force.service';
 import { MapService } from './map/map.service';
+import { MagicalItemService } from './magical-items/magical-item.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { MapService } from './map/map.service';
     CombatComponent,
     ForceComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    MagicalItemComponent,
+    CapitalizePipe
   ],
   imports: [
     AccordionModule,
@@ -53,6 +59,9 @@ import { MapService } from './map/map.service';
     }, {
       path: 'force',
       component: ForceComponent
+    },  {
+      path: 'magical-items',
+      component: MagicalItemComponent
     }, {
       path: 'map',
       component: MapComponent
@@ -64,7 +73,8 @@ import { MapService } from './map/map.service';
   ],
   providers: [
     ForceService,
-    MapService
+    MapService,
+    MagicalItemService
   ],
   bootstrap: [
     AppComponent

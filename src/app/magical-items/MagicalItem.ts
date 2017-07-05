@@ -1,4 +1,4 @@
-export class MagicItem {
+export class MagicalItem {
   name: string
   description: string
   type: string

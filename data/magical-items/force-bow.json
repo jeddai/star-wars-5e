@@ -1,0 +1,13 @@
+{
+  "name":"Force Bow",
+  "description":"The force bow is a special weapon created by the Dathomirian Witch clans. It utilizes the energy of the force to create and propel missiles. The force bow has the following statistics:<br/><br/>Martial ranged weapon, 1d10 force damage, 60/240. No ammunition required.",
+  "type": "weapon",
+  "sub_type": "ranged",
+  "rarity": "uncommon",
+  "attunement": false,
+  "notes": "Ranged Weapon, No Ammunition",
+  "tags": [
+    "weapon",
+    "ranged"
+  ]
+}

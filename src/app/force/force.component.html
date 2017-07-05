@@ -2,15 +2,33 @@
 <hr/>
 
 <p-tabMenu [model]="items"></p-tabMenu>
-<p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'" [rows]="10" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
+<p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
   <p-header>List of Abilities</p-header>
   <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
   <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true"></p-column>
   <p-column field="order" header="Force Order" [sortable]="true" [filter]="true"></p-column>
   <p-column field="cost" header="Force Points"></p-column>
-  <p-column field="casting_time" header="Casting Time"></p-column>
-  <p-column field="duration" header="Duration"></p-column>
-  <p-column field="range" header="Range/Area"></p-column>
+  <p-column field="casting_time" header="Casting Time" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
+    <ng-template pTemplate="filter" let-col>
+      <p-dropdown [options]="castingTimeOptions" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
+    </ng-template>
+    <ng-template let-col let-item="rowData" pTemplate="body">
+      <span>{{ item[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="duration" header="Duration">
+    <ng-template let-col let-item="rowData" pTemplate="body">
+      <span>{{ item[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="range" header="Range/Area" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
+    <ng-template pTemplate="filter" let-col>
+      <p-dropdown [options]="rangeOptions" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
+    </ng-template>
+    <ng-template let-col let-item="rowData" pTemplate="body">
+      <span>{{ item[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
   <ng-template let-ability pTemplate="rowexpansion">
     <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
       <div class="ui-g-2"></div>
@@ -58,7 +76,7 @@
 </p-dataTable>
 
 <div *ngIf="activeItem == 'selector'" style="padding: 5px 5px 5px 5px;">
-  <p-multiSelect [options]="selectDisciplines" [(ngModel)]="selectedDisciplines"></p-multiSelect>
+  <p-multiSelect [options]="selectDisciplines" [(ngModel)]="selectedDisciplines" (onChange)="saveSelectedDisciplines()"></p-multiSelect>
   <div class="ui-grid ui-grid-responsive" *ngFor="let discipline of disciplines">
     <div class="panel-padding" *ngIf="selectedDisciplines.includes(discipline.name)">
       <p-panel [toggleable]="true">
