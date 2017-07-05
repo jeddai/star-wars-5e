@@ -34,6 +34,9 @@
             <div class="ui-grid-row">
               <div class="label">Range: {{ ability.range }}</div>
             </div>
+            <div class="ui-grid-row">
+              <div class="label">Damage: {{ ability.damage }}</div>
+            </div>
           </div>
           <div class="ui-grid-col-4">
             <div class="ui-grid-row">
@@ -48,9 +51,7 @@
           </div>
         </div>
         <hr/>
-        <div class="ui-grid-row">
-          {{ ability.description }}
-        </div>
+        <div class="ui-grid-row" [innerHtml]="ability.description"></div>
       </div>
     </div>
   </ng-template>
@@ -64,10 +65,11 @@
         <p-header>
           {{ discipline.name }} | <small>{{ discipline.order }}</small>
         </p-header>
-        <p [innerHtml]="discipline.description"></p>
+        <p>{{ discipline.description }}</p>
         <hr/>
         <p><strong>Focus:</strong> {{ discipline.focus }}</p>
-        <p *ngFor="let ability of discipline.abilities"><strong>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}):</strong> {{ability.description }}</p>
+        <p *ngFor="let ability of discipline.abilities">
+          <strong>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}):</strong> <span [innerHtml]="ability.description"></span>
       </p-panel>
     </div>
   </div>
