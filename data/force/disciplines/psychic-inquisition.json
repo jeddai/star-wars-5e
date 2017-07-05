@@ -1,47 +1,47 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Psychic Inquisition",
+    "description":"You reach into a creature’s mind to uncover information or plant ideas within it.",
+    "order":"Consular",
+    "focus":"While focused on this discipline, you know when a creature communicating with you via telepathy is lying.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Hammer of Inquisition",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"nd10 psychic",
+      "description":"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per point spent and suffers disadvantage on its next Wisdom saving throw before the end of your next turn. On a successful save, it takes half as much damage."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Forceful Query",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"30ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you ask a question of one creature that can see and hear you within 30 feet of you. The question must be phrased so that it can be answered with a yes or no, otherwise this ability fails. The target must succeed on a Wisdom saving throw, or it replies with a truthful answer. A creature is immune to this ability if it is immune to being charmed."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Ransack Mind",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"instant",
+      "duration":"1 hr",
+      "target":["creature"],
+      "range":"30ft",
       "damage":"",
-      "description":""
+      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails.\\nWith one failed saving throw, you learn its key memories from the past 12 hours. With two failed saving throws, you learn its key memories from the past 24 hours. With three failed saving throws, you learn its key memories from the past 48 hours."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Phantom Idea",
+      "cost":"6",
+      "conc":true,
+      "casting_time":"instant",
+      "duration":"1 hour",
+      "target":["creature"],
+      "range":"30ft",
       "damage":"",
-      "description":""
+      "description":"While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you plant a memory or an idea in it, which lasts for a number of hours based on the number of saving throws it fails. You choose whether the idea or memory is trivial (such as “I had porridge for breakfast” or “Ale is the worst”) or personality-defining (“I failed to save my village from orc marauders and am therefore a coward” or “Magic is a scourge, so I renounce it”).\\nWith one failed saving throw, the idea or memory lasts for the next 4 hours. With two failed saving throws, it lasts for 24 hours. With three failed saving throws, it lasts for 48 hours."
     }]
 }

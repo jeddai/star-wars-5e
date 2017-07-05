@@ -1,47 +1,57 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mantle of Command",
+    "description":"You exert an aura of trust and authority, enhancing the coordination among your allies.",
+    "order":"Sentinel",
+    "focus":"While focused on this discipline, when you end your turn and didn’t move during it, you can use your reaction to allow one ally you can see within 30 feet of you to move up to half their speed, following a path of your choice. To move in this way, the ally mustn’t be incapacitated.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Coordinated Movement",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"bonus",
+      "duration":"instant",
+      "target":["allies"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, choose up to five allies you can see within 60 feet of you. Each of those allies can use their reaction to move up to half their speed, following a path of your choice."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Commander's Sight",
+      "cost":"2",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"round",
+      "target":["creature"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, choose one creature you can see within 60 feet of you. Until the start of your next turn, your allies have advantage on attack rolls against that target."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Command to Strike",
+      "cost":"3",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["ally"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, choose one ally you can see within 60 feet of you. That ally can use their reaction to immediately take the Attack action. You choose the targets."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Strategic Mind",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["allies"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you exert an aura of trust and command that unites your allies into a cohesive unit. Until your concentration ends, any ally within 60 feet of you on their turn can, as a bonus action, take the Dash or Disengage action or roll a d4 and add the number rolled to each attack roll they make that turn."
+    }, {
+      "name":"Overwhelming Attack",
+      "cost":"7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["allies"],
+      "range":"60ft",
+      "damage":"",
+      "description":"As an action, choose up to five allies you can see within 60 feet of you. Each of those allies can use their reaction to take the Attack action. You choose the targets of the attacks."
     }]
 }

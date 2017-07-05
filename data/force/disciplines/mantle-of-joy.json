@@ -1,47 +1,47 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mantle of Joy",
+    "description":"You tap into the joy within you, radiating it outward in soothing, psychic energy that brings hope and comfort to creatures around you.",
+    "order":"Consular",
+    "focus":"While focused on this discipline, you have advantage on Charisma (Persuasion) checks.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Soothing Presence",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"bonus",
+      "duration":"instant",
+      "target":["creatures"],
+      "range":"60ft",
+      "damage":"3 * FP HP",
+      "description":"As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target gains 3 temporary hit points per force point spent on this effect."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "name":"Comforting Aura",
+      "cost":"2",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["allies"],
+      "range":"sight",
+      "damage":"1d4",
+      "description":"As a bonus action, choose up to three allies you can see (you can choose yourself in place of one of the allies). Until your concentration ends, each target can roll a d4 when making a saving throw and add the number rolled to the total."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Aura of Jubilation",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["creatures"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you radiate a distracting mirth until your concentration ends. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Beacon of Recovery",
+      "cost":"5",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"bonus",
+      "duration":"instant",
+      "target":["allies"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you and up to five allies you can see within 60 feet of you can immediately make saving throws against every effect they’re suffering that allows a save at the start or end of their turns."
     }]
 }

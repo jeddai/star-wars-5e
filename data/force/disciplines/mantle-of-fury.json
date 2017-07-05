@@ -1,47 +1,47 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mantle of Fury",
+    "description":"You allow the primal fury lurking deep within your mind to burst forth, catching you and your allies in an implacable bloodthirst.",
+    "order":"Guardian",
+    "focus":"While focused on this discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5-foot increase to their walking speed during that turn.",
     "abilities":[{
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "name":"Incite Fury",
+      "cost":"2",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["allies"],
+      "range":"60ft",
+      "damage":"1d4",
+      "description":"As a bonus action, choose up to three allies you can see within 60 feet of you (you can choose yourself in place of one of the allies). Until your concentration ends, each target can roll a d4 when rolling damage for a melee weapon attack and add the number rolled to the damage roll."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Mindless Charge",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"bonus",
+      "duration":"instant",
+      "target":["creatures"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target can immediately use its reaction to move up to its speed in a straight line toward its nearest enemy."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Aura of Bloodletting",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["creatures"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you unleash an aura of rage. Until your concentration ends, you and any creature within 60 feet of you has advantage on melee attack rolls."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Overwhelming Fury",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"1 min",
+      "target":["creature"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you flood rage into one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw, or it can use its actions only to make melee attacks until your concentration ends. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
     }]
 }

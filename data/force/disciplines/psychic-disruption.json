@@ -1,47 +1,37 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Psychic Disruption",
+    "description":"You create psychic static that disrupts other creatures’ ability to think clearly.",
+    "order":"Guardian",
+    "focus":"While focused on this discipline, you have advantage on Charisma (Deception) checks.",
     "abilities":[{
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "name":"Distracting Haze",
+      "cost":"1-7",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"nd10 psychic",
+      "description":"As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per point spent and can’t see anything more than 10 feet from it until your concentration ends. On a successful save, it takes half as much damage."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Daze",
+      "cost":"3",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"action",
+      "duration":"round",
+      "target":["creature"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, the target is incapacitated until the end of your next turn or until it takes any damage."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Mind Storm",
+      "cost":"5",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
-    }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["20ft sphere"],
+      "range":"60ft",
+      "damage":"6d8 + nd6 psychic",
+      "description":"As an action, choose a point you can see within 60 feet of you. Each creature in a 20-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes 6d8 psychic damage and suffers disadvantage on all saving throws until the end of your next turn. On a successful save, a creature takes half as much damage. You can increase the damage by 1d6 per additional point spent on this ability."
     }]
 }

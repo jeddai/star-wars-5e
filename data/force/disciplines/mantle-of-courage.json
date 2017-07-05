@@ -1,47 +1,37 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mantle of Courage",
+    "description":"You focus your mind on courage, radiating confidence and bravado to your allies.",
+    "order":"Guardian",
+    "focus":"While focused on this discipline, you and allies within 10 feet of you who can see you have advantage on saving throws against being frightened.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Incite Courage",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "casting_time":"bonus",
+      "duration":"instant",
+      "target":["creatures"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, choose up to six creatures you can see within 60 feet of you. If any of those creatures is frightened, that condition ends on that creature."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Aura of Victory",
+      "cost":"1-7",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"10 mins",
+      "target":["allies"],
+      "range":"30ft",
       "damage":"",
-      "description":""
+      "description":"As a bonus action, you project force energy until your concentration ends. The energy fortifies you and your allies when your enemies are felled; whenever an enemy you can see is reduced to 0 hit points, you and each of your allies within 30 feet of you gain temporary hit points equal to double the force points spent to activate this effect."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Pillar of Confidence",
+      "cost":"6",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"round",
+      "target":["creatures"],
+      "range":"60ft",
       "damage":"",
-      "description":""
-    }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "description":"As an action, you and up to five creatures you can see within 60 feet of you each gain one extra action to use on your individual turns. The action goes away if not used before the end of your next turn. the action can be used only to make one weapon attack or to take the Dash or Disengage action."
     }]
 }

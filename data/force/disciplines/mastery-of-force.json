@@ -1,47 +1,57 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mastery of Force",
+    "description":"As a student of force power, you perceive the potential energy that flows through all things. You reach out with your mind, transforming the potential into the actual. Objects and creatures move at your command.",
+    "order":"Sentinel",
+    "focus":"While focused on this discipline, you have advantage on Strength checks.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Push",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"nd8 force",
+      "description":"As an action, choose one creature you can see within 60 feet of you. The target must make a Strength saving throw. On a failed save, it takes 1d8 force damage per force point spent and is pushed up to 5 feet per point spent in a straight line away from you. On a successful save, it takes half as much damage."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Move",
+      "cost":"2-7",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "casting_time":"action",
+      "duration":"instant",
+      "target":["object"],
+      "range":"60ft",
+      "damage":"See SWPHB",
+      "description":"Choose one object you can see within 60 feet of you that isn’t being worn or carried by another creature and that isn’t secured in place. It can’t be larger than 20 feet on a side, and its maximum weight depends on the force points spent on this ability, as shown below.\\nAs an action, you move the object up to 60 feet, and you must keep the object within sight during this movement. If the object ends this movement in the air, it falls. If the object would fall on a creature, the creature must succeed on a DC 10 Dexterity saving throw or take damage as listed on the table below."
     }, {
-      "name":"",
-      "cost":"",
+      "name":"Inertial Armor",
+      "cost":"2",
       "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
+      "casting_time":"action",
+      "duration":"8 hrs",
+      "target":["self"],
       "range":"",
       "damage":"",
-      "description":""
+      "description":"As an action, you sheathe yourself in an intangible field of magical force. For 8 hours, your base AC is 14 + your Dexterity modifier, and you gain resistance to force damage. This effect ends if you are wearing or don armor."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Telekinetic Barrier",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"10 mins",
+      "target":["point"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you create a transparent wall of telekinetic energy, at least one portion of which must be within 60 feet of you. The wall is 40 feet long, 10 feet high, and 1 inch thick. The wall lasts until your concentration ends. Each 10-foot section of the wall has an AC of 10 and 10 hit points."
+    }, {
+      "name":"Grasp",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"",
+      "description":"You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or be grappled by you until your concentration ends or until the target leaves your reach, which is 60 feet for this grapple.\\nThe grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your force ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend force points to boost your check, abiding by your force limit. You gain a +1 bonus to DC per 2 force points spent.\\nWhile a target is grappled in this manner, you create one of the following effects as an action:\\nCrush (1–7 force). The target takes 1d6 bludgeoning damage per force point spent.\\nMove (1–7 force). You move the target up to 5 feet per force point spent. You can move it in the air and hold it there. It falls if the grapple ends."
     }]
 }

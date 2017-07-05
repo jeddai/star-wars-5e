@@ -1,47 +1,47 @@
 {
-    "name":"",
-    "description":"",
-    "order":"",
-    "focus":"",
+    "name":"Mastery of Light and Darkness",
+    "description":"You claim dominion over light and darkness with your mind.",
+    "order":"Sentinel",
+    "focus":"While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.",
     "abilities":[{
-      "name":"",
-      "cost":"",
+      "name":"Darkness",
+      "cost":"1-7",
       "conc":false,
-      "casting_time":"",
+      "casting_time":"action",
       "duration":"",
-      "target":[],
-      "range":"",
+      "target":["point"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10-foot radius per force point spent on this ability. The light produced by spells of 2nd level or less is suppressed in this area."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Light",
+      "cost":"2",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["object", "creature"],
+      "range":"touch",
       "damage":"",
-      "description":""
+      "description":"As an action, an object you touch radiates light in a 20-foot radius and dim light for an additional 20 feet. The light lasts until your concentration ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can’t hide, and attack rolls against it gain advantage."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
+      "name":"Shadow Beasts",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["points"],
+      "range":"60ft",
       "damage":"",
-      "description":""
+      "description":"As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your verbal commands. In combat, roll for their initiative, and choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block."
     }, {
-      "name":"",
-      "cost":"",
-      "conc":false,
-      "casting_time":"",
-      "duration":"",
-      "target":[],
-      "range":"",
-      "damage":"",
-      "description":""
+      "name":"Radiant Beam",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["creature"],
+      "range":"60ft",
+      "damage":"1 + nd6 radiant",
+      "description":"As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\\nYou can increase this effect’s damage by 1d6 per each additional force point spent on it."
     }]
 }
