@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { DisciplineResponse } from './DisciplineResponse';
+import { DisciplineResponse } from '../responses/DisciplineResponse';
 import 'rxjs/Rx';
 
 import { URL } from '../URL';

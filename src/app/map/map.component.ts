@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
-import { ForceDirectedGraphData } from './ForceDirectedGraphData';
-import { ForceDirectedNode } from './ForceDirectedNode';
+import { ForceDirectedGraphData } from '../classes/ForceDirectedGraphData';
+import { ForceDirectedNode } from '../classes/ForceDirectedNode';
 import { MapService } from './map.service';
 import { Colors } from '../Colors';
 

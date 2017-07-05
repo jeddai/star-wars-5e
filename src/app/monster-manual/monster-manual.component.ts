@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem } from 'primeng/primeng';
 
-import { MagicalItem } from '../classes/MagicalItem';
-import { MagicalItemService } from './magical-item.service';
+import { Monster } from '../classes/Monster';
+import { MonsterManualService } from './monster-manual.service';
 
 @Component({
   selector: 'magical-item',
   templateUrl: './magical-item.component.html',
   styleUrls: ['./magical-item.component.css']
 })
-export class MagicalItemComponent implements OnInit {
-  constructor(private magicalItemService : MagicalItemService) { }
+export class MonsterManualComponent implements OnInit {
+  constructor(private monsterManualService : MonsterManualService) { }
   
-  items: MagicalItem[];
   attunementOptions: SelectItem[] = [{
       label: 'All',
       value: null
@@ -33,10 +32,10 @@ export class MagicalItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.magicalItemService
+    this.monsterManualService
     .GetMagicItems()
     .then((res) => {
-      this.items = res.Response;
+      
     })
     .catch(e => console.log(e));
   }

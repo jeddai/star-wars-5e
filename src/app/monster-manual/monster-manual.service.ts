@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { ForceDirectedGraphResponse } from '../responses/ForceDirectedGraphResponse';
+import { MonsterManualResponse } from '../responses/MonsterManualResponse';
 import 'rxjs/Rx';
 
 import { URL } from '../URL';
 
 @Injectable()
-export class MapService {
-  private readonly forceDirectedGraphEndpoint: string = URL.api + "/map/data";
+export class MonsterManualService {
+  private readonly magicalItemEndpoint: string = URL.api + "/magical-items/get-magical-items";
 
   constructor(private http: Http) {}
-  public GetActivePlanets(): Promise <ForceDirectedGraphResponse> {
+  public GetMagicItems(): Promise <MonsterManualResponse> {
     return this
       .http
-      .get(this.forceDirectedGraphEndpoint)
+      .get(this.magicalItemEndpoint)
       .map(value => {
-        var response = value.json() as ForceDirectedGraphResponse;
+        var response = value.json() as MonsterManualResponse;
         if (!response) {
           throw value.toString();
         } else if (response.Error) {

@@ -1,4 +1,4 @@
-import { MagicalItem } from './MagicalItem';
+import { MagicalItem } from '../classes/MagicalItem';
 
 export interface MagicalItemResponse {
     Response: MagicalItem[]

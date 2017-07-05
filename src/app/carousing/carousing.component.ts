@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import * as _ from 'lodash';
 
-import { CarousingRolls } from './CarousingRolls';
-import { CarousingResult } from './CarousingResult';
+import { CarousingRolls } from '../classes/CarousingRolls';
+import { CarousingResult } from '../classes/CarousingResult';
 
 @Component({
   selector: 'carousing',

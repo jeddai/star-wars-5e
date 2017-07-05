@@ -1,4 +1,4 @@
-import { ForceDirectedGraphData } from './ForceDirectedGraphData';
+import { ForceDirectedGraphData } from '../classes/ForceDirectedGraphData';
 
 export interface ForceDirectedGraphResponse {
   Response: ForceDirectedGraphData

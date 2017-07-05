@@ -1,4 +1,4 @@
-import { Discipline } from './Discipline';
+import { Discipline } from '../classes/Discipline';
 
 export interface DisciplineResponse {
     Response: Discipline[]

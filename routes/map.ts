@@ -2,10 +2,10 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { ForceDirectedGraphResponse } from '../src/app/map/ForceDirectedGraphResponse';
-import { ForceDirectedGraphData } from '../src/app/map/ForceDirectedGraphData';
-import { ForceDirectedLink } from '../src/app/map/ForceDirectedLink';
-import { ForceDirectedNode } from '../src/app/map/ForceDirectedNode';
+import { ForceDirectedGraphResponse } from '../src/app/responses/ForceDirectedGraphResponse';
+import { ForceDirectedGraphData } from '../src/app/classes/ForceDirectedGraphData';
+import { ForceDirectedLink } from '../src/app/classes/ForceDirectedLink';
+import { ForceDirectedNode } from '../src/app/classes/ForceDirectedNode';
 
 var filePath = path.join(__dirname, '../data');
 var router = express.Router();

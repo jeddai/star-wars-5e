@@ -2,7 +2,7 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { MagicalItemResponse } from '../src/app/magical-items/MagicalItemResponse';
+import { MagicalItemResponse } from '../src/app/responses/MagicalItemResponse';
 
 var filePath = path.join(__dirname, '../data/magical-items');
 var router = express.Router();
