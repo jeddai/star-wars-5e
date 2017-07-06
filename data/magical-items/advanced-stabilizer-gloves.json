@@ -1,0 +1,12 @@
+{
+  "name":"Advanced Stabilizer Gloves",
+  "description":"These gloves contain an advanced fire control and trajectory analysis system which links to held ranged weapons. This allows the user greater accuracy when aiming their own weapons, and also gives warning when incoming fire would likely hit the wearer.<br/><br/>Your range with all blasters is increased by 30ft. In addition, whenever you would be hit by a ranged weapon attack, you can use your reaction to add your proficiency bonus to your AC.",
+  "type": "wondrous item",
+  "sub_type": "gloves",
+  "rarity": "rare",
+  "attunement": true,
+  "notes": "Range, Gloves",
+  "tags": [
+    "handwear"
+  ]
+}

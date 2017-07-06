@@ -1,0 +1,13 @@
+{
+  "name":"Carth Onasi's Blaster Pistol",
+  "description":"The blaster pistol of Republic hero Carth Onasi. It is exactly like a heavy blaster pistol, but it has the *light* attribute and you add your proficiency bonus to damage die rolls.",
+  "type": "weapon",
+  "sub_type": "blaster",
+  "rarity": "very rare",
+  "attunement": false,
+  "notes": "Blaster, Bonus Damage",
+  "tags": [
+    "weapon",
+    "blaster"
+  ]
+}

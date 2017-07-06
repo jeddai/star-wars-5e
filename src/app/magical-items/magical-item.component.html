@@ -25,6 +25,7 @@
     <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
       <div class="ui-g-2"></div>
       <div class="ui-g-8">
+        <h3>{{ item.name }}</h3>
         <div class="ui-grid-row">
           <em>
             {{ item.type | capitalize }}
@@ -33,7 +34,7 @@
           </em>
         </div>
         <hr/>
-        <div class="ui-grid-row" [innerHtml]="item.description">
+        <div class="ui-grid-row" [innerHtml]="item.description | markdown">
 
         </div>
         <br/>

@@ -1,9 +1,9 @@
 {
   "name":"Tulak Hord's Mask",
-  "description":"",
+  "description":"This ancient mask, blackened with age, has an eerie glow and seems uncomfortably claustrophobic. Your stealth skill increases by 2 and you gain resistance to fire damage.",
   "type": "wondrous item",
   "sub_type": "mask",
-  "rarity": "artifact",
+  "rarity": "rare",
   "attunement": true,
   "notes": "",
   "tags": [

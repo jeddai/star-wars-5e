@@ -1,0 +1,44 @@
+{
+  "name": "Soldier Captain",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "any",
+  "armor_class": 16,
+  "hit_points": 9,
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 14,
+    "dex": 18,
+    "con": 14,
+    "int": 14,
+    "wis": 10,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 10"],
+  "languages": ["Basic"],
+  "challenge": 4,
+  "others": [],
+  "abilities": [{
+    "name":"***Rally (3/day).***",
+    "ability":"As a bonus action, the captain can rally its allies within 30ft of itself to give them +2 to attack and damage rolls for the next round."
+  }, {
+    "name":"***Call for Backup.***",
+    "ability":"As a bonus action during the first round of combat, if the captain is his own territory, he can call for backup. When a captain calls for backup, 1d4 soldiers appear at the end of his turn. They each roll their own initiative."
+  }],
+  "actions": [{
+    "name":"***Disruptor Rifle.***",
+    "action":"*Ranged Weapon Attack:* +7 to hit, one target. *Hit* 9 (1d8 + 4) DC 14 Con save or stunned 1 round."
+  }, {
+    "name":"***Dual Blaster Pistols.***",
+    "action":"*Ranged Weapon Attack:* +7 to hit, one target. *Hit* 7 (1d4 + 4)"
+  }],
+  "legendary_actions": []
+}

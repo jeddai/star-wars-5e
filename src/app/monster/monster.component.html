@@ -1,0 +1,86 @@
+<div class="ui-grid" [style.font-size.px]="size.font_size">
+  <h1 [style.font-size.px]="size.font_size+18">{{ monster.name | capitalize }}</h1>
+  <div class="ui-grid-row">
+    <div class="ui-g-6 ui-g-md-2 center-text" *ngFor="let sc of ascores">
+      <small><strong>{{ sc.toUpperCase() }}</strong></small>
+      <h2 [style.font-size.px]="size.font_size+12">{{ monster.ability_scores[sc] }}({{ (score(monster.ability_scores[sc]) >= 0 ? '+' : '') + score(monster.ability_scores[sc]) }})</h2>
+    </div>
+  </div>
+  <hr/>
+  <div class="ui-grid-row center-text">
+    <div class="ui-g-6 ui-g-md-3">
+      <small><strong>Challenge Rating</strong></small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetChallenge(monster.challenge).label  }}</h3><small>({{ monsterManualService.GetChallenge(monster.challenge).xp }}xp)</small>
+    </div>
+    <div class="ui-g-6 ui-g-md-3">
+      <small><strong>Armor Class</strong></small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ monster.armor_class }}</h3>
+    </div>
+    <div class="ui-g-6 ui-g-md-3">
+      <small><strong>Hit Points</strong></small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetHP(monster) }}</h3><small>({{ monster.hit_points }}d{{ monsterManualService.hit_die[monster.size].die }} + {{ monster.hit_points * score(monster.ability_scores.con) }})</small>
+    </div>
+    <div class="ui-g-6 ui-g-md-3">
+      <small><strong>Speed</strong></small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ monster.speed[0] }}ft</h3>
+    </div>
+  </div>
+  <hr/>
+  <div class="ui-grid-row">
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.saving_throws)">
+      <small><strong>Saving Throws</strong></small><br/>
+      {{ monster.saving_throws.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.skills)">
+      <small><strong>Skills</strong></small><br/>
+      {{ monster.skills.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.damage_vulnerabilities)">
+      <small><strong>Damage Vulnerabilities</strong></small><br/>
+      {{ monster.damage_vulnerabilities.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.damage_resistances)">
+      <small><strong>Damage Resistances</strong></small><br/>
+      {{ monster.damage_resistances.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.damage_immunities)">
+      <small><strong>Damage Immunities</strong></small><br/>
+      {{ monster.damage_immunities.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.condition_immunities)">
+      <small><strong>Condition Immunities</strong></small><br/>
+      {{ monster.condition_immunities.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.senses)">
+      <small><strong>Senses</strong></small><br/>
+      {{ monster.senses.join(', ') }}
+    </div>
+    <div class="ui-g-6 ui-g-md-3" *ngIf="!_.isEmpty(monster.languages)">
+      <small><strong>Languages</strong></small><br/>
+      {{ monster.languages.join(', ') }}
+    </div>
+  </div>
+  <div *ngIf="!_.isEmpty(monster.others)">
+    <hr/>
+    <div class="ui-grid-row" *ngFor="let abl of monster.others">
+      <span [innerHtml]="abl.name | markdown"></span>&nbsp;<span [innerHtml]="abl.ability | markdown"></span>&nbsp;
+    </div>
+  </div>
+  <div *ngIf="!_.isEmpty(monster.actions) || !_.isEmpty(monster.abilities)">
+    <hr/>
+    <h3 [style.font-size.px]="size.font_size+6">Actions</h3>
+    <div class="ui-grid-row" *ngFor="let abl of monster.abilities">
+      <span [innerHtml]="abl.name | markdown"></span>&nbsp;<span [innerHtml]="abl.ability | markdown"></span>
+    </div>
+    <div class="ui-grid-row" *ngFor="let act of monster.actions">
+      <span [innerHtml]="act.name | markdown"></span>&nbsp;<span [innerHtml]="act.action | markdown"></span>
+    </div>
+  </div>
+  <div *ngIf="!_.isEmpty(monster.legendary_actions)">
+    <hr/>
+    <h3 [style.font-size.px]="size.font_size+6">Legendary Actions</h3>
+    <div class="ui-grid-row" *ngFor="let act of monster.legendary_actions">
+      <span [innerHtml]="act.name | markdown"></span>&nbsp;<span [innerHtml]="act.action | markdown"></span>
+    </div>
+  </div>
+</div>

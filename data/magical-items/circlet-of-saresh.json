@@ -1,12 +1,13 @@
 {
   "name":"Circlet of Saresh",
-  "description":"",
+  "description":"Your Wisdom score is 19 while you wear this amulet. It has no effect on you if your Wisdom is already 19 or higher without it.",
   "type": "wondrous item",
-  "sub_type": "",
-  "rarity": "uncommon",
-  "attunement": false,
-  "notes": "",
+  "sub_type": "jewelry",
+  "rarity": "rare",
+  "attunement": true,
+  "notes": "Set: Wisdom Score, Buff, Jewelry",
   "tags": [
-    ""
+    "buff",
+    "jewelry"
   ]
 }

@@ -1,2 +1,60 @@
-<h1 class="title">Combat</h1>
+<div class="title">
+  <h1>Combat</h1>
+  <p>The combat page uses <code>localStorage</code> to save your combat scenarios.</p>
+</div>
 <hr/>
+
+<p-dataTable #dt expandableRows="true" (onRowClick)="toggleRow($event)" [value]="_.concat(enemies, players)" [editable]="true" [responsive]="true" [stacked]="stacked">
+  <p-column field="challenge" header="CR/Level" [editable]="false"></p-column>
+  <p-column field="name" header="Name" [editable]="true">
+    <ng-template let-col let-monster="rowData" pTemplate="editor">
+      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+    </ng-template>
+  </p-column>
+  <p-column field="armor_class" header="AC" [editable]="true">
+    <ng-template let-col let-monster="rowData" pTemplate="editor">
+      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+    </ng-template>
+  </p-column>
+  <p-column field="initiative" header="Initiative" [editable]="true" [sortable]="true">
+    <ng-template let-col let-monster="rowData" pTemplate="editor">
+      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+    </ng-template>
+  </p-column>
+  <p-column field="current_hit_points" header="HP" [editable]="true">
+    <ng-template let-col let-monster="rowData" pTemplate="editor">
+      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+    </ng-template>
+  </p-column>
+  <ng-template let-monster pTemplate="rowexpansion">
+    <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
+      <div class="ui-g-2"></div>
+      <div class="ui-g-8">
+        <monster [monster]="monster"></monster>
+      </div>
+    </div>
+  </ng-template>
+</p-dataTable>
+
+<div class="ui-grid">
+  <div class="ui-grid-row">
+    <div class="ui-g-12">
+      <h3>Difficulty: </h3>
+    </div>
+  </div>
+  <div class="ui-grid-row">
+    <div class="ui-g-12 ui-g-md-6">
+      <h3>Add Monster</h3>
+      <p-dropdown [options]="monsterOptions" [(ngModel)]="selectedMonster" filter="filter" [style]="{'width':'200px'}"></p-dropdown>
+      <div *ngIf="!!selectedMonster">
+        <hr/>
+        <input pInputText [(ngModel)]="selectedMonster.name"/>
+      </div>
+      <hr/>
+      <button type="button" pButton (click)="addMonsterSync(selectedMonster, true, true)" [disabled]="!selectedMonster || !monsterValid(selectedMonster)" label="Add Monster"></button>
+    </div>
+    <div class="ui-g-12 ui-g-md-6">
+      <h3>Add Player</h3>
+    </div>
+  </div>
+</div>

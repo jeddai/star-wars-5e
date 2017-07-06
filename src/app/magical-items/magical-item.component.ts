@@ -29,7 +29,7 @@ export class MagicalItemComponent implements OnInit {
     rare: '#03c',
     "very rare": '#0cf',
     legendary: '#c0c',
-    artifact: '#f0f'
+    artifact: '#c90'
   }
 
   ngOnInit() {

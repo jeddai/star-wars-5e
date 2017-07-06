@@ -1,12 +1,13 @@
 {
   "name":"Marka Ragnos' Gauntlets",
-  "description":"",
+  "description":"Ancient but still intact, these gloves appear to be made of black scales; they pulse with a dark power.<br/><br/>At the beginning of your turn, you can immediately make a singular weapon attack. This attack deals an extra 1d4 necrotic damage on a hit.",
   "type": "wondrous item",
   "sub_type": "gauntlets",
-  "rarity": "artifact",
-  "attunement": "",
-  "notes": "",
+  "rarity": "very rare",
+  "attunement": true,
+  "notes": "Extra Attack, Bonus Damage",
   "tags": [
-    ""
+    "damage",
+    "wristwear"
   ]
 }

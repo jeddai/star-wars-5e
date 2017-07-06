@@ -1,0 +1,13 @@
+{
+  "name":"Sentinel Jedi Master Robes",
+  "description":"The Sentinel must be highly intelligent to do his or her work properly. Wearing these robes grants the user +4 to their intelligence score. These robes can increase your ability score above 20.",
+  "type": "clothing",
+  "sub_type": "robes",
+  "rarity": "legendary",
+  "attunement": false,
+  "notes": "Robes, Buff",
+  "tags": [
+    "robes",
+    "intelligence"
+  ]
+}

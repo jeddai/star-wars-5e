@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AccordionModule, ButtonModule, DataTableModule, DropdownModule, InputTextModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
+import { AccordionModule, ButtonModule, DataTableModule, DialogModule, DropdownModule, InputTextModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { CarousingComponent } from './carousing/carousing.component';
@@ -14,12 +14,17 @@ import { ForceComponent } from './force/force.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { MagicalItemComponent } from './magical-items/magical-item.component';
+import { MonsterComponent } from './monster/monster.component';
+import { MonsterManualComponent } from './monster-manual/monster-manual.component';
 
-import { CapitalizePipe } from './magical-items/capitalize.pipe';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { MarkdownPipe } from './pipes/markdown.pipe';
+import { NonePipe } from './pipes/none.pipe';
 
 import { ForceService } from './force/force.service';
 import { MapService } from './map/map.service';
 import { MagicalItemService } from './magical-items/magical-item.service';
+import { MonsterManualService } from './monster-manual/monster-manual.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,11 @@ import { MagicalItemService } from './magical-items/magical-item.service';
     HomeComponent,
     MapComponent,
     MagicalItemComponent,
-    CapitalizePipe
+    MonsterComponent,
+    MonsterManualComponent,
+    CapitalizePipe,
+    MarkdownPipe,
+    NonePipe
   ],
   imports: [
     AccordionModule,
@@ -39,6 +48,7 @@ import { MagicalItemService } from './magical-items/magical-item.service';
     BrowserModule,
     CommonModule,
     DataTableModule,
+    DialogModule,
     DropdownModule,
     FormsModule,
     HttpModule,
@@ -66,6 +76,9 @@ import { MagicalItemService } from './magical-items/magical-item.service';
       path: 'map',
       component: MapComponent
     }, {
+      path: 'monster-manual',
+      component: MonsterManualComponent
+    }, {
       path: '',
       redirectTo: '/home',
       pathMatch: 'full'
@@ -74,7 +87,8 @@ import { MagicalItemService } from './magical-items/magical-item.service';
   providers: [
     ForceService,
     MapService,
-    MagicalItemService
+    MagicalItemService,
+    MonsterManualService
   ],
   bootstrap: [
     AppComponent

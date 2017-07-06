@@ -1,0 +1,41 @@
+{
+  "name": "Acklay",
+  "size": "huge",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "armor_class": 15,
+  "hit_points": "15",
+  "speed": ["40"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 6,
+    "wis": 6,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": ["groggy", "weak-kneed"],
+  "senses": ["Passive Perception 8"],
+  "languages": [],
+  "challenge": 5,
+  "others": [],
+  "abilities": [{
+    "name":"***Multiattack.***",
+    "ability":"The Acklay has six legs and is incredibly fast. It attacks twice with its Claws and once with its Bite."
+  }],
+  "actions": [{
+    "name":"***Claws.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, reach 5ft., one target. *Hit* 9 piercing (1d8 + 4)"
+  }, {
+    "name":"***Bite.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 10 piercing (1d10 + 4)"
+  }],
+  "legendary_actions": []
+}

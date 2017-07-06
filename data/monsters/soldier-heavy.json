@@ -1,0 +1,47 @@
+{
+  "name": "Soldier Heavy",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "any",
+  "armor_class": 16,
+  "hit_points": 10,
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 18,
+    "dex": 8,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": ["Athletics +7", "Demolitions +6"],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 10"],
+  "languages": ["Basic"],
+  "challenge": 4,
+  "others": [{
+    "name":"***Quick Reload.***",
+    "ability":"The heavy soldier can reload any of his weapons as an action."
+  }],
+  "abilities": [{
+    "name":"***Multiattack.***",
+    "ability":"The heavy soldier can perform two attack actions per turn."
+  }],
+  "actions": [{
+    "name":"***Gatling Laser.***",
+    "action":"*Ranged Weapon Attack:* +7 to hit, up to three targets. *Hit* 9 (1d8 + 4) *Reload* 12"
+  }, {
+    "name":"***Flame Thrower.***",
+    "action":"*Ranged Weapon Attack:* +7 to hit, 15ft cone or 30ft line. DC 14 Dex save half *Hit* 11 (2d6 + 4) *Reload* 8"
+  }, {
+    "name":"***Vibroaxe.***",
+    "action":"*Melee Weapon Attack:* +7 to hit, one target. *Hit* 11 (2d6 + 4)"
+  }],
+  "legendary_actions": []
+}

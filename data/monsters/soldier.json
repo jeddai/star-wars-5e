@@ -1,0 +1,44 @@
+{
+  "name": "Soldier",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "any",
+  "armor_class": 15,
+  "hit_points": 7,
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 14,
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 10"],
+  "languages": ["Basic"],
+  "challenge": 2,
+  "others": [],
+  "abilities": [{
+    "name":"***Rapid Attack.***",
+    "ability":"Taking a -2 penalty to AC until the beginning of its next turn, the soldier can make two attacks with a weapon this round."
+  }],
+  "actions": [{
+    "name":"***Vibrosword.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 8 (1d10 + 2)"
+  }, {
+    "name":"***Dual Vibroblades.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 6 (1d6 + 2)"
+  }, {
+    "name":"***Blaster Rifle.***",
+    "action":"*Ranged Weapon Attack:* +5 to hit, one target. *Hit* 7 (1d8 + 2)"
+  }],
+  "legendary_actions": []
+}

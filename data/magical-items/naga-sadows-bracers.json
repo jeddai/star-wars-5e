@@ -1,12 +1,13 @@
 {
   "name":"Naga Sadow's Bracers",
-  "description":"",
+  "description":"While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.",
   "type": "wondrous item",
   "sub_type": "bracers",
-  "rarity": "artifact",
+  "rarity": "rare",
   "attunement": true,
-  "notes": "",
+  "notes": "Notes: Bonus: Armor Class, Warding, Wristwear",
   "tags": [
-    ""
+    "warding",
+    "wristwear"
   ]
 }

@@ -1,0 +1,44 @@
+{
+  "name": "Black Sun Bandit Captain",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "armor_class": 14,
+  "hit_points": 7,
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 16,
+    "dex": 16,
+    "con": 12,
+    "int": 10,
+    "wis": 8,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 9"],
+  "languages": ["Basic"],
+  "challenge": 1,
+  "others": [],
+  "abilities": [{
+    "name":"***Rally (1/day).***",
+    "ability":"As a bonus action, the captain can rally its allies within 30ft of itself to give them +2 to attack and damage rolls for the next round."
+  }],
+  "actions": [{
+    "name":"***Vibrosword.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 9 (1d10 + 3)"
+  }, {
+    "name":"***Dual Vibroblades.***",
+    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 7 (1d6 + 3)"
+  }, {
+    "name":"***Blaster Rifle.***",
+    "action":"*Ranged Weapon Attack:* +5 to hit, one target. *Hit* 8 (1d8 + 3)"
+  }],
+  "legendary_actions": []
+}

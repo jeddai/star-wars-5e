@@ -1,0 +1,14 @@
+{
+  "name":"Sith Assassin Pistol",
+  "description":"These weapons are designed to incapacitate so death may be quick or lingered upon as desired. <br/><br/> This pistol is a normal +1 blaster pistol, but it inflicts an additional 1d6 necrotic damage on a hit and does not suffer disadvantage for an additional 30ft.",
+  "type": "weapon",
+  "sub_type": "blaster",
+  "rarity": "very rare",
+  "attunement": false,
+  "notes": "+1 Blaster, Bonus Damage",
+  "tags": [
+    "blaster",
+    "pistol",
+    "weapon"
+  ]
+}

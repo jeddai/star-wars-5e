@@ -1,0 +1,41 @@
+{
+  "name": "Akk Dog",
+  "size": "medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "armor_class": 16,
+  "hit_points": "8",
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 6,
+    "wis": 6,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 8"],
+  "languages": [],
+  "challenge": 2,
+  "others": [],
+  "abilities": [{
+    "name":"***Multiattack.***",
+    "ability":"The Akk Dog attacks once with its claws and once with its tail."
+  }],
+  "actions": [{
+    "name":"***Claws.***",
+    "action":"*Melee Weapon Attack:* +3 to hit, one target. *Hit* 12 slashing (2d8 + 3)"
+  }, {
+    "name":"***Tail.***",
+    "action":"*Melee Weapon Attack:* +3 to hit, reach 5ft., one target. *Hit* 9 bludgeoning (1d10 + 3)"
+  }],
+  "legendary_actions": []
+}

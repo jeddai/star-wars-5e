@@ -1,0 +1,13 @@
+{
+  "name":"Consular Jedi Robes",
+  "description":"The Consular must be very skilled in negotiating. Wearing these robes grants the user +2 to his or her charisma score. These robes can increase your ability score above 20.",
+  "type": "clothing",
+  "sub_type": "robes",
+  "rarity": "rare",
+  "attunement": false,
+  "notes": "Robes, Buff",
+  "tags": [
+    "robes",
+    "intelligence"
+  ]
+}

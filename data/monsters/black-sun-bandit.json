@@ -1,0 +1,41 @@
+{
+  "name": "Black Sun Bandit",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "armor_class": 13,
+  "hit_points": "6",
+  "speed": ["30"],
+  "environment":[],
+  "planets":[],
+  "ability_scores": {
+    "str": 14,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 8,
+    "cha": 10
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": ["Passive Perception 9"],
+  "languages": ["Basic"],
+  "challenge": 0.25,
+  "others": [],
+  "abilities": [],
+  "actions": [{
+    "name":"***Vibrosword.***",
+    "action":"*Melee Weapon Attack:* +4 to hit, one target. *Hit* 8 (1d10 + 2)"
+  }, {
+    "name":"***Dual Vibroblades.***",
+    "action":"*Melee Weapon Attack:* +4 to hit, one target. *Hit* 6 (1d6 + 2)"
+  }, {
+    "name":"***Blaster Rifle.***",
+    "action":"*Ranged Weapon Attack:* +4 to hit, one target. *Hit* 7 (1d8 + 2)"
+  }],
+  "legendary_actions": []
+}

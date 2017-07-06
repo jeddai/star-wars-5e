@@ -1,3 +1,7 @@
-.panel-padding {
-  padding-top: 5px;
+#ability_scores>tbody {
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
 }
