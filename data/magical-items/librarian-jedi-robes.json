@@ -1,0 +1,13 @@
+{
+  "name":"Librarian's Jedi Robes",
+  "description":"The Jedi librarians have such vast knowledge and understanding of the universe. Wearing these robes grants the user +4 to their wisdom score. These robes can increase your ability score above 20.",
+  "type": "clothing",
+  "sub_type": "robes",
+  "rarity": "legendary",
+  "attunement": false,
+  "notes": "Robes, Buff",
+  "tags": [
+    "robes",
+    "wisdom"
+  ]
+}

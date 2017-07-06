@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { SelectItem } from 'primeng/primeng';
+import { Component, OnInit, ViewChild, ApplicationRef } from '@angular/core';
+import { SelectItem, MenuItem } from 'primeng/primeng';
 import * as _ from 'lodash';
 
 import { AbilityScore } from '../classes/AbilityScore';
@@ -16,16 +16,19 @@ export class CombatComponent implements OnInit {
   constructor( public monsterManualService: MonsterManualService) {}
 
   _=_;
-  monsterOptions: SelectItem[] = [{ label: 'None', value: null }, { label: 'Custom', value: <Monster>{} }];
-  
+  monsterOptions: SelectItem[] = [{ label: 'None', value: null }, { label: 'Custom', value: Monster.GetEmptyMonster() }];
+  items: MenuItem[] = [
+    {label: 'Delete', icon: 'fa-close', command: (event) => this.remove(this.selectedObject)}
+  ];
+
   @ViewChild("dt") table;
   monsters: Monster[];
-  selectedMonster: SelectItem;
-  dialogMonster: Monster;
+  newMonster: Monster;
+  newPlayer: Combatant;
+  selectedObject: (Monster|Combatant)
   dialogVisible: boolean = false;
   tracker: number;
-  enemies: Monster[] = [];
-  players: Combatant[] = [];
+  encounter: (Monster|Combatant)[] = [];
 
   ngOnInit() {
     this.monsterManualService
@@ -38,6 +41,25 @@ export class CombatComponent implements OnInit {
     })
     .catch(e => console.log(e));
     this.getState();
+
+    this.initNewPlayer();
+  }
+
+  private initNewPlayer() {
+    this.newPlayer = {
+      name: '',
+      armor_class: null,
+      current_hit_points: null,
+      challenge: null,
+      initiative: null
+    }
+  }
+
+  private remove(obj: (Monster|Combatant)) {
+    this.encounter = _.remove(this.encounter, (e) => {
+      return !_.eq(e, obj);
+    });
+    this.saveState();
   }
 
   public addMonster(name: string, rollInitiative: boolean, rollHP: boolean) {
@@ -62,27 +84,28 @@ export class CombatComponent implements OnInit {
     } else {
       monster.current_hit_points = this.monsterManualService.GetHP(monster);
     }
-    this.enemies.push(monster);
+    // if(this.encounter.)
+    this.encounter.push(monster);
+    this.newMonster = null;
     this.saveState();
   }
 
   public addPlayer(player: Combatant) {
-
+    this.encounter.push(player);
+    this.saveState();
   }
 
   public toggleRow(event: any) {
-    if(!!event.data && !!event.data.ability_scores && !event.originalEvent.target.classList.contains("ui-editable-column"))
+    if(!!event.data && !!event.data.ability_scores && !(event.data instanceof Monster))
       this.table.toggleRow(event.data);
   }
 
   public saveState(): void {
-    localStorage.setItem('enemies', JSON.stringify(this.enemies));
-    localStorage.setItem('players', JSON.stringify(this.players));
+    localStorage.setItem('encounter', JSON.stringify(this.encounter));
   }
 
   private getState(): void {
-    this.players = !!localStorage.players ? JSON.parse(localStorage.players) : [new Combatant('Person', 15, 50, 5, 15)];
-    this.enemies = !!localStorage.enemies ? JSON.parse(localStorage.enemies) : [];
+    this.encounter = !!localStorage.encounter ? JSON.parse(localStorage.encounter) : [new Combatant('Person', 15, 50, 5, 15)];
   }
 
   public monsterValid(monster: Monster): boolean {

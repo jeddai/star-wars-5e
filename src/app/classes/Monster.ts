@@ -56,4 +56,40 @@ export class Monster {
   actions: MonsterAction[] = []
   legendary_actions: MonsterAction[] = []
   initiative: number = 0
+
+  public static GetEmptyMonster(): Monster {
+    var monster:Monster = <Monster>{};
+    monster.name = '';
+    monster.size = '';
+    monster.type = '';
+    monster.alignment = '';
+    monster.armor_class = null;
+    monster.hit_points = null;
+    monster.speed = [];
+    monster.environment = [];
+    monster.planet = [];
+    monster.ability_scores = {
+      str: null,
+      dex: null,
+      con: null,
+      int: null,
+      wis: null,
+      cha: null
+    };
+    monster.saving_throws = [];
+    monster.skills = [];
+    monster.damage_vulnerabilities = [];
+    monster.damage_resistances = [];
+    monster.damage_immunities = [];
+    monster.condition_immunities = [];
+    monster.senses = [];
+    monster.languages = [];
+    monster.challenge = null;
+    monster.others = [];
+    monster.abilities = [];
+    monster.actions = [];
+    monster.legendary_actions = [];
+    monster.initiative = null;
+    return monster;
+  }
 }

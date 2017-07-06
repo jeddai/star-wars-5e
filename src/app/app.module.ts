@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AccordionModule, ButtonModule, DataTableModule, DialogModule, DropdownModule, InputTextModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
+import { AccordionModule, ButtonModule, ContextMenuModule, DataTableModule, DialogModule, DropdownModule, InputTextModule, MultiSelectModule, PanelModule, SharedModule, TabMenuModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { CarousingComponent } from './carousing/carousing.component';
@@ -46,6 +46,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     ButtonModule,
     BrowserAnimationsModule,
     BrowserModule,
+    ContextMenuModule,
     CommonModule,
     DataTableModule,
     DialogModule,

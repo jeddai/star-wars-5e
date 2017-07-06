@@ -1,29 +1,34 @@
 <div class="title">
   <h1>Combat</h1>
-  <p>The combat page uses <code>localStorage</code> to save your combat scenarios.</p>
+  <p>The combat page uses <code>localStorage</code> to save your combat scenarios. When you add a monster, click anywhere on the row to see its stats.</p>
 </div>
 <hr/>
 
-<p-dataTable #dt expandableRows="true" (onRowClick)="toggleRow($event)" [value]="_.concat(enemies, players)" [editable]="true" [responsive]="true" [stacked]="stacked">
-  <p-column field="challenge" header="CR/Level" [editable]="false"></p-column>
-  <p-column field="name" header="Name" [editable]="true">
-    <ng-template let-col let-monster="rowData" pTemplate="editor">
-      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+<p-dataTable #dt expandableRows="true" (onRowClick)="toggleRow($event)" [value]="_.clone(encounter)" 
+[responsive]="true" [stacked]="stacked" selectionMode="single" [(selection)]="selectedObject" [contextMenu]="cm">
+  <p-column field="challenge" header="CR/Level">
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
   </p-column>
-  <p-column field="armor_class" header="AC" [editable]="true">
-    <ng-template let-col let-monster="rowData" pTemplate="editor">
-      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+  <p-column field="name" header="Name">
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <input type="text" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
   </p-column>
-  <p-column field="initiative" header="Initiative" [editable]="true" [sortable]="true">
-    <ng-template let-col let-monster="rowData" pTemplate="editor">
-      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+  <p-column field="armor_class" header="AC">
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
   </p-column>
-  <p-column field="current_hit_points" header="HP" [editable]="true">
-    <ng-template let-col let-monster="rowData" pTemplate="editor">
-      <input pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+  <p-column field="initiative" header="Initiative" [sortable]="true">
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+    </ng-template>
+  </p-column>
+  <p-column field="current_hit_points" header="HP">
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
   </p-column>
   <ng-template let-monster pTemplate="rowexpansion">
@@ -36,6 +41,8 @@
   </ng-template>
 </p-dataTable>
 
+<p-contextMenu #cm [model]="items"></p-contextMenu>
+
 <div class="ui-grid">
   <div class="ui-grid-row">
     <div class="ui-g-12">
@@ -45,16 +52,93 @@
   <div class="ui-grid-row">
     <div class="ui-g-12 ui-g-md-6">
       <h3>Add Monster</h3>
-      <p-dropdown [options]="monsterOptions" [(ngModel)]="selectedMonster" filter="filter" [style]="{'width':'200px'}"></p-dropdown>
-      <div *ngIf="!!selectedMonster">
+      <p-dropdown [options]="monsterOptions" [(ngModel)]="newMonster" filter="filter" [style]="{'width':'200px'}"></p-dropdown>
+      <div *ngIf="!!newMonster">
         <hr/>
-        <input pInputText [(ngModel)]="selectedMonster.name"/>
+        <div class="ui-g-1"></div>
+        <div class="ui-g-10">
+          <div class="form-group row">
+            <label for="monsterName" class="ui-g-2">Name:</label>
+            <input id="monsterName" class="ui-g-6" type="text" pInputText [(ngModel)]="newMonster.name" placeholder="Name"/>
+          </div>
+          <div class="form-group row">
+            <label for="monsterAScores" class="ui-g-2">Ability Scores:</label>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.str" placeholder="STR"/>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.dex" placeholder="DEX"/>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.con" placeholder="CON"/>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.int" placeholder="INT"/>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.wis" placeholder="WIS"/>
+            <input class="ui-g-1" type="number" pInputText [(ngModel)]="newMonster.ability_scores.cha" placeholder="CHA"/>
+          </div>
+          <div class="form-group row">
+            <label for="monsterAC" class="ui-g-2">Armor Class:</label>
+            <input id="monsterAC" class="ui-g-2" type="number" pInputText [(ngModel)]="newMonster.armor_class" placeholder="AC"/>
+          </div>
+          <div class="form-group row">
+            <p>Only put the number of die rolled for HP. The application will calculate the avg or roll random as you choose.</p>
+            <label for="monsterHP" class="ui-g-2">Hit Points:</label>
+            <input id="monsterHP" class="ui-g-2" type="number" pInputText [(ngModel)]="newMonster.hit_points" placeholder="HP"/>
+          </div>
+          <div class="form-group row">
+            <label for="monsterSize" class="ui-g-2">CR:</label>
+            <input id="monsterSize" class="ui-g-10" type="text" pInputText [(ngModel)]="newMonster.size" placeholder="Size"/>
+          </div>
+          <div class="form-group row">
+            <label for="monsterCR" class="ui-g-2">CR:</label>
+            <input id="monsterCR" class="ui-g-2" type="number" pInputText [(ngModel)]="newMonster.challenge" placeholder="CR"/>
+          </div>
+          <div class="form-group row">
+            <label for="monsterSpeed" class="ui-g-2">Speed:</label>
+            <input id="monsterSpeed" class="ui-g-2" type="text" pInputText [(ngModel)]="newMonster.speed[0]" placeholder="Speed"/>
+          </div>
+          <div class="form-group row">
+            <p>The actions are objects with a name and an action, and should be written in Markdown syntax.</p>
+            <div class="ui-g-12">
+              <h3 class="ui-g-6">Actions:</h3>
+              <div class="ui-g-6">
+                <button pButton class="float-right" label="Add Action" (click)="newMonster.actions.push({ 'name':'', 'action':'' })"></button>
+              </div>
+            </div>
+            <hr/>
+            <div class="ui-g-12 form-group row" *ngFor="let act of newMonster.actions; let i = index">
+              <label for="monsterActionName" class="ui-g-1">Name:</label>
+              <input id="monsterActionName" class="ui-g-3" type="text" pInputText [(ngModel)]="act.name" placeholder="Name"/>
+              <label for="monsterAction" class="ui-g-1">Action:</label>
+              <input id="monsterAction" class="ui-g-6" type="text" pInputText [(ngModel)]="act.action" placeholder="Action"/>
+              <button pButton class="float-right ui-button-danger" icon="fa-times" (click)="newMonster.actions.splice(i, 1)"></button>
+            </div>
+          </div>
+          <button type="button" pButton (click)="addMonsterSync(newMonster, true, true)" [disabled]="!newMonster || !monsterValid(newMonster)" label="Add Monster"></button>
+        </div>
+        <div class="ui-g-1"></div>
       </div>
-      <hr/>
-      <button type="button" pButton (click)="addMonsterSync(selectedMonster, true, true)" [disabled]="!selectedMonster || !monsterValid(selectedMonster)" label="Add Monster"></button>
     </div>
     <div class="ui-g-12 ui-g-md-6">
       <h3>Add Player</h3>
+      <div class="ui-g-1"></div>
+      <div class="ui-g-10">
+        <div class="form-group row">
+          <label for="playerName" class="ui-g-2">Name:</label>
+          <input id="playerName" class="ui-g-6" type="text" pInputText [(ngModel)]="newPlayer.name" placeholder="Name"/>
+        </div>
+        <div class="form-group row">
+          <label for="playerLevel" class="ui-g-2">Level:</label>
+          <input id="playerLevel" class="ui-g-2" type="number" pInputText [(ngModel)]="newPlayer.challenge" placeholder="Level"/>
+        </div>
+        <div class="form-group row">
+          <label for="playerAC" class="ui-g-2">Armor Class:</label>
+          <input id="playerAC" class="ui-g-1" type="number" pInputText [(ngModel)]="newPlayer.armor_class" placeholder="AC"/>
+        </div>
+        <div class="form-group row">
+          <label for="playerHP" class="ui-g-2">Hit Points:</label>
+          <input id="playerHP" class="ui-g-1" type="number" pInputText [(ngModel)]="newPlayer.current_hit_points" placeholder="HP"/>
+        </div>
+        <div class="form-group row">
+          <label for="playerInit" class="ui-g-2">Initiative:</label>
+          <input id="playerInit" class="ui-g-1" type="number" pInputText [(ngModel)]="newPlayer.initiative" placeholder="Init"/>
+        </div>
+        <button type="text" pButton label="Add" (click)="addPlayer(newPlayer)" [disabled]="!newPlayer.challenge"></button>
+      </div>
     </div>
   </div>
 </div>
