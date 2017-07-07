@@ -1,0 +1,53 @@
+{
+  "name": "Sith Lord of Hunger",
+  "size": "medium",
+  "type": "humanoid",
+  "alignment": "evil",
+  "armor_class": 17,
+  "hit_points": 20,
+  "speed": ["30"],
+  "environment": [],
+  "planets": [],
+  "ability_scores": {
+    "str": 22,
+    "dex": 14,
+    "con": 18,
+    "int": 18,
+    "wis": 22,
+    "cha": 18
+  },
+  "saving_throws": [],
+  "skills": [],
+  "damage_vulnerabilities": [],
+  "damage_resistances": [],
+  "damage_immunities": [],
+  "condition_immunities": [],
+  "senses": [],
+  "languages": [],
+  "challenge": 0,
+  "others": [{
+    "name": "***Hungry Hungry Hippo.***",
+    "ability": "Any creature that ends its turn within 10ft of the Lord of Hunger must make a Constitution saving throw (DC 18). If they fail and they have force points, they lose 5 force points. Regardless, if they fail they take 3d8 necrotic damage. A successful save halves the damage taken from this ability."
+  }, {
+    "name":"***Psychic Backlash.***",
+    "ability":"As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage."
+  }],
+  "abilities": [{
+    "name": "***Multiattack.***",
+    "ability": "The Lord of Hunger can make two melee attacks and one force ability on his turn."
+  }],
+  "actions": [{
+    "name": "***Lightsaber.***",
+    "action": "*Melee Weapon Attack:* +10 to hit, reach 5ft., one target. *Hit* 12 (1d10 + 6)"
+  }, {
+    "name":"***Darkness.***",
+    "action":"As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10-foot radius per force point spent on this ability. The light produced by spells of 2nd level or less is suppressed in this area."
+  } {
+    "name": "***Incite Panic.***",
+    "action": "As an action, choose up to eight creatures you can see within 90 feet of you that can see you. At the start of each of a target’s turns before your concentration ends, the target must make a Wisdom saving throw. On a failed save, the target is frightened until the start of its next turn, and you roll a die. If you roll an odd number, the frightened target moves half its speed in a random direction and takes no action on that turn, other than to scream in terror. If you roll an even number, the frightened target makes one melee attack against a random target within its reach. If there is no such target, it moves half its speed in a random direction and takes no action on that turn. This effect ends on a target if it succeeds on three saving throws against it."
+  }, {
+    "name":"***Phantom Foe.***",
+    "action":"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your concentration ends. During this time, the target can’t take reactions, and it takes 1d8 psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by 1d8 for each additional point spent on the ability."
+  }],
+  "legendary_actions": []
+}
