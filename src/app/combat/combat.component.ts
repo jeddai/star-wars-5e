@@ -4,6 +4,7 @@ import * as _ from 'lodash';
 
 import { AbilityScores } from '../classes/AbilityScores';
 import { Combat } from '../classes/Combat';
+import { CRSelectItem } from '../classes/CRSelectItem';
 import { Monster } from '../classes/Monster';
 import { Combatant } from '../classes/Combatant';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
@@ -22,16 +23,22 @@ export class CombatComponent implements OnInit {
     {label: 'Copy', icon: 'fa-copy', command: (event) => this.copy(this.selectedObject)},
     {label: 'Delete', icon: 'fa-close', command: (event) => this.remove(this.selectedObject)}
   ];
+  crItems: CRSelectItem[] = Combat.ChallengeRatings;
+  levelItems: CRSelectItem[] = _.concat(Combat.ChallengeRatings[0], Combat.ChallengeRatings.slice(5, 25));
 
   @ViewChild("dt") table;
   monsters: Monster[];
   diff = {};
   newMonster: Monster;
-  newPlayer: Combatant ;
+  newPlayer: Combatant;
   selectedObject: (Monster|Combatant)
   dialogVisible: boolean = false;
   tracker: number;
   encounter: (Monster|Combatant)[] = [];
+  roll = {
+    hp: false,
+    init: false
+  }
 
   ngOnInit() {
     this.monsterManualService
@@ -46,25 +53,28 @@ export class CombatComponent implements OnInit {
     this.getState();
     this.getDifficulty();
     this.initNewPlayer();
+
+    this.crItems[0].label = 'Select';
+    this.levelItems[0].label = 'Select';
   }
 
-  public addMonster(name: string, rollInitiative: boolean, rollHP: boolean) {
+  public addMonster(name: string) {
     this.monsterManualService.GetMonster(name)
     .then((res) => {
       var monster: Monster = Monster.MakeMonster(res.Response);
-      this.addMonsterSync(monster, rollInitiative, rollHP);
+      this.addMonsterSync(monster);
     })
     .catch(e => console.log(e));
     //this.addMonster('acklay', true, true);
   }
 
-  public addMonsterSync(monster: Monster, rollInitiative: boolean, rollHP: boolean) {
-    if(rollInitiative) {
+  public addMonsterSync(monster: Monster) {
+    if(this.roll.init) {
       monster.initiative = _.random(1, 20) + AbilityScores.GetScore(monster.ability_scores.dexterity);
     } else {
       monster.initiative = 0;
     }
-    if(rollHP) {
+    if(this.roll.hp) {
       monster.current_hit_points = this.monsterManualService.RollHP(monster);
     } else {
       monster.current_hit_points = this.monsterManualService.GetHP(monster);
