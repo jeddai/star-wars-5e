@@ -2,6 +2,7 @@
   "name": "",
   "size": "",
   "type": "",
+  "subtype":"",
   "alignment": "",
   "armor_class": 10,
   "hit_points": "0",
@@ -61,12 +62,13 @@
     "name": "",
     "desc": "",
     "attack_bonus": 0,
-    "damage_dice": "2d6",
+    "damage_dice": "",
     "damage_bonus": 0
   }],
   "legendary_actions": [{
     "name": "",
     "desc": "",
     "attack_bonus": 0
-  }]
+  }],
+  "from":"star-wars"
 }

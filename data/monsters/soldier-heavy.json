@@ -2,46 +2,83 @@
   "name": "Soldier Heavy",
   "size": "medium",
   "type": "humanoid",
-  "alignment": "any",
+  "subtype":"",
+  "alignment": "any alignment",
   "armor_class": 16,
-  "hit_points": 10,
-  "speed": ["30"],
-  "environment":[],
-  "planets":[],
+  "hit_points": "10",
+  "speed": "30ft.",
   "ability_scores": {
-    "str": 18,
-    "dex": 8,
-    "con": 16,
-    "int": 10,
-    "wis": 10,
-    "cha": 10
+    "strength": 18,
+    "dexterity": 8,
+    "constitution": 16,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 10
   },
-  "saving_throws": [],
-  "skills": ["Athletics +7", "Demolitions +6"],
-  "damage_vulnerabilities": [],
-  "damage_resistances": [],
-  "damage_immunities": [],
-  "condition_immunities": [],
-  "senses": ["Passive Perception 10"],
-  "languages": ["Basic"],
-  "challenge": 4,
-  "others": [{
-    "name":"***Quick Reload.***",
-    "ability":"The heavy soldier can reload any of his weapons as an action."
-  }],
-  "abilities": [{
-    "name":"***Multiattack.***",
-    "ability":"The heavy soldier can perform two attack actions per turn."
-  }],
+  "saving_throws": {
+    "strength": 7,
+    "dexterity": null,
+    "constitution": 6,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": 7,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": 6,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "bludgeoning, piercing, slashing",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "passive Perception 10",
+  "languages": "Basic",
+  "challenge": "4",
+  "special_abilities": [],
   "actions": [{
-    "name":"***Gatling Laser.***",
-    "action":"*Ranged Weapon Attack:* +7 to hit, up to three targets. *Hit* 9 (1d8 + 4) *Reload* 12"
+    "name": "Multiattack",
+    "desc": "The heavy soldier can perform two attack actions per turn.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
   }, {
-    "name":"***Flame Thrower.***",
-    "action":"*Ranged Weapon Attack:* +7 to hit, 15ft cone or 30ft line. DC 14 Dex save half *Hit* 11 (2d6 + 4) *Reload* 8"
+    "name": "Gatling Laser",
+    "desc": "Ranged Weapon Attack: +7 to hit, up to three targets. Hit 9 (1d8 + 4) Reload 12",
+    "attack_bonus": 7,
+    "damage_dice": "1d8",
+    "damage_bonus": 4
   }, {
-    "name":"***Vibroaxe.***",
-    "action":"*Melee Weapon Attack:* +7 to hit, one target. *Hit* 11 (2d6 + 4)"
+    "name": "Flame Thrower",
+    "desc": "Ranged Weapon Attack: +7 to hit, 15ft cone or 30ft line. DC 14 Dex save half Hit 11 (2d6 + 4) Reload 8",
+    "attack_bonus": 7,
+    "damage_dice": "2d6",
+    "damage_bonus": 4
+  }, {
+    "name": "Vibroaxe",
+    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 11 (2d6 + 4)",
+    "attack_bonus": 7,
+    "damage_dice": "2d6",
+    "damage_bonus": 4
   }],
-  "legendary_actions": []
+  "legendary_actions": [],
+  "from":"star-wars"
 }

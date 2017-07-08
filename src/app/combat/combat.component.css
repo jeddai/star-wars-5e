@@ -1,3 +1,7 @@
 #end {
   padding-bottom: 60px;
 }
+
+.always-black {
+  color: #000 !important;
+}

@@ -99,7 +99,8 @@
     "name": "Psychic Drain (Costs 2 Actions)",
     "desc": "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Acolyte",
   "size": "medium",
@@ -165,7 +166,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
     "attack_bonus": 2,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Black Dragon",
   "size": "huge",
@@ -274,7 +276,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Blue Dracolich",
   "size": "huge",
@@ -383,7 +386,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dracolich beats its tattered wings. Each creature within 10 ft. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Blue Dragon",
   "size": "huge",
@@ -488,7 +492,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Brass Dragon",
   "size": "huge",
@@ -580,7 +585,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
     "attack_bonus": 0,
     "damage_dice": "13d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Bronze Dragon",
   "size": "huge",
@@ -689,7 +695,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Copper Dragon",
   "size": "huge",
@@ -794,7 +801,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Gold Dragon",
   "size": "huge",
@@ -903,7 +911,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Green Dragon",
   "size": "huge",
@@ -1012,7 +1021,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Red Dragon",
   "size": "huge",
@@ -1122,7 +1132,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult Silver Dragon",
   "size": "huge",
@@ -1227,7 +1238,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Adult White Dragon",
   "size": "huge",
@@ -1336,7 +1348,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Air Elemental",
   "size": "large",
@@ -1411,7 +1424,8 @@
     "name": "Whirlwind (Recharge 4-6)",
     "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Black Dragon",
   "size": "gargantuan",
@@ -1523,7 +1537,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Blue Dragon",
   "size": "gargantuan",
@@ -1623,7 +1638,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Brass Dragon",
   "size": "gargantuan",
@@ -1732,7 +1748,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Bronze Dragon",
   "size": "gargantuan",
@@ -1845,7 +1862,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Copper Dragon",
   "size": "gargantuan",
@@ -1954,7 +1972,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Gold Dragon",
   "size": "gargantuan",
@@ -2067,7 +2086,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Green Dragon",
   "size": "gargantuan",
@@ -2176,7 +2196,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Red Dragon",
   "size": "gargantuan",
@@ -2281,7 +2302,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient Silver Dragon",
   "size": "gargantuan",
@@ -2390,7 +2412,8 @@
     "name": "Wing Attack (Costs 2 Actions)",
     "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ancient White Dragon",
   "size": "gargantuan",
@@ -2486,7 +2509,8 @@
     "desc": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (l6d8) cold damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "16d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Androsphinx",
   "size": "large",
@@ -2582,7 +2606,8 @@
     "name": "Cast a Spell (Costs 3 Actions)",
     "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Animated Armor",
   "size": "medium",
@@ -2657,7 +2682,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ankheg",
   "size": "large",
@@ -2724,7 +2750,8 @@
     "desc": "The ankheg spits acid in a line that is 30 ft. long and 5 ft. wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "3d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ape",
   "size": "medium",
@@ -2796,7 +2823,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Archmage",
   "size": "medium",
@@ -2867,7 +2895,8 @@
     "attack_bonus": 6,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Assassin",
   "size": "medium",
@@ -2953,7 +2982,8 @@
     "attack_bonus": 6,
     "damage_dice": "1d8",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Awakened Shrub",
   "size": "small",
@@ -3020,7 +3050,8 @@
     "attack_bonus": 1,
     "damage_dice": "1d4",
     "damage_bonus": -1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Awakened Tree",
   "size": "huge",
@@ -3087,7 +3118,8 @@
     "attack_bonus": 6,
     "damage_dice": "3d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Axe Beak",
   "size": "large",
@@ -3149,7 +3181,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Azer",
   "size": "medium",
@@ -3225,7 +3258,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d8 + 1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Baboon",
   "size": "small",
@@ -3292,7 +3326,8 @@
     "attack_bonus": 1,
     "damage_dice": "1d4",
     "damage_bonus": -1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Badger",
   "size": "tiny",
@@ -3358,7 +3393,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
     "attack_bonus": 2,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Balor",
   "size": "huge",
@@ -3457,7 +3493,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA balor has a 50 percent chance of summoning 1d8 vrocks, 1d6 hezrous, 1d4 glabrezus, 1d3 nalfeshnees, 1d2 mariliths, or one goristro.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bandit Captain",
   "size": "medium",
@@ -3529,7 +3566,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bandit",
   "size": "medium",
@@ -3597,7 +3635,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d8",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Barbed Devil",
   "size": "medium",
@@ -3688,7 +3727,8 @@
     "desc": "Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.",
     "attack_bonus": 5,
     "damage_dice": "3d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Basilisk",
   "size": "medium",
@@ -3755,7 +3795,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6 + 2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bat",
   "size": "tiny",
@@ -3825,7 +3866,8 @@
     "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
     "attack_bonus": 0,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bearded Devil",
   "size": "medium",
@@ -3910,7 +3952,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d10",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Behir",
   "size": "huge",
@@ -3992,7 +4035,8 @@
     "desc": "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.\nIf the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.",
     "attack_bonus": 0,
     "damage_dice": "6d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Berserker",
   "size": "medium",
@@ -4059,7 +4103,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d12",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Black Bear",
   "size": "medium",
@@ -4136,7 +4181,8 @@
     "attack_bonus": 3,
     "damage_dice": "2d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Black Dragon Wyrmling",
   "size": "medium",
@@ -4208,7 +4254,8 @@
     "desc": "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (Sd8) acid damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "5d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Black Pudding",
   "size": "large",
@@ -4284,7 +4331,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d6 + 4d8",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Blink Dog",
   "size": "medium",
@@ -4355,7 +4403,8 @@
     "name": "Teleport (Recharge 4-6)",
     "desc": "The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 ft. to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Blood Hawk",
   "size": "small",
@@ -4426,7 +4475,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Blue Dragon Wyrmling",
   "size": "medium",
@@ -4493,7 +4543,8 @@
     "desc": "The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "4d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Boar",
   "size": "medium",
@@ -4565,7 +4616,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bone Devil",
   "size": "large",
@@ -4662,7 +4714,8 @@
     "attack_bonus": 8,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Brass Dragon Wyrmling",
   "size": "medium",
@@ -4729,7 +4782,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
     "attack_bonus": 0,
     "damage_dice": "4d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bronze Dragon Wyrmling",
   "size": "medium",
@@ -4801,7 +4855,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.",
     "attack_bonus": 0,
     "damage_dice": "3d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Brown Bear",
   "size": "large",
@@ -4878,7 +4933,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bugbear",
   "size": "medium",
@@ -4956,7 +5012,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Bulette",
   "size": "large",
@@ -5027,7 +5084,8 @@
     "name": "Deadly Leap",
     "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its ft. in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Camel",
   "size": "large",
@@ -5088,7 +5146,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
     "attack_bonus": 5,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Carrion Crawler",
   "size": "large",
@@ -5169,7 +5228,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cat",
   "size": "tiny",
@@ -5235,7 +5295,8 @@
     "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
     "attack_bonus": 0,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cave Bear",
   "size": "large",
@@ -5312,7 +5373,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Centaur",
   "size": "large",
@@ -5396,7 +5458,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Chain Devil",
   "size": "medium",
@@ -5475,7 +5538,8 @@
     "name": "Animate Chains (Recharges after a Short or Long Rest)",
     "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Multiattack on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Chimera",
   "size": "large",
@@ -5558,7 +5622,8 @@
     "desc": "The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "7d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Chuul",
   "size": "large",
@@ -5637,7 +5702,8 @@
     "name": "Tentacles",
     "desc": "One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Clay Golem",
   "size": "large",
@@ -5728,7 +5794,8 @@
     "name": "Haste (Recharge 5-6)",
     "desc": "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cloaker",
   "size": "large",
@@ -5821,7 +5888,8 @@
     "name": "Phantasms (Recharges after a Short or Long Rest)",
     "desc": "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.\nA duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cloud Giant",
   "size": "huge",
@@ -5902,7 +5970,8 @@
     "attack_bonus": 12,
     "damage_dice": "4d10",
     "damage_bonus": 8
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cockatrice",
   "size": "small",
@@ -5964,7 +6033,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d4",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Commoner",
   "size": "medium",
@@ -6025,7 +6095,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
     "attack_bonus": 2,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Constrictor Snake",
   "size": "large",
@@ -6093,7 +6164,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Copper Dragon Wyrmling",
   "size": "medium",
@@ -6160,7 +6232,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 1 5-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
     "attack_bonus": 0,
     "damage_dice": "4d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Couatl",
   "size": "medium",
@@ -6245,7 +6318,8 @@
     "name": "Change Shape",
     "desc": "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Crab",
   "size": "tiny",
@@ -6311,7 +6385,8 @@
     "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.",
     "attack_bonus": 0,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Crocodile",
   "size": "large",
@@ -6378,7 +6453,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d10",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cult Fanatic",
   "size": "medium",
@@ -6453,7 +6529,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Cultist",
   "size": "medium",
@@ -6520,7 +6597,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Darkmantle",
   "size": "small",
@@ -6595,7 +6673,8 @@
     "name": "Darkness Aura (1/day)",
     "desc": "A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Death Dog",
   "size": "medium",
@@ -6666,7 +6745,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Deep Gnome (Svirfneblin)",
   "size": "small",
@@ -6747,7 +6827,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Deer",
   "size": "medium",
@@ -6808,7 +6889,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
     "attack_bonus": 2,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Deva",
   "size": "medium",
@@ -6895,7 +6977,8 @@
     "name": "Change Shape",
     "desc": "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).\nIn a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Dire Wolf",
   "size": "large",
@@ -6966,7 +7049,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Djinni",
   "size": "large",
@@ -7049,7 +7133,8 @@
     "name": "Create Whirlwind",
     "desc": "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.\nA creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Doppelganger",
   "size": "medium",
@@ -7133,7 +7218,8 @@
     "name": "Read Thoughts",
     "desc": "The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Draft Horse",
   "size": "large",
@@ -7195,7 +7281,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d4",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Dragon Turtle",
   "size": "gargantuan",
@@ -7283,7 +7370,8 @@
     "desc": "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.",
     "attack_bonus": 0,
     "damage_dice": "15d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Dretch",
   "size": "small",
@@ -7357,7 +7445,8 @@
     "name": "Fetid Cloud (1/Day)",
     "desc": "A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Drider",
   "size": "large",
@@ -7456,7 +7545,8 @@
     "attack_bonus": 6,
     "damage_dice": "1d8",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Drow",
   "size": "medium",
@@ -7537,7 +7627,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Druid",
   "size": "medium",
@@ -7603,7 +7694,8 @@
     "desc": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.",
     "attack_bonus": 2,
     "damage_dice": "1d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Dryad",
   "size": "medium",
@@ -7685,7 +7777,8 @@
     "name": "Fey Charm",
     "desc": "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Duergar",
   "size": "medium",
@@ -7770,7 +7863,8 @@
     "name": "Invisibility (Recharges after a Short or Long Rest)",
     "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it .",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Dust Mephit",
   "size": "small",
@@ -7849,7 +7943,8 @@
     "name": "Variant: Summon Mephits (1/Day)",
     "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Eagle",
   "size": "small",
@@ -7916,7 +8011,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Earth Elemental",
   "size": "large",
@@ -7991,7 +8087,8 @@
     "attack_bonus": 8,
     "damage_dice": "2d8",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Efreeti",
   "size": "large",
@@ -8075,7 +8172,8 @@
     "desc": "Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (5d6) fire damage.",
     "attack_bonus": 7,
     "damage_dice": "5d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Elephant",
   "size": "huge",
@@ -8148,7 +8246,8 @@
     "attack_bonus": 8,
     "damage_dice": "3d10",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Elk",
   "size": "large",
@@ -8218,7 +8317,8 @@
     "name": "Hooves",
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Erinyes",
   "size": "medium",
@@ -8303,7 +8403,8 @@
     "name": "Variant: Rope of Entanglement",
     "desc": "Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ettercap",
   "size": "medium",
@@ -8398,7 +8499,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ettin",
   "size": "large",
@@ -8479,7 +8581,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d8",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Fire Elemental",
   "size": "large",
@@ -8559,7 +8662,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Fire Giant",
   "size": "huge",
@@ -8631,7 +8735,8 @@
     "attack_bonus": 11,
     "damage_dice": "4d10",
     "damage_bonus": 7
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Flesh Golem",
   "size": "medium",
@@ -8722,7 +8827,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Flying Snake",
   "size": "tiny",
@@ -8788,7 +8894,8 @@
     "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
     "attack_bonus": 6,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Flying Sword",
   "size": "small",
@@ -8859,7 +8966,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d8",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Frog",
   "size": "tiny",
@@ -8923,7 +9031,8 @@
     "name": "Standing Leap",
     "desc": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Frost Giant",
   "size": "huge",
@@ -8995,7 +9104,8 @@
     "attack_bonus": 9,
     "damage_dice": "4d10",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gargoyle",
   "size": "medium",
@@ -9072,7 +9182,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gelatinous Cube",
   "size": "large",
@@ -9146,7 +9257,8 @@
     "name": "Engulf",
     "desc": "The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw.\nOn a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\nOn a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.\nAn engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ghast",
   "size": "medium",
@@ -9223,7 +9335,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ghost",
   "size": "medium",
@@ -9306,7 +9419,8 @@
     "name": "Possession (Recharge 6)",
     "desc": "One humanoid that the ghost can see within 5 ft. of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.\nThe possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 ft. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ghoul",
   "size": "medium",
@@ -9372,7 +9486,8 @@
     "name": "Claws",
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Ape",
   "size": "huge",
@@ -9444,7 +9559,8 @@
     "attack_bonus": 9,
     "damage_dice": "7d6",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Badger",
   "size": "medium",
@@ -9521,7 +9637,8 @@
     "attack_bonus": 3,
     "damage_dice": "2d4",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Bat",
   "size": "large",
@@ -9592,7 +9709,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Boar",
   "size": "large",
@@ -9664,7 +9782,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Centipede",
   "size": "small",
@@ -9726,7 +9845,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Constrictor Snake",
   "size": "huge",
@@ -9794,7 +9914,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Crab",
   "size": "medium",
@@ -9861,7 +9982,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Crocodile",
   "size": "huge",
@@ -9938,7 +10060,8 @@
     "attack_bonus": 8,
     "damage_dice": "2d8",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Eagle",
   "size": "large",
@@ -10015,7 +10138,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Elk",
   "size": "huge",
@@ -10089,7 +10213,8 @@
     "attack_bonus": 6,
     "damage_dice": "4d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Fire Beetle",
   "size": "small",
@@ -10156,7 +10281,8 @@
     "attack_bonus": 1,
     "damage_dice": "1d6",
     "damage_bonus": -1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Frog",
   "size": "medium",
@@ -10231,7 +10357,8 @@
     "name": "Swallow",
     "desc": "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 ft. of movement, exiting prone.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Goat",
   "size": "large",
@@ -10303,7 +10430,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Hyena",
   "size": "large",
@@ -10370,7 +10498,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Lizard",
   "size": "large",
@@ -10441,7 +10570,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Octopus",
   "size": "large",
@@ -10520,7 +10650,8 @@
     "name": "Ink Cloud (Recharges after a Short or Long Rest)",
     "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Owl",
   "size": "large",
@@ -10591,7 +10722,8 @@
     "attack_bonus": 3,
     "damage_dice": "2d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Poisonous Snake",
   "size": "medium",
@@ -10653,7 +10785,8 @@
     "attack_bonus": 6,
     "damage_dice": "1d4",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Rat (Diseased)",
   "size": "small",
@@ -10715,7 +10848,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Rat",
   "size": "small",
@@ -10786,7 +10920,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Scorpion",
   "size": "large",
@@ -10858,7 +10993,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d10",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Sea Horse",
   "size": "large",
@@ -10930,7 +11066,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Shark",
   "size": "huge",
@@ -11001,7 +11138,8 @@
     "attack_bonus": 9,
     "damage_dice": "3d10",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Spider",
   "size": "large",
@@ -11080,7 +11218,8 @@
     "name": "Web (Recharge 5-6)",
     "desc": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
     "attack_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Toad",
   "size": "large",
@@ -11155,7 +11294,8 @@
     "name": "Swallow",
     "desc": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Vulture",
   "size": "large",
@@ -11236,7 +11376,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Wasp",
   "size": "medium",
@@ -11298,7 +11439,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Weasel",
   "size": "medium",
@@ -11365,7 +11507,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Giant Wolf Spider",
   "size": "medium",
@@ -11440,7 +11583,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gibbering Mouther",
   "size": "medium",
@@ -11518,7 +11662,8 @@
     "name": "Blinding Spittle (Recharge 5-6)",
     "desc": "The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Glabrezu",
   "size": "large",
@@ -11603,7 +11748,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA glabrezu has a 30 percent chance of summoning 1d3 vrocks, 1d2 hezrous, or one glabrezu.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gladiator",
   "size": "medium",
@@ -11684,7 +11830,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d4",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gnoll",
   "size": "medium",
@@ -11763,7 +11910,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d8",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Goat",
   "size": "medium",
@@ -11835,7 +11983,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d4",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Goblin",
   "size": "small",
@@ -11908,7 +12057,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gold Dragon Wyrmling",
   "size": "medium",
@@ -11980,7 +12130,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0,
     "damage_dice": "4d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gorgon",
   "size": "large",
@@ -12057,7 +12208,8 @@
     "name": "Petrifying Breath (Recharge 5-6)",
     "desc": "The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the greater restoration spell or other magic.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gray Ooze",
   "size": "medium",
@@ -12132,7 +12284,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Green Dragon Wyrmling",
   "size": "medium",
@@ -12204,7 +12357,8 @@
     "desc": "The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "6d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Green Hag",
   "size": "medium",
@@ -12299,7 +12453,8 @@
     "name": "Invisible Passage",
     "desc": "The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Grick",
   "size": "medium",
@@ -12376,7 +12531,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Griffon",
   "size": "large",
@@ -12453,7 +12609,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Grimlock",
   "size": "medium",
@@ -12528,7 +12685,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d4 + 1d4",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Guard",
   "size": "medium",
@@ -12590,7 +12748,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Guardian Naga",
   "size": "large",
@@ -12666,7 +12825,8 @@
     "desc": "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 8,
     "damage_dice": "10d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Gynosphinx",
   "size": "large",
@@ -12758,7 +12918,8 @@
     "name": "Cast a Spell (Costs 3 Actions)",
     "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Half-Red Dragon Veteran",
   "size": "medium",
@@ -12841,7 +13002,8 @@
     "desc": "The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "7d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Harpy",
   "size": "medium",
@@ -12917,7 +13079,8 @@
     "name": "Luring Song",
     "desc": "The harpy sings a magical melody. Every humanoid and giant within 300 ft. of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.\nWhile charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 ft. away from the harpy, the must move on its turn toward the harpy by the most direct route. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.\nA target that successfully saves is immune to this harpy's song for the next 24 hours.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hawk",
   "size": "tiny",
@@ -12983,7 +13146,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
     "attack_bonus": 5,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hell Hound",
   "size": "medium",
@@ -13059,7 +13223,8 @@
     "desc": "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "6d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hezrou",
   "size": "large",
@@ -13144,7 +13309,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA hezrou has a 30 percent chance of summoning 2d6 dretches or one hezrou.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hill Giant",
   "size": "huge",
@@ -13216,7 +13382,8 @@
     "attack_bonus": 8,
     "damage_dice": "3d10",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hippogriff",
   "size": "large",
@@ -13293,7 +13460,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hobgoblin",
   "size": "medium",
@@ -13367,7 +13535,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d8",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Homunculus",
   "size": "tiny",
@@ -13433,7 +13602,8 @@
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
     "attack_bonus": 4,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Horned Devil",
   "size": "large",
@@ -13519,7 +13689,8 @@
     "desc": "Ranged Spell Attack: +7 to hit, range 150 ft., one target. Hit: 14 (4d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.",
     "attack_bonus": 7,
     "damage_dice": "4d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hunter Shark",
   "size": "large",
@@ -13590,7 +13761,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hydra",
   "size": "huge",
@@ -13673,7 +13845,8 @@
     "attack_bonus": 8,
     "damage_dice": "1d10",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Hyena",
   "size": "medium",
@@ -13739,7 +13912,8 @@
     "desc": "Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
     "attack_bonus": 2,
     "damage_dice": "1d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ice Devil",
   "size": "large",
@@ -13830,7 +14004,8 @@
     "name": "Wall of Ice",
     "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ice Mephit",
   "size": "small",
@@ -13914,7 +14089,8 @@
     "name": "Variant: Summon Mephits (1/Day)",
     "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Imp",
   "size": "tiny",
@@ -13997,7 +14173,8 @@
     "name": "Invisibility",
     "desc": "The imp magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Invisible Stalker",
   "size": "medium",
@@ -14072,7 +14249,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Iron Golem",
   "size": "large",
@@ -14166,7 +14344,8 @@
     "desc": "The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (l0d8) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "10d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Jackal",
   "size": "small",
@@ -14237,7 +14416,8 @@
     "attack_bonus": 1,
     "damage_dice": "1d4",
     "damage_bonus": -1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Killer Whale",
   "size": "huge",
@@ -14310,7 +14490,8 @@
     "name": "Bite",
     "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Knight",
   "size": "medium",
@@ -14390,7 +14571,8 @@
     "name": "Leadership (Recharges after a Short or Long Rest)",
     "desc": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Kobold",
   "size": "small",
@@ -14467,7 +14649,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Kraken",
   "size": "gargantuan",
@@ -14574,7 +14757,8 @@
     "name": "Ink Cloud (Costs 3 Actions)",
     "desc": "While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lamia",
   "size": "large",
@@ -14655,7 +14839,8 @@
     "name": "Intoxicating Touch",
     "desc": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lemure",
   "size": "medium",
@@ -14725,7 +14910,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage",
     "attack_bonus": 3,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lich",
   "size": "medium",
@@ -14821,7 +15007,8 @@
     "desc": "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "6d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lion",
   "size": "large",
@@ -14906,7 +15093,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lizard",
   "size": "tiny",
@@ -14967,7 +15155,8 @@
     "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
     "attack_bonus": 0,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Lizardfolk",
   "size": "medium",
@@ -15056,7 +15245,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mage",
   "size": "medium",
@@ -15123,7 +15313,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Magma Mephit",
   "size": "small",
@@ -15207,7 +15398,8 @@
     "name": "Variant: Summon Mephits (1/Day)",
     "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Magmin",
   "size": "small",
@@ -15278,7 +15470,8 @@
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a target takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.",
     "attack_bonus": 4,
     "damage_dice": "2d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mammoth",
   "size": "huge",
@@ -15351,7 +15544,8 @@
     "attack_bonus": 10,
     "damage_dice": "4d10",
     "damage_bonus": 7
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Manticore",
   "size": "large",
@@ -15434,7 +15628,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d8",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Marilith",
   "size": "large",
@@ -15527,7 +15722,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA marilith has a 50 percent chance of summoning 1d6 vrocks, 1d4 hezrous, 1d3 glabrezus, 1d2 nalfeshnees, or one marilith.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mastiff",
   "size": "medium",
@@ -15594,7 +15790,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Medusa",
   "size": "medium",
@@ -15676,7 +15873,8 @@
     "desc": "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 7 (2d6) poison damage.",
     "attack_bonus": 5,
     "damage_dice": "2d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Merfolk",
   "size": "medium",
@@ -15742,7 +15940,8 @@
     "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.",
     "attack_bonus": 2,
     "damage_dice": "1d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Merrow",
   "size": "large",
@@ -15825,7 +16024,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mimic",
   "size": "medium",
@@ -15910,7 +16110,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d8 + 1d8",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Minotaur Skeleton",
   "size": "large",
@@ -15984,7 +16185,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Minotaur",
   "size": "large",
@@ -16066,7 +16268,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mule",
   "size": "medium",
@@ -16137,7 +16340,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mummy Lord",
   "size": "medium",
@@ -16241,7 +16445,8 @@
     "name": "Whirlwind of Sand (Costs 2 Actions)",
     "desc": "The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Mummy",
   "size": "medium",
@@ -16311,7 +16516,8 @@
     "name": "Dreadful Glare",
     "desc": "The mummy targets one creature it can see within 60 ft. of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Nalfeshnee",
   "size": "large",
@@ -16400,7 +16606,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA nalfeshnee has a 50 percent chance of summoning 1d4 vrocks, 1d3 hezrous, 1d2 glabrezus, or one nalfeshnee.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Night Hag",
   "size": "medium",
@@ -16499,7 +16706,8 @@
     "name": "Nightmare Haunting (1/Day)",
     "desc": "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Nightmare",
   "size": "large",
@@ -16574,7 +16782,8 @@
     "name": "Ethereal Stride",
     "desc": "The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Noble",
   "size": "medium",
@@ -16636,7 +16845,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d8",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ochre Jelly",
   "size": "large",
@@ -16707,7 +16917,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Octopus",
   "size": "small",
@@ -16785,7 +16996,8 @@
     "name": "Ink Cloud (Recharges after a Short or Long Rest)",
     "desc": "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ogre Zombie",
   "size": "large",
@@ -16852,7 +17064,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d8",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Ogre",
   "size": "large",
@@ -16920,7 +17133,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Oni",
   "size": "large",
@@ -17009,7 +17223,8 @@
     "name": "Change Shape",
     "desc": "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Orc",
   "size": "medium",
@@ -17082,7 +17297,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Otyugh",
   "size": "large",
@@ -17163,7 +17379,8 @@
     "name": "Tentacle Slam",
     "desc": "The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Owl",
   "size": "tiny",
@@ -17233,7 +17450,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
     "attack_bonus": 3,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Owlbear",
   "size": "large",
@@ -17310,7 +17528,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d8",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Panther",
   "size": "medium",
@@ -17387,7 +17606,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Pegasus",
   "size": "large",
@@ -17449,7 +17669,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Phase Spider",
   "size": "large",
@@ -17524,7 +17745,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d10",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Pit Fiend",
   "size": "large",
@@ -17625,7 +17847,8 @@
     "attack_bonus": 14,
     "damage_dice": "3d10",
     "damage_bonus": 8
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Planetar",
   "size": "large",
@@ -17712,7 +17935,8 @@
     "name": "Healing Touch (4/Day)",
     "desc": "The planetar touches another creature. The target magically regains 30 (6d8 + 3) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Plesiosaurus",
   "size": "large",
@@ -17779,7 +18003,8 @@
     "attack_bonus": 6,
     "damage_dice": "3d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Poisonous Snake",
   "size": "tiny",
@@ -17840,7 +18065,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 5,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Polar Bear",
   "size": "large",
@@ -17917,7 +18143,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Pony",
   "size": "medium",
@@ -17979,7 +18206,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Priest",
   "size": "medium",
@@ -18050,7 +18278,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.",
     "attack_bonus": 2,
     "damage_dice": "1d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Pseudodragon",
   "size": "tiny",
@@ -18135,7 +18364,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Purple Worm",
   "size": "gargantuan",
@@ -18212,7 +18442,8 @@
     "attack_bonus": 9,
     "damage_dice": "3d6",
     "damage_bonus": 9
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Quasit",
   "size": "tiny",
@@ -18295,7 +18526,8 @@
     "name": "Invisibility",
     "desc": "The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Quipper",
   "size": "tiny",
@@ -18365,7 +18597,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
     "attack_bonus": 5,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Rakshasa",
   "size": "medium",
@@ -18440,7 +18673,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Rat",
   "size": "tiny",
@@ -18506,7 +18740,8 @@
     "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
     "attack_bonus": 0,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Raven",
   "size": "tiny",
@@ -18571,7 +18806,8 @@
     "name": "Beak",
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Red Dragon Wyrmling",
   "size": "medium",
@@ -18638,7 +18874,8 @@
     "desc": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC l3 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "7d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Reef Shark",
   "size": "medium",
@@ -18709,7 +18946,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Remorhaz",
   "size": "huge",
@@ -18781,7 +19019,8 @@
     "name": "Swallow",
     "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet oft he remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Rhinoceros",
   "size": "large",
@@ -18849,7 +19088,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d8",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Riding Horse",
   "size": "large",
@@ -18911,7 +19151,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Roc",
   "size": "gargantuan",
@@ -18988,7 +19229,8 @@
     "attack_bonus": 13,
     "damage_dice": "4d6",
     "damage_bonus": 9
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Roper",
   "size": "large",
@@ -19075,7 +19317,8 @@
     "name": "Reel",
     "desc": "The roper pulls each creature grappled by it up to 25 ft. straight toward it.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Rug of Smothering",
   "size": "large",
@@ -19150,7 +19393,8 @@
     "attack_bonus": 0,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Rust Monster",
   "size": "medium",
@@ -19225,7 +19469,8 @@
     "name": "Antennae",
     "desc": "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Saber-Toothed Tiger",
   "size": "large",
@@ -19302,7 +19547,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 5
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Sahuagin",
   "size": "medium",
@@ -19393,7 +19639,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Salamander",
   "size": "large",
@@ -19475,7 +19722,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6 + 2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Satyr",
   "size": "medium",
@@ -19558,7 +19806,8 @@
     "name": "Variant: Panpipes",
     "desc": "Gentle Lullaby. The creature falls asleep and is unconscious for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Scorpion",
   "size": "tiny",
@@ -19619,7 +19868,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 2,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Scout",
   "size": "medium",
@@ -19696,7 +19946,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Sea Hag",
   "size": "medium",
@@ -19787,7 +20038,8 @@
     "name": "Illusory Appearance",
     "desc": "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Sea Horse",
   "size": "tiny",
@@ -19847,7 +20099,8 @@
     "name": "Water Breathing",
     "desc": "The sea horse can breathe only underwater.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Shadow",
   "size": "medium",
@@ -19922,7 +20175,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Shambling Mound",
   "size": "large",
@@ -19997,7 +20251,8 @@
     "name": "Engulf",
     "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Shield Guardian",
   "size": "large",
@@ -20076,7 +20331,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Shrieker",
   "size": "medium",
@@ -20141,7 +20397,8 @@
     "name": "Shriek",
     "desc": "When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Silver Dragon Wyrmling",
   "size": "medium",
@@ -20208,7 +20465,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0,
     "damage_dice": "4d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Skeleton",
   "size": "medium",
@@ -20276,7 +20534,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Solar",
   "size": "large",
@@ -20386,7 +20645,8 @@
     "name": "Blinding Gaze (Costs 3 Actions)",
     "desc": "The solar targets one creature it can see within 30 ft. of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Specter",
   "size": "medium",
@@ -20456,7 +20716,8 @@
     "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
     "attack_bonus": 4,
     "damage_dice": "3d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Spider",
   "size": "tiny",
@@ -20530,7 +20791,8 @@
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.",
     "attack_bonus": 4,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Spirit Naga",
   "size": "large",
@@ -20601,7 +20863,8 @@
     "attack_bonus": 7,
     "damage_dice": "1d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Sprite",
   "size": "tiny",
@@ -20675,7 +20938,8 @@
     "name": "Invisibility",
     "desc": "The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Spy",
   "size": "medium",
@@ -20757,7 +21021,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Steam Mephit",
   "size": "small",
@@ -20836,7 +21101,8 @@
     "name": "Variant: Summon Mephits (1/Day)",
     "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Stirge",
   "size": "tiny",
@@ -20898,7 +21164,8 @@
     "attack_bonus": 5,
     "damage_dice": "1d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Stone Giant",
   "size": "huge",
@@ -20975,7 +21242,8 @@
     "attack_bonus": 9,
     "damage_dice": "4d10",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Stone Golem",
   "size": "large",
@@ -21058,7 +21326,8 @@
     "name": "Slow (Recharge 5-6)",
     "desc": "The golem targets one or more creatures it can see within 10 ft. of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Storm Giant",
   "size": "huge",
@@ -21144,7 +21413,8 @@
     "desc": "The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "12d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Succubus/Incubus",
   "size": "medium",
@@ -21229,7 +21499,8 @@
     "name": "Etherealness",
     "desc": "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Bats",
   "size": "medium",
@@ -21303,7 +21574,8 @@
     "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 4,
     "damage_dice": "2d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Beetles",
   "size": "medium",
@@ -21369,7 +21641,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 3,
     "damage_dice": "4d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Centipedes",
   "size": "medium",
@@ -21435,7 +21708,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.\nA creature reduced to 0 hit points by a swarm of centipedes is stable but poisoned for 1 hour, even after regaining hit points, and paralyzed while poisoned in this way.",
     "attack_bonus": 3,
     "damage_dice": "4d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Insects",
   "size": "medium",
@@ -21501,7 +21775,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 3,
     "damage_dice": "4d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Poisonous Snakes",
   "size": "medium",
@@ -21567,7 +21842,8 @@
     "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 6,
     "damage_dice": "2d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Quippers",
   "size": "medium",
@@ -21641,7 +21917,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 5,
     "damage_dice": "4d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Rats",
   "size": "medium",
@@ -21711,7 +21988,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 2,
     "damage_dice": "2d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Ravens",
   "size": "medium",
@@ -21777,7 +22055,8 @@
     "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 4,
     "damage_dice": "2d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Spiders",
   "size": "medium",
@@ -21855,7 +22134,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 3,
     "damage_dice": "4d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Swarm of Wasps",
   "size": "medium",
@@ -21921,7 +22201,8 @@
     "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
     "attack_bonus": 3,
     "damage_dice": "4d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Tarrasque",
   "size": "gargantuan",
@@ -22043,7 +22324,8 @@
     "name": "Chomp (Costs 2 Actions)",
     "desc": "The tarrasque makes one bite attack or uses its Swallow.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Thug",
   "size": "medium",
@@ -22119,7 +22401,8 @@
     "desc": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.",
     "attack_bonus": 2,
     "damage_dice": "1d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Tiger",
   "size": "large",
@@ -22194,7 +22477,8 @@
     "name": "Claw",
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Treant",
   "size": "huge",
@@ -22279,7 +22563,8 @@
     "name": "Animate Trees (1/Day)",
     "desc": "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Tribal Warrior",
   "size": "medium",
@@ -22346,7 +22631,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Triceratops",
   "size": "huge",
@@ -22419,7 +22705,8 @@
     "attack_bonus": 9,
     "damage_dice": "3d10",
     "damage_bonus": 6
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Troll",
   "size": "large",
@@ -22504,7 +22791,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Tyrannosaurus Rex",
   "size": "huge",
@@ -22576,7 +22864,8 @@
     "attack_bonus": 10,
     "damage_dice": "3d8",
     "damage_bonus": 7
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Unicorn",
   "size": "large",
@@ -22687,7 +22976,8 @@
     "name": "Heal Self (Costs 3 Actions)",
     "desc": "The unicorn magically regains 11 (2d8 + 2) hit points.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Vampire Spawn",
   "size": "medium",
@@ -22770,7 +23060,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d4",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Vampire",
   "size": "medium",
@@ -22888,7 +23179,8 @@
     "name": "Bite (Costs 2 Actions)",
     "desc": "The vampire makes one bite attack.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Veteran",
   "size": "medium",
@@ -22966,7 +23258,8 @@
     "attack_bonus": 3,
     "damage_dice": "1d10",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Violet Fungus",
   "size": "medium",
@@ -23036,7 +23329,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage.",
     "attack_bonus": 2,
     "damage_dice": "1d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Vrock",
   "size": "large",
@@ -23125,7 +23419,8 @@
     "name": "Variant: Summon Demon (1/Day)",
     "desc": "The demon chooses what to summon and attempts a magical summoning.\nA vrock has a 30 percent chance of summoning 2d4 dretches or one vrock.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Vulture",
   "size": "medium",
@@ -23195,7 +23490,8 @@
     "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
     "attack_bonus": 2,
     "damage_dice": "1d4"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Warhorse Skeleton",
   "size": "large",
@@ -23257,7 +23553,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Warhorse",
   "size": "large",
@@ -23324,7 +23621,8 @@
     "attack_bonus": 6,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Water Elemental",
   "size": "large",
@@ -23403,7 +23701,8 @@
     "name": "Whelm (Recharge 4-6)",
     "desc": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Weasel",
   "size": "tiny",
@@ -23469,7 +23768,8 @@
     "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
     "attack_bonus": 5,
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Werebear",
   "size": "medium",
@@ -23556,7 +23856,8 @@
     "attack_bonus": 7,
     "damage_dice": "1d12",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wereboar",
   "size": "medium",
@@ -23642,7 +23943,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wererat",
   "size": "medium",
@@ -23729,7 +24031,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Weretiger",
   "size": "medium",
@@ -23826,7 +24129,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Werewolf",
   "size": "medium",
@@ -23913,7 +24217,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d6",
     "damage_bonus": -2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "White Dragon Wyrmling",
   "size": "medium",
@@ -23980,7 +24285,8 @@
     "desc": "The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "5d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wight",
   "size": "medium",
@@ -24063,7 +24369,8 @@
     "attack_bonus": 4,
     "damage_dice": "1d8",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Will-o'-Wisp",
   "size": "tiny",
@@ -24145,7 +24452,8 @@
     "name": "Invisibility",
     "desc": "The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Winter Wolf",
   "size": "large",
@@ -24225,7 +24533,8 @@
     "desc": "The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "4d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wolf",
   "size": "medium",
@@ -24296,7 +24605,8 @@
     "attack_bonus": 4,
     "damage_dice": "2d4",
     "damage_bonus": 2
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Worg",
   "size": "large",
@@ -24363,7 +24673,8 @@
     "attack_bonus": 5,
     "damage_dice": "2d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wraith",
   "size": "medium",
@@ -24438,7 +24749,8 @@
     "name": "Create Specter",
     "desc": "The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.",
     "attack_bonus": 0
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Wyvern",
   "size": "large",
@@ -24516,7 +24828,8 @@
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 4
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Xorn",
   "size": "medium",
@@ -24601,7 +24914,8 @@
     "attack_bonus": 6,
     "damage_dice": "1d6",
     "damage_bonus": 3
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Black Dragon",
   "size": "large",
@@ -24683,7 +24997,8 @@
     "desc": "The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "11d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Blue Dragon",
   "size": "large",
@@ -24760,7 +25075,8 @@
     "desc": "The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "10d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Brass Dragon",
   "size": "large",
@@ -24837,7 +25153,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.\nSleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
     "attack_bonus": 0,
     "damage_dice": "12d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Bronze Dragon",
   "size": "large",
@@ -24919,7 +25236,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nLightning Breath. The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.\nRepulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.",
     "attack_bonus": 0,
     "damage_dice": "10d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Copper Dragon",
   "size": "large",
@@ -24996,7 +25314,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nAcid Breath. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.\nSlowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
     "attack_bonus": 0,
     "damage_dice": "9d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Gold Dragon",
   "size": "large",
@@ -25078,7 +25397,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nFire Breath. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\nWeakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0,
     "damage_dice": "10d10"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Green Dragon",
   "size": "large",
@@ -25160,7 +25480,8 @@
     "desc": "The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "12d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Red Dragon",
   "size": "large",
@@ -25237,7 +25558,8 @@
     "desc": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "16d6"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young Silver Dragon",
   "size": "large",
@@ -25314,7 +25636,8 @@
     "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
     "attack_bonus": 0,
     "damage_dice": "12d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Young White Dragon",
   "size": "large",
@@ -25396,7 +25719,8 @@
     "desc": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.",
     "attack_bonus": 0,
     "damage_dice": "10d8"
-  }]
+  }],
+  "from": "srd"
 }, {
   "name": "Zombie",
   "size": "medium",
@@ -25463,5 +25787,6 @@
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
-  }]
+  }],
+  "from": "srd"
 }]

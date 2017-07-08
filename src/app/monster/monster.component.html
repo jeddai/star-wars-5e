@@ -8,19 +8,24 @@
   </div>
   <hr/>
   <div class="ui-grid-row center-text">
-    <div class="ui-g-6 ui-md-3">
+    <div class="ui-g-12 ui-md-1"></div>
+    <div class="ui-g-6 ui-md-2">
       <small><strong>Challenge Rating</strong></small>
       <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetChallenge(monster.challenge).label  }}</h3><small>({{ monsterManualService.GetChallenge(monster.challenge).xp }}xp)</small>
     </div>
-    <div class="ui-g-6 ui-md-3">
+    <div class="ui-g-6 ui-md-2">
+      <small><strong>Size</strong></small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ _.capitalize(monster.size) }}</h3>
+    </div>
+    <div class="ui-g-6 ui-md-2">
       <small><strong>Armor Class</strong></small>
       <h3 [style.font-size.px]="size.font_size+6">{{ monster.armor_class }}</h3>
     </div>
-    <div class="ui-g-6 ui-md-3">
+    <div class="ui-g-6 ui-md-2">
       <small><strong>Hit Points</strong></small>
       <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetHP(monster) }}</h3><small>({{ monster.hit_points }}d{{ monsterManualService.hit_die[monster.size].die }} + {{ monster.hit_points * score(monster.ability_scores.constitution) }})</small>
     </div>
-    <div class="ui-g-6 ui-md-3">
+    <div class="ui-g-6 ui-md-2">
       <small><strong>Speed</strong></small>
       <h3 [style.font-size.px]="size.font_size+6">{{ monster.speed }}</h3>
     </div>
@@ -60,10 +65,12 @@
       {{ monster.languages }}
     </div>
   </div>
-  <div *ngIf="!_.isEmpty(monster.others)">
+  <div *ngIf="!_.isEmpty(monster.special_abilities)">
     <hr/>
-    <div class="ui-grid-row" *ngFor="let abl of monster.others">
-      <span [innerHtml]="abl.name | markdown"></span>&nbsp;<span [innerHtml]="abl.desc | markdown"></span>&nbsp;
+    <h3 [style.font-size.px]="size.font_size+6">Special Abilities</h3>
+    <div class="ui-grid-row" *ngFor="let abl of monster.special_abilities">
+      <strong class="ui-g-2"><em>{{ abl.name }}.</em></strong>
+      <span class="ui-g-12 ui-md-10" [innerHtml]="abl.desc | markdown"></span>
     </div>
   </div>
   <div *ngIf="!_.isEmpty(monster.actions) || !_.isEmpty(monster.abilities)">

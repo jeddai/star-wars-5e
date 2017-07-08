@@ -52,11 +52,7 @@
   "senses": "passive Perception 8",
   "languages": "",
   "challenge": "5",
-  "special_abilities": [{
-    "name": "",
-    "desc": "",
-    "attack_bonus": 0
-  }],
+  "special_abilities": [],
   "actions": [{
     "name": "Multiattack",
     "desc": "The Acklay has six legs and is incredibly fast. It attacks twice with its Claws and once with its Bite.",
@@ -76,5 +72,6 @@
     "damage_dice": "1d10",
     "damage_bonus": 4
   }],
-  "legendary_actions": []
+  "legendary_actions": [],
+  "from":"star-wars"
 }

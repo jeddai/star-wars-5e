@@ -1,25 +1,25 @@
 {
-  "name": "Soldier Captain",
+  "name": "Bandit Captain",
   "size": "medium",
   "type": "humanoid",
   "subtype":"",
-  "alignment": "any alignment",
-  "armor_class": 16,
-  "hit_points": "12",
+  "alignment": "chaotic evil",
+  "armor_class": 14,
+  "hit_points": "8",
   "speed": "30ft.",
   "ability_scores": {
-    "strength": 14,
-    "dexterity": 18,
-    "constitution": 14,
-    "intelligence": 14,
-    "wisdom": 10,
+    "strength": 16,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 8,
     "charisma": 10
   },
   "saving_throws": {
-    "strength": null,
-    "dexterity": 7,
+    "strength": 5,
+    "dexterity": 5,
     "constitution": null,
-    "intelligence": 5,
+    "intelligence": null,
     "wisdom": null,
     "charisma": null
   },
@@ -34,7 +34,7 @@
     "nature": null,
     "religion": null,
     "repair": null,
-    "security": 5,
+    "security": 2,
     "arcana": null,
     "animal_handling": null,
     "insight": null,
@@ -50,30 +50,32 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "passive Perception 10",
+  "senses": "passive Perception 9",
   "languages": "Basic",
-  "challenge": "7",
+  "challenge": "1",
   "special_abilities": [{
-    "name":"Call for Backup",
-    "desc":"As a bonus action during the first round of combat, if the captain is in his own territory, he can call for backup. When a captain calls for backup, 1d4 soldiers appear at the end of his turn.",
-    "attack_bonus": 0
-  }, {
-    "name":"Rally (3/day)",
+    "name":"Rally (1/day)",
     "desc":"As a bonus action, the captain can rally its allies within 30ft of itself to give them +2 to attack and damage rolls for the next round.",
     "attack_bonus": 0
   }],
   "actions": [{
-    "name": "Disruptor Rifle",
-    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 9 (1d8 + 4) DC 14 Con save or stunned 1 round.",
-    "attack_bonus": 7,
-    "damage_dice": "1d8",
-    "damage_bonus": 4
+    "name": "Vibrosword",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3)",
+    "attack_bonus": 5,
+    "damage_dice": "1d10",
+    "damage_bonus": 3
   }, {
-    "name": "Dual Blaster Pistols",
-    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 7 (1d4 + 4)",
-    "attack_bonus": 7,
-    "damage_dice": "1d4",
-    "damage_bonus": 4
+    "name": "Dual Vibroblades",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 7 (1d6 + 3)",
+    "attack_bonus": 5,
+    "damage_dice": "1d6",
+    "damage_bonus": 3
+  }, {
+    "name": "Blaster Rifle",
+    "desc": "Ranged Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3)",
+    "attack_bonus": 5,
+    "damage_dice": "1d10",
+    "damage_bonus": 3
   }],
   "legendary_actions": [],
   "from":"star-wars"

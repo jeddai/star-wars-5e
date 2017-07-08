@@ -4,16 +4,16 @@
 </div>
 <hr/>
 
-<p-dataTable #dt expandableRows="true" (onRowClick)="toggleRow($event)" [value]="_.clone(encounter)" 
+<p-dataTable #dt expandableRows="true" (onRowClick)="toggleRow($event)" [value]="_.clone(encounter)" sortField="initiative" sortOrder="-1"
 [responsive]="true" [stacked]="stacked" selectionMode="single" [(selection)]="selectedObject" [contextMenu]="cm">
   <p-column header="Type">
     <ng-template let-col let-monster="rowData" pTemplate="body">
-      {{ type(monster) }}
+      {{ isMonster(monster) ? 'Monster' : 'Player' }}
     </ng-template>
   </p-column>
-  <p-column field="challenge" header="CR/Level">
+  <p-column field="challenge" header="CR/Level" [style]="{'overflow':'visible'}">
     <ng-template let-col let-monster="rowData" pTemplate="body">
-      <input type="text" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
+      <p-dropdown class="always-black" [options]="isMonster(monster) ? crItems : levelItems" [disabled]="isMonster(monster)" [(ngModel)]="monster[col.field]" (change)="saveState()"></p-dropdown>
     </ng-template>
   </p-column>
   <p-column field="name" header="Name">
@@ -26,7 +26,7 @@
       <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
   </p-column>
-  <p-column field="initiative" header="Initiative" [sortable]="true">
+  <p-column field="initiative" header="Initiative">
     <ng-template let-col let-monster="rowData" pTemplate="body">
       <input type="number" pInputText [(ngModel)]="monster[col.field]" (change)="saveState()"/>
     </ng-template>
@@ -152,6 +152,7 @@
         <input id="playerInit" class="ui-g-12 ui-lg-9" type="number" pInputText [(ngModel)]="newPlayer.initiative" placeholder="Init"/>
       </div>
       <button type="text" pButton label="Add" (click)="addPlayer(newPlayer)" [disabled]="!newPlayer.challenge"></button>
+      <button type="text" pButton class="ui-button-warning" label="Clear" (click)="initNewPlayer()"></button>
     </div>
   </div>
 </div>

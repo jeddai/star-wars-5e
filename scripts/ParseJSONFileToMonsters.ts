@@ -29,10 +29,12 @@ function makeOneFile() {
     var allMonsters = [];
     console.log('Starting Conversion.');
     monsters.forEach((m) => {
-      allMonsters.push(JSON.parse(fs.readFileSync(__dirname + '/../data/monsters/srd/' + m, 'utf8')));
+      var mon = JSON.parse(fs.readFileSync(__dirname + '/../data/monsters/srd/' + m, 'utf8'));
+      mon.from = "srd";
+      allMonsters.push(mon);
     });
     console.log('Conversion Complete.');
-    fs.writeFileSync(__dirname + '/../data/monsters/all.json', JSON.stringify(allMonsters), 'utf8');
+    fs.writeFileSync(__dirname + '/../data/monsters/all-srd.json', JSON.stringify(allMonsters), 'utf8');
     console.log('Done.');
   });
 };

@@ -15,6 +15,7 @@ import { URL } from '../URL';
 @Injectable()
 export class MonsterManualService {
   private readonly monsterManualEndpoint: string = URL.api + "/monster-manual/get-monsters";
+  private readonly monsterManualSWEndpoint: string = URL.api + "/monster-manual/get-monsters-sw";
   private readonly monsterEndpoint: string = URL.api + "/monster-manual/get-monster/";
 
   public hit_die = {
@@ -33,6 +34,27 @@ export class MonsterManualService {
     return this
       .http
       .get(this.monsterManualEndpoint)
+      .map(value => {
+        var response = value.json() as MonsterManualResponse;
+        response.Response.forEach((m: Monster): void => {
+          m.ability_scores = AbilityScores.ParseScores(m.ability_scores);
+          m.saving_throws = AbilityScores.ParseScores(m.saving_throws);
+          m.skills = Skills.ParseSkills(m.skills);
+        });
+        if (!response) {
+          throw value.toString();
+        } else if (response.Error) {
+          throw response.Error;
+        }
+        return response;
+      })
+      .toPromise();
+  }
+
+  public GetStarWarsMonsters(): Promise <MonsterManualResponse> {
+    return this
+      .http
+      .get(this.monsterManualSWEndpoint)
       .map(value => {
         var response = value.json() as MonsterManualResponse;
         response.Response.forEach((m: Monster): void => {

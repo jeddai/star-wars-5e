@@ -1,18 +1,18 @@
 {
-  "name": "Akk Dog",
+  "name": "Bandit",
   "size": "medium",
-  "type": "beast",
-  "subtype":"dog",
-  "alignment": "unaligned",
-  "armor_class": 16,
-  "hit_points": "8",
+  "type": "humanoid",
+  "subtype":"",
+  "alignment": "chaotic evil",
+  "armor_class": 13,
+  "hit_points": "6",
   "speed": "30ft.",
   "ability_scores": {
-    "strength": 16,
-    "dexterity": 12,
-    "constitution": 14,
-    "intelligence": 6,
-    "wisdom": 6,
+    "strength": 14,
+    "dexterity": 14,
+    "constitution": 10,
+    "intelligence": 10,
+    "wisdom": 8,
     "charisma": 10
   },
   "saving_throws": {
@@ -50,28 +50,28 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "passive Perception 8",
-  "languages": "",
-  "challenge": "2",
+  "senses": "passive Perception 9",
+  "languages": "Basic",
+  "challenge": "1/4",
   "special_abilities": [],
   "actions": [{
-    "name": "Multiattack",
-    "desc": "The Akk Dog attacks once with its claws and once with its tail.",
-    "attack_bonus": 0,
-    "damage_dice": "",
-    "damage_bonus": 0
-  }, {
-    "name": "Claws",
-    "desc": "Melee Weapon Attack: +3 to hit, one target. Hit 12 slashing (2d8 + 3)",
-    "attack_bonus": 3,
-    "damage_dice": "2d8",
-    "damage_bonus": 3
-  }, {
-    "name": "Tail",
-    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d10 + 3)",
-    "attack_bonus": 3,
+    "name": "Vibrosword",
+    "desc": "Melee Weapon Attack: +4 to hit, one target. Hit 8 (1d10 + 2)",
+    "attack_bonus": 4,
     "damage_dice": "1d10",
-    "damage_bonus": 3
+    "damage_bonus": 2
+  }, {
+    "name": "Dual Vibroblades",
+    "desc": "Melee Weapon Attack: +4 to hit, one target. Hit 6 (1d6 + 2)",
+    "attack_bonus": 4,
+    "damage_dice": "1d6",
+    "damage_bonus": 2
+  }, {
+    "name": "Blaster Rifle",
+    "desc": "Ranged Weapon Attack: +4 to hit, one target. Hit 8 (1d10 + 2)",
+    "attack_bonus": 4,
+    "damage_dice": "1d10",
+    "damage_bonus": 2
   }],
   "legendary_actions": [],
   "from":"star-wars"

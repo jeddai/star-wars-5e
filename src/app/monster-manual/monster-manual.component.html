@@ -28,6 +28,14 @@
       <span>{{ monster[col.field] | capitalize }}</span>
     </ng-template>
   </p-column>
+  <p-column field="from" header="Monster From" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
+    <ng-template pTemplate="filter" let-col>
+      <p-dropdown [options]="[{ 'label':'All', 'value':null}, { 'label':'SRD', 'value':'srd' }, { 'label':'Star Wars', 'value':'star-wars' }]" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
+    </ng-template>
+    <ng-template let-col let-monster="rowData" pTemplate="body">
+      <span>{{ monster[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
   <ng-template let-monster pTemplate="rowexpansion">
     <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
       <div class="ui-g-2"></div>

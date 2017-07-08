@@ -1,10 +1,10 @@
 export class Combatant {
-  constructor(name: string, armor_class: number, current_hit_points: number, challenge: number, initiative: number) {
-    this.name = name;
-    this.armor_class = armor_class;
-    this.current_hit_points = current_hit_points;
-    this.challenge = challenge;
-    this.initiative = initiative;
+  constructor() {
+    this.name = '';
+    this.armor_class = null;
+    this.current_hit_points = null;
+    this.challenge = null;
+    this.initiative = null;
   }
 
   name: string
@@ -12,4 +12,14 @@ export class Combatant {
   current_hit_points: number
   challenge: number
   initiative: number
+
+  public static MakeCombatant(name: string, armor_class: number, current_hit_points: number, challenge: number, initiative: number): Combatant {
+    var com = new Combatant();
+    com.name = name;
+    com.armor_class = armor_class;
+    com.current_hit_points = current_hit_points;
+    com.challenge = challenge;
+    com.initiative = initiative;
+    return com;
+  }
 }
