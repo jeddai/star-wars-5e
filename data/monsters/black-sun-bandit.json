@@ -9,10 +9,10 @@
   "environment":[],
   "planets":[],
   "ability_scores": {
-    "str": 14,
-    "dex": 14,
-    "con": 10,
-    "int": 10,
+    "strength": 14,
+    "dexterity": 14,
+    "constitution": 10,
+    "intelligence": 10,
     "wis": 8,
     "cha": 10
   },
@@ -24,7 +24,7 @@
   "condition_immunities": [],
   "senses": ["Passive Perception 9"],
   "languages": ["Basic"],
-  "challenge": 0.25,
+  "challenge": "1/4",
   "others": [],
   "abilities": [],
   "actions": [{

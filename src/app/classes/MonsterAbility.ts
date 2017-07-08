@@ -1,4 +1,5 @@
 export class MonsterAbility {
   name: string
-  ability: string
+  desc: string
+  attack_bonus: number
 }

@@ -5,37 +5,76 @@
   "alignment": "unaligned",
   "armor_class": 15,
   "hit_points": "15",
-  "speed": ["40"],
-  "environment":[],
-  "planets":[],
+  "speed": "40ft.",
   "ability_scores": {
-    "str": 18,
-    "dex": 14,
-    "con": 16,
-    "int": 6,
-    "wis": 6,
-    "cha": 10
+    "strength": 18,
+    "dexterity": 14,
+    "constitution": 16,
+    "intelligence": 6,
+    "wisdom": 6,
+    "charisma": 10
   },
-  "saving_throws": [],
-  "skills": [],
-  "damage_vulnerabilities": [],
-  "damage_resistances": [],
-  "damage_immunities": [],
-  "condition_immunities": ["groggy", "weak-kneed"],
-  "senses": ["Passive Perception 8"],
-  "languages": [],
-  "challenge": 5,
-  "others": [],
-  "abilities": [{
-    "name":"***Multiattack.***",
-    "ability":"The Acklay has six legs and is incredibly fast. It attacks twice with its Claws and once with its Bite."
+  "saving_throws": {
+    "strength": 7,
+    "dexterity": null,
+    "constitution": 6,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "groggy, weak-kneed",
+  "senses": "passive Perception 8",
+  "languages": "",
+  "challenge": "5",
+  "special_abilities": [{
+    "name": "",
+    "desc": "",
+    "attack_bonus": 0
   }],
   "actions": [{
-    "name":"***Claws.***",
-    "action":"*Melee Weapon Attack:* +5 to hit, reach 5ft., one target. *Hit* 9 piercing (1d8 + 4)"
+    "name": "Multiattack",
+    "desc": "The Acklay has six legs and is incredibly fast. It attacks twice with its Claws and once with its Bite.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
   }, {
-    "name":"***Bite.***",
-    "action":"*Melee Weapon Attack:* +5 to hit, one target. *Hit* 10 piercing (1d10 + 4)"
+    "name": "Claws",
+    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit 9 piercing (1d8 + 4)",
+    "attack_bonus": 7,
+    "damage_dice": "1d8",
+    "damage_bonus": 4
+  }, {
+    "name": "Bite",
+    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 10 piercing (1d10 + 4)",
+    "attack_bonus": 7,
+    "damage_dice": "1d10",
+    "damage_bonus": 4
   }],
   "legendary_actions": []
 }

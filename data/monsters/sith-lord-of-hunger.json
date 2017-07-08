@@ -3,8 +3,8 @@
   "size": "medium",
   "type": "humanoid",
   "alignment": "evil",
-  "armor_class": 17,
-  "hit_points": 20,
+  "armor_class": 18,
+  "hit_points": 30,
   "speed": ["30"],
   "environment": [],
   "planets": [],
@@ -45,6 +45,9 @@
   }, {
     "name": "***Incite Panic.***",
     "action": "As an action, choose up to eight creatures you can see within 90 feet of you that can see you. At the start of each of a target’s turns before your concentration ends, the target must make a Wisdom saving throw. On a failed save, the target is frightened until the start of its next turn, and you roll a die. If you roll an odd number, the frightened target moves half its speed in a random direction and takes no action on that turn, other than to scream in terror. If you roll an even number, the frightened target makes one melee attack against a random target within its reach. If there is no such target, it moves half its speed in a random direction and takes no action on that turn. This effect ends on a target if it succeeds on three saving throws against it."
+  }, {
+    "name":"***Mind Storm.***",
+    "action":"As an action, choose a point you can see within 60 feet of you. Each creature in a 20-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes 6d8 psychic damage and suffers disadvantage on all saving throws until the end of your next turn. On a successful save, a creature takes half as much damage. You can increase the damage by 1d6 per additional point spent on this ability."
   }, {
     "name":"***Phantom Foe.***",
     "action":"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your concentration ends. During this time, the target can’t take reactions, and it takes 1d8 psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by 1d8 for each additional point spent on the ability."

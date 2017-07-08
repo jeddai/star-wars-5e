@@ -1,95 +1,108 @@
-import { AbilityScore } from './AbilityScore';
+import * as _ from 'lodash';
+
+import { AbilityScores } from './AbilityScores';
 import { MonsterAbility } from './MonsterAbility';
 import { MonsterAction } from './MonsterAction';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
+import { Skills } from './Skills';
 
 export class Monster {
-  constructor(monster: Monster) {
-    this.name = monster.name;
-    this.size = monster.size;
-    this.type = monster.type;
-    this.alignment = monster.alignment;
-    this.armor_class = monster.armor_class;
-    this.hit_points = monster.hit_points;
-    this.speed = monster.speed;
-    this.environment = monster.environment;
-    this.planet = monster.planet;
-    this.ability_scores = monster.ability_scores;
-    this.saving_throws = monster.saving_throws;
-    this.skills = monster.skills;
-    this.damage_vulnerabilities = monster.damage_vulnerabilities;
-    this.damage_resistances = monster.damage_resistances;
-    this.damage_immunities = monster.damage_immunities;
-    this.condition_immunities = monster.condition_immunities;
-    this.senses = monster.senses;
-    this.languages = monster.languages;
-    this.challenge = monster.challenge;
-    this.others = monster.others;
-    this.abilities = monster.abilities;
-    this.actions = monster.actions;
-    this.legendary_actions = monster.legendary_actions;
-    this.initiative = monster.initiative;
-  }
-
-  name: string = ''
-  size: string = ''
-  type: string = ''
-  alignment: string = ''
-  armor_class: number = 0
-  hit_points: number = 0
-  current_hit_points: number = 0
-  speed: string[] = []
-  environment: string[] = []
-  planet: string[] = []
-  ability_scores: AbilityScore = null
-  saving_throws: string[] = []
-  skills: string[] = []
-  damage_vulnerabilities: string[] = []
-  damage_resistances: string[] = []
-  damage_immunities: string[] = []
-  condition_immunities: string[] = []
-  senses: string[] = []
-  languages: string[] = []
-  challenge: number = 0
-  others: MonsterAbility[] = []
-  abilities: MonsterAbility[] = []
-  actions: MonsterAction[] = []
-  legendary_actions: MonsterAction[] = []
-  initiative: number = 0
-
-  public static GetEmptyMonster(): Monster {
-    var monster:Monster = <Monster>{};
+  constructor() {
+    var monster: Monster = <Monster>{};
     monster.name = '';
     monster.size = '';
     monster.type = '';
     monster.alignment = '';
     monster.armor_class = null;
     monster.hit_points = null;
-    monster.speed = [];
-    monster.environment = [];
-    monster.planet = [];
-    monster.ability_scores = {
-      str: null,
-      dex: null,
-      con: null,
-      int: null,
-      wis: null,
-      cha: null
-    };
-    monster.saving_throws = [];
-    monster.skills = [];
-    monster.damage_vulnerabilities = [];
-    monster.damage_resistances = [];
-    monster.damage_immunities = [];
-    monster.condition_immunities = [];
-    monster.senses = [];
-    monster.languages = [];
-    monster.challenge = null;
-    monster.others = [];
-    monster.abilities = [];
-    monster.actions = [];
-    monster.legendary_actions = [];
-    monster.initiative = null;
+    monster.speed = ''
+    monster.ability_scores = new AbilityScores();
+    monster.saving_throws = new AbilityScores();
+    monster.skills = new Skills();
+    monster.damage_vulnerabilities = ''
+    monster.damage_resistances = ''
+    monster.damage_immunities = ''
+    monster.condition_immunities = ''
+    monster.senses = ''
+    monster.languages = ''
+    monster.challenge = ''
+    monster.special_abilities = []
+    monster.actions = []
+    monster.legendary_actions = []
+  }
+
+  name: string = ''
+  size: string = ''
+  type: string = ''
+  subtype: string = ''
+  alignment: string = ''
+  armor_class: number = null
+  hit_points: number = null
+  current_hit_points: number = null
+  speed: string = ''
+  ability_scores: AbilityScores = null
+  saving_throws: AbilityScores = null
+  skills: Skills = null;
+  damage_vulnerabilities: string = ''
+  damage_resistances: string = ''
+  damage_immunities: string = ''
+  condition_immunities: string = ''
+  senses: string = ''
+  languages: string = ''
+  challenge: string = ''
+  special_abilities: MonsterAbility[] = []
+  actions: MonsterAction[] = []
+  legendary_actions: MonsterAbility[] = []
+  initiative: number = null;
+
+  public static MakeMonster(monster: any): Monster {
+    var newMonster: Monster = new Monster();
+    _.forIn(newMonster, function(value, key) {
+      newMonster[key] = monster[key];
+    });
+    newMonster.ability_scores = AbilityScores.ParseScores(newMonster.ability_scores);
+    newMonster.saving_throws = AbilityScores.ParseScores(newMonster.saving_throws);
+    newMonster.skills = Skills.ParseSkills(newMonster.skills);
+    return newMonster;
+  }
+
+  public static SetMonsterFromSRD(obj: any): Monster {
+    var monster: Monster = <Monster>{};
+    monster.name = obj.name;
+    monster.size = _.lowerCase(obj.size);
+    monster.type = obj.type;
+    monster.subtype = obj.subtype;
+    monster.alignment = obj.alignment;
+    monster.armor_class = obj.armor_class;
+    monster.hit_points = obj.hit_dice.slice(0, obj.hit_dice.indexOf('d'));
+    monster.speed = obj.speed;
+    monster.ability_scores = AbilityScores.MakeScores(obj.strength, obj.dexterity, obj.constitution, obj.intelligence, obj.wisdom, obj.charisma);
+    monster.saving_throws = AbilityScores.MakeScores(
+      !!obj.strength_save ? obj.strength_save : null,
+      !!obj.dexterity_save ? obj.dexterity_save : null,
+      !!obj.constitution_save ? obj.constitution_save : null,
+      !!obj.intelligence_save ? obj.intelligence_save : null,
+      !!obj.wisdom_save ? obj.wisdom_save : null,
+      !!obj.charisma_save ? obj.charisma_save : null,
+    );
+    monster.skills = new Skills();
+    for(var key in monster.skills) {
+      monster.skills[key] = !!obj[key] ? obj[key] : null;
+    }
+    monster.damage_vulnerabilities = obj.damage_vulnerabilities;
+    monster.damage_resistances = obj.damage_resistances;
+    monster.damage_immunities = obj.damage_immunities;
+    monster.condition_immunities = obj.condition_immunities;
+    monster.senses = obj.senses;
+    monster.languages = obj.languages;
+    monster.challenge = obj.challenge_rating;
+    monster.special_abilities = obj.special_abilities;
+    monster.actions = obj.actions;
+    monster.legendary_actions = obj.legendary_actions;
     return monster;
+  }
+
+  public static IsMonster(obj): boolean {
+    return obj.hasOwnProperty('ability_scores');
   }
 }

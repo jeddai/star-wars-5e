@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem } from 'primeng/primeng';
 import * as _ from 'lodash';
 
-import { AbilityScore } from '../classes/AbilityScore';
+import { AbilityScores } from '../classes/AbilityScores';
 import { CRSelectItem } from '../classes/CRSelectItem';
 import { Monster } from '../classes/Monster';
 import { MonsterManualService } from './monster-manual.service';
@@ -33,6 +33,6 @@ export class MonsterManualComponent implements OnInit {
   }
 
   public score(num: number): number {
-    return AbilityScore.GetScore(num);
+    return AbilityScores.GetScore(num);
   }
 }
