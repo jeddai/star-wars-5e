@@ -51,27 +51,6 @@ export class MonsterManualService {
       .toPromise();
   }
 
-  public GetStarWarsMonsters(): Promise <MonsterManualResponse> {
-    return this
-      .http
-      .get(this.monsterManualSWEndpoint)
-      .map(value => {
-        var response = value.json() as MonsterManualResponse;
-        response.Response.forEach((m: Monster): void => {
-          m.ability_scores = AbilityScores.ParseScores(m.ability_scores);
-          m.saving_throws = AbilityScores.ParseScores(m.saving_throws);
-          m.skills = Skills.ParseSkills(m.skills);
-        });
-        if (!response) {
-          throw value.toString();
-        } else if (response.Error) {
-          throw response.Error;
-        }
-        return response;
-      })
-      .toPromise();
-  }
-
   public GetMonster(name: string): Promise <MonsterResponse> {
     return this
       .http

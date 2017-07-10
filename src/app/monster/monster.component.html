@@ -42,19 +42,19 @@
     </div>
     <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_vulnerabilities)">
       <small><strong>Damage Vulnerabilities</strong></small><br/>
-      {{ monster.damage_vulnerabilities }}
+      {{ monster.damage_vulnerabilities | capitalize | commaSplit }}
     </div>
     <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_resistances)">
       <small><strong>Damage Resistances</strong></small><br/>
-      {{ monster.damage_resistances }}
+      {{ monster.damage_resistances | capitalize | commaSplit }}
     </div>
     <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_immunities)">
       <small><strong>Damage Immunities</strong></small><br/>
-      {{ monster.damage_immunities }}
+      {{ monster.damage_immunities | capitalize | commaSplit }}
     </div>
     <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.condition_immunities)">
       <small><strong>Condition Immunities</strong></small><br/>
-      {{ monster.condition_immunities }}
+      {{ monster.condition_immunities | capitalize | commaSplit }}
     </div>
     <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.senses)">
       <small><strong>Senses</strong></small><br/>

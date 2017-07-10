@@ -1,0 +1,7 @@
+<p-overlayPanel #op>
+    <div class="overlay">
+      <monster *ngIf="show()" [monster]="monster" [size]="{ 'font_size': 8 }"></monster>
+    </div>
+</p-overlayPanel>
+
+<a class="link" role="button" (click)="op.toggle($event)">{{ text }}</a>

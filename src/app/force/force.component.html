@@ -85,9 +85,9 @@
         </p-header>
         <p>{{ discipline.description }}</p>
         <hr/>
-        <p><strong>Focus:</strong> {{ discipline.focus }}</p>
+        <p><strong><em>Focus.</em></strong> {{ discipline.focus }}</p>
         <p *ngFor="let ability of discipline.abilities">
-          <strong>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}):</strong> <span [innerHtml]="ability.description"></span>
+          <strong><em>{{ ability.name }} ({{ ability.cost }} force points{{ ability.conc ? ', conc' : '' }}{{ !!ability.duration ? ', ' + ability.duration : '' }}).</em></strong> <span [innerHtml]="ability.description"></span>
       </p-panel>
     </div>
   </div>

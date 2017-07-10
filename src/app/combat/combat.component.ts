@@ -20,7 +20,7 @@ export class CombatComponent implements OnInit {
   _=_;
   monsterOptions: SelectItem[] = [{ label: 'None', value: null }, { label: 'Custom', value: Monster.MakeMonster(new Monster()) }];
   items: MenuItem[] = [
-    {label: 'Edit', icon: 'fa-edit', command: (event) => this.edit(_.cloneDeep(this.selectedObject))},
+    {label: 'Edit Clone', icon: 'fa-edit', command: (event) => this.edit(_.cloneDeep(this.selectedObject))},
     {label: 'Copy', icon: 'fa-copy', command: (event) => this.copy(this.selectedObject)},
     {label: 'Delete', icon: 'fa-close', command: (event) => this.remove(this.selectedObject)}
   ];
@@ -148,13 +148,17 @@ export class CombatComponent implements OnInit {
       }
     });
     xp *= Combat.GetMonsterMultiplier(numMonsters);
-    diff = xp < threshold.easy ? 'Easy' : xp < threshold.medium ? 'Medium' : xp < threshold.hard ? 'Hard' : 'Deadly';
-    pxp = xp < threshold.easy ? threshold.easy : xp < threshold.medium ? threshold.medium : xp < threshold.hard ? threshold.hard : threshold.deadly;
+    diff = xp < threshold.easy ? 'Trivial' : xp < threshold.medium ? 'Easy' : xp < threshold.hard ? 'Medium' : xp < threshold.deadly ? 'Hard' : 'Deadly';
+    pxp = xp < threshold.easy ? 0 : xp < threshold.medium ? threshold.easy : xp < threshold.hard ? threshold.medium : xp < threshold.deadly ? threshold.hard : threshold.deadly;
     this.diff = { xp: xp, pxp: pxp, diff: diff };
   }
 
   public initNewPlayer(num?: number) {
     this.newPlayer = new Combatant();
+  }
+
+  public initNewMonster() {
+    this.newMonster = Monster.MakeMonster(new Monster());
   }
 
   private remove(obj: (Monster|Combatant)) {
@@ -176,7 +180,7 @@ export class CombatComponent implements OnInit {
   private checkEncounterForConflicts(name: string): string {
     var conflictIndex =  _.findIndex(this.encounter, ({ 'name': name }));
     if(conflictIndex !== -1) {
-      name = _.trim(name, '1234567890') + ' ' + (parseInt(this.encounter[conflictIndex].name.substr(-1), 10) + 1 || 1);
+      name = _.trim(name, ' 1234567890') + ' ' + (parseInt(this.encounter[conflictIndex].name.substr(-1), 10) + 1 || 1);
     }
     return name;
   }

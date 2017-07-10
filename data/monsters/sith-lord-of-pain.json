@@ -1,0 +1,112 @@
+{
+  "name": "Sith Lord of Pain",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"",
+  "alignment": "evil",
+  "armor_class": 16,
+  "hit_points": "15",
+  "speed": "30ft.",
+  "ability_scores": {
+    "strength": 18,
+    "dexterity": 18,
+    "constitution": 22,
+    "intelligence": 14,
+    "wisdom": 14,
+    "charisma": 22
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": null,
+    "constitution": 10,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": 10
+  },
+  "skills": {
+    "athletics": 10,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": 10,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": 10,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "psychic",
+  "damage_immunities": "necrotic, force",
+  "condition_immunities": "charmed",
+  "senses": "passive Perception 12",
+  "languages": "Basic",
+  "challenge": "16",
+  "special_abilities": [{
+    "name":"Cracked Body",
+    "desc":"When the Lord of Pain is struck down, he is revived at the end of the turn in which he was struck down. It is immediately his turn, and his initiative is now the same as the initiative of the player who dealt the final blow. When rolling the revived Lord of Pain's HP, roll 5 less hit die than the last time you rolled his HP. When the Lord of Pain has no more hit die, he perishes.",
+    "attack_bonus": 0
+  }, {
+    "name":"Iron Hide",
+    "desc":"As a reaction when he is hit by an attack, the Lord of Pain gains a +3 bonus to AC. The bonus lasts until the end of his next turn. This bonus applies against the triggering attack.",
+    "attack_bonus": 0
+  }],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Lord of Pain can make two melee attacks and use one force ability on his turn.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Lightsaber",
+    "desc": "Melee Weapon Attack: +8 to hit, reach 5ft., one target. Hit 15 (2d10 + 4)",
+    "attack_bonus": 8,
+    "damage_dice": "2d10",
+    "damage_bonus": 4
+  }, {
+    "name": "Grasp",
+    "desc": "The Lord of Pain attempts to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature the Lord of Pain can see. The target must succeed on a Strength saving throw (DC 18) or be grappled for one minute. The Lord of Pain can only grapple one creature at a time with this ability.<br/><br/>The grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your force ability plus your proficiency bonus. When a target attempts to escape in this way, add +4 to the Lord of Pain's roll.<br/><br/>While a target is grappled in this manner, you create one of the following effects as an action:<br/><br/>***Crush.*** The target takes 4d6 bludgeoning damage.<br/><br/>***Move.*** You move the target up to 20 feet. You can move it in the air and hold it there. It falls if the grapple ends.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Lethal Strike",
+    "desc": "As a bonus action, the Lord of Pain imbues his lightsaber with psychic energy. The next time he hits with it before the end of his turn, it deals an extra 4d10 psychic damage.",
+    "attack_bonus": 0,
+    "damage_dice" : "4d10",
+    "damage_bonus": 0
+  }, {
+    "name": "Mindless Charge",
+    "desc": "As an action, choose up to five creatures the Lord of Pain can see. Each target immediately uses its reaction to move up to its speed in a straight line toward the Lord of Pain.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Psychic Grip",
+    "desc": "As an action, the Lord of Pain targets one creature he can see within 60 feet of him. The target must succeed on an Intelligence saving throw (DC 18), or it is paralyzed for three rounds. At the end of each of its turns, it can repeat the saving throw. On a success, this effect ends. On a failure, the Lord of Pain can force the target to move up to half its speed, even though it’s paralyzed.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }],
+  "legendary_actions": [{
+    "name": "Lightsaber Attack",
+    "desc": "The Lord of Pain can make one lightsaber attack as a legendary action.",
+    "attack_bonus": 8
+  }, {
+    "name":"Psychic Grip (2 actions)",
+    "desc":"The Lord of Pain can use Psychic Grip as a legendary action.",
+    "attack_bonus": 0
+  }],
+  "from":"star-wars"
+}

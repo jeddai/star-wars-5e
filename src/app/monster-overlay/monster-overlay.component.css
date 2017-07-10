@@ -1,0 +1,9 @@
+.overlay {
+  max-width: 700px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.link {
+  color: #106fd5 !important;
+}

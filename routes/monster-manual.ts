@@ -16,11 +16,18 @@ router.get('/get-monster/:monster', function (req, res, next) {
     Response: null,
     Error: null
   }
-  fs.readFile(filePath + '/' + req.params.monster + '.json', 'utf8', (err, data) => {
-    if(!!err) next(err);
-    obj.Response = JSON.parse(data);
-    return res.send(obj);
-  });
+  var file = {};
+  try {
+    file = fs.readFileSync(filePath + '/' + req.params.monster + '.json', 'utf8');
+  } catch(e) { 
+    obj.Error = e;
+    try {
+      file = fs.readFileSync(filePath + '/srd/' + req.params.monster + '.json', 'utf8');
+      obj.Error = null;
+    } catch(e) { return res.status(404).send(obj); }
+  }
+  obj.Response = JSON.parse(<string>file);
+  return res.send(obj);
 });
 
 router.get('/get-monsters', function (req, res) {

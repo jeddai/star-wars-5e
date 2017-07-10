@@ -1,0 +1,243 @@
+[
+  {
+    "name": "Adaptive Armor",
+    "type": "armor",
+    "subtype": "",
+    "activation": "reaction",
+    "desc": "When equipped to an armor, you can use a reaction when hit with an attack or ability that deals thunder, acid, cold, lightning, fire, or radiant damage. You gain resistance against the damage type chosen until the beginning of your next turn.",
+    "level": 3,
+    "restrictions":"engineer, mercenary"
+  }, {
+    "name": "Advanced Personal Stealth Field",
+    "type": "tool",
+    "subtype": "",
+    "activation": "action",
+    "desc": "When equipped, as an action, you can activate the field to temporarily gain +5 to all stealth check for up to 10 minutes. This duration of the field increases to 20 minutes at level 7, 45 minutes at level 14, and an hour at level 17. <br/><br/>***Shared field.*** As an action, you may instead create a small 10ft radius sphere of your stealth field, giving anyone inside the field the bonus of the field. However because of the expanded range the duration of the field becomes halved, and after use, its energy is expended and a long rest must be taken to recharge it.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Autoloader",
+    "type": "weapon",
+    "subtype": "attachment",
+    "activation": "constant",
+    "desc": "When you attach this gadget to a weapon of your choosing it lowers the reload time of the weapon by 1 action. For example, with a gatling laser, instead of taking a full turn to reload, it would instead take a regular action when this gadget is attached.",
+    "level": 3,
+    "restrictions":"engineer, mercenary"
+  }, {
+    "name": "Arkanian Energy Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "activation": "constant",
+    "desc": "Arkanian Energy shields are personal shields that protect from extreme temperatures and energy and sonic-based weaponry. This shield has an AC of 16 with 40 HP and has resistances to sonic and energy-based weaponry. Once it’s HP hits 0 the shield is destroyed and a new one must be built. You may only have one personal shield equipped at a time.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Cape of the Bat",
+    "type": "clothing",
+    "subtype": "cloak",
+    "activation": "action",
+    "desc": "When you take an object interaction to activate this gadget, your cloak becomes rigid, allowing you to glide down from a high place. You can fly at a speed of 30 feet for a maximum distance of up to three times the height of your starting point. (If you begin at a height of 30 feet, you can glide a maximum of 90 feet from your starting point.) If you are still airborne when you reach the maximum distance, you fall. Once used, the gadget must be reset and this effect cannot be used again until you complete a short or long rest.",
+    "level": 3,
+    "restrictions":"engineer"
+  }, {
+    "name": "Cryoban Cells",
+    "type": "charge pack",
+    "subtype": "",
+    "activation": "bonus",
+    "desc": "When equipped, the user can load a CryoBan cell into their weapon. When they do so, the damage type of their weapon is converted to cold and gains the effect of Freeze. The amount of use would be only one cartridge worth of ammunition and once used must be recharged through a long rest.<br/><br/>Freeze. When a creature is hit with CryoBan Cells it must make a constitution saving throw (DC 15) or it is frozen.<br/><br/>When you are frozen your movement speed becomes 0, you cannot make any actions or reactions, and at the end of your turn you may make the DC save again. If you keep hitting them with the cells it stacks the effect. If a creature remains frozen for more than 1 minutes it dies.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Explosive Traps",
+    "type": "weapon",
+    "subtype": "explosive",
+    "activation": "action",
+    "desc": "As an action, this gadget allows you to place a mechanical trap on an unoccupied location within 5 feet of you. When you place the trap you may choose it’s damage type and trigger mechanism.<br/><br/>Trigger Mechanism<br/>Location:5x5 area within 20 ft of trap<br/>Proximity: 8 ft radius sphere around trap.<br/>Timed: between 1 minute to an hour.<br/><br/>The trap becomes active the turn after you activated and remains active unless deactivated or disarmed. When activated, the trap explodes and deals 2d10 damage of the damage type to everything within 30 feet of the trap. The damage increase by 1d10 at 11th and then again at 17th level. Once used it must be recharged and its effects cannot be used again until after a successful short or longs rest.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Extendable Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "activation": "constant",
+    "desc": "When equipped it is a regular shield, but as an object interaction you can extend or retract the shield. When extended, you gain 3/4 cover in front of you and your movement is halved. This shield is considered heavy armor for the purposes of proficiency.",
+    "level": 3,
+    "restrictions":"engineer"
+  }, {
+    "name": "Gatling Turret",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "constant",
+    "desc": "When this weapon is equipped, you can equpt a gatling laser onto your turret. Your turret is proficient with this weapon and gains and the bonuses and benefits using it.",
+    "level": 3,
+    "restrictions":"engineer"
+  }, {
+    "name": "G-52 Tactical Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "activation": "action",
+    "desc": "This shield gives a +3 to your AC when equipped. This shield has exceptionally bright lights and as an action you can shine your light in a 60 ft cone. Everyone within this cone must make a constitution saving throw (DC 14) or be blinded for 1 minute. Once used, this gadget cannot be used again until it is recharged via a short or long rest.",
+    "level": 3,
+    "restrictions":"engineer"
+  }, {
+    "name": "Grenade Launcher",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "action, object",
+    "desc": "When you make a weapon attack, you can use an object interaction with a grenade of your choosing to launch the grenade instead. The attack roll is your normal weapon attack roll, plus your demolitions skill. The grenade deals its normal damage.",
+    "level": 3,
+    "restrictions":"engineer, mercenary"
+  }, {
+    "name": "Lightning Gun",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "action, object",
+    "desc": "When you make a weapon attack, you may use an object interaction to shoot a bolt of lightning at an opponent. The target takes 6d6 lightning damage on a hit, or half as much on a miss, instead of the normal weapon damage. On a hit or miss, creatures within 10 feet of the target must make a dexterity saving throw (DC 14), taking 3d6 lightning damage on a failed save, and half as much on a successful save. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "ZX Miniature Flame Projector",
+    "type": "armor",
+    "subtype": "gloves",
+    "activation": "action",
+    "desc": "When you use this gadget, you shoot a 15ft. line of flames from your wrist. Anyone along this line must make a dexterity saving throw (DC 15). On a failed save, the creature takes 4d6 fire damage and is on fire, taking 1d6 fire damage at the start of its turn. On a successful save the creature takes half damage. Creatures on fire can use an action to put the fire out. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Repulsor Grappling Gun",
+    "type": "weapon",
+    "subtype": "attachment",
+    "activation": "action",
+    "desc": "The repulsor grappling gun is a rifle containing 200 meters of molecularly reinforced line that can pull up to 200 kilograms at 20 meters per second. As an action, the user can aim the grappling gun at a surface and make a weapon attack. On a hit, the hook becomes attached to the surface and the user can climb up to 390 ft per round. The hook cannot be used on flat ground and the user must have both hands holding the gun while climbing.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Targeting Scope",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "constant",
+    "desc": "This gadget increases your accuracy when you make an attack with the weapon it is attached to. You do not suffer disadvantage when you use this weapon to attack a target outside the weapon's effective range.",
+    "level": 3,
+    "restrictions":"engineer"
+  }, {
+    "name": "Tinfoil Hat",
+    "type": "clothing",
+    "subtype": "hat",
+    "activation": "continuous",
+    "desc": "As long as you are wearing this gadget you gain resistance to psychic damage and gain advantage on saving throws against your mind.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Valkyrie Cameras",
+    "type": "toolbelt",
+    "subtype": "grenade",
+    "activation": "action, object",
+    "desc": "When you have this gadget equipped you gain two small, deployable cameras that can attach to any surface. To use them, you must make a grenade check with them to see where they land. These cameras have 60ft. darkvision. It takes 1 object interaction to see through the chosen camera. The cameras last up to 8 hours. After you use a camera, you cannot use it again until you recharge it during a short or long rest. The number of cameras you can have increases to 3 at level 11 and 4 at level 17.",
+    "level": 3,
+    "restrictions":""
+  }, {
+    "name": "Climbsuit",
+    "type": "armor",
+    "subtype": "",
+    "activation": "constant",
+    "desc": "The climbsuit is a suit of light armor that is used for climbing. Its knees, elbow pads, and gloves are covered in Frictiongrip. This is an armor that has an ac of 11 + dexterity modifier and can be used to climb any surface as long as your knees and hands are on the surface of which you are climbing.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Cluster Charge",
+    "type": "weapon",
+    "subtype": "breaching",
+    "activation": "action",
+    "desc": "When equipped, the cluster charge can be used against breachable surfaces. When placed against the surface, it releases 5 small grenades into the room. To evaluate where they grenades land, divide the room into 10ft. squares and assign the squares numbers. Use an appropriate die to randomly assign where the grenades land. When the grenade explodes it deals 1d4 bludgeoning damage to all enemies within the radii, and the radii stack.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Disintegrator 9000",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "action",
+    "desc": "The Disintegrator 9000 takes the form of a large heavy beam cannon that shoots out a powerful beam of force towards a target up to 60 feet away from you. The target can be a creature or an object.<br/><br/>When targeted, the target must make a dexterity saving throw (DC 15). If the target succeeds the saving throw, the gadget has no effect. If the saving throw fails, the target takes 95 (10d6 + 40) force damage. If this damage reduces the target to 0 hit points, it is disintegrated. The disintegrated creature and everything it is wearing and carrying, except magical items, are reduced to a pile of fine gray dust. This effect automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this effect disintegrates a 10-foot-cube portion of it. Magic items are unaffected.<br/><br/>Once this effect has been used, the gadget must be recharged and cannot be used again until you have completed a short or long rest.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Full Auto Conversion",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "action, object",
+    "desc": "When this gadget is equipped, the firearm that the gadget is integrated into gains the Burst Fire property. You can use the weapon to take a normal attack action, or you can use an object interaction in conjunction with an attack action to spray a 30 foot cone area within normal range with plasma rounds. Each Creature in the area must succeed on a Dexterity saving throw (DC 15)or take 8 die of the weapon's normal damage die radiant damage. On a failed save a creature takes half as much damage. This action consumes eight pieces of ammunition. ",
+    "level": 4,
+    "restrictions":"engineer, mercenary"
+  }, {
+    "name": "Invisibility Generator",
+    "type": "toolbelt",
+    "subtype": "",
+    "activation": "action",
+    "desc": "When you use an object interaction to activate it, this gadget projects a light-bending sphere of energy in a 10 foot radius around you. The sphere renders you and all other creatures inside of it invisible to any creature that is outside of the sphere. Equipment that is worn or carried by a creature inside of the sphere is invisible as long as it is on the creature’s person. The sphere and its effect moces as you move. The effect lasts for one minute or until you take a second object interaction to cancel it. Once used, the gadget must be recharged and cannot be used again until you complete a short or a long rest.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "JT-12 Jetpack",
+    "type": "backpack",
+    "subtype": "",
+    "activation": "action, constant",
+    "desc": "This jetpack has 5 fuel units. You regain all units of fuels after spending an entire round without using it.<br/><br/>***Flight (1fu).***You may expend a unit of fuel to gain a flying speed of 30 feet until the end of your turn. <br/><br/>***Hover (1fu).*** You expend a unit of fuel to hover at your current altitude, and become immune to falling damage until the beginning of your next turn. While you are hovering you may use your jetpack to shift in midair up to your half base speed. <br/><br/>***Increased Speed (2fu).***You may expend two units of fuel to double your flying speed. <br/><br/>***Missile (2fu).*** You may use two units of fuel and an action to fire the Z-6 anti-vehicle homing missile. This attack uses your proficiency bonus (as long as you are proficient with heavy weapons) and either your dexterity or strength modifier for the attack. The attack can be made against a target that you do not have direct line of sight to as long as the target is within the weapon’s range and you know its location. This attack ignores the effects of cover. Once used, this gadget must be reset and cannot be used again until you complete either a short or a long rest. <br/><br/>The rocket's damage and DC are equivalent to that of the standard rocket launcher.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Mandalorian Power Shield",
+    "type": "armor",
+    "subtype": "shield",
+    "activation": "constant",
+    "desc": "When equipped, this shield has an AC of 13, HP equal to 10 + your int mod + twice your engineer level, and resistance against all melee weapons and energy based weapons. When its HP hits 0, it can only be recharged through a long or short rest. You may only have one personal shield equipped at a time.",
+    "level": 4,
+    "restrictions":"engineer, mercenary"
+  }, {
+    "name": "Mining Drill",
+    "type": "toolbelt",
+    "subtype": "",
+    "activation": "action",
+    "desc": "When equipped, the drill allows you to have a burrowing speed of equal to half your movement speed, which lasts for three turns. The hole created by this drill is 5’ wide and half as tall as your height. Once used it must be recharged, and its effects cannot be used again until after a short or long rest.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Sonic Screwdriver",
+    "type": "toolbelt",
+    "subtype": "",
+    "activation": "action",
+    "desc": "This metal device measures about 8 inches long and weighs 1 pound. You can use an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The screwdriver issues a sonic tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Targeting Assistance Mem-stick",
+    "type": "datapad",
+    "subtype": "mem-stick",
+    "activation": "constant",
+    "desc": "The targeting assistance mem-stick is a reformatted memory stick that when plugged into a datapad gives the user constant updates on hostile target positions. The mem-stick allows the user to use a bonus action to begin tracking up to 10 targets. You know a tracked target's position within 600 feet of you, and have advantage on attack rolls against tracked enemies.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Wheeled Heels",
+    "type": "clothing",
+    "subtype": "shoes",
+    "activation": "constant",
+    "desc": "While this gadget is equipped, you can use a bonus action on each of your turns to take the Dash action.<br/><br/>***Rocket Shoes.*** You can take an object interaction to fire rockets built into your boots, causing your walking speed to be doubled and any creature that makes an opportunity attack against you has disadvantage on the attack roll. This effect lasts for one minute. Once used, this effect must be recharged and it cannot be used again until you complete a short or long rest.",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Ultra Power Blast",
+    "type": "weapon",
+    "subtype": "starship",
+    "activation": "action",
+    "desc": "The ultra-power blast is a weapon that can be added to any small or larger starship. It is capable of dealing immense amounts of ion damage and can even disable Star Destroyers.<br/><br/>When equipped on a ship, you can make an weapon attack with the ultra power blast. If it hits, it deals 5,000 ion damage",
+    "level": 4,
+    "restrictions":""
+  }, {
+    "name": "Velocity-7 Dart Shooter",
+    "type": "weapon",
+    "subtype": "ranged",
+    "activation": "action",
+    "desc": "This gadget is a Velocity-7 Dart Shooter integrated into your gloves/gauntlets. You can use an object interaction in conjunction with an attack action to fire a powerful dart of your choosing at a target you can see within 60 feet of you. You add your proficiency bonus and dexterity modifier to the attack roll. If the attack hits the target suffers the effect of the chosen dart. The darts you can choose from are listed below. Once used, the effect must be reset and cannot be used again until you complete a short or long rest.<br/><br/>***Kaminoan Saberdart.*** When hit with this dart the enemy must make a constitution saving throw. If they succeed the throw, the effect fail. If they fail the throw they must take 62 (12d6 + 20) poison damage.<br/><br/>***Sleep Dart.***  the target takes 2d4 piercing damage and must make a Constitution saving throw (DC 16) or fall unconscious for 24 hours.",
+    "level": 4,
+    "restrictions":"engineer, mercenary"
+  }
+]

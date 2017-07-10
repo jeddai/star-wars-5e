@@ -5,3 +5,9 @@
 .always-black {
   color: #000 !important;
 }
+
+.overlay {
+  max-width: 500px;
+  max-height: 500px;
+  overflow: scroll;
+}

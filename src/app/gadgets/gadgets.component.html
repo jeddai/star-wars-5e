@@ -1,0 +1,40 @@
+<h1 class="title">Gadgets</h1>
+<p-dataTable [value]="gadgets" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
+  <p-header>List of Gadgets</p-header>
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="type" header="Type" [sortable]="true" [filter]="true">
+    <ng-template let-col let-gadget="rowData" pTemplate="body">
+      <span>{{ gadget[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="activation" header="Activation Type" [sortable]="true" [filter]="true">
+    <ng-template let-col let-gadget="rowData" pTemplate="body">
+      <span>{{ gadget[col.field] | capitalize | commaSplit }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="level" header="Required Level" [sortable]="true" [filter]="true">
+    <ng-template let-col let-gadget="rowData" pTemplate="body">
+      <span>{{ gadget[col.field] | capitalize }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="restrictions" header="Restrictions" [sortable]="true" [filter]="true">
+    <ng-template let-col let-gadget="rowData" pTemplate="body">
+      <span>{{ gadget[col.field] | capitalize | commaSplit }}</span>
+    </ng-template>
+  </p-column>
+  <ng-template let-gadget pTemplate="rowexpansion">
+    <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
+      <div class="ui-g-2"></div>
+      <div class="ui-g-8">
+        <h3>{{ gadget.name }}</h3>
+        <div class="ui-grid-row">
+          <em>
+            {{ _.capitalize(gadget.type) }}
+          </em>
+        </div>
+        <hr/>
+        <div class="ui-grid-row" [innerHtml]="gadget.desc | markdown"></div>
+      </div>
+    </div>
+  </ng-template>
+</p-dataTable>

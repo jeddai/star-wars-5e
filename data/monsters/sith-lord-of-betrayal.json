@@ -1,0 +1,104 @@
+{
+  "name": "Sith Lord of Betrayal",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"",
+  "alignment": "evil",
+  "armor_class": 18,
+  "hit_points": "40",
+  "speed": "30ft.",
+  "ability_scores": {
+    "strength": 18,
+    "dexterity": 22,
+    "constitution": 18,
+    "intelligence": 22,
+    "wisdom": 18,
+    "charisma": 18
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": 10,
+    "constitution": null,
+    "intelligence": 10,
+    "wisdom": 8,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": 10,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": 10,
+    "repair": null,
+    "security": null,
+    "arcana": 8,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "force",
+  "damage_immunities": "necrotic, psychic",
+  "condition_immunities": "charmed",
+  "senses": "passive Perception 18",
+  "languages": "Basic",
+  "challenge": "18",
+  "special_abilities": [{
+    "name":"Ethereal Trifecta",
+    "desc":"The Lord of Betrayal has no need for physical strength. She uses the force to control her three lightsabers. On her turn, she can move her lightsabers up to 60ft, and attack with each of them as if it were a normal melee attack.",
+    "attack_bonus": 0
+  }, {
+    "name":"Psychic Backlash",
+    "desc":"As a reaction, the Lord of Betrayal can impose disadvantage on an attack roll against her if she can see the attacker. If the attack still hits her, the attacker takes 2d10 psychic damage.",
+    "attack_bonus": 0
+  }],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Lord of Betrayal makes three melee attacks (one with each lightsaber) and uses one force ability on her turn.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Lightsaber",
+    "desc": "Melee Weapon Attack: +10 to hit, reach 5ft., one target. Hit 35 (4d10 + 6) radiant, 7 (2d6) fire, cold, force, or lightning",
+    "attack_bonus": 10,
+    "damage_dice": "4d10",
+    "damage_bonus": 6
+  }, {
+    "name": "Light",
+    "desc": "As an action, an object or creature the Lord of Betrayal can see radiates light in a 20-foot radius and dim light for an additional 20 feet. The light lasts for 30 seconds. Alternatively, a targeted creature radiates light in the same manner if it fails a Dexterity saving throw (DC 18). While lit in this manner, it can’t hide, and attack rolls against it gain advantage.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Psychic Domination",
+    "desc": "As an action, the Lord of Betrayal targets one creature she can see within 60 feet of her. The target must succeed on an Intelligence saving throw (DC 18), or she chooses the creature’s actions and movement on its turns. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }],
+  "legendary_actions": [{
+    "name": "Lightsaber Attack",
+    "desc": "The Lord of Betrayal can make one lightsaber attack as a legendary action.",
+    "attack_bonus": 8
+  }, {
+    "name":"Psychic Backlash",
+    "desc":"The Lord of Betrayal can use Psychic Backlash as a legendary action.",
+    "attack_bonus": 0
+  }, {
+    "name": "Psychic Domination (2 actions",
+    "desc": "The Lord of Betrayal can use Psychic Domination as a legendary action.",
+    "attack_bonus": 0
+  }],
+  "from":"star-wars"
+}

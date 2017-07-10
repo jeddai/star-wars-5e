@@ -1,0 +1,84 @@
+{
+  "name": "Sith Destroyer",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"",
+  "alignment": "chaotic evil",
+  "armor_class": 17,
+  "hit_points": "14",
+  "speed": "20ft.",
+  "ability_scores": {
+    "strength": 20,
+    "dexterity": 8,
+    "constitution": 18,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 10
+  },
+  "saving_throws": {
+    "strength": 8,
+    "dexterity": null,
+    "constitution": 7,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": 8,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": 7,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "bludgeoning, piercing, slashing",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "passive Perception 10",
+  "languages": "Basic",
+  "challenge": "6",
+  "special_abilities": [],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Sith destroyer can perform two attack actions per turn.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Gatling Laser",
+    "desc": "Ranged Weapon Attack: +8 to hit, up to three targets. Hit 10 (1d8 + 5) Reload 12",
+    "attack_bonus": 8,
+    "damage_dice": "1d8",
+    "damage_bonus": 5
+  }, {
+    "name": "Flame Thrower",
+    "desc": "Ranged Weapon Attack: +8 to hit, 15ft cone or 30ft line. DC 14 Dex save half Hit 12 (2d6 + 5) Reload 8",
+    "attack_bonus": 8,
+    "damage_dice": "2d6",
+    "damage_bonus": 5
+  }, {
+    "name": "Vibroaxe",
+    "desc": "Melee Weapon Attack: +8 to hit, one target. Hit 12 (2d6 + 5)",
+    "attack_bonus": 8,
+    "damage_dice": "2d6",
+    "damage_bonus": 5
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}

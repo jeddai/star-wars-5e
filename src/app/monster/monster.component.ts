@@ -12,20 +12,19 @@ import { MonsterManualService } from '../monster-manual/monster-manual.service';
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.css']
 })
-export class MonsterComponent {
+export class MonsterComponent implements OnInit {
   constructor(private monsterManualService : MonsterManualService) { }
 
   _=_;
   ascores = ['strength','dexterity','constitution','intelligence','wisdom','charisma']
 
   @Input() monster: Monster;
-  @Input() size = {
-    'font_size': 14
-  }
+  @Input() size;
 
-  public print(scores: AbilityScores): string {
-    console.log(scores);
-    return scores.print();
+  ngOnInit() {
+    if(!this.size) {
+      this.size = { 'font_size': 14 }
+    }
   }
 
   public score(num: number): number {
