@@ -1,0 +1,10 @@
+{
+  "name": "JT-12 Jetpack",
+  "type": "backpack",
+  "subtype": "",
+  "activation": "action, constant",
+  "desc": "This jetpack has 5 fuel units. You regain all units of fuels after spending an entire round without using it.<br/><br/>***Flight (1fu).***You may expend a unit of fuel to gain a flying speed of 30 feet until the end of your turn. <br/><br/>***Hover (1fu).*** You expend a unit of fuel to hover at your current altitude, and become immune to falling damage until the beginning of your next turn. While you are hovering you may use your jetpack to shift in midair up to your half base speed. <br/><br/>***Increased Speed (2fu).***You may expend two units of fuel to double your flying speed. <br/><br/>***Missile (2fu).*** You may use two units of fuel and an action to fire the Z-6 anti-vehicle homing missile. This attack uses your proficiency bonus (as long as you are proficient with heavy weapons) and either your dexterity or strength modifier for the attack. The attack can be made against a target that you do not have direct line of sight to as long as the target is within the weapon’s range and you know its location. This attack ignores the effects of cover. Once used, this gadget must be reset and cannot be used again until you complete either a short or a long rest. <br/><br/>The rocket's damage and DC are equivalent to that of the standard rocket launcher.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 4000
+}

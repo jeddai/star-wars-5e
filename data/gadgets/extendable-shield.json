@@ -1,0 +1,10 @@
+{
+  "name": "Extendable Shield",
+  "type": "armor",
+  "subtype": "shield",
+  "activation": "constant",
+  "desc": "When equipped it is a regular shield, but as an object interaction you can extend or retract the shield. When extended, you gain 3/4 cover in front of you and your movement is halved. This shield is considered heavy armor for the purposes of proficiency.",
+  "level": 3,
+  "restrictions": "engineer",
+  "cost": 600
+}

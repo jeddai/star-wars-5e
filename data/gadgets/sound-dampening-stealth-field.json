@@ -1,0 +1,10 @@
+{
+  "name": "Sound-Dampening Stealth Field",
+  "type": "boots toolbelt",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "This gadget creates a field that dampens and almost mutes all sound you make but you are still visible. When activated, for up to an hour, you gain advantage on all stealth checks. Once activated it cannot be used again until after a long or short rest.",
+  "level": 1,
+  "restrictions": "engineer",
+  "cost": 150
+}

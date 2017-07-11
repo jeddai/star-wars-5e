@@ -9,8 +9,8 @@
       <span >{{ monsterManualService.GetChallenge(monster[col.field]).label }}</span>
     </ng-template>
   </p-column>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
-  <p-column field="type" header="Type" [sortable]="true" [filter]="true">
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+  <p-column field="type" header="Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-monster="rowData" pTemplate="body">
       <span >{{ monster[col.field] | capitalize }}</span>
     </ng-template>
@@ -23,7 +23,7 @@
       <span>{{ monster[col.field] | capitalize }}</span>
     </ng-template>
   </p-column>
-  <p-column field="alignment" header="Alignment" [sortable]="true" [filter]="true">
+  <p-column field="alignment" header="Alignment" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-monster="rowData" pTemplate="body">
       <span>{{ monster[col.field] | capitalize }}</span>
     </ng-template>

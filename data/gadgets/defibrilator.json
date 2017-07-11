@@ -1,0 +1,10 @@
+{
+  "name": "Defibrilator",
+  "type": "gloves",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When you take 1 object interaction to activate this gadget, you can target an unconscious, dying target within 10 feet of you and they regain 1 hp. Once used, the gadget must be recharged and cannot be used until a short or long rest.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 100
+}

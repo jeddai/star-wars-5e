@@ -1,0 +1,10 @@
+{
+  "name": "Tinfoil Hat",
+  "type": "clothing",
+  "subtype": "hat",
+  "activation": "continuous",
+  "desc": "As long as you are wearing this gadget you gain resistance to psychic damage and gain advantage on saving throws against your mind.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 300
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Concealed Carry",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "When this gadget is equipped, the weapon that this gadget is integrated into becomes easier to hide. You get a +2 bonus and have advantage on Dexterity (Sleight of Hand) checks to prevent the weapon from being found during any search of your person. If the weapon requires ammunition, up to 2 charge pack, including the one already in your weapon, are hidden as well.",
+  "level": 2,
+  "restrictions": "",
+  "cost": 350
+}

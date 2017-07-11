@@ -1,0 +1,10 @@
+{
+  "name": "Glue Gun",
+  "type": "weapon",
+  "subtype": "",
+  "activation": "interaction, attack",
+  "desc": "When the glue gun is attached to a weapon, you use it in conjunction with a weapon attack to shoot a ball of super glue that splatters within a ten foot radius. The glue lasts for 30 minutes after which it dries and crumbles away.A creature that enters or ends their movement in an area covered by the glue must succeed on a Dexterity saving throw or become trapped by the glue. A creature trapped by the glue has its speed reduced to 0 as long as they remain stuck. As an action, a creature stuck by the glue can make a Strength saving throw to break free. You get 2 charges and after both uses, the glue gun must recharged and cannot be used again till a long rest.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 150
+}

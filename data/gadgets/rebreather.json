@@ -1,0 +1,10 @@
+{
+  "name": "Rebreather",
+  "type": "headgear",
+  "subtype": "",
+  "activation": "constant, action",
+  "desc": " You can breathe underwater while you have this gadget equipped. Air Filter. While this gadget is equipped, you can take an action to activate an emergency air filter that is built into the gadget. For one minute after activation, you have advantage on saving throws made against harmful gases and vapors. Once used, this effect must be recharged and cannot be used again until you complete a short or long rest",
+  "level": 1,
+  "restrictions": "",
+  "cost": 40
+}

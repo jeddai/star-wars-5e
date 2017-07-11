@@ -1,0 +1,10 @@
+{
+  "name": "Valkyrie Cameras",
+  "type": "toolbelt",
+  "subtype": "grenade",
+  "activation": "action, object",
+  "desc": "When you have this gadget equipped you gain two small, deployable cameras that can attach to any surface. To use them, you must make a grenade check with them to see where they land. These cameras have 60ft. darkvision. It takes 1 object interaction to see through the chosen camera. The cameras last up to 8 hours. After you use a camera, you cannot use it again until you recharge it during a short or long rest. The number of cameras you can have increases to 3 at level 11 and 4 at level 17.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 1000
+}

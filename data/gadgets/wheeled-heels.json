@@ -1,0 +1,10 @@
+{
+  "name": "Wheeled Heels",
+  "type": "clothing",
+  "subtype": "shoes",
+  "activation": "constant",
+  "desc": "While this gadget is equipped, you can use a bonus action on each of your turns to take the Dash action.<br/><br/>***Rocket Shoes.*** You can take an object interaction to fire rockets built into your boots, causing your walking speed to be doubled and any creature that makes an opportunity attack against you has disadvantage on the attack roll. This effect lasts for one minute. Once used, this effect must be recharged and it cannot be used again until you complete a short or long rest.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 2000
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Autoloader",
+  "type": "weapon",
+  "subtype": "attachment",
+  "activation": "constant",
+  "desc": "When you attach this gadget to a weapon of your choosing it lowers the reload time of the weapon by 1 action. For example, with a gatling laser, instead of taking a full turn to reload, it would instead take a regular action when this gadget is attached.",
+  "level": 3,
+  "restrictions": "engineer, mercenary",
+  "cost": 600
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Implanted Healing Systems",
+  "type": "armor",
+  "subtype": "",
+  "activation": "action, reaction",
+  "desc": "When you use an action to activate this gadget you regain a number of hit points equal to 1d8 + your Intelligence modifier. The amount healed increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). Once used, the gadget must be reset and cannot be used again until you complete a short or long rest. <br/><br/>***Self Defense.*** When you are damaged by a single attack or effect, you can use your reaction to activate your healing infusion. You regain a number of hit points equal to 1d4 + your Intelligence modifier. The amount healed increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). Once used, the gadget must be reset and cannot be used again until you complete a short or long rest.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 500
+}

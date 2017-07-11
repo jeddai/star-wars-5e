@@ -1,0 +1,10 @@
+{
+  "name": "Cluster Charge",
+  "type": "weapon",
+  "subtype": "breaching",
+  "activation": "action",
+  "desc": "When equipped, the cluster charge can be used against breachable surfaces. When placed against the surface, it releases 5 small grenades into the room. To evaluate where they grenades land, divide the room into 10ft. squares and assign the squares numbers. Use an appropriate die to randomly assign where the grenades land. When the grenade explodes it deals 1d4 bludgeoning damage to all enemies within the radii, and the radii stack.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 3500
+}

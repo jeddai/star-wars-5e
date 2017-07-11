@@ -1,0 +1,10 @@
+{
+  "name": "MM9 mini-concussive rocket launcher",
+  "type": "gloves",
+  "subtype": "",
+  "activation": "attack",
+  "desc": "When this gadget is equipped you can use an action to activate it. When you do, you fire an explosive rocket out of the gauntlet. Make a ranged weapon attack against one enemy within 60ft of you. If it hits, it deals 1d8 bludgeoning damage. The number of die you roll increases at level 5 to 2d8, then again at 11 to 3d8 and 17 to 4d8.",
+  "level": 1,
+  "restrictions": "engineer, mercenary",
+  "cost": 250
+}

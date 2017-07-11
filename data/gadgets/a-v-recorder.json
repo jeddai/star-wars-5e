@@ -1,0 +1,10 @@
+{
+  "name": "A/V Recorder",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "object",
+  "desc": "This gadget allows you to record sound and/or visual images of objects that you can see and hear within 60 feet of you. You can begin recording by taking an object interaction to activate the gadget and you can take a second object interaction to stop the recording. When you activate the recorder, you can chose to record sound only, images only, or both images and sound. Messages of up to 1 minute in length can be recorded and stored recordings can be played back by taking an object interaction.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 50
+}

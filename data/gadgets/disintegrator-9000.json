@@ -1,0 +1,10 @@
+{
+  "name": "Disintegrator 9000",
+  "type": "weapon",
+  "subtype": "ranged",
+  "activation": "action",
+  "desc": "The Disintegrator 9000 takes the form of a large heavy beam cannon that shoots out a powerful beam of force towards a target up to 60 feet away from you. The target can be a creature or an object.<br/><br/>When targeted, the target must make a dexterity saving throw (DC 15). If the target succeeds the saving throw, the gadget has no effect. If the saving throw fails, the target takes 95 (10d6 + 40) force damage. If this damage reduces the target to 0 hit points, it is disintegrated. The disintegrated creature and everything it is wearing and carrying, except magical items, are reduced to a pile of fine gray dust. This effect automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this effect disintegrates a 10-foot-cube portion of it. Magic items are unaffected.<br/><br/>Once this effect has been used, the gadget must be recharged and cannot be used again until you have completed a short or long rest.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 10000
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Advanced Personal Stealth Field",
+  "type": "tool",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When equipped, as an action, you can activate the field to temporarily gain +5 to all stealth check for up to 10 minutes. This duration of the field increases to 20 minutes at level 7, 45 minutes at level 14, and an hour at level 17. <br/><br/>***Shared field.*** As an action, you may instead create a small 10ft radius sphere of your stealth field, giving anyone inside the field the bonus of the field. However because of the expanded range the duration of the field becomes halved, and after use, its energy is expended and a long rest must be taken to recharge it.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 500
+}

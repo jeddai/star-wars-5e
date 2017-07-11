@@ -1,0 +1,10 @@
+{
+  "name": "Recovery Field",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "Anyone within 60 feet of you regain hit points at the end of a short rest, each such creature regains an extra 1d4 hit points. The amount of hit points healed increases to 1d6 hit points when you reach 11th level and again to 1d8 at 17th level.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 250
+}

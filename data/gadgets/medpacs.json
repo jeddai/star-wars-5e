@@ -1,0 +1,10 @@
+{
+  "name": "Medpacs",
+  "type": "consumable",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When equipped, as an action, you can use the medpac on a creature to heal up to 50 hit points. Once used, the materials are expended and you must spend the time to make another one.",
+  "level": 2,
+  "restrictions": "",
+  "cost": 100
+}

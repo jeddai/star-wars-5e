@@ -1,25 +1,34 @@
 <h1 class="title">Gadgets</h1>
-<p-dataTable [value]="gadgets" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
+<p-dataTable [value]="gadgets" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" sortField="name" sortOrder="1"
+[rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
   <p-header>List of Gadgets</p-header>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
-  <p-column field="type" header="Type" [sortable]="true" [filter]="true">
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+  <p-column field="type" header="Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-gadget="rowData" pTemplate="body">
       <span>{{ gadget[col.field] | capitalize }}</span>
     </ng-template>
   </p-column>
-  <p-column field="activation" header="Activation Type" [sortable]="true" [filter]="true">
+  <p-column field="activation" header="Activation Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-gadget="rowData" pTemplate="body">
       <span>{{ gadget[col.field] | capitalize | commaSplit }}</span>
     </ng-template>
   </p-column>
-  <p-column field="level" header="Required Level" [sortable]="true" [filter]="true">
+  <p-column field="level" header="Required Level" [sortable]="true" [filter]="true"  filterMatchMode="equals" [style]="{'overflow':'visible'}">
+    <ng-template pTemplate="filter" let-col>
+      <p-dropdown [options]="levelOptions" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
+    </ng-template>
     <ng-template let-col let-gadget="rowData" pTemplate="body">
       <span>{{ gadget[col.field] | capitalize }}</span>
     </ng-template>
   </p-column>
-  <p-column field="restrictions" header="Restrictions" [sortable]="true" [filter]="true">
+  <p-column field="restrictions" header="Restrictions" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-gadget="rowData" pTemplate="body">
       <span>{{ gadget[col.field] | capitalize | commaSplit }}</span>
+    </ng-template>
+  </p-column>
+  <p-column field="cost" header="Standard Cost" [sortable]="true">
+    <ng-template let-col let-gadget="rowData" pTemplate="body">
+      <span>{{ gadget[col.field] }}cr</span>
     </ng-template>
   </p-column>
   <ng-template let-gadget pTemplate="rowexpansion">
@@ -29,7 +38,7 @@
         <h3>{{ gadget.name }}</h3>
         <div class="ui-grid-row">
           <em>
-            {{ _.capitalize(gadget.type) }}
+            {{ _.capitalize(gadget.type) + (!!gadget.subtype ? ' (' + gadget.subtype + ')' : '')}}; Cost: {{ gadget.cost }}cr
           </em>
         </div>
         <hr/>

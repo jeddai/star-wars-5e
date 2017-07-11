@@ -1,0 +1,10 @@
+{
+  "name": "Anti-Theft Device",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "When this gadget is equipped, other creatures have disadvantage on any Dexterity (Sleight of Hand) checks that they make in an attempt to steal objects that are in your possession. Additionally, you automatically know when a failed attempt to pick your pockets has been made.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 80
+}

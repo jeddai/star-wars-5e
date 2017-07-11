@@ -1,0 +1,10 @@
+{
+  "name": "Sonic Loudspeaker",
+  "type": "headgear",
+  "subtype": "",
+  "activation": "action, interaction",
+  "desc": "This gadget consists of a powerful amplifier that can focus a spoken word into a beam of compressed sound. When this gadget is equipped, you can use an object interaction in conjunction with an attack action to make a ranged attack at a target you can see within 60 feet of you. You add both your proficiency bonus and Dexterity modifier to the attack roll. If the attack hits, the beam deals 3d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone. This gadget cannot be used if you are rendered unable to speak. Once used this gadget must be recharged and cannot be used again until you take a short or a long rest.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 350
+}

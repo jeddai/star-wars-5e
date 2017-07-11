@@ -1,0 +1,10 @@
+{
+  "name": "Mass-Nulling Clip",
+  "type": "toolbelt backpack",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "The Mass-nulling clip is a device that can create a field of low gravity to carry heavy loads upon one’s back or belt clip. When equipped the carrier’s maximum carry weight is doubled.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 40
+}

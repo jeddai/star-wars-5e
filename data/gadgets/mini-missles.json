@@ -1,0 +1,10 @@
+{
+  "name": "Mini Missles",
+  "type": "gloves",
+  "subtype": "",
+  "activation": "attack",
+  "desc": "When this gadget is equipped you can use an action to activate it. If you do, you fire tiny missiles out of your gloves. Make a ranged weapon attack against any number of creatures of your choice that you can see within 80 feet of you. Each rocket deals 1d6+1 bludgeoning damage to its target. The rockets all strike simultaneously, and you can direct them both to hit the same, or different targets. At 5th level you can fire an additional rocket (4 rockets total). This increases by an additional rocket at 11th (6 rockets) and 17th levels (8 rockets). Once used, this gadget must be reloaded and cannot be used again until you complete a short or a long rest.",
+  "level": 1,
+  "restrictions": "engineer, mercenary",
+  "cost": 300
+}

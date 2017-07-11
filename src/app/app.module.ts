@@ -5,20 +5,21 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AccordionModule, 
-  ButtonModule, 
+import { AccordionModule,
+  ButtonModule,
   CheckboxModule,
   CodeHighlighterModule,
-  ContextMenuModule, 
-  DataTableModule, 
-  DialogModule, 
-  DropdownModule, 
+  ContextMenuModule,
+  DataTableModule,
+  DialogModule,
+  DropdownModule,
   FieldsetModule,
-  InputTextModule, 
-  MultiSelectModule, 
+  InputTextModule,
+  MultiSelectModule,
   OverlayPanelModule,
-  PanelModule, 
-  SharedModule, 
+  PanelModule,
+  SharedModule,
+  SliderModule,
   TabMenuModule
  } from 'primeng/primeng';
 
@@ -83,6 +84,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     OverlayPanelModule,
     PanelModule,
     SharedModule,
+    SliderModule,
     TabMenuModule,
     RouterModule.forRoot([{
       path: 'carousing',

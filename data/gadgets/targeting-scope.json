@@ -1,0 +1,10 @@
+{
+  "name": "Targeting Scope",
+  "type": "weapon",
+  "subtype": "ranged",
+  "activation": "constant",
+  "desc": "This gadget increases your accuracy when you make an attack with the weapon it is attached to. You do not suffer disadvantage when you use this weapon to attack a target outside the weapon's effective range.",
+  "level": 3,
+  "restrictions": "engineer",
+  "cost": 600
+}

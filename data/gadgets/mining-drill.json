@@ -1,0 +1,10 @@
+{
+  "name": "Mining Drill",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When equipped, the drill allows you to have a burrowing speed of equal to half your movement speed, which lasts for three turns. The hole created by this drill is 5’ wide and half as tall as your height. Once used it must be recharged, and its effects cannot be used again until after a short or long rest.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 3000
+}

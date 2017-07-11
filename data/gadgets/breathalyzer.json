@@ -1,0 +1,10 @@
+{
+  "name": "Breathalyzer",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "object",
+  "desc": "You can use this gadget to identify a type of poison or disease that is affecting a creature. The afflicted creature must make an object interaction to breathe into the gadget. After 1d4 rounds you can determine indicate the type of disease or poison, or the type of creature that created the poison. <br/><br/>***Synthesize Antidote.*** After analyzing the breath of an infected creature, you can take an action to synthesize an antidote or an antitoxin, Once begun, it takes the gadget 1d4 rounds to create the antidote. Drinking the antidote give the infected advantage to their next saving throw against the disease or poison. Only the creature that breathed into the device can benefit. Once this effect is used, it must be recharged and cannot be used again until a short or long rest.",
+  "level": 1,
+  "restrictions": "engineer",
+  "cost": 40
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Expanded Turret Capacity",
+  "type": "turret",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "When this gadget is equipped to your turret, it increase the number of charge pack it can carry by two.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 300
+}

@@ -1,0 +1,10 @@
+{
+  "name": "G-52 Tactical Shield",
+  "type": "armor",
+  "subtype": "shield",
+  "activation": "action",
+  "desc": "This shield gives a +3 to your AC when equipped. This shield has exceptionally bright lights and as an action you can shine your light in a 60 ft cone. Everyone within this cone must make a constitution saving throw (DC 14) or be blinded for 1 minute. Once used, this gadget cannot be used again until it is recharged via a short or long rest.",
+  "level": 3,
+  "restrictions": "engineer",
+  "cost": 750
+}

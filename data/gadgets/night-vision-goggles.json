@@ -1,0 +1,10 @@
+{
+  "name": "Night-Vision Goggles",
+  "type": "headgear",
+  "subtype": "",
+  "activation": "interaction",
+  "desc": "When activated, the user gains night vision equal to their normal vision for up to 8 hours. After it has been used it must be recharged and cannot be used until after a long or short rest.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 250
+}

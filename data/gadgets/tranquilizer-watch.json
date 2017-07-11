@@ -1,0 +1,10 @@
+{
+  "name": "Tranquilizer Watch",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "constant, attack",
+  "desc": "This gadget tells you the exact time, date, and day of the week Tranq Dart. When this gadget is equipped, you can use an object interaction in conjunction with an attack action to fire a spring, loaded dart at a target you can see within 30 feet of you. You add your proficiency bonus and Dexterity modifier to the attack roll. If the attack hits, the target takes 1d4 piercing damage and must make a Constitution saving throw or fall unconscious for 10 minutes. The unconscious creature awakens if it takes damage or if someone uses an action to shake or slap it awake. Once used, the effect must be reset and cannot be used again until you complete a short or long rest.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 150
+}

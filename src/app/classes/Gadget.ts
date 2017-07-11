@@ -18,6 +18,7 @@ export class Gadget {
   desc: string
   level: number
   restrictions: string
+  cost: number
 
   public static MakeGadget(g: Gadget): Gadget {
     var newGadget = new Gadget();
@@ -28,6 +29,7 @@ export class Gadget {
     newGadget.desc = g.desc;
     newGadget.level = g.level;
     newGadget.restrictions = _.words(_.lowerCase(g.restrictions)).join(', ');
+    newGadget.cost = !!g.cost ? g.cost : 0;
     return newGadget;
   }
 }

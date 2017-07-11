@@ -1,0 +1,10 @@
+{
+  "name": "Universal Translator",
+  "type": "headgear",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "As you have this gadget equipped, you constantly understand and can speak almost any language.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 150
+}

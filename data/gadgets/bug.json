@@ -1,0 +1,10 @@
+{
+  "name": "Bug",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "action",
+  "desc": "This gadget which is a tiny probe bot, when activated, has AC 10, 1 hit point, a movement/flying speed of 30, and cannot attack. It can take no actions on its own, but you can control the clockwork insect via a wireless communications link. While controlling the clockwork you perceive through the robot’s senses and are deaf and blind with regard to your own senses. The wireless link is lost and the gadget is deactivated if the clockwork moves further than 100 feet away from you or if you take an object interaction to disable it. At 10th level its speed is increased to 60 feet and the maximum range is increased to 200.",
+  "level": 1,
+  "restrictions": "engineer, mercenary",
+  "cost": 150
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Dew-Condeser Jugs",
+  "type": "backpack",
+  "subtype": "",
+  "activation": "object",
+  "desc": "The Dew condenser Jug was created for use on dry planets such as Tatooine to draw water from the atmosphere. It is a large water container that once activated must be left outside for about 8 hours or less depending upon the environment before becoming full.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 40
+}

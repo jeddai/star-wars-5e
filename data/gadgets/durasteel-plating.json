@@ -1,0 +1,10 @@
+{
+  "name": "Durasteel Plating",
+  "type": "turret",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "When this gadget is equipped, your turret gains a +2 to their AC.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 300
+}

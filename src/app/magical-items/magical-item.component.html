@@ -1,13 +1,13 @@
 <h1 class="title">Magical Items</h1>
 <p-dataTable [value]="items" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
   <p-header>List of Magical Items</p-header>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
-  <p-column field="rarity" header="Rarity" [sortable]="true" [filter]="true">
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+  <p-column field="rarity" header="Rarity" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-item="rowData" pTemplate="body">
       <span [style.color]="colors[item[col.field]]">{{ item[col.field] | capitalize }}</span>
     </ng-template>
   </p-column>
-  <p-column field="type" header="Type" [sortable]="true" [filter]="true">
+  <p-column field="type" header="Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
     <ng-template let-col let-item="rowData" pTemplate="body">
       <span>{{ item[col.field] | capitalize }}</span>
     </ng-template>

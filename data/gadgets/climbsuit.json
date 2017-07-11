@@ -1,0 +1,10 @@
+{
+  "name": "Climbsuit",
+  "type": "armor",
+  "subtype": "",
+  "activation": "constant",
+  "desc": "The climbsuit is a suit of light armor that is used for climbing. Its knees, elbow pads, and gloves are covered in Frictiongrip. This is an armor that has an ac of 11 + dexterity modifier and can be used to climb any surface as long as your knees and hands are on the surface of which you are climbing.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 2000
+}

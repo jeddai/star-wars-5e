@@ -1,0 +1,10 @@
+{
+  "name": "Retractable Bayonet",
+  "type": "ranged weapon",
+  "subtype": "",
+  "activation": "object, attack",
+  "desc": "A weapon equipped with this gadget now has a hidden retractable bayonet, allowing the weapon to be used as an effective close quarters melee weapon. The bayonet can be deployed or hidden using an object interaction. As long as the bayonet is deployed, you can use the weapon to make a melee attack, adding both your proficiency bonus and your choice of either your Strength or Dexterity modifier to the attack roll. If the attack hits, the bayonet deals 1d6 plus either your Strength or Dexterity modifier in piercing damage. If you hit a creature of size large or smaller with the bayonet, you can choose to push the creature up to 5 feet away to you.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 250
+}

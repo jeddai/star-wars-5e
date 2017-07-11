@@ -1,0 +1,10 @@
+{
+  "name": "Arkanian Energy Shield",
+  "type": "armor",
+  "subtype": "shield",
+  "activation": "constant",
+  "desc": "Arkanian Energy shields are personal shields that protect from extreme temperatures and energy and sonic-based weaponry. This shield has an AC of 16 with 40 HP and has resistances to sonic and energy-based weaponry. Once it’s HP hits 0 the shield is destroyed and a new one must be built. You may only have one personal shield equipped at a time.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 550
+}

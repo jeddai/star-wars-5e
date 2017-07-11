@@ -1,0 +1,10 @@
+{
+  "name": "ZX Miniature Flame Projector",
+  "type": "armor",
+  "subtype": "gloves",
+  "activation": "action",
+  "desc": "When you use this gadget, you shoot a 15ft. line of flames from your wrist. Anyone along this line must make a dexterity saving throw (DC 15). On a failed save, the creature takes 4d6 fire damage and is on fire, taking 1d6 fire damage at the start of its turn. On a successful save the creature takes half damage. Creatures on fire can use an action to put the fire out. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 750
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Explosive Traps",
+  "type": "weapon",
+  "subtype": "explosive",
+  "activation": "action",
+  "desc": "As an action, this gadget allows you to place a mechanical trap on an unoccupied location within 5 feet of you. When you place the trap you may choose it’s damage type and trigger mechanism.<br/><br/>Trigger Mechanism<br/>Location:5x5 area within 20 ft of trap<br/>Proximity: 8 ft radius sphere around trap.<br/>Timed: between 1 minute to an hour.<br/><br/>The trap becomes active the turn after you activated and remains active unless deactivated or disarmed. When activated, the trap explodes and deals 2d10 damage of the damage type to everything within 30 feet of the trap. The damage increase by 1d10 at 11th and then again at 17th level. Once used it must be recharged and its effects cannot be used again until after a successful short or longs rest.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 1000
+}

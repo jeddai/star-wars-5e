@@ -1,0 +1,10 @@
+{
+  "name": "Adaptive Armor",
+  "type": "armor",
+  "subtype": "",
+  "activation": "reaction",
+  "desc": "When equipped to an armor, you can use a reaction when hit with an attack or ability that deals thunder, acid, cold, lightning, fire, or radiant damage. You gain resistance against the damage type chosen until the beginning of your next turn.",
+  "level": 3,
+  "restrictions": "engineer, mercenary",
+  "cost": 500
+}

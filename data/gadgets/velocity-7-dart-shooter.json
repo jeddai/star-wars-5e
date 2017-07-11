@@ -1,0 +1,10 @@
+{
+  "name": "Velocity-7 Dart Shooter",
+  "type": "weapon",
+  "subtype": "ranged",
+  "activation": "action",
+  "desc": "This gadget is a Velocity-7 Dart Shooter integrated into your gloves/gauntlets. You can use an object interaction in conjunction with an attack action to fire a powerful dart of your choosing at a target you can see within 60 feet of you. You add your proficiency bonus and dexterity modifier to the attack roll. If the attack hits the target suffers the effect of the chosen dart. The darts you can choose from are listed below. Once used, the effect must be reset and cannot be used again until you complete a short or long rest.<br/><br/>***Kaminoan Saberdart.*** When hit with this dart the enemy must make a constitution saving throw. If they succeed the throw, the effect fail. If they fail the throw they must take 62 (12d6 + 20) poison damage.<br/><br/>***Sleep Dart.***  the target takes 2d4 piercing damage and must make a Constitution saving throw (DC 16) or fall unconscious for 24 hours.",
+  "level": 4,
+  "restrictions": "engineer, mercenary",
+  "cost": 5000
+}

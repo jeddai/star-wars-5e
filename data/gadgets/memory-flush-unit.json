@@ -1,0 +1,10 @@
+{
+  "name": "Memory Flush Unit",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When this gadget is equipped, you can take an action to activate it, targeting a creature you can see within 5 feet of you. The target must then make a intelligence saving throw. If they succeed, they are immune to the effect of this gadget for the next 24 hours. If they fail to save, they permanently forget the events of the last 1 minute. At 5th level the amount of time they can forget increase to 2 minutes. This increases again at 11 to 3 minutes, 15 to 4 minutes, 17 to 5 minutes.",
+  "level": 2,
+  "restrictions": "engineer",
+  "cost": 120
+}

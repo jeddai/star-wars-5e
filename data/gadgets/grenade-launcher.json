@@ -1,0 +1,10 @@
+{
+  "name": "Grenade Launcher",
+  "type": "weapon",
+  "subtype": "ranged",
+  "activation": "action, object",
+  "desc": "When you make a weapon attack, you can use an object interaction with a grenade of your choosing to launch the grenade instead. The attack roll is your normal weapon attack roll, plus your demolitions skill. The grenade deals its normal damage.",
+  "level": 3,
+  "restrictions": "engineer, mercenary",
+  "cost": 1200
+}

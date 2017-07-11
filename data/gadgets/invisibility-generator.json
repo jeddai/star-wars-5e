@@ -1,0 +1,10 @@
+{
+  "name": "Invisibility Generator",
+  "type": "toolbelt",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When you use an object interaction to activate it, this gadget projects a light-bending sphere of energy in a 10 foot radius around you. The sphere renders you and all other creatures inside of it invisible to any creature that is outside of the sphere. Equipment that is worn or carried by a creature inside of the sphere is invisible as long as it is on the creature’s person. The sphere and its effect moces as you move. The effect lasts for one minute or until you take a second object interaction to cancel it. Once used, the gadget must be recharged and cannot be used again until you complete a short or a long rest.",
+  "level": 4,
+  "restrictions": "",
+  "cost": 2000
+}

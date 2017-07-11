@@ -4,9 +4,9 @@
 <p-tabMenu [model]="items"></p-tabMenu>
 <p-dataTable [value]="abilities" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" *ngIf="activeItem == 'table'" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
   <p-header>List of Abilities</p-header>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true"></p-column>
-  <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true"></p-column>
-  <p-column field="order" header="Force Order" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+  <p-column field="discipline" header="Discipline" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
+  <p-column field="order" header="Force Order" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
   <p-column field="cost" header="Force Points"></p-column>
   <p-column field="casting_time" header="Casting Time" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
     <ng-template pTemplate="filter" let-col>

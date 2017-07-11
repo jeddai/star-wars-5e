@@ -12,27 +12,10 @@ import { GadgetsService } from './gadgets.service';
 })
 export class GadgetsComponent implements OnInit {
   constructor(private gadgetsService : GadgetsService) { }
-  
+
   _=_;
   gadgets: Gadget[];
-  attunementOptions: SelectItem[] = [{
-      label: 'All',
-      value: null
-    }, {
-      label:'Required', 
-      value:true
-    }, {
-      label:'Not Required',
-      value:false
-    }
-  ];
-  colors = {
-    uncommon: '#0c0',
-    rare: '#03c',
-    "very rare": '#0cf',
-    legendary: '#c0c',
-    artifact: '#c90'
-  }
+  levelOptions: SelectItem[] = [{label:'All',value:null},{label:'1',value:1},{label:'2',value:2},{label:'3',value:3},{label:'4',value:4}];
 
   ngOnInit() {
     this.gadgetsService

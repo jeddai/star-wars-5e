@@ -1,0 +1,10 @@
+{
+  "name": "Retractable Stilts",
+  "type": "boots",
+  "subtype": "",
+  "activation": "object",
+  "desc": "When this gadget is equipped, you can take an object interaction to unfold telescoping stilts out of your footwear, increasing your effective height by 5 feet and enabling you to reach objects which you could not otherwise. While the stilts are deployed, walking counts as difficult terrain. If you make a weapon attack or are hit by an attack you must make a DC 13 Dexterity (Acrobatics) check or be knocked prone. You have disadvantage on any check to resist being pushed. You can retract the stilts by taking a second object interaction.",
+  "level": 1,
+  "restrictions": "",
+  "cost": 100
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Lightning Gun",
+  "type": "weapon",
+  "subtype": "ranged",
+  "activation": "action, object",
+  "desc": "When you make a weapon attack, you may use an object interaction to shoot a bolt of lightning at an opponent. The target takes 6d6 lightning damage on a hit, or half as much on a miss, instead of the normal weapon damage. On a hit or miss, creatures within 10 feet of the target must make a dexterity saving throw (DC 14), taking 3d6 lightning damage on a failed save, and half as much on a successful save. Once used, this gadget must be recharged and its effect cannot be used again until you complete a short or long rest.",
+  "level": 3,
+  "restrictions": "",
+  "cost": 1500
+}
