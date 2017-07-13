@@ -87,15 +87,15 @@ export class ForceComponent implements OnInit {
     this.selectedDisciplines = !!localStorage.disciplines ? localStorage.disciplines.split(',') : ['Adaptive Body'];
 
     this.items = [
-      {label: 'Select Disciplines', icon: 'fa-list-ol', command: () => {
-        this.activeItem = 'selector';
+      { label: 'Select Disciplines', icon: 'fa-list-ol', command: () => {
+        this.activeItem = this.items[0];
       }},
-      {label: 'Ability Table', icon: 'fa-bar-chart', command: () => {
-        this.activeItem = 'table';
+      { label: 'Ability Table', icon: 'fa-bar-chart', command: () => {
+        this.activeItem = this.items[1];
       }}
     ];
 
-    this.activeItem = 'selector';
+    this.activeItem = this.items[0];
   }
 
   public saveSelectedDisciplines(): void {

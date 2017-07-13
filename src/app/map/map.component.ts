@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Message } from 'primeng/primeng';
 import * as d3 from 'd3';
+import * as _ from 'lodash';
 
+import { Colors } from '../Colors';
 import { ForceDirectedGraphData } from '../classes/ForceDirectedGraphData';
 import { ForceDirectedNode } from '../classes/ForceDirectedNode';
 import { MapService } from './map.service';
-import { Colors } from '../Colors';
+import { ShortestHyperspaceLane } from '../classes/ShortestHyperspaceLane';
 
 const baseLineColor = '#aaa',
       highlightLineColor = '#777',
@@ -18,11 +21,16 @@ const baseLineColor = '#aaa',
 export class MapComponent implements OnInit {
   constructor(private mapService: MapService) {}
 
+  public messages: Message[] = [];
   public groupings: string[] = ['hyperspace'];
   public groupBy: string = 'climate';
   public alignment: string = 'Republic';
   public safe: string = 'false';
   public highlighted: any;
+  public planets: string[] = [];
+  public planets1: string[] = [];
+  public planets2: string[] = [];
+  private path;
 
   /* Data and element variables */
   private data: ForceDirectedGraphData;
@@ -51,9 +59,18 @@ export class MapComponent implements OnInit {
     this.mapService.GetActivePlanets()
     .then((res) => {
       this.data = res.Response;
+      this.data.nodes.forEach((n) => {
+        this.planets.push(n.name);
+      });
       this.initializeForceDirectedGraph();
     })
     .catch(err => console.error(err));
+  }
+
+  public search(list: string, event) {
+    this[list] = _.filter(this.planets, (s) => {
+      return s.toLowerCase().includes(event.query.toLowerCase());
+    });
   }
 
   private initializeForceDirectedGraph(): void {
@@ -291,53 +308,59 @@ export class MapComponent implements OnInit {
       });
     }
     if(!!p.coordinates) html += '<br/>Coordinates: ' + p.coordinates;
-
     return html;
   }
-  
-  /*
 
-    function getDirections(p1, p2) {
-      var sp = new ShortestPathCalculator(vm.data.nodes, vm.data.links, vm.safe === 'true', vm.alignment);
-      if(!p1 || !p2) {
-        showToast('Please enter valid planet names');
-        return;
+  public getDirections(p1, p2) {
+    var sp = new ShortestHyperspaceLane(this.data.nodes, this.data.links, this.safe === 'true', this.alignment);
+    if(!p1 || !p2) {
+      this.growl('Invalid Planet', 'Please enter a valid planet name.', 3);
+      return;
+    }
+    d3.selectAll("line").attr('stroke-width', 2)
+    .attr('stroke', baseLineColor);
+    var path = sp.findRoute(p1, p2);
+    try {
+      console.log(path);
+      if(path.mesg != 'OK') {
+        throw new Error(path.mesg);
       }
-      d3.selectAll("line").attr('stroke-width', 2)
-      .attr('stroke', baseLineColor);
-      path = sp.findRoute(p1, p2);
-      path.distance = findDistance(path.path);
-      if(path.mesg === 'OK') {
-        vm.path = path;
-        path = path.path;
-        vm.error = '';
-      } else {
-        vm.path = {};
-        showToast(path.mesg);
-      }
+      this.path = path;
+      path = path.path;
+
+      path.distance = this.findDistance(path);
+
       d3.selectAll("line")
-      .filter(function(line) {
-        for(var i = 0; i < path.length; i++) {
-          if(line.id.includes(path[i].source) && line.id.includes(path[i].target))
-            return true;
-        }
-        return false;
-        // return line.source.name === p1 || line.target.name === p1 || line.source.name === p2 || line.target.name === p2;
-      })
-      .attr('stroke', mapLineColor);
+        .filter(function(line) {
+          for(var i = 0; i < path.length; i++) {
+            if(line.id.includes(path[i].source) && line.id.includes(path[i].target))
+              return true;
+          }
+          return false;
+        })
+        .attr('stroke', mapLineColor);
+      this.growl('Path Found', 'Distance: ' + path.distance, 5);
+    } catch(e) {
+      this.growl(_.capitalize(path.mesg), 'Unable to map from ' + p1 + ' to ' + p2, 3);
     }
+  }
 
-    function findDistance(path) {
-      var dist = 0;
-      if(typeof path === 'object' && !!path)
-        path.forEach(function(p) {
-          var arr = angular.copy(vm.data.links);
-          arr = arr.filter(function(link) {
-            return link.id.includes(p.source) && link.id.includes(p.target);
-          });
-          dist += arr[0].distance;
-        });
-      return dist;
-    }
-  }*/
+  private findDistance(path) {
+    var dist = 0;
+    if(typeof path === 'object' && !!path && path instanceof Array)
+      var arr = _.cloneDeep(this.data.links);
+      path.forEach((p) => {
+        dist += _.filter(arr, (link) => {
+          return link.id.includes(p.source) && link.id.includes(p.target);
+        })[0].distance;
+      });
+    return dist;
+  }
+
+  private growl(summary: string, detail: string, time: number) {
+    this.messages.push({severity:'warning', summary: summary, detail: detail});
+    setTimeout(() => {
+      this.messages = _.drop(this.messages, 1);
+    }, time * 1000);
+  }
 }

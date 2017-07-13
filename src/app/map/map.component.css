@@ -17,3 +17,7 @@ svg {
 .ui-grid-row > .ui-grid-col-6 {
   padding: 5px;
 }
+
+p-growl .ui-growl-item {
+  padding-top: 50px !important;
+}

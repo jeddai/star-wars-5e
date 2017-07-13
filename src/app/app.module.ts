@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AccordionModule,
+  AutoCompleteModule,
   ButtonModule,
   CheckboxModule,
   CodeHighlighterModule,
@@ -14,6 +15,7 @@ import { AccordionModule,
   DialogModule,
   DropdownModule,
   FieldsetModule,
+  GrowlModule,
   InputTextModule,
   MultiSelectModule,
   OverlayPanelModule,
@@ -66,6 +68,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
   ],
   imports: [
     AccordionModule,
+    AutoCompleteModule,
     ButtonModule,
     BrowserAnimationsModule,
     BrowserModule,
@@ -78,6 +81,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     DropdownModule,
     FieldsetModule,
     FormsModule,
+    GrowlModule,
     HttpModule,
     InputTextModule,
     MultiSelectModule,

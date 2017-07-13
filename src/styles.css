@@ -6,3 +6,11 @@ body {
 .title {
   padding-left: 15px;
 }
+
+p-growl .ui-growl {
+  margin-top: 50px !important;
+}
+
+p-growl .ui-growl-message {
+  margin-left: 0px;
+}
