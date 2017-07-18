@@ -1,0 +1,13 @@
+{
+  "name":"Mask of Darth Nihilus",
+  "description":"The mask of Darth Nihilus was one of the pieces of armor that Sith Lord Darth Nihilus had bound to himself using the Force in an effort to retain a semblance of a physical form. While wearing this mask, you gain knowledge of the <strong>Mantle of Fear</strong> force discipline, no matter your proclivity to the force. At the end of each long rest you have 20 special force points, which can only be used on Mantle of Fear abilities. Abilities cast in this way have no force limit. <br/><br/>***Sentience.*** The Mask of Darth Nihilus is a sentient evil mask with an Intelligence of 14, a Wisdom of 18, and a Charisma of 12. It has hearing and Darkvision out to a range of 120 feet.<br/><br/>The mask communicates telepathically with its wearer and can speak, read, and understand Sithari.<br/><br/>***Personality.*** While worn, the mask encourages the wearer to slowly destroy him/herself in order to obtain more power. When someone attunes to the mask, and additionally each morning at dawn, the wearer must make a Wisdom saving throw (DC 15), or their alignment becomes evil and their Strength is set to 20. They can attempt to succeed on this save after they have failed each morning at dawn. If the wearer fails three days in a row, his/her alignment is permanently evil and he/she must do the mask's bidding.",
+  "type": "clothing",
+  "sub_type": "mask",
+  "rarity": "artifact",
+  "attunement": true,
+  "notes": "Sith Artifact, Cursed, Sentient",
+  "tags": [
+    "sentient",
+    "sith"
+  ]
+}

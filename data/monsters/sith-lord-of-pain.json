@@ -70,7 +70,7 @@
     "damage_bonus": 0
   }, {
     "name": "Lightsaber",
-    "desc": "Melee Weapon Attack: +8 to hit, reach 5ft., one target. Hit 15 (2d10 + 4)",
+    "desc": "Melee Weapon Attack: +8 to hit, reach 5ft., one target. Hit 15 radiant (2d10 + 4)",
     "attack_bonus": 8,
     "damage_dice": "2d10",
     "damage_bonus": 4
