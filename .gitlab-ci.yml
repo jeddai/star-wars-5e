@@ -8,6 +8,7 @@ before_script:
   - apt-get --quiet install -y nodejs
   - apt-get --quiet update --yes
   - npm -v
+  - npm install -g @angular/cli
 stages:
   - test
   - deploy
@@ -22,6 +23,7 @@ test:
     - dist/
 #deploy build production
 deploy:
+  when: manual
   stage: deploy
   script:
     - npm install
