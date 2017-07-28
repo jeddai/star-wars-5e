@@ -55,7 +55,7 @@
   "special_abilities": [{
     "name": "Force Resistance",
     "desc": "The teretatek has resistance to all damage caused by force effects, and advantage on all force related saving throws.",
-    "attack_bonus": 0,
+    "attack_bonus": 0
   }],
   "actions": [{
     "name": "Multiattack",

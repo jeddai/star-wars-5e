@@ -40,7 +40,11 @@ router.get('/get-monsters', function (req, res) {
     if (err) obj.Error = err.toString();
     data.forEach((monster) => {
       if(monster.includes('.json') && monster !== 'template.json' && monster !== 'all-srd.json') {
-        obj.Response.push(JSON.parse(fs.readFileSync(filePath + '/' + monster, 'utf8')));
+        try {
+          obj.Response.push(JSON.parse(fs.readFileSync(filePath + '/' + monster, 'utf8')));
+        } catch(e) {
+          console.error(e, monster);
+        }
       }
     });
     obj.Response.sort((a: Monster, b: Monster): number => {
