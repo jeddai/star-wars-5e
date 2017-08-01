@@ -7,7 +7,7 @@ import { URL } from '../URL';
 
 @Injectable()
 export class MagicalItemService {
-  private readonly magicalItemEndpoint: string = URL.api + "/magical-items/get-magical-items";
+  private readonly magicalItemEndpoint: string = URL.api + '/magical-items/get-magical-items';
 
   constructor(private http: Http) {}
   public GetMagicItems(): Promise <MagicalItemResponse> {
@@ -15,7 +15,7 @@ export class MagicalItemService {
       .http
       .get(this.magicalItemEndpoint)
       .map(value => {
-        var response = value.json() as MagicalItemResponse;
+        let response = value.json() as MagicalItemResponse;
         if (!response) {
           throw value.toString();
         } else if (response.Error) {

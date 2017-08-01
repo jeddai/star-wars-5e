@@ -7,7 +7,7 @@ import cors = require('cors');
 
 import { default as routes } from './routes';
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({ origin: 'http://localhost:4200' }));
 
-for (var route in routes) {
+for (const route in routes) {
     app.use('/' + route, routes[route]);
 }
 

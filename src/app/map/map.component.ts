@@ -14,19 +14,19 @@ const baseLineColor = '#aaa',
       mapLineColor = '#e00';
 
 @Component({
-  selector: 'map',
+  selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  constructor(private mapService: MapService) {}
-
   public messages: Message[] = [];
   public groupings: string[] = ['hyperspace'];
-  public groupBy: string = 'climate';
-  public alignment: string = 'Republic';
-  public safe: string = 'false';
+  public groupBy = 'climate';
+  public alignment = 'Republic';
+  public safe = 'false';
   public highlighted: any;
+  public p1: ForceDirectedNode;
+  public p2: ForceDirectedNode;
   public planets: string[] = [];
   public planets1: string[] = [];
   public planets2: string[] = [];
@@ -43,6 +43,8 @@ export class MapComponent implements OnInit {
   private height;
   private aspect;
   private transform;
+
+  constructor(private mapService: MapService) {}
 
   ngOnInit() {
     this.main = document.getElementById('main');
@@ -74,7 +76,7 @@ export class MapComponent implements OnInit {
   }
 
   private initializeForceDirectedGraph(): void {
-    var component = this;
+    const component = this;
 
     component.legend = d3.select('#legend')
     .html(component.legendHtml(null));
@@ -83,18 +85,18 @@ export class MapComponent implements OnInit {
       return;
     }
     component.svg.html('');
-    var simulation = d3.forceSimulation()
+    const simulation = d3.forceSimulation()
     .force('link', d3.forceLink()
     .id(function (d) {
       return d.name;
-    }).distance(function(p) {
-      if(p.distance) return p.distance;
+    }).distance(function (p) {
+      if (p.distance) return p.distance;
       else return 50;
     }))
     .force('charge', d3.forceManyBody())
     .force('center', d3.forceCenter(component.width / 2, component.height / 2));
 
-    var link = component.svg.append('g')
+    const link = component.svg.append('g')
     .attr('class', 'links')
     .selectAll('line')
     .data(component.data.links)
@@ -103,43 +105,43 @@ export class MapComponent implements OnInit {
     .attr('stroke-width', 2)
     .attr('stroke', baseLineColor);
 
-    var selectedLines = null;
+    let selectedLines = null;
 
-    component.svg.on("click", function(p) {
-      d3.selectAll("line")
+    component.svg.on('click', function(p) {
+      d3.selectAll('line')
       .attr('stroke-width', 2)
       .attr('stroke', baseLineColor);
 
       component.legend.html(component.legendHtml(null));
     });
 
-    var node = component.svg.append('g')
-      .attr('class', 'nodes')
-      .selectAll('circle')
-      .data(component.data.nodes)
-      .enter()
-      .append('circle')
-      .attr('r', 7)
-      .attr('fill', function (p) {
-        move(p);
-        if(component.groupBy === 'climate') {
-          return Colors.climateColors[p.climate];
-        } else if(component.groupBy === 'alignment') {
-          if(typeof p.alignment !== 'object') return Colors.alignmentColors['None'];
-          var mainAlignment = p.alignment[0];
-          if(mainAlignment)
-            return Colors.alignmentColors[mainAlignment];
-          else
-            return Colors.alignmentColors['None'];
-        } else if(component.groupBy === 'region') {
-          return Colors.regionColors[p.region];
-        }
-      })
-      .on('mouseover', highlight)
-      .call(d3.drag()
-      .on('start', dragstarted)
-      .on('drag', dragged)
-      .on('end', dragended));
+    const node = component.svg.append('g')
+    .attr('class', 'nodes')
+    .selectAll('circle')
+    .data(component.data.nodes)
+    .enter()
+    .append('circle')
+    .attr('r', 7)
+    .attr('fill', function (p) {
+      move(p);
+      if (component.groupBy === 'climate') {
+        return Colors.climateColors[p.climate];
+      } else if (component.groupBy === 'alignment') {
+        if (typeof p.alignment !== 'object') return Colors.alignmentColors['None'];
+        const mainAlignment = p.alignment[0];
+        if (mainAlignment)
+          return Colors.alignmentColors[mainAlignment];
+        else
+          return Colors.alignmentColors['None'];
+      } else if (component.groupBy === 'region') {
+        return Colors.regionColors[p.region];
+      }
+    })
+    .on('mouseover', highlight)
+    .call(d3.drag()
+    .on('start', dragstarted)
+    .on('drag', dragged)
+    .on('end', dragended));
 
       function move(p) {
         p.x = getCoords(p.coordinates, 'x');
@@ -147,8 +149,8 @@ export class MapComponent implements OnInit {
       }
 
       function getCoords(mapCoord, axis) {
-        if(axis === 'x') return (mapCoord.charCodeAt(0) - 64) * 75;
-        else if(axis === 'y') return (parseInt(mapCoord.slice(mapCoord.search('-')+1, 4))) * 75;
+        if (axis === 'x') return (mapCoord.charCodeAt(0) - 64) * 75;
+        else if (axis === 'y') return (parseInt(mapCoord.slice(mapCoord.search('-') + 1, 4))) * 75;
       }
 
       function getAttachedLinks(currCircle, line) {
@@ -162,7 +164,7 @@ export class MapComponent implements OnInit {
 
       component.svg.call(d3.zoom()
       .scaleExtent([1 / 2, 8])
-      .on("zoom", zoomed));
+      .on('zoom', zoomed));
 
       node.append('title')
       .text(function (d) {
@@ -230,14 +232,14 @@ export class MapComponent implements OnInit {
       function highlight(p) {
         component.highlighted = p;
 
-        if(selectedLines){
+        if (selectedLines){
           selectedLines
           .attr('stroke-width', 2)
           .attr('stroke', baseLineColor);
         }
 
-        var currCircle = this;
-        selectedLines = d3.selectAll("line")
+        const currCircle = this;
+        selectedLines = d3.selectAll('line')
         .filter(function(line) {
           return getAttachedLinks(currCircle, line);
         })
@@ -248,40 +250,40 @@ export class MapComponent implements OnInit {
       }
 
       function redraw(){
-        if(component.main.clientHeight < component.main.clientWidth)
-          component.svg.attr("width", Math.min(component.main.clientWidth, component.width))
-          .attr("height", Math.min(component.main.clientWidth, component.width));
+        if (component.main.clientHeight < component.main.clientWidth)
+          component.svg.attr('width', Math.min(component.main.clientWidth, component.width))
+          .attr('height', Math.min(component.main.clientWidth, component.width));
         else
-          component.svg.attr("width", Math.min(component.main.clientHeight, component.height))
-          .attr("height", Math.min(component.main.clientHeight, component.height));
+          component.svg.attr('width', Math.min(component.main.clientHeight, component.height))
+          .attr('height', Math.min(component.main.clientHeight, component.height));
       }
 
       // Draw for the first time to initialize.
       redraw();
 
       // Redraw based on the new size whenever the browser window is resized.
-      window.addEventListener("resize", redraw);
+      window.addEventListener('resize', redraw);
   }
 
-  private legendHtml(p: ForceDirectedNode) : string {
-    var html:string = '';
-    if(this.groupBy === 'climate') {
+  private legendHtml(p: ForceDirectedNode): string {
+    let html = '';
+    if (this.groupBy === 'climate') {
       html += '<h5>Climates:</h5><ul>';
-      for (let key in Colors.climateColors) {
+      for (const key in Colors.climateColors) {
         html += '<li style="color:' + Colors.climateColors[key] + ';">' + key
             + '</li>';
       }
       html += '</ul>';
     }
-    if(this.groupBy === 'alignment') {
+    if (this.groupBy === 'alignment') {
       html += '<h5>Alignments:</h5><ul>';
-      for (let key in Colors.alignmentColors) {
+      for (const key in Colors.alignmentColors) {
         html += '<li style="color:' + Colors.alignmentColors[key] + ';">' + key
             + '</li>';
       }
       html += '</ul>';
     }
-    if(!!p) {
+    if (!!p) {
       html += '<h5>Highlighted Planet:</h5>';
       html += '<div>';
       html += this.getPlanetTooltip(p);
@@ -292,37 +294,37 @@ export class MapComponent implements OnInit {
   }
 
   private getPlanetTooltip(p: ForceDirectedNode): string {
-    var html:string = '';
+    let html = '';
 
-    if(!!p.name) html += '<b>' + p.name + '</b><br/>';
-    if(!!p.region) html += 'Region: ' + p.region;
-    if(!!p.sector) html += '<br/>Sector: ' + p.sector;
-    if(!!p.system) html += '<br/>System: ' + p.system;
-    if(!!p.capital) html += '<br/>Capital: ' + p.capital;
-    if(!!p.climate) html += '<br/>Climate: ' + p.climate;
-    if(!!p.inhabitants) {
+    if (!!p.name) html += '<b>' + p.name + '</b><br/>';
+    if (!!p.region) html += 'Region: ' + p.region;
+    if (!!p.sector) html += '<br/>Sector: ' + p.sector;
+    if (!!p.system) html += '<br/>System: ' + p.system;
+    if (!!p.capital) html += '<br/>Capital: ' + p.capital;
+    if (!!p.climate) html += '<br/>Climate: ' + p.climate;
+    if (!!p.inhabitants) {
       html += '<br/>Inhabitants: ';
       p.inhabitants.forEach(function(inhab, i) {
         html += inhab;
-        if(i != p.inhabitants.length - 1) html += ', ';
+        if (i != p.inhabitants.length - 1) html += ', ';
       });
     }
-    if(!!p.coordinates) html += '<br/>Coordinates: ' + p.coordinates;
+    if (!!p.coordinates) html += '<br/>Coordinates: ' + p.coordinates;
     return html;
   }
 
   public getDirections(p1, p2) {
-    var sp = new ShortestHyperspaceLane(this.data.nodes, this.data.links, this.safe === 'true', this.alignment);
-    if(!p1 || !p2) {
+    const sp = new ShortestHyperspaceLane(this.data.nodes, this.data.links, this.safe === 'true', this.alignment);
+    if (!p1 || !p2) {
       this.growl('Invalid Planet', 'Please enter a valid planet name.', 3);
       return;
     }
-    d3.selectAll("line").attr('stroke-width', 2)
+    d3.selectAll('line').attr('stroke-width', 2)
     .attr('stroke', baseLineColor);
-    var path = sp.findRoute(p1, p2);
+    let path = sp.findRoute(p1, p2);
     try {
       console.log(path);
-      if(path.mesg != 'OK') {
+      if (path.mesg !== 'OK') {
         throw new Error(path.mesg);
       }
       this.path = path;
@@ -330,35 +332,36 @@ export class MapComponent implements OnInit {
 
       path.distance = this.findDistance(path);
 
-      d3.selectAll("line")
+      d3.selectAll('line')
         .filter(function(line) {
-          for(var i = 0; i < path.length; i++) {
-            if(line.id.includes(path[i].source) && line.id.includes(path[i].target))
+          for (let i = 0; i < path.length; i++) {
+            if (line.id.includes(path[i].source) && line.id.includes(path[i].target))
               return true;
           }
           return false;
         })
         .attr('stroke', mapLineColor);
       this.growl('Path Found', 'Distance: ' + path.distance, 5);
-    } catch(e) {
+    } catch (e) {
       this.growl(_.capitalize(path.mesg), 'Unable to map from ' + p1 + ' to ' + p2, 3);
     }
   }
 
   private findDistance(path) {
-    var dist = 0;
-    if(typeof path === 'object' && !!path && path instanceof Array)
-      var arr = _.cloneDeep(this.data.links);
+    let dist = 0;
+    if (typeof path === 'object' && !!path && path instanceof Array) {
+      const arr = _.cloneDeep(this.data.links);
       path.forEach((p) => {
         dist += _.filter(arr, (link) => {
           return link.id.includes(p.source) && link.id.includes(p.target);
         })[0].distance;
       });
+    }
     return dist;
   }
 
   private growl(summary: string, detail: string, time: number) {
-    this.messages.push({severity:'warning', summary: summary, detail: detail});
+    this.messages.push({severity: 'warning', summary: summary, detail: detail});
     setTimeout(() => {
       this.messages = _.drop(this.messages, 1);
     }, time * 1000);

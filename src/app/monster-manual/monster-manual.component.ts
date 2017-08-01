@@ -8,20 +8,21 @@ import { Monster } from '../classes/Monster';
 import { MonsterManualService } from './monster-manual.service';
 
 @Component({
-  selector: 'monster-manual',
+  selector: 'app-monster-manual',
   templateUrl: './monster-manual.component.html',
   styleUrls: ['./monster-manual.component.css']
 })
 export class MonsterManualComponent implements OnInit {
-  constructor(private monsterManualService : MonsterManualService) { }
-  
   monsters: Monster[];
-
-  _=_;
-  ascores = ['str','dex','con','int','wis','cha']
-  sizeFilter: SelectItem[] = [{ label: 'All', value: null }, { label: 'Tiny', value: 'tiny' }, { label: 'Small', value: 'small' }, { label: 'Medium', value: 'Medium' },
-  { label: 'Large', value: 'large' }, { label: 'Huge', value: 'huge' }, { label: 'Gargantuan', value: 'gargantuan' }];
+  _ = _;
+  stacked;
+  ascores = ['str', 'dex', 'con', 'int', 'wis', 'cha'];
+  sizeFilter: SelectItem[] = [{ label: 'All', value: null }, { label: 'Tiny', value: 'tiny' },
+    { label: 'Small', value: 'small' }, { label: 'Medium', value: 'Medium' },
+    { label: 'Large', value: 'large' }, { label: 'Huge', value: 'huge' },
+    { label: 'Gargantuan', value: 'gargantuan' }];
   alignmentFilter: SelectItem[] = [{ label: 'All', value: null }];
+  constructor(public monsterManualService: MonsterManualService) { }
 
   ngOnInit() {
     this.monsterManualService

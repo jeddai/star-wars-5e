@@ -1,6 +1,6 @@
 <div class="title">
   <h1>Combat</h1>
-  <p>The combat page uses <code>localStorage</code> to save your combat scenarios. When you add a monster, click anywhere on the row to see its <monster-overlay monster-string="bandit-captain" text="stats"></monster-overlay>.</p>
+  <p>The combat page uses <code>localStorage</code> to save your combat scenarios. When you add a monster, click anywhere on the row to see its <app-monster-overlay monster-string="bandit-captain" text="stats"></app-monster-overlay>.</p>
 </div>
 <hr/>
 
@@ -40,7 +40,7 @@
     <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
       <div class="ui-g-2"></div>
       <div class="ui-g-8">
-        <monster [monster]="monster"></monster>
+        <app-monster [monster]="monster"></app-monster>
       </div>
     </div>
   </ng-template>

@@ -8,21 +8,21 @@ import { Monster } from '../classes/Monster';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
 
 @Component({
-  selector: 'monster',
+  selector: 'app-monster',
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.css']
 })
 export class MonsterComponent implements OnInit {
-  constructor(private monsterManualService : MonsterManualService) { }
-
-  _=_;
-  ascores = ['strength','dexterity','constitution','intelligence','wisdom','charisma']
+  _ = _;
+  ascores: string[] = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma']
 
   @Input() monster: Monster;
   @Input() size;
 
+  constructor(public monsterManualService: MonsterManualService) { }
+
   ngOnInit() {
-    if(!this.size) {
+    if (!this.size) {
       this.size = { 'font_size': 14 }
     }
   }

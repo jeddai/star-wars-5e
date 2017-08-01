@@ -7,7 +7,7 @@ import { URL } from '../URL';
 
 @Injectable()
 export class GadgetsService {
-  private readonly gadgetsEndpoint: string = URL.api + "/gadgets/get-gadgets";
+  private readonly gadgetsEndpoint: string = URL.api + '/gadgets/get-gadgets';
 
   constructor(private http: Http) {}
   public GetGadgets(): Promise <GadgetsResponse> {
@@ -15,7 +15,7 @@ export class GadgetsService {
       .http
       .get(this.gadgetsEndpoint)
       .map(value => {
-        var response = value.json() as GadgetsResponse;
+        const response = value.json() as GadgetsResponse;
         if (!response) {
           throw value.toString();
         } else if (response.Error) {

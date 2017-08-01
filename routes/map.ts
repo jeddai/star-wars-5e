@@ -7,22 +7,25 @@ import { ForceDirectedGraphData } from '../src/app/classes/ForceDirectedGraphDat
 import { ForceDirectedLink } from '../src/app/classes/ForceDirectedLink';
 import { ForceDirectedNode } from '../src/app/classes/ForceDirectedNode';
 
-var filePath = path.join(__dirname, '../data');
-var router = express.Router();
+const filePath = path.join(__dirname, '../data');
+const router = express.Router();
 
 router.get('/data', (req, res, next) => {
-  var fullPath: string = filePath + '/planets';
-  var obj: ForceDirectedGraphData = {
+  const fullPath: string = filePath + '/planets';
+  const obj: ForceDirectedGraphData = {
     nodes: [],
     links: []
   };
   fs.readdir(fullPath, (err, planetFiles) => {
     obj.nodes = [];
-    if(err) return res.status(500).send(err);
+    if (err) {
+      return res.status(500).send(err);
+    }
     planetFiles.forEach(function(f) {
-      var planet = JSON.parse(fs.readFileSync(fullPath + '/' + f, 'utf8'));
-      if(planet.active)
+      const planet = JSON.parse(fs.readFileSync(fullPath + '/' + f, 'utf8'));
+      if (planet.active) {
         obj.nodes.push(<ForceDirectedNode>planet);
+      }
     });
     obj.links = [];
     obj.links = obj.links.concat(createLinks(obj.nodes));
@@ -34,9 +37,9 @@ router.get('/data', (req, res, next) => {
 });
 
 router.get('/planet/:name', (req, res, next) => {
-  var planet = req.params.name.toLowerCase();
-  if(planet.includes(' ')) {
-    while(planet.includes(' ')) {
+  let planet = req.params.name.toLowerCase();
+  if (planet.includes(' ')) {
+    while (planet.includes(' ')) {
       planet = planet.replace(' ', '-');
     }
     planet = planet.replace('/', '-');
@@ -46,15 +49,15 @@ router.get('/planet/:name', (req, res, next) => {
 });
 
 function createLinks(nodes) {
-  var links = [];
+  const links = [];
   nodes.forEach((n) => {
     findAllMatching(links, nodes, n)
     .forEach((nm) => {
       links.push(<ForceDirectedLink>{
-        "source": n.name,
-        "target": nm.name,
-        "distance": nm.distance,
-        "id": n.name + ',' + nm.name
+        'source': n.name,
+        'target': nm.name,
+        'distance': nm.distance,
+        'id': n.name + ',' + nm.name
       });
     });
   });
@@ -62,26 +65,27 @@ function createLinks(nodes) {
 }
 
 function findAllMatching(links, nodes, n) {
-  var matching = [];
-  if(typeof n.hyperspace === 'object')
+  let matching = [];
+  if (typeof n.hyperspace === 'object') {
     n.hyperspace.forEach((hyp) => {
       nodes.forEach((node) => {
         if (node.name === hyp.planet &&
-            n.name != node.name &&
-            !containsDuplicate(links, n, node)) {
+          n.name != node.name &&
+          !containsDuplicate(links, n, node)) {
           node.distance = hyp.distance;
           matching.push(node);
         }
       });
     });
+  }
   return matching;
 }
 
 function containsDuplicate(links, n, node) {
-  var val = false;
+  let val = false;
   links.some((link) => {
-    if ((link.source == n.name && link.target == node.name) ||
-        (link.target == n.name && link.source == node.name)) {
+    if ((link.source === n.name && link.target === node.name) ||
+        (link.target === n.name && link.source === node.name)) {
       val = true;
       return true;
     }

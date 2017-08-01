@@ -8,9 +8,11 @@ import { MenuItem } from 'primeng/primeng';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private _router:Router) {}
   title = 'app';
   items: MenuItem[];
+
+  constructor(private _router: Router) {}
+
   ngOnInit() {
     this.items = [
         {label: 'Stats', icon: 'fa-bar-chart'},

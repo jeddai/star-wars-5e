@@ -6,17 +6,16 @@ import { Ability } from '../classes/Ability';
 import { ForceService } from './force.service';
 
 @Component({
-  selector: 'force',
+  selector: 'app-force',
   templateUrl: './force.component.html',
   styleUrls: ['./force.component.css']
 })
 export class ForceComponent implements OnInit {
-  constructor(private forceService : ForceService) { }
-  
   disciplines: Discipline[];
   abilities: Ability[];
 
   items: MenuItem[];
+  stacked;
   activeItem: MenuItem;
   selectDisciplines: SelectItem[] = [];
   selectedDisciplines: string[] = ['Adaptive Body'];
@@ -25,16 +24,16 @@ export class ForceComponent implements OnInit {
       label: 'All',
       value: null
     }, {
-      label:'Action', 
+      label: 'Action',
       value: 'action'
     }, {
-      label:'Bonus Action',
+      label: 'Bonus Action',
       value: 'bonus'
     }, {
-      label:'Instant',
+      label: 'Instant',
       value: 'instant'
     }, {
-      label:'Reaction',
+      label: 'Reaction',
       value: 'reaction'
     }
   ];
@@ -43,39 +42,41 @@ export class ForceComponent implements OnInit {
       label: 'All',
       value: null
     }, {
-      label:'30ft',
+      label: '30ft',
       value: '30ft'
     }, {
-      label:'60ft',
+      label: '60ft',
       value: '60ft'
     }, {
-      label:'90ft',
+      label: '90ft',
       value: '90ft'
     }, {
-      label:'120ft',
+      label: '120ft',
       value: '120ft'
     }, {
-      label:'Telepathy',
+      label: 'Telepathy',
       value: 'telepathy'
     }, {
-      label:'Touch',
+      label: 'Touch',
       value: 'touch'
     }, {
-      label:'Sight',
+      label: 'Sight',
       value: 'sight'
     }
   ];
+
+  constructor(private forceService: ForceService) { }
 
   ngOnInit() {
     this.forceService
     .GetDisciplines()
     .then((res) => {
       this.disciplines = res.Response;
-      var abilities: Ability[] = [];
-      var disciplines = [];
-      for(let d of this.disciplines) {
-        disciplines.push({ label:d.name, value:d.name });
-        for(let a of d.abilities) {
+      const abilities: Ability[] = [];
+      const disciplines = [];
+      for (const d of this.disciplines) {
+        disciplines.push({ label: d.name, value: d.name });
+        for (const a of d.abilities) {
           abilities.push(a);
         }
       }

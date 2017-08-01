@@ -76,7 +76,7 @@
   <div *ngIf="!_.isEmpty(monster.actions) || !_.isEmpty(monster.abilities)">
     <hr/>
     <h3 [style.font-size.px]="size.font_size+6">Actions</h3>
-    <div class="ui-grid-row" *ngFor="let abl of monster.abilities">
+    <div class="ui-grid-row" *ngFor="let abl of monster.special_abilities">
       <strong class="ui-g-2"><em>{{ abl.name }}.</em></strong>
       <span class="ui-g-12 ui-md-10" [innerHtml]="abl.desc | markdown"></span>
     </div>

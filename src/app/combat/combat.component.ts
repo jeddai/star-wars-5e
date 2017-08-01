@@ -8,38 +8,40 @@ import { CRSelectItem } from '../classes/CRSelectItem';
 import { Monster } from '../classes/Monster';
 import { Combatant } from '../classes/Combatant';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
+import {Difficulty} from "../classes/Difficulty";
 
 @Component({
-  selector: 'combat',
+  selector: 'app-combat',
   templateUrl: './combat.component.html',
   styleUrls: ['./combat.component.css']
 })
 export class CombatComponent implements OnInit {
-  constructor( public monsterManualService: MonsterManualService) {}
-
-  _=_;
+  _ = _;
   monsterOptions: SelectItem[] = [{ label: 'None', value: null }, { label: 'Custom', value: Monster.MakeMonster(new Monster()) }];
   items: MenuItem[] = [
     {label: 'Edit Clone', icon: 'fa-edit', command: (event) => this.edit(_.cloneDeep(this.selectedObject))},
     {label: 'Copy', icon: 'fa-copy', command: (event) => this.copy(this.selectedObject)},
     {label: 'Delete', icon: 'fa-close', command: (event) => this.remove(this.selectedObject)}
   ];
+  stacked;
   crItems: CRSelectItem[] = Combat.ChallengeRatings;
   levelItems: CRSelectItem[] = _.concat(Combat.ChallengeRatings[0], Combat.ChallengeRatings.slice(5, 25));
-
-  @ViewChild("dt") table;
   monsters: Monster[];
-  diff = {};
+  diff: Difficulty = {} as Difficulty;
   newMonster: Monster;
   newPlayer: Combatant;
-  selectedObject: (Monster|Combatant)
-  dialogVisible: boolean = false;
+  selectedObject: (Monster|Combatant);
+  dialogVisible = false;
   tracker: number;
   encounter: (Monster|Combatant)[] = [];
   roll = {
     hp: false,
     init: false
-  }
+  };
+
+  @ViewChild('dt') table;
+
+  constructor( public monsterManualService: MonsterManualService) {}
 
   ngOnInit() {
     this.monsterManualService
@@ -62,22 +64,22 @@ export class CombatComponent implements OnInit {
   public addMonster(name: string) {
     this.monsterManualService.GetMonster(name)
     .then((res) => {
-      var monster: Monster = Monster.MakeMonster(res.Response);
+      const monster: Monster = Monster.MakeMonster(res.Response);
       this.addMonsterSync(monster);
     })
     .catch(e => console.log(e));
-    //this.addMonster('acklay', true, true);
+    // this.addMonster('acklay', true, true);
   }
 
   public addMonsterSync(monster: Monster) {
-    if(this.roll.init) {
+    if (this.roll.init) {
       monster.initiative = _.random(1, 20) + AbilityScores.GetScore(monster.ability_scores.dexterity);
-    } else if(!monster.initiative) {
+    } else if (!monster.initiative) {
       monster.initiative = 0;
     }
-    if(this.roll.hp) {
+    if (this.roll.hp) {
       monster.current_hit_points = this.monsterManualService.RollHP(monster);
-    } else if(!monster.current_hit_points) {
+    } else if (!monster.current_hit_points) {
       monster.current_hit_points = this.monsterManualService.GetHP(monster);
     }
     monster.name = this.checkEncounterForConflicts(monster.name);
@@ -100,7 +102,7 @@ export class CombatComponent implements OnInit {
   }
 
   private edit(combatant: (Combatant|Monster)) {
-    if(this.isMonster(combatant)) {
+    if (this.isMonster(combatant)) {
       this.newMonster = <Monster>combatant;
     } else {
       this.newPlayer = <Combatant>combatant;
@@ -108,8 +110,9 @@ export class CombatComponent implements OnInit {
   }
 
   public toggleRow(event: any) {
-    if(!!event.data && !!event.data.ability_scores && Monster.IsMonster(event.data))
+    if (!!event.data && !!event.data.ability_scores && Monster.IsMonster(event.data)) {
       this.table.toggleRow(event.data);
+    }
   }
 
   public saveState(): void {
@@ -126,19 +129,19 @@ export class CombatComponent implements OnInit {
   }
 
   public getDifficulty() {
-    var threshold = {
+    const threshold = {
       easy: 0,
       medium: 0,
       hard: 0,
       deadly: 0
-    }
-    var xp = 0;
-    var numMonsters = 0;
-    var diff = '';
-    var pxp = 0;
+    };
+    let xp = 0;
+    let numMonsters = 0;
+    let diff = '';
+    let pxp = 0;
     this.encounter.forEach((c) => {
-      if(Monster.IsMonster(c)) {
-        xp += Combat.ChallengeRatings[_.findIndex(Combat.ChallengeRatings, (cr) => { return cr.label == c.challenge; })].xp;
+      if (Monster.IsMonster(c)) {
+        xp += Combat.ChallengeRatings[_.findIndex(Combat.ChallengeRatings, (cr) => cr.label == c.challenge)].xp;
         numMonsters += 1;
       } else {
         threshold.easy += Combat.XPThresholds[c.challenge].easy;
@@ -171,15 +174,15 @@ export class CombatComponent implements OnInit {
   private getState(): void {
     this.encounter = !!localStorage.encounter ? JSON.parse(localStorage.encounter) : [Combatant.MakeCombatant('Person', 15, 50, 5, 15)];
     this.encounter.forEach((c, i) => {
-      if(Monster.IsMonster(c)) {
+      if (Monster.IsMonster(c)) {
         this.encounter[i] = Monster.MakeMonster(c);
       }
     })
   }
 
   private checkEncounterForConflicts(name: string): string {
-    var conflictIndex =  _.findIndex(this.encounter, ({ 'name': name }));
-    if(conflictIndex !== -1) {
+    let conflictIndex =  _.findIndex(this.encounter, ({ 'name': name }));
+    if (conflictIndex !== -1) {
       name = _.trim(name, ' 1234567890') + ' ' + (parseInt(this.encounter[conflictIndex].name.substr(-1), 10) + 1 || 1);
     }
     return name;

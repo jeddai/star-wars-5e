@@ -4,6 +4,13 @@
 /dist
 /tmp
 /out-tsc
+**/*.js.map
+
+# compiled js files
+app.js
+src/**/*.js
+routes/**/*.js
+scripts/**/*.js
 
 # dependencies
 /node_modules
