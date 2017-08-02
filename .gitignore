@@ -8,6 +8,7 @@
 
 # compiled js files
 app.js
+bot.js
 src/**/*.js
 routes/**/*.js
 scripts/**/*.js
