@@ -17,17 +17,17 @@ export class PlanetBot {
 
   constructor(nodes?: ForceDirectedNode[], message?: Discord.Message) {
     if(!!nodes) this._nodes = nodes;
-    if(!!message) this.message = message;
+    if(!!message) this._message = message;
   }
 
   public isRequestingPlanet(): boolean {
     console.log(this);
-    return !_.isNull(this.message.content.match(/(planet|list planets|search planets)/));
+    return !_.isNull(this._message.content.match(/(planet|list planets|search planets)/));
   }
 
   public analyze(): string {
-    if (!_.isNull(this.message.content.match(/list planets/))) return this.listPlanets();
-    if (!_.isNull(this.message.content.match(/(?=planet)[^>]+/))) return this.planet(/(?=planet)[^>]+/.exec(this.message.content)[0].replace(/planet/, '').trim());
+    if (!_.isNull(this._message.content.match(/list planets/))) return this.listPlanets();
+    if (!_.isNull(this._message.content.match(/(?=planet)[^>]+/))) return this.planet(/(?=planet)[^>]+/.exec(this._message.content)[0].replace(/planet/, '').trim());
     return '';
   }
 
@@ -35,7 +35,7 @@ export class PlanetBot {
     let planet: ForceDirectedNode;
     if(!planet) {
       this._nodes.forEach((p) => {
-        if (_.lowerCase(this.message.content).search(_.lowerCase(p.name)) !== -1)
+        if (_.lowerCase(this._message.content).search(_.lowerCase(p.name)) !== -1)
           planet = _.find(this._nodes, { name: p.name });
       })
     }
