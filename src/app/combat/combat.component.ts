@@ -137,20 +137,42 @@ export class CombatComponent implements OnInit {
     };
     let xp = 0;
     let numMonsters = 0;
+    let numPlayers = 0;
     let diff = '';
     let pxp = 0;
+    let maxCr = 0;
+
+    function getChallengeNumber(challenge: string | number) {
+      try {
+        return +challenge;
+      } catch(e) {
+        if(challenge === '1/2') return 0.5;
+        if(challenge === '1/4') return 0.25;
+        if(challenge === '1/8') return 0.125;
+      }
+    }
+
+    this.encounter.forEach((c) => {
+      if (Monster.IsMonster(c)) {
+        if(getChallengeNumber(c.challenge) > maxCr) maxCr = getChallengeNumber(c.challenge);
+      }
+    });
+
     this.encounter.forEach((c) => {
       if (Monster.IsMonster(c)) {
         xp += Combat.ChallengeRatings[_.findIndex(Combat.ChallengeRatings, (cr) => cr.label == c.challenge)].xp;
-        numMonsters += 1;
+        if(getChallengeNumber(c.challenge) + 5 > maxCr) {
+          numMonsters += 1;
+        }
       } else {
         threshold.easy += Combat.XPThresholds[c.challenge].easy;
         threshold.medium += Combat.XPThresholds[c.challenge].medium;
         threshold.hard += Combat.XPThresholds[c.challenge].hard;
         threshold.deadly += Combat.XPThresholds[c.challenge].deadly;
+        numPlayers += 1;
       }
     });
-    xp *= Combat.GetMonsterMultiplier(numMonsters);
+    xp *= Combat.GetMonsterMultiplier(numMonsters, numPlayers);
     diff = xp < threshold.easy ? 'Trivial' : xp < threshold.medium ? 'Easy' : xp < threshold.hard ? 'Medium' : xp < threshold.deadly ? 'Hard' : 'Deadly';
     pxp = xp < threshold.easy ? 0 : xp < threshold.medium ? threshold.easy : xp < threshold.hard ? threshold.medium : xp < threshold.deadly ? threshold.hard : threshold.deadly;
     this.diff = { xp: xp, pxp: pxp, diff: diff };
