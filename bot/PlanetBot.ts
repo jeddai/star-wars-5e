@@ -45,18 +45,45 @@ export class PlanetBot {
 
   private getPlanetData(planet: ForceDirectedNode): string {
     let returnVal: string = `**${ planet.name }:**`;
-    if (planet.climate) returnVal += `\nClimate: ${ planet.climate }`;
-    if (planet.system) returnVal += `\nCapital: ${ planet.capital }`;
-    if (planet.inhabitants) returnVal += `\nInhabitants: ${ _.join(planet.inhabitants.sort(), ', ') }`;
-    if (!!planet.alignment && !!planet.alignment.length) returnVal += `\nAlignment: ${ _.join(planet.alignment.sort(), ', ') }`;
-    if (!!planet.hyperspace && !!planet.hyperspace.length) {
-      returnVal += `\nConnected Planets: `;
-      _.sortBy(planet.hyperspace, (h) => { return h.planet }).forEach((h, i) => {
-        returnVal += h.planet;
-        if (i !== planet.hyperspace.length - 1) {
-          returnVal += ', ';
+    try {
+      if (planet.climate) returnVal += `\nClimate: ${ planet.climate }`;
+      if (planet.system) returnVal += `\nCapital: ${ planet.capital }`;
+      if (planet.inhabitants) returnVal += `\nInhabitants: ${ _.join(planet.inhabitants.sort(), ', ') }`;
+      if (!!planet.alignment && !!planet.alignment.length) returnVal += `\nAlignment: ${ _.join(planet.alignment.sort(), ', ') }`;
+      if (!!planet.hyperspace && !!planet.hyperspace.length) {
+        returnVal += `\nConnected Planets: `;
+        _.sortBy(planet.hyperspace, (h) => {
+          return h.planet
+        }).forEach((h, i) => {
+          returnVal += h.planet;
+          if (i !== planet.hyperspace.length - 1) {
+            returnVal += ', ';
+          }
+        })
+      } else {
+        let planets = '';
+        const arr = _.filter(this.nodes, (n) => {
+          let hasHyperspace = false;
+          try {
+            hasHyperspace = !!_.find(n.hyperspace, ['planet', planet.name]);
+          } catch(e) {
+            return false;
+          }
+          return hasHyperspace;
+        });
+        if (!!arr.length) {
+          planets += '\nConnected Planets: ';
+          arr.forEach((p, i) => {
+            planets += p.name;
+            if (i !== arr.length - 1) {
+              planets += ', ';
+            }
+          });
         }
-      })
+        returnVal += planets;
+      }
+    } catch(e) {
+      return PlanetBot.error(e);
     }
     return returnVal;
   }
@@ -70,5 +97,12 @@ export class PlanetBot {
       }
     });
     return planets;
+  }
+
+  private static error(e: Error): string {
+    return `Sincerest apologies, master, but I am afraid I ran into an error processing your request. The error has been logged. 
+      \`\`\`
+      ${ e.message }
+      \`\`\``;
   }
 }
