@@ -48,8 +48,8 @@ export class PlanetBot {
     if (planet.climate) returnVal += `\nClimate: ${ planet.climate }`;
     if (planet.system) returnVal += `\nCapital: ${ planet.capital }`;
     if (planet.inhabitants) returnVal += `\nInhabitants: ${ _.join(planet.inhabitants.sort(), ', ') }`;
-    if (!!planet.alignment.length) returnVal += `\nAlignment: ${ _.join(planet.alignment.sort(), ', ') }`;
-    if (!!planet.hyperspace.length) {
+    if (!!planet.alignment && !!planet.alignment.length) returnVal += `\nAlignment: ${ _.join(planet.alignment.sort(), ', ') }`;
+    if (!!planet.hyperspace && !!planet.hyperspace.length) {
       returnVal += `\nConnected Planets: `;
       _.sortBy(planet.hyperspace, (h) => { return h.planet }).forEach((h, i) => {
         returnVal += h.planet;
