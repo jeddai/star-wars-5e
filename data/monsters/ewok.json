@@ -6,7 +6,7 @@
   "alignment": "neutral",
   "armor_class": 13,
   "hit_points": "5",
-  "speed": "25",
+  "speed": "25ft.",
   "ability_scores": {
     "strength": 13,
     "dexterity": 12,

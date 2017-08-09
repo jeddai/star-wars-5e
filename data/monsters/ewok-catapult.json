@@ -1,24 +1,24 @@
 {
-  "name": "Ewok Beserker",
-  "size": "small",
-  "type": "beast",
+  "name": "Ewok Catapult",
+  "size": "large",
+  "type": "construct",
   "subtype": "",
-  "alignment": "neutral",
+  "alignment": "",
   "armor_class": 15,
-  "hit_points": "15",
-  "speed": "40ft.",
+  "hit_points": "13",
+  "speed": "0",
   "ability_scores": {
-    "strength": 14,
-    "dexterity": 10,
-    "constitution": 16,
-    "intelligence": 6,
-    "wisdom": 10,
-    "charisma": 6
+    "strength": 22,
+    "dexterity": 8,
+    "constitution": 14,
+    "intelligence": 4,
+    "wisdom": 4,
+    "charisma": 4
   },
   "saving_throws": {
-    "strength": 5,
+    "strength": 9,
     "dexterity": null,
-    "constitution": 6,
+    "constitution": 5,
     "intelligence": null,
     "wisdom": null,
     "charisma": null
@@ -47,23 +47,23 @@
     "persuasion": null
   },
   "damage_vulnerabilities": "",
-  "damage_resistances": "",
+  "damage_resistances": "piercing",
   "damage_immunities": "",
-  "condition_immunities": "",
+  "condition_immunities": "frightened, groggy, weak-kneed",
   "senses": "Passive perception 10",
-  "languages": "Ewok",
-  "challenge": "2",
+  "languages": "",
+  "challenge": "4",
   "special_abilities": [{
     "name": "Multiattack",
-    "desc": "The Ewok Beserker makes two attacks with its Large Rock on its turn.",
+    "desc": "The Ewok Catapult makes two Launch attacks on its turn.",
     "attack_bonus": 0
   }],
   "actions": [{
-    "name": "Large Rock",
-    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d12 + 2)",
-    "attack_bonus": 5,
-    "damage_dice": "1d12",
-    "damage_bonus": 2
+    "name": "Launch",
+    "desc": "Area Attack: Choose a 10ft x 10ft square within 120ft to target. Each creature in the area must succeed a DC 16 Dexterity saving throw or take 4d10 bludgeoning damage. A successful save halves the damage taken. After this has been used, roll 1d6. On a 3-6 it can be used again this turn.",
+    "attack_bonus": 9,
+    "damage_dice": "4d10",
+    "damage_bonus": 0
   }],
   "legendary_actions": [],
   "from":"star-wars"

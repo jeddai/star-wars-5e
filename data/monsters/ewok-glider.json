@@ -6,19 +6,19 @@
   "alignment": "neutral",
   "armor_class": 15,
   "hit_points": "15",
-  "speed": "40ft.",
+  "speed": "15ft., 40ft flying",
   "ability_scores": {
-    "strength": 14,
-    "dexterity": 10,
-    "constitution": 16,
+    "strength": 12,
+    "dexterity": 16,
+    "constitution": 12,
     "intelligence": 6,
     "wisdom": 10,
     "charisma": 6
   },
   "saving_throws": {
-    "strength": 5,
-    "dexterity": null,
-    "constitution": 6,
+    "strength": null,
+    "dexterity": 6,
+    "constitution": null,
     "intelligence": null,
     "wisdom": null,
     "charisma": null
@@ -55,15 +55,15 @@
   "challenge": "2",
   "special_abilities": [{
     "name": "Multiattack",
-    "desc": "The Ewok Beserker makes two attacks with its Large Rock on its turn.",
+    "desc": "The Ewok Glider makes two attacks with its Large Rock on its turn.",
     "attack_bonus": 0
   }],
   "actions": [{
     "name": "Large Rock",
-    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d12 + 2)",
-    "attack_bonus": 5,
+    "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit 10 bludgeoning (1d12 + 3)",
+    "attack_bonus": 6,
     "damage_dice": "1d12",
-    "damage_bonus": 2
+    "damage_bonus": 3
   }],
   "legendary_actions": [],
   "from":"star-wars"
