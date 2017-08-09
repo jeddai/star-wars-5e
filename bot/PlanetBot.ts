@@ -59,7 +59,7 @@ export class PlanetBot {
           if (i !== planet.hyperspace.length - 1) {
             returnVal += ', ';
           }
-        })
+        });
       } else {
         let planets = '';
         const arr = _.filter(this.nodes, (n) => {

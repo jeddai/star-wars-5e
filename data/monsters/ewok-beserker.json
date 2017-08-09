@@ -1,0 +1,70 @@
+{
+  "name": "Ewok Beserker",
+  "size": "small",
+  "type": "beast",
+  "subtype": "",
+  "alignment": "neutral",
+  "armor_class": 15,
+  "hit_points": "15",
+  "speed": "40",
+  "ability_scores": {
+    "strength": 14,
+    "dexterity": 10,
+    "constitution": 16,
+    "intelligence": 6,
+    "wisdom": 10,
+    "charisma": 6
+  },
+  "saving_throws": {
+    "strength": 5,
+    "dexterity": null,
+    "constitution": 6,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "Passive perception 10",
+  "languages": "Ewok",
+  "challenge": "2",
+  "special_abilities": [{
+    "name": "Multiattack",
+    "desc": "The Ewok Beserker makes two attacks with its Large Rock on its turn.",
+    "attack_bonus": 0
+  }],
+  "actions": [{
+    "name": "Large Rock",
+    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d12 + 2)",
+    "attack_bonus": 5,
+    "damage_dice": "1d12",
+    "damage_bonus": 2
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Ewok Shaman",
+  "size": "small",
+  "type": "beast",
+  "subtype": "",
+  "alignment": "neutral",
+  "armor_class": 15,
+  "hit_points": "15",
+  "speed": "25",
+  "ability_scores": {
+    "strength": 10,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 6,
+    "wisdom": 16,
+    "charisma": 6
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": null,
+    "constitution": null,
+    "intelligence": null,
+    "wisdom": 6,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": 6,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "Passive perception 16",
+  "languages": "Ewok",
+  "challenge": "3",
+  "special_abilities": [{
+    "name": "Multiattack",
+    "desc": "The Ewok Shaman makes one staff attack and uses healing strike on its turn.",
+    "attack_bonus": 0
+  }, {
+    "name": "Healing Strike",
+    "desc": "The Ewok Shaman makes a ranged weapon attack with its staff (Wisdom) against another ewok's natural armor class. If it hits, the ewok regains 22 (4d4 + 12) hp",
+    "attack_bonus": 3
+  }],
+  "actions": [{
+    "name": "Staff",
+    "desc": "Ranged Weapon Attack: +6 to hit, range 30/60., one target. Hit 8 force (1d8 + 3)",
+    "attack_bonus": 6,
+    "damage_dice": "1d8",
+    "damage_bonus": 3
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}

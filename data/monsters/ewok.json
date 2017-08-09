@@ -1,0 +1,78 @@
+{
+  "name": "Ewok",
+  "size": "small",
+  "type": "beast",
+  "subtype": "",
+  "alignment": "neutral",
+  "armor_class": 13,
+  "hit_points": "5",
+  "speed": "25",
+  "ability_scores": {
+    "strength": 13,
+    "dexterity": 12,
+    "constitution": 8,
+    "intelligence": 6,
+    "wisdom": 12,
+    "charisma": 6
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": null,
+    "constitution": null,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "Passive perception 11",
+  "languages": "Ewok",
+  "challenge": "1/4",
+  "special_abilities": [],
+  "actions": [{
+    "name": "Spear",
+    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 5 piercing (1d6 + 1)",
+    "attack_bonus": 3,
+    "damage_dice": "1d6",
+    "damage_bonus": 1
+  }, {
+    "name": "Stolen Blaster",
+    "desc": "Ranged Weapon Attack: +3 to hit, range 60/120, one target. Hit 5 radiant (1d6 + 1)",
+    "attack_bonus": 3,
+    "damage_dice": "1d6",
+    "damage_bonus": 1
+  }, {
+    "name": "Throw Rock",
+    "desc": "Ranged Weapon Attack: +3 to hit, range 20/60, one target. Hit 4 bludgeoning (1d4 + 1)",
+    "attack_bonus": 3,
+    "damage_dice": "1d4",
+    "damage_bonus": 1
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}

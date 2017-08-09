@@ -1,0 +1,70 @@
+{
+  "name": "Ewok Chieftain",
+  "size": "small",
+  "type": "beast",
+  "subtype": "",
+  "alignment": "neutral",
+  "armor_class": 16,
+  "hit_points": "20",
+  "speed": "30",
+  "ability_scores": {
+    "strength": 18,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 6,
+    "wisdom": 6,
+    "charisma": 6
+  },
+  "saving_throws": {
+    "strength": 7,
+    "dexterity": null,
+    "constitution": 5,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "Passive perception 16",
+  "languages": "Ewok",
+  "challenge": "5",
+  "special_abilities": [{
+    "name": "Multiattack",
+    "desc": "The Ewok Chieftain makes two spear attacks on its turn.",
+    "attack_bonus": 0
+  }],
+  "actions": [{
+    "name": "Spear",
+    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit 15 piercing (3d6 + 4)",
+    "attack_bonus": 7,
+    "damage_dice": "3d6",
+    "damage_bonus": 4
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}
