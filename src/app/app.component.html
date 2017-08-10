@@ -15,20 +15,19 @@
       <li class="nav-item" [class.active]="isActive('combat')">
         <a class="nav-link" routerLink="/combat">Combat</a>
       </li>
-      <li class="nav-item" [class.active]="isActive('force')">
-        <a class="nav-link" routerLink="/force">Force</a>
-      </li>
-      <li class="nav-item" [class.active]="isActive('gadgets')">
-        <a class="nav-link" routerLink="/gadgets">Gadgets</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Compendium
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown1">
+          <a class="dropdown-item" [class.active]="isActive('force')" routerLink="/force">Force</a>
+          <a class="dropdown-item" [class.active]="isActive('gadgets')" routerLink="/gadgets">Gadgets</a>
+          <a class="dropdown-item" [class.active]="isActive('magical-items')" routerLink="/magical-items">Magical Items</a>
+          <a class="dropdown-item" [class.active]="isActive('monster-manual')" routerLink="/monster-manual">Monster Manual</a>
+        </div>
       </li>
       <li class="nav-item" [class.active]="isActive('map')">
         <a class="nav-link" routerLink="/map">Galaxy Map</a>
-      </li>
-      <li class="nav-item" [class.active]="isActive('magical-items')">
-        <a class="nav-link" routerLink="/magical-items">Magical Items</a>
-      </li>
-      <li class="nav-item" [class.active]="isActive('monster-manual')">
-        <a class="nav-link" routerLink="/monster-manual">Monster Manual</a>
       </li>
     </ul>
     <a href="https://drive.google.com/drive/folders/0B_Ii2UyVgIWuVlhUQ1hJTWdCWEk?usp=sharing" target="_blank"><button pButton type="button" class="ui-button-primary" label="Files" iconPos="right" icon="fa-external-link"></button></a>
