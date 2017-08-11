@@ -22,11 +22,13 @@ import { AccordionModule,
   PanelModule,
   SharedModule,
   SliderModule,
+  StepsModule,
   TabMenuModule
  } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { CarousingComponent } from './carousing/carousing.component';
+import { CharacterCreatorComponent } from './character-creator/character-creator.component';
 import { CombatComponent } from './combat/combat.component';
 import { ForceComponent } from './force/force.component';
 import { GadgetsComponent } from './gadgets/gadgets.component';
@@ -42,6 +44,7 @@ import { CommaSplitPipe } from './pipes/comma-split.pipe';
 import { MarkdownPipe } from './pipes/markdown.pipe';
 import { NonePipe } from './pipes/none.pipe';
 
+import { CharacterCreatorService } from './character-creator/character-creator.service';
 import { ForceService } from './force/force.service';
 import { GadgetsService } from './gadgets/gadgets.service';
 import { MapService } from './map/map.service';
@@ -52,6 +55,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
   declarations: [
     AppComponent,
     CarousingComponent,
+    CharacterCreatorComponent,
     CombatComponent,
     ForceComponent,
     GadgetsComponent,
@@ -89,10 +93,14 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     PanelModule,
     SharedModule,
     SliderModule,
+    StepsModule,
     TabMenuModule,
     RouterModule.forRoot([{
       path: 'carousing',
       component: CarousingComponent
+    }, {
+      path: 'character-creator',
+      component: CharacterCreatorComponent,
     }, {
       path: 'combat',
       component: CombatComponent
@@ -121,6 +129,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     }])
   ],
   providers: [
+    CharacterCreatorService,
     ForceService,
     GadgetsService,
     MapService,

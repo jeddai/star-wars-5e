@@ -2,7 +2,7 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { GadgetsResponse } from '../src/app/responses/GadgetsResponse';
+import { GadgetsResponse } from 'contracts/responses';
 
 var filePath = path.join(__dirname, '../data/gadgets');
 var router = express.Router();

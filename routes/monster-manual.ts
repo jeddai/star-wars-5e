@@ -2,9 +2,8 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { Monster } from '../src/app/classes/Monster';
-import { MonsterResponse } from '../src/app/responses/MonsterResponse';
-import { MonsterManualResponse } from '../src/app/responses/MonsterManualResponse';
+import { Monster } from 'contracts/classes';
+import { MonsterResponse, MonsterManualResponse } from 'contracts/responses';
 
 var filePath = path.join(__dirname, '../data/monsters');
 var router = express.Router();
@@ -19,7 +18,7 @@ router.get('/get-monster/:monster', function (req, res, next) {
   var file = {};
   try {
     file = fs.readFileSync(filePath + '/' + req.params.monster + '.json', 'utf8');
-  } catch(e) { 
+  } catch(e) {
     obj.Error = e;
     try {
       file = fs.readFileSync(filePath + '/srd/' + req.params.monster + '.json', 'utf8');

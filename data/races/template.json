@@ -1,0 +1,37 @@
+{
+  "name": "",
+  "age": "",
+  "alignment": "",
+  "size": "medium",
+  "speed": {
+    "walk": 30,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "proficiency_number": 0,
+  "proficiency": [
+    ""
+  ],
+  "tool_proficiency_number": 0,
+  "tool_proficiency": [
+    ""
+  ],
+  "languages_number": 0,
+  "languages": [
+    ""
+  ],
+  "ability_score_increases": {
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charisma": 0
+  },
+  "abilities": [{
+    "name": "",
+    "description": ""
+  }]
+}

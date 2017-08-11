@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng/primeng';
 import * as _ from 'lodash';
 
-import { Gadget } from '../classes/Gadget';
+import { Gadget } from 'contracts/classes';
 import { GadgetsService } from './gadgets.service';
 
 @Component({

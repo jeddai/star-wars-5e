@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import * as fs from 'fs';
 
 import {PlanetBot} from './bot/PlanetBot';
-import {ForceDirectedNode} from './src/app/classes/ForceDirectedNode';
+import {ForceDirectedNode} from 'contracts/interfaces';
 
 const client = new Discord.Client();
 const token = '';
@@ -17,7 +17,6 @@ let planetBot: PlanetBot = new PlanetBot();
 
 client.on('ready', () => {
   console.log('C-3PO, at your service!');
-  construct();
 });
 
 client.on('message', message => {
@@ -39,6 +38,7 @@ client.on('message', message => {
   }
 });
 
+construct();
 client.login(token);
 
 // Functions

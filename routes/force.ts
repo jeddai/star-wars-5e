@@ -2,8 +2,7 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { DisciplineResponse } from '../src/app/responses/DisciplineResponse';
-import { AbilityResponse } from '../src/app/responses/AbilityResponse';
+import { AbilityResponse, DisciplineResponse } from 'contracts/responses';
 
 var filePath = path.join(__dirname, '../data/force');
 var router = express.Router();

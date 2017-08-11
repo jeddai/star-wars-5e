@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { DisciplineResponse } from '../responses/DisciplineResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../URL';
+import { DisciplineResponse } from 'contracts/responses';
+import { URL } from 'contracts/URL';
 
 @Injectable()
 export class ForceService {

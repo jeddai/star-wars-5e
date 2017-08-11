@@ -1,7 +1,7 @@
 import * as Discord from 'discord.js';
 import * as _ from 'lodash';
 
-import {ForceDirectedNode} from '../src/app/classes/ForceDirectedNode';
+import {ForceDirectedNode} from 'contracts/interfaces';
 
 export class PlanetBot {
   private _nodes: ForceDirectedNode[];

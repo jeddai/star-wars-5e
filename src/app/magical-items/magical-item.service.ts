@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { MagicalItemResponse } from '../responses/MagicalItemResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../URL';
+import { MagicalItemResponse } from 'contracts/responses';
+import { URL } from 'contracts/URL';
 
 @Injectable()
 export class MagicalItemService {

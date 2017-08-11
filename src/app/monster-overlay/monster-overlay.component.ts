@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Monster } from '../classes/Monster';
+import { Monster } from 'contracts/classes';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
 
 @Component({

@@ -3,11 +3,10 @@ import { Message } from 'primeng/primeng';
 import * as d3 from 'd3';
 import * as _ from 'lodash';
 
-import { Colors } from '../Colors';
-import { ForceDirectedGraphData } from '../classes/ForceDirectedGraphData';
-import { ForceDirectedNode } from '../classes/ForceDirectedNode';
+import { Colors } from 'contracts/Colors';
+import { ForceDirectedGraphData, ForceDirectedNode } from 'contracts/interfaces';
+import { ShortestHyperspaceLane } from 'contracts/classes';
 import { MapService } from './map.service';
-import { ShortestHyperspaceLane } from '../classes/ShortestHyperspaceLane';
 
 const baseLineColor = '#aaa',
       highlightLineColor = '#777',

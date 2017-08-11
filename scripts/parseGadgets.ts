@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as _ from 'lodash';
 import path = require('path');
 
-import { Gadget } from '../src/app/classes/Gadget';
+import { Gadget } from 'contracts/classes';
 
 var filePath = path.join(__dirname, '../data/gadgets');
 

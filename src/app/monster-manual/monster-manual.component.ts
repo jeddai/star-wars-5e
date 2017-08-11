@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem } from 'primeng/primeng';
 import * as _ from 'lodash';
 
-import { AbilityScores } from '../classes/AbilityScores';
-import { CRSelectItem } from '../classes/CRSelectItem';
-import { Monster } from '../classes/Monster';
+import { AbilityScores, Monster } from 'contracts/classes';
 import { MonsterManualService } from './monster-manual.service';
 
 @Component({

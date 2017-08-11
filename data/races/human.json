@@ -1,0 +1,30 @@
+{
+  "name": "Human",
+  "age": "Humans reach adulthood in their late teens and live less than a century.",
+  "alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
+  "size": "medium",
+  "speed": {
+    "walk": 30,
+    "fly": null,
+    "swim": null,
+    "climb": null,
+    "burrow": null
+  },
+  "proficiency_number": 0,
+  "proficiency": [],
+  "tool_proficiency_number": 0,
+  "tool_proficiency": [],
+  "languages_number": 2,
+  "languages": [
+    "*"
+  ],
+  "ability_score_increases": {
+    "strength": 1,
+    "dexterity": 1,
+    "constitution": 1,
+    "intelligence": 1,
+    "wisdom": 1,
+    "charisma": 1
+  },
+  "abilities": []
+}

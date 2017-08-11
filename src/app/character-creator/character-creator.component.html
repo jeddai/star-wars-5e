@@ -1,0 +1,46 @@
+<div class="title">
+  <h1>Character Creator</h1>
+  <p></p>
+</div>
+<hr/>
+
+<div class="ui-g-3"></div>
+<div class="ui-g-6">
+  <button pButton label="Back" type="button" (click)="previous()"></button>
+  <button pButton class="float-right" label="Continue" type="button" (click)="next()"></button>
+  <div class="panel-padding">
+    <p-panel [header]="'Race'" [(collapsed)]="collapsed[0]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Profile'" [(collapsed)]="collapsed[1]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Class'" [(collapsed)]="collapsed[2]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Abilities'" [(collapsed)]="collapsed[3]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Equipment'" [(collapsed)]="collapsed[4]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Powers'" [(collapsed)]="collapsed[5]">
+
+    </p-panel>
+  </div>
+  <div class="panel-padding">
+    <p-panel [header]="'Review'" [(collapsed)]="collapsed[6]">
+
+    </p-panel>
+  </div>
+</div>

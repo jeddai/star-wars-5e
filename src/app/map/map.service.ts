@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { ForceDirectedGraphResponse } from '../responses/ForceDirectedGraphResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../URL';
+import { ForceDirectedGraphResponse } from 'contracts/responses';
+import { URL } from 'contracts/URL';
 
 @Injectable()
 export class MapService {
@@ -15,7 +15,7 @@ export class MapService {
       .http
       .get(this.forceDirectedGraphEndpoint)
       .map(value => {
-        var response = value.json() as ForceDirectedGraphResponse;
+        let response = value.json() as ForceDirectedGraphResponse;
         if (!response) {
           throw value.toString();
         } else if (response.Error) {

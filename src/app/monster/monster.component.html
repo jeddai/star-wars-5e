@@ -11,7 +11,9 @@
     <div class="ui-g-12 ui-md-1"></div>
     <div class="ui-g-6 ui-md-2">
       <small><strong>Challenge Rating</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetChallenge(monster.challenge).label  }}</h3><small>({{ monsterManualService.GetChallenge(monster.challenge).xp }}xp)</small>
+      <h3 [style.font-size.px]="size.font_size+6">{{
+        monsterManualService.GetChallenge(monster.challenge).label }}</h3><small>({{
+      monsterManualService.GetChallenge(monster.challenge).xp }}xp)</small>
     </div>
     <div class="ui-g-6 ui-md-2">
       <small><strong>Size</strong></small>
@@ -23,7 +25,9 @@
     </div>
     <div class="ui-g-6 ui-md-2">
       <small><strong>Hit Points</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetHP(monster) }}</h3><small>({{ monster.hit_points }}d{{ monsterManualService.hit_die[monster.size].die }} + {{ monster.hit_points * score(monster.ability_scores.constitution) }})</small>
+      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetHP(monster) }}</h3><small>({{
+      monster.hit_points }}d{{ monsterManualService.hit_die[monster.size].die }} + {{
+      monster.hit_points * score(monster.ability_scores.constitution) }})</small>
     </div>
     <div class="ui-g-6 ui-md-2">
       <small><strong>Speed</strong></small>

@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as _ from 'lodash';
 import path = require('path');
 
-import { Monster } from '../src/app/classes/Monster';
+import { Monster } from 'contracts/classes';
 
 var filePath = path.join(__dirname, '.');
 

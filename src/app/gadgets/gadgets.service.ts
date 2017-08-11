@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { GadgetsResponse } from '../responses/GadgetsResponse';
 import 'rxjs/Rx';
 
-import { URL } from '../URL';
+import { GadgetsResponse } from 'contracts/responses';
+import { URL } from 'contracts/URL';
 
 @Injectable()
 export class GadgetsService {

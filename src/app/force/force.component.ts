@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem } from 'primeng/primeng';
 
-import { Discipline } from '../classes/Discipline';
-import { Ability } from '../classes/Ability';
+import { Ability, Discipline } from 'contracts/interfaces';
 import { ForceService } from './force.service';
 
 @Component({

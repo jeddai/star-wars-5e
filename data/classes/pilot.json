@@ -1,0 +1,221 @@
+{
+  "class_name":"Pilot",
+  "overview": [{
+    "level": 1,
+    "prof": 2,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 1
+    }]
+  }, {
+    "level": 2,
+    "prof": 2,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 1
+    }]
+  }, {
+    "level": 3,
+    "prof": 2,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 2
+    }]
+  }, {
+    "level": 4,
+    "prof": 2,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 2
+    }]
+  }, {
+    "level": 5,
+    "prof": 3,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 3
+    }]
+  }, {
+    "level": 6,
+    "prof": 3,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 3
+    }]
+  }, {
+    "level": 7,
+    "prof": 3,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 3
+    }]
+  }, {
+    "level": 8,
+    "prof": 3,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 4
+    }]
+  }, {
+    "level": 9,
+    "prof": 4,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 4
+    }]
+  }, {
+    "level": 10,
+    "prof": 4,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 4
+    }]
+  }, {
+    "level": 11,
+    "prof": 4,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 4
+    }]
+  }, {
+    "level": 12,
+    "prof": 4,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 5
+    }]
+  }, {
+    "level": 13,
+    "prof": 5,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 5
+    }]
+  }, {
+    "level": 14,
+    "prof": 5,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 5
+    }]
+  }, {
+    "level": 15,
+    "prof": 5,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 5
+    }]
+  }, {
+    "level": 16,
+    "prof": 5,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 5
+    }]
+  }, {
+    "level": 17,
+    "prof": 6,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 6
+    }]
+  }, {
+    "level": 18,
+    "prof": 6,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 6
+    }]
+  }, {
+    "level": 19,
+    "prof": 6,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 6
+    }]
+  }, {
+    "level": 20,
+    "prof": 6,
+    "features": "",
+    "other": [{
+      "vehicle_proficiencies": 7
+    }]
+  }],
+  "features": {
+    "hit_die": 8,
+    "proficiencies": {
+      "armor": "",
+      "weapons": "",
+      "tools": "",
+      "skill_number": 0,
+      "abilities": {
+        "strength": {
+          "saving_throws": false,
+          "skills": {
+            "athletics": false
+          }
+        },
+        "dexterity": {
+          "saving_throws": false,
+          "skills": {
+            "acrobatics": false,
+            "sleight_of_hand": false,
+            "stealth": false
+          }
+        },
+        "constitution": {
+          "saving_throws": false,
+          "skills": {
+            "demolitions": false
+          }
+        },
+        "intelligence": {
+          "saving_throws": false,
+          "skills": {
+            "history": false,
+            "investigation": false,
+            "nature": false,
+            "religion": false,
+            "repair": false,
+            "security": false
+          }
+        },
+        "wisdom": {
+          "saving_throws": false,
+          "skills": {
+            "arcana": false,
+            "animal_handling": false,
+            "insight": false,
+            "medicine": false,
+            "perception": false,
+            "survival": false
+          }
+        },
+        "charisma": {
+          "saving_throws": false,
+          "skills": {
+            "deception": false,
+            "intimidation": false,
+            "performance": false,
+            "persuasion": false
+          }
+        }
+      }
+    },
+    "equipment": [],
+    "feature_list": [{
+      "name": "",
+      "description": "",
+      "level": 1
+    }],
+    "sub_classes": [{
+      "name": "",
+      "description": "",
+      "features": [{
+        "name": "",
+        "description": "",
+        "level": ""
+      }]
+    }]
+  }
+}

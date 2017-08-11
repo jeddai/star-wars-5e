@@ -10,11 +10,14 @@
 app.js
 bot.js
 src/**/*.js
+bot/**/*.js
+contracts/**/*.js
 routes/**/*.js
 scripts/**/*.js
 
 # dependencies
 /node_modules
+/contracts/node_modules
 
 # IDEs and editors
 /.idea

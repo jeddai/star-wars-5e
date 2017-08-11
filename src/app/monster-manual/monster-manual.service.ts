@@ -3,14 +3,10 @@ import { Http } from '@angular/http';
 import 'rxjs/Rx';
 import * as _ from 'lodash';
 
-import { Combat } from '../classes/Combat';
-import { MonsterManualResponse } from '../responses/MonsterManualResponse';
-import { MonsterResponse } from '../responses/MonsterResponse';
-import { AbilityScores } from '../classes/AbilityScores';
-import { Skills } from '../classes/Skills';
-import { CRSelectItem } from '../classes/CRSelectItem';
-import { Monster } from '../classes/Monster';
-import { URL } from '../URL';
+import { CRSelectItem } from 'contracts/interfaces';
+import { AbilityScores, Combat, Monster, Skills } from 'contracts/classes';
+import { MonsterManualResponse, MonsterResponse } from 'contracts/responses';
+import { URL } from 'contracts/URL';
 
 @Injectable()
 export class MonsterManualService {

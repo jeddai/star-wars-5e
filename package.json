@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^4.3.2",
     "@angular/router": "^4.3.2",
     "@angular/testing": "0.0.0-0",
+    "contracts": "file:./contracts",
     "body-parser": "^1.17.2",
     "bootstrap": "^4.0.0-alpha.6",
     "code-point-at": "^1.1.0",
