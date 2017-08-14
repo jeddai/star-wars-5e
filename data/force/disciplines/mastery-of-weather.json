@@ -52,7 +52,7 @@
       "target":["line"],
       "range":"60ft",
       "damage":"6d6 lightning + nd6",
-      "description":"As an action, you let loose a line of lightning that is 60 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one. You can then teleport to an unoccupied space touched by the line.\n\nYou can increase this ability’s damage by 1d6 per additional force point spent on it."
+      "description":"As an action, you let loose a line of lightning that is 60 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one. You can then teleport to an unoccupied space touched by the line.<br/><br/>You can increase this ability’s damage by 1d6 per additional force point spent on it."
     }, {
       "name":"Wall of Thunder",
       "cost":"6",

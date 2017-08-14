@@ -42,7 +42,7 @@
       "target":["point"],
       "range":"120ft",
       "damage":"6d6 cold + nd6",
-      "description":"As an action, choose a point you can see within 120 feet of you. The air in a 20-foot-radius sphere centered on that point becomes deathly cold and saturated with moisture. Each creature in that area must make a Constitution saving throw. On a failed save, a target takes 6d6 cold damage, and its speed is reduced to 0 until your concentration ends. On a successful save, a target takes half as much damage.\n\nAs an action, a target that has its speed reduced can end the effect early if it succeeds on a Strength (Athletics) check with a DC equal to this effect’s save DC.\n\nYou can increase this effect’s damage by 1d6 per each additional force point spent on it."
+      "description":"As an action, choose a point you can see within 120 feet of you. The air in a 20-foot-radius sphere centered on that point becomes deathly cold and saturated with moisture. Each creature in that area must make a Constitution saving throw. On a failed save, a target takes 6d6 cold damage, and its speed is reduced to 0 until your concentration ends. On a successful save, a target takes half as much damage.<br/><br/>As an action, a target that has its speed reduced can end the effect early if it succeeds on a Strength (Athletics) check with a DC equal to this effect’s save DC.<br/><br/>You can increase this effect’s damage by 1d6 per each additional force point spent on it."
     }, {
       "name":"Ice Barrier",
       "cost":"6",
