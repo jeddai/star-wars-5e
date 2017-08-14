@@ -1,0 +1,57 @@
+{
+    "name":"Telekinesis",
+    "description":"You can use telekinetic energy on yourself to alter your physical abilities and form.",
+    "order":"Adept",
+    "focus":"While focused on this discipline, you take no falling damage, and you ignore difficult terrain when walking.",
+    "abilities":[{
+      "name":"Telekinetic Step",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"instant",
+      "duration":"",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As part of your move on your turn, you can fly up to 20 feet for each force point spent. If you end this flight in the air, you fall unless something else holds you aloft."
+    },{
+      "name":"Telekinetic Stream",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["line"],
+      "range":"30ft",
+      "damage":"nd8 bludgeoning",
+      "description":"As an action, you create a line of focused telekinetic energy that is 30 feet long and 5 feet wide. Each creature in that area must make a Strength saving throw, taking 1d8 bludgeoning damage per force point spent and being knocked prone on a failed save, or half as much damage on a successful one."
+    }, {
+      "name":"Cloak of Telekinesis",
+      "cost":"3",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"10 mins",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a bonus action, you seize control of the air around you to create a protective veil. Until your concentration ends, attack rolls against you have disadvantage, and when a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself."
+    }, {
+      "name":"Telekinetic Form",
+      "cost":"5",
+      "conc":true,
+      "casting_time":"bonus",
+      "duration":"10 mins",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As a bonus action, you gain a flying speed of 60 feet, which lasts until your concentration ends."
+    }, {
+      "name":"Misty Form",
+      "cost":"6",
+      "conc":true,
+      "casting_time":"action",
+      "duration":"1 min",
+      "target":["self"],
+      "range":"",
+      "damage":"",
+      "description":"As an action, your body becomes like a misty cloud until your concentration ends. In this form, you gain resistance to bludgeoning, piercing, and slashing damage, but you can’t take actions other than the Dash action. You can pass through openings that are no more than 1 inch wide without squeezing."
+    }]
+}

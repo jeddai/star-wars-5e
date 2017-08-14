@@ -1,0 +1,57 @@
+{
+    "name":"Corrosive Metabolism",
+    "description":"Your control over your body allows you to deliver acid or poison attacks.",
+    "order":"Adept",
+    "focus":"While focused on this discipline, you have resistance to acid and poison damage.",
+    "abilities":[{
+      "name":"Corrosive Touch",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"nd10 acid",
+      "description":"As an action, you deliver a touch of acid to one creature within your reach. The target must make a Dexterity saving throw, taking 1d10 acid damage per force point spent on a failed save, or half as much damage on a successful one."
+    },{
+      "name":"Venom Strike",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["creature"],
+      "range":"30ft",
+      "damage":"nd6 poison",
+      "description":"As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes 1d6 poison damage per force point spent and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn’t poisoned."
+    }, {
+      "name":"Acid Spray",
+      "cost":"2",
+      "conc":false,
+      "casting_time":"reaction",
+      "duration":"",
+      "target":["self"],
+      "range":"5ft",
+      "damage":"2d6",
+      "description":"As a reaction when you take piercing or slashing damage, you cause acid to spray from your wound; each creature within 5 feet of you takes 2d6 acid damage."
+    }, {
+      "name":"Breath of the Canyon Krayt Dragon",
+      "cost":"5",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["line"],
+      "range":"60ft",
+      "damage":"6d6 acid + nd6",
+      "description":"You exhale a wave of acid in a 60-foot line that is 5 feet wide. Each creature in the line must make a Constitution saving throw, taking 6d6 acid damage on a failed save, or half as much on a successful one. You can increase the damage by 1d6 per additional force point spent on it."
+    }, {
+      "name":"Breath of the Greater Krayt Dragon",
+      "cost":"7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["cone"],
+      "range":"90ft",
+      "damage":"10d6 poison",
+      "description":"You exhale a cloud of poison in a 90-foot cone. Each creature in the cone must make a Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much damage on a successful one."
+    }]
+}
