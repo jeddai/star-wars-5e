@@ -6,7 +6,7 @@
   "alignment": "any alignment",
   "armor_class": 15,
   "hit_points": "7",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 14,
     "dexterity": 14,
@@ -60,19 +60,19 @@
   }],
   "actions": [{
     "name": "Vibrosword",
-    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 8 (1d10 + 2)",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 8 (1d10 + 2) slashing damage.",
     "attack_bonus": 5,
     "damage_dice": "1d10",
     "damage_bonus": 2
   }, {
     "name": "Dual Vibroblades",
-    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 6 (1d6 + 2)",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 6 (1d6 + 2) slashing damage.",
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 2
   }, {
     "name": "Blaster Rifle",
-    "desc": "Ranged Weapon Attack: +5 to hit, one target. Hit 8 (1d10 + 2)",
+    "desc": "Ranged Weapon Attack: +5 to hit, one target. Hit 8 (1d10 + 2) radiant damage.",
     "attack_bonus": 5,
     "damage_dice": "1d10",
     "damage_bonus": 2

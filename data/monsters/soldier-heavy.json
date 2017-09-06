@@ -6,7 +6,7 @@
   "alignment": "any alignment",
   "armor_class": 16,
   "hit_points": "10",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 18,
     "dexterity": 8,
@@ -74,7 +74,7 @@
     "damage_bonus": 4
   }, {
     "name": "Vibroaxe",
-    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 11 (2d6 + 4)",
+    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 11 (2d6 + 4) slashing damage.",
     "attack_bonus": 7,
     "damage_dice": "2d6",
     "damage_bonus": 4

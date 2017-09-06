@@ -6,7 +6,7 @@
   "alignment": "evil",
   "armor_class": 18,
   "hit_points": "40",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 18,
     "dexterity": 22,
@@ -70,7 +70,7 @@
     "damage_bonus": 0
   }, {
     "name": "Lightsaber",
-    "desc": "Melee Weapon Attack: +10 to hit, reach 5ft., one target. Hit 35 radiant (4d10 + 6) radiant, 7 (2d6) fire, cold, force, or lightning",
+    "desc": "Melee Weapon Attack: +10 to hit, reach 5ft., one target. Hit 35 (4d10 + 6) radiant damage, 7 (2d6) fire, cold, force, or lightning",
     "attack_bonus": 10,
     "damage_dice": "4d10",
     "damage_bonus": 6

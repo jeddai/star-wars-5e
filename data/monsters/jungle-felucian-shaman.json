@@ -1,0 +1,84 @@
+{
+  "name": "Jungle Felucian Shaman",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"flora",
+  "alignment": "good",
+  "armor_class": 15,
+  "hit_points": "14",
+  "speed": "30 ft. walking, 60 ft. swimming",
+  "ability_scores": {
+    "strength": 12,
+    "dexterity": 14,
+    "constitution": 14,
+    "intelligence": 8,
+    "wisdom": 16,
+    "charisma": 10
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": 5,
+    "constitution": null,
+    "intelligence": null,
+    "wisdom": 6,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "fire",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "passive Perception 13",
+  "languages": "Felucian",
+  "challenge": "4",
+  "special_abilities": [],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "On each of its turns, the jungle felucian warrior makes two attacks.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Force Bolt",
+    "desc": "Ranged Weapon Attack: +6 to hit, range 40/160, one target. Hit: 12 (2d8 + 3) force damage.",
+    "attack_bonus": 6,
+    "damage_dice": "2d8",
+    "damage_bonus": 3
+  }, {
+    "name": "Staff",
+    "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 1) force damage.",
+    "attack_bonus": 4,
+    "damage_dice": "1d6",
+    "damage_bonus": 1
+  }, {
+    "name": "Venom Strike",
+    "desc": "As an action, the shaman creates a poison spray that targets one creature it can see within 30 feet of it. The target must make a Constitution saving throw. On a failed save, it takes 4d6 poison damage and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn’t poisoned. At the end of each of the shaman's turns, it rolls a d6. On a 5-6 this ability is recharged.",
+    "attack_bonus": 0,
+    "damage_dice": "4d6",
+    "damage_bonus": 0
+  }],
+  "legendary_actions": [],
+  "from":"star-wars"
+}

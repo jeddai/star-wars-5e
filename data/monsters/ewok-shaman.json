@@ -6,7 +6,7 @@
   "alignment": "neutral",
   "armor_class": 15,
   "hit_points": "15",
-  "speed": "25ft.",
+  "speed": "25 ft.",
   "ability_scores": {
     "strength": 10,
     "dexterity": 10,
@@ -50,7 +50,7 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "Passive perception 16",
+  "senses": "passive Perception 16",
   "languages": "Ewok",
   "challenge": "3",
   "special_abilities": [{
@@ -64,7 +64,7 @@
   }],
   "actions": [{
     "name": "Staff",
-    "desc": "Ranged Weapon Attack: +6 to hit, range 30/60., one target. Hit 8 force (1d8 + 3)",
+    "desc": "Ranged Weapon Attack: +6 to hit, range 30/60., one target. Hit 8 (1d8 + 3) force damage.",
     "attack_bonus": 6,
     "damage_dice": "1d8",
     "damage_bonus": 3

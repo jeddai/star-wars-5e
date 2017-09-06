@@ -50,17 +50,19 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "Passive perception 10",
+  "senses": "passive Perception 10",
   "languages": "Ewok",
   "challenge": "2",
-  "special_abilities": [{
+  "special_abilities": [],
+  "actions": [{
     "name": "Multiattack",
     "desc": "The Ewok Beserker makes two attacks with its Large Rock on its turn.",
-    "attack_bonus": 0
-  }],
-  "actions": [{
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
     "name": "Large Rock",
-    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d12 + 2)",
+    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 (1d12 + 2) bludgeoning damage.",
     "attack_bonus": 5,
     "damage_dice": "1d12",
     "damage_bonus": 2

@@ -6,7 +6,7 @@
   "alignment": "neutral",
   "armor_class": 13,
   "hit_points": "5",
-  "speed": "25ft.",
+  "speed": "25 ft.",
   "ability_scores": {
     "strength": 13,
     "dexterity": 12,
@@ -50,25 +50,25 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "Passive perception 11",
+  "senses": "passive Perception 11",
   "languages": "Ewok",
   "challenge": "1/4",
   "special_abilities": [],
   "actions": [{
     "name": "Spear",
-    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 5 piercing (1d6 + 1)",
+    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 5 (1d6 + 1) piercing damage.",
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
   }, {
     "name": "Stolen Blaster",
-    "desc": "Ranged Weapon Attack: +3 to hit, range 60/120, one target. Hit 5 radiant (1d6 + 1)",
+    "desc": "Ranged Weapon Attack: +3 to hit, range 60/120, one target. Hit 5 (1d6 + 1) radiant damage.",
     "attack_bonus": 3,
     "damage_dice": "1d6",
     "damage_bonus": 1
   }, {
     "name": "Throw Rock",
-    "desc": "Ranged Weapon Attack: +3 to hit, range 20/60, one target. Hit 4 bludgeoning (1d4 + 1)",
+    "desc": "Ranged Weapon Attack: +3 to hit, range 20/60, one target. Hit 4 (1d4 + 1) bludgeoning damage.",
     "attack_bonus": 3,
     "damage_dice": "1d4",
     "damage_bonus": 1

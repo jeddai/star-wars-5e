@@ -1,26 +1,26 @@
 {
-  "name": "",
-  "size": "",
-  "type": "",
-  "subtype":"",
-  "alignment": "",
-  "armor_class": 10,
-  "hit_points": "0",
-  "speed": "",
+  "name": "Jungle Felucian Chieftain",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"flora",
+  "alignment": "good",
+  "armor_class": 16,
+  "hit_points": "18",
+  "speed": "30 ft. walking, 60 ft. swimming",
   "ability_scores": {
-    "strength": 10,
-    "dexterity": 10,
-    "constitution": 10,
-    "intelligence": 10,
-    "wisdom": 10,
+    "strength": 12,
+    "dexterity": 18,
+    "constitution": 14,
+    "intelligence": 8,
+    "wisdom": 14,
     "charisma": 10
   },
   "saving_throws": {
     "strength": null,
-    "dexterity": null,
+    "dexterity": 7,
     "constitution": null,
     "intelligence": null,
-    "wisdom": null,
+    "wisdom": 5,
     "charisma": null
   },
   "skills": {
@@ -46,29 +46,27 @@
     "performance": null,
     "persuasion": null
   },
-  "damage_vulnerabilities": "",
+  "damage_vulnerabilities": "fire",
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "passive Perception",
-  "languages": "",
-  "challenge": "10",
-  "special_abilities": [{
-    "name": "",
-    "desc": "",
-    "attack_bonus": 0
-  }],
+  "senses": "passive Perception 12",
+  "languages": "Felucian",
+  "challenge": "6",
+  "special_abilities": [],
   "actions": [{
-    "name": "",
-    "desc": "",
+    "name": "Multiattack",
+    "desc": "On each of its turns, the jungle felucian warrior can make two weapon attacks.",
     "attack_bonus": 0,
     "damage_dice": "",
     "damage_bonus": 0
+  }, {
+    "name": "Swords Attack",
+    "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+    "attack_bonus": 7,
+    "damage_dice": "2d8",
+    "damage_bonus": 4
   }],
-  "legendary_actions": [{
-    "name": "",
-    "desc": "",
-    "attack_bonus": 0
-  }],
+  "legendary_actions": [],
   "from":"star-wars"
 }

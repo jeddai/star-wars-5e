@@ -6,7 +6,7 @@
   "alignment": "unaligned",
   "armor_class": 12,
   "hit_points": "10",
-  "speed": "20ft.",
+  "speed": "20 ft.",
   "ability_scores": {
     "strength": 14,
     "dexterity": 10,
@@ -56,13 +56,13 @@
   "special_abilities": [],
   "actions": [{
     "name": "Horns",
-    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 piercing (1d8 + 4)",
+    "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit 9 (1d8 + 4) piercing damage.",
     "attack_bonus": 5,
     "damage_dice": "1d8",
     "damage_bonus": 2
   }, {
     "name": "Stomp",
-    "desc": "Area Attack: All enemies in 10ft radius make Strength saving throw. On failed save take 20 (4d8) bludgeoning. Successful save for half damage.",
+    "desc": "Area Attack: All enemies in 10ft radius make Strength saving throw. On failed save take 20 (4d8) bludgeoning damage. Successful save for half damage.",
     "attack_bonus": 0,
     "damage_dice": "4d8",
     "damage_bonus": 0

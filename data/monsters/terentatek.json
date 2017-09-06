@@ -5,7 +5,7 @@
   "alignment": "evil",
   "armor_class": 16,
   "hit_points": "15",
-  "speed": "40ft.",
+  "speed": "40 ft.",
   "ability_scores": {
     "strength": 20,
     "dexterity": 12,
@@ -48,7 +48,7 @@
   "damage_vulnerabilities": "",
   "damage_resistances": "bludgeoning, piercing, radiant, slashing",
   "damage_immunities": "necrotic, psychic",
-  "condition_immunities": "charmed, freightened, groggy, weakkneed",
+  "condition_immunities": "charmed, frightened, groggy, weak-kneed",
   "senses": "passive Perception 13",
   "languages": "",
   "challenge": "11",
@@ -65,13 +65,13 @@
     "damage_bonus": 0
   }, {
     "name": "Claws",
-    "desc": "Melee Weapon Attack: +9 to hit, reach 10ft., one target. Hit 11 slashing (1d10 + 5) DC 16 Constitution check or 4d6 poison damage, half on successful save.",
+    "desc": "Melee Weapon Attack: +9 to hit, reach 10ft., one target. Hit 11 (1d10 + 5) slashing damage. DC 16 Constitution check or 4d6 poison damage, half on successful save.",
     "attack_bonus": 9,
     "damage_dice": "2d10",
     "damage_bonus": 5
   }, {
     "name": "Bite",
-    "desc": "Melee Weapon Attack: +9 to hit, one target. Hit 22 piercing (3d10 + 5)",
+    "desc": "Melee Weapon Attack: +9 to hit, one target. Hit 22 (3d10 + 5) piercing damage.",
     "attack_bonus": 9,
     "damage_dice": "3d10",
     "damage_bonus": 5

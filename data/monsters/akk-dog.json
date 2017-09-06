@@ -6,7 +6,7 @@
   "alignment": "unaligned",
   "armor_class": 16,
   "hit_points": "8",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 16,
     "dexterity": 12,
@@ -62,13 +62,13 @@
     "damage_bonus": 0
   }, {
     "name": "Claws",
-    "desc": "Melee Weapon Attack: +3 to hit, one target. Hit 12 slashing (2d8 + 3)",
+    "desc": "Melee Weapon Attack: +3 to hit, one target. Hit 12 (2d8 + 3) slashing damage.",
     "attack_bonus": 3,
     "damage_dice": "2d8",
     "damage_bonus": 3
   }, {
     "name": "Tail",
-    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 9 bludgeoning (1d10 + 3)",
+    "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit 9 (1d10 + 3) bludgeoning damage.",
     "attack_bonus": 3,
     "damage_dice": "1d10",
     "damage_bonus": 3

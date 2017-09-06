@@ -6,7 +6,7 @@
   "alignment": "",
   "armor_class": 15,
   "hit_points": "13",
-  "speed": "0",
+  "speed": "0 ft.",
   "ability_scores": {
     "strength": 22,
     "dexterity": 8,
@@ -50,7 +50,7 @@
   "damage_resistances": "piercing",
   "damage_immunities": "",
   "condition_immunities": "frightened, groggy, weak-kneed",
-  "senses": "Passive perception 10",
+  "senses": "passive Perception 10",
   "languages": "",
   "challenge": "4",
   "special_abilities": [{

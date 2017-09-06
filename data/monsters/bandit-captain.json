@@ -6,7 +6,7 @@
   "alignment": "chaotic evil",
   "armor_class": 14,
   "hit_points": "8",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 16,
     "dexterity": 16,
@@ -60,19 +60,19 @@
   }],
   "actions": [{
     "name": "Vibrosword",
-    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3)",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3) slashing damage.",
     "attack_bonus": 5,
     "damage_dice": "1d10",
     "damage_bonus": 3
   }, {
     "name": "Dual Vibroblades",
-    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 7 (1d6 + 3)",
+    "desc": "Melee Weapon Attack: +5 to hit, one target. Hit 7 (1d6 + 3) slashing damage.",
     "attack_bonus": 5,
     "damage_dice": "1d6",
     "damage_bonus": 3
   }, {
     "name": "Blaster Rifle",
-    "desc": "Ranged Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3)",
+    "desc": "Ranged Weapon Attack: +5 to hit, one target. Hit 9 (1d10 + 3) radiant damage.",
     "attack_bonus": 5,
     "damage_dice": "1d10",
     "damage_bonus": 3

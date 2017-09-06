@@ -6,7 +6,7 @@
   "alignment": "any alignment",
   "armor_class": 16,
   "hit_points": "12",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 14,
     "dexterity": 18,
@@ -64,13 +64,13 @@
   }],
   "actions": [{
     "name": "Disruptor Rifle",
-    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 9 (1d8 + 4) DC 14 Con save or stunned 1 round.",
+    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 9 (1d8 + 4) radiant damage. DC 14 Con save or stunned 1 round.",
     "attack_bonus": 7,
     "damage_dice": "1d8",
     "damage_bonus": 4
   }, {
     "name": "Dual Blaster Pistols",
-    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 7 (1d4 + 4)",
+    "desc": "Ranged Weapon Attack: +7 to hit, one target. Hit 7 (1d4 + 4) radiant damage.",
     "attack_bonus": 7,
     "damage_dice": "1d4",
     "damage_bonus": 4

@@ -6,7 +6,7 @@
   "alignment": "chaotic evil",
   "armor_class": 17,
   "hit_points": "14",
-  "speed": "20ft.",
+  "speed": "20 ft.",
   "ability_scores": {
     "strength": 20,
     "dexterity": 8,
@@ -62,19 +62,19 @@
     "damage_bonus": 0
   }, {
     "name": "Gatling Laser",
-    "desc": "Ranged Weapon Attack: +8 to hit, up to three targets. Hit 10 (1d8 + 5) Reload 12",
+    "desc": "Ranged Weapon Attack: +8 to hit, up to three targets. Hit 10 (1d8 + 5) radiant damage. Reload 12",
     "attack_bonus": 8,
     "damage_dice": "1d8",
     "damage_bonus": 5
   }, {
     "name": "Flame Thrower",
-    "desc": "Ranged Weapon Attack: +8 to hit, 15ft cone or 30ft line. DC 14 Dex save half Hit 12 (2d6 + 5) Reload 8",
+    "desc": "Ranged Weapon Attack: +8 to hit, 15ft cone or 30ft line. DC 14 Dex save half Hit 12 (2d6 + 5) fire damage. Reload 8",
     "attack_bonus": 8,
     "damage_dice": "2d6",
     "damage_bonus": 5
   }, {
     "name": "Vibroaxe",
-    "desc": "Melee Weapon Attack: +8 to hit, one target. Hit 12 (2d6 + 5)",
+    "desc": "Melee Weapon Attack: +8 to hit, one target. Hit 12 (2d6 + 5) slashing damage.",
     "attack_bonus": 8,
     "damage_dice": "2d6",
     "damage_bonus": 5

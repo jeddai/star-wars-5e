@@ -6,7 +6,7 @@
   "alignment": "neutral",
   "armor_class": 16,
   "hit_points": "20",
-  "speed": "30ft.",
+  "speed": "30 ft.",
   "ability_scores": {
     "strength": 18,
     "dexterity": 10,
@@ -50,7 +50,7 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "Passive perception 16",
+  "senses": "passive Perception 16",
   "languages": "Ewok",
   "challenge": "5",
   "special_abilities": [{
@@ -60,7 +60,7 @@
   }],
   "actions": [{
     "name": "Spear",
-    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit 15 piercing (3d6 + 4)",
+    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit 15 (3d6 + 4) piercing damage.",
     "attack_bonus": 7,
     "damage_dice": "3d6",
     "damage_bonus": 4

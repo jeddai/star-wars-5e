@@ -5,7 +5,7 @@
   "alignment": "unaligned",
   "armor_class": 15,
   "hit_points": "15",
-  "speed": "40ft.",
+  "speed": "40 ft.",
   "ability_scores": {
     "strength": 18,
     "dexterity": 14,
@@ -61,13 +61,13 @@
     "damage_bonus": 0
   }, {
     "name": "Claws",
-    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit 9 piercing (1d8 + 4)",
+    "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit 9 (1d8 + 4) piercing damage.",
     "attack_bonus": 7,
     "damage_dice": "1d8",
     "damage_bonus": 4
   }, {
     "name": "Bite",
-    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 10 piercing (1d10 + 4)",
+    "desc": "Melee Weapon Attack: +7 to hit, one target. Hit 10 (1d10 + 4) piercing damage.",
     "attack_bonus": 7,
     "damage_dice": "1d10",
     "damage_bonus": 4

@@ -6,7 +6,7 @@
   "alignment": "neutral",
   "armor_class": 15,
   "hit_points": "15",
-  "speed": "15ft., 40ft flying",
+  "speed": "15 ft., 40 ft flying",
   "ability_scores": {
     "strength": 12,
     "dexterity": 16,
@@ -50,7 +50,7 @@
   "damage_resistances": "",
   "damage_immunities": "",
   "condition_immunities": "",
-  "senses": "Passive perception 10",
+  "senses": "passive Perception 10",
   "languages": "Ewok",
   "challenge": "2",
   "special_abilities": [{
@@ -60,7 +60,7 @@
   }],
   "actions": [{
     "name": "Large Rock",
-    "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit 10 bludgeoning (1d12 + 3)",
+    "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit 10 (1d12 + 3) bludgeoning damage.",
     "attack_bonus": 6,
     "damage_dice": "1d12",
     "damage_bonus": 3
