@@ -301,9 +301,16 @@ export class MapComponent implements OnInit {
     if (!!p.system) html += '<br/>System: ' + p.system;
     if (!!p.capital) html += '<br/>Capital: ' + p.capital;
     if (!!p.climate) html += '<br/>Climate: ' + p.climate;
-    if (!!p.inhabitants) {
+    if (!!p.alignment && !!p.alignment.length) {
+      html += '<br/>Alignment: ';
+      p.alignment.forEach((group, index) => {
+        html += group;
+        if(index !== p.alignment.length - 1) html += ', ';
+      });
+    }
+    if (!!p.inhabitants && !!p.inhabitants.length) {
       html += '<br/>Inhabitants: ';
-      p.inhabitants.forEach(function(inhab, i) {
+      p.inhabitants.forEach((inhab, i) => {
         html += inhab;
         if (i != p.inhabitants.length - 1) html += ', ';
       });

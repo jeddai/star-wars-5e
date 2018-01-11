@@ -1,0 +1,13 @@
+{
+  "name":"Fatebringer",
+  "description":"The is a mythical weapon of great power found in the Eternity Vault. The Fatebringer is a blaster pistol with the following statistics:<br/><br/>Martial ranged weapon, 1d6 lightning damage, 30/120. Light, reload 10.<br/><br/>***Explosive Rounds.*** The Fatebringer's rounds are explosive, dealing an extra 1d4 fire damage to the target on a hit. Additionally, each creature within 5ft of the target that fails a DC 12 dexterity saving throw takes this damage as well.<br/><br/>***Firefly.*** The Fatebringer lands critical hits on a 19/20. When a critical hit occurs, an explosion engulfs the target. Each creature within 10ft of the target must make a DC 15 Dexterity saving throw, or take 1d6 lightning damage. A successful save reduces the damage taken by half, but the target fails the save regardless of the result. <br/><br/>***Outlaw.*** When you get a kill with this weapon, you can reload as a free action during the same turn.",
+  "type": "weapon",
+  "sub_type": "ranged",
+  "rarity": "very rare",
+  "attunement": true,
+  "notes": "Ranged Weapon, Explosions",
+  "tags": [
+    "weapon",
+    "ranged"
+  ]
+}

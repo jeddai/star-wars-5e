@@ -1,0 +1,57 @@
+{
+    "name":"Mastery of Death",
+    "description":"Your control over your body allows you to deliver life draining attacks.",
+    "order":"Adept",
+    "focus":"While focused on this discipline, you have resistance to necrotic and poison damage.",
+    "abilities":[{
+      "name":"Necrotizing Touch",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["creature"],
+      "range":"touch",
+      "damage":"nd10 necrotic",
+      "description":"As an action, you deliver a touch of necrosis to one creature within your reach. The target must make a Dexterity saving throw, taking 1d10 necrotic damage per force point spent on a failed save, or half as much damage on a successful one."
+    },{
+      "name":"Venomous Strike",
+      "cost":"1-7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["creature"],
+      "range":"30ft",
+      "damage":"nd6 poison",
+      "description":"As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes 1d6 poison damage per force point spent and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn’t poisoned."
+    }, {
+      "name":"Transfer Essence",
+      "cost":"2",
+      "conc":false,
+      "casting_time":"reaction",
+      "duration":"",
+      "target":["self"],
+      "range":"5ft",
+      "damage":"1d6 necrotic, 1d6 HP",
+      "description":"As a reaction when you take damage, you can drain the life from your attacker to heal yourself. The creature that attacked you takes 1d6 necrotic damage and you gain that much HP."
+    }, {
+      "name":"Drain Life",
+      "cost":"5",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["area"],
+      "range":"60ft",
+      "damage":"6d6 + nd6 necrotic",
+      "description":"You drain the life from enemies in a 10ft radius of a point you choose within 60ft of you. Each creature in the area must make a Constitution saving throw, taking 6d6 necrotic damage on a failed save, or half as much on a successful one. You can increase the damage by 1d6 per additional force point spent on it. Any damage taken in this way reduces the creature's maximum HP by that amount, and cannot be regained until the creature has taken a long rest."
+    }, {
+      "name":"Life Steal",
+      "cost":"7",
+      "conc":false,
+      "casting_time":"action",
+      "duration":"",
+      "target":["target"],
+      "range":"60ft",
+      "damage":"10d10 necrotic",
+      "description":"You steal the life force from a target. Make a force attack against a living target of your choice within 60ft of you. On a hit, the target takes 10d10 necrotic damage, and you gain half as much HP. Any damage taken in this way reduces the creature's maximum HP by that amount, and cannot be regained until the creature has taken a long rest."
+    }]
+}

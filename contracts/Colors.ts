@@ -19,7 +19,7 @@ export class Colors {
   };
 
   public static alignmentColors= {
-    'Black Sun': '#333',
+    'Black Sun': '#555',
     'Chiss Ascendancy': '#808',
     Contested: '#000',
     'Eternal Empire': '#dd0',

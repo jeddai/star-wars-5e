@@ -1,0 +1,90 @@
+{
+  "name": "Raana Tey",
+  "size": "medium",
+  "type": "humanoid",
+  "subtype":"",
+  "alignment": "lawful good",
+  "armor_class": 18,
+  "hit_points": "37",
+  "speed": "30 ft.",
+  "ability_scores": {
+    "strength": 16,
+    "dexterity": 22,
+    "constitution": 16,
+    "intelligence": 16,
+    "wisdom": 20,
+    "charisma": 16
+  },
+  "saving_throws": {
+    "strength": null,
+    "dexterity": 11,
+    "constitution": null,
+    "intelligence": null,
+    "wisdom": 10,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": null,
+    "acrobatics": 10,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": 10,
+    "repair": null,
+    "security": null,
+    "arcana": 8,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": null,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "force, psychic",
+  "damage_immunities": "",
+  "condition_immunities": "charmed, frightened, groggy, weak-kneed",
+  "senses": "passive Perception 18",
+  "languages": "Basic",
+  "challenge": "16",
+  "special_abilities": [{
+    "name":"Psychic Backlash",
+    "desc":"As a reaction, Raana Tey can impose disadvantage on an attack roll against her if she can see the attacker. If the attack still hits her, the attacker takes 2d10 psychic damage.",
+    "attack_bonus": 0
+  }],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Lord of Betrayal makes two melee attacks or Incite Panic on her turn.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Lightsaber",
+    "desc": "Melee Weapon Attack: +11 to hit, reach 5ft., one target. Hit 29 (3d10 + 6) radiant damage plus 6 (1d10) psychic damage.",
+    "attack_bonus": 11,
+    "damage_dice": "2d10 + 1d10",
+    "damage_bonus": 6
+  }, {
+    "name": "Incite Panic (Recharge 5-6)",
+    "desc": "As an action, choose up to eight creatures you can see within 90 feet of you that can see you. At the start of each of a target’s turns before your concentration ends, the target must make a Wisdom saving throw. On a failed save, the target is frightened until the start of its next turn, and you roll a die. If you roll an odd number, the frightened target moves half its speed in a random direction and takes no action on that turn, other than to scream in terror. If you roll an even number, the frightened target makes one melee attack against a random target within its reach. If there is no such target, it moves half its speed in a random direction and takes no action on that turn. This effect ends on a target if it succeeds on three saving throws against it.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }],
+  "legendary_actions": [{
+    "name": "Lightsaber Attack",
+    "desc": "Raana Tey can make one lightsaber attack as a legendary action.",
+    "attack_bonus": 8
+  }, {
+    "name":"Psychic Backlash (2 Actions)",
+    "desc":"Raana Tey can use Psychic Backlash as a legendary action.",
+    "attack_bonus": 0
+  }],
+  "from":"star-wars"
+}
