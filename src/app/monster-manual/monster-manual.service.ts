@@ -78,7 +78,7 @@ export class MonsterManualService {
     return hp;
   }
 
-  public GetChallenge(cr: number): CRSelectItem {
+  public GetChallenge(cr: number | string): CRSelectItem {
     const val = _.findIndex(this.crs, function(challenge) {
       return challenge.value === cr;
     });

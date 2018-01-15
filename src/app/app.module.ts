@@ -126,7 +126,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
       path: '',
       redirectTo: '/home',
       pathMatch: 'full'
-    }])
+    }], { useHash: true })
   ],
   providers: [
     CharacterCreatorService,

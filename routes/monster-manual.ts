@@ -8,8 +8,6 @@ import { MonsterResponse, MonsterManualResponse } from 'contracts/responses';
 var filePath = path.join(__dirname, '../data/monsters');
 var router = express.Router();
 
-console.log(__dirname);
-
 router.get('/get-monster/:monster', function (req, res, next) {
   var obj: MonsterResponse = {
     Response: null,

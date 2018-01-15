@@ -7,8 +7,6 @@ import { AbilityResponse, DisciplineResponse } from 'contracts/responses';
 var filePath = path.join(__dirname, '../data/force');
 var router = express.Router();
 
-console.log(__dirname);
-
 router.get('/get-disciplines', function (req, res) {
   var fullPath = filePath + '/disciplines';
   var obj: DisciplineResponse = {

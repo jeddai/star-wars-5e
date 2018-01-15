@@ -7,8 +7,6 @@ import { MagicalItemResponse } from 'contracts/responses';
 var filePath = path.join(__dirname, '../data/magical-items');
 var router = express.Router();
 
-console.log(__dirname);
-
 router.get('/get-magical-items', function (req, res) {
   var obj: MagicalItemResponse = {
     Response: [],

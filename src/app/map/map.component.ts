@@ -74,7 +74,7 @@ export class MapComponent implements OnInit {
     });
   }
 
-  private initializeForceDirectedGraph(): void {
+  public initializeForceDirectedGraph(): void {
     const component = this;
 
     component.legend = d3.select('#legend')

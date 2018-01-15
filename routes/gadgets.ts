@@ -7,8 +7,6 @@ import { GadgetsResponse } from 'contracts/responses';
 var filePath = path.join(__dirname, '../data/gadgets');
 var router = express.Router();
 
-console.log(__dirname);
-
 router.get('/get-gadgets', function (req, res) {
   var obj: GadgetsResponse = {
     Response: [],

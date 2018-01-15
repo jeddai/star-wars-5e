@@ -5,12 +5,12 @@
   "scripts": {
     "ng": "node_modules/@angular/cli/bin/ng",
     "start": "nodemon --exec ts-node app.ts",
-    "start-client": "node_modules/@angular/cli/bin/ng serve",
+    "start-prod": "env=prod ts-node app.ts",
     "build": "node_modules/@angular/cli/bin/ng build",
+    "build-prod": "node_modules/@angular/cli/bin/ng build --env=prod",
     "test": "node_modules/@angular/cli/bin/ng test",
     "lint": "node_modules/@angular/cli/bin/ng lint",
-    "e2e": "node_modules/@angular/cli/bin/ng e2e",
-    "bot": "ts-node bot.ts"
+    "e2e": "node_modules/@angular/cli/bin/ng e2e"
   },
   "private": true,
   "dependencies": {
