@@ -1,0 +1,16 @@
+{
+  "name": "Dxun",
+  "region": "Inner Rim",
+  "sector": "Japrael",
+  "system": "Japrael",
+  "capital": "",
+  "inhabitants": [],
+  "climate": "Forest",
+  "coordinates": "O-9",
+  "hyperspace": [{
+    "planet": "Onderon",
+    "distance": 15
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

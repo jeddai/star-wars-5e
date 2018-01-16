@@ -1,0 +1,22 @@
+{
+  "name": "Colla IV",
+  "region": "Inner Rim",
+  "sector": "",
+  "system": "Colla",
+  "capital": "",
+  "climate": "Polluted",
+  "coordinates": "N-9",
+  "inhabitants": ["Colicoids"],
+  "alignment": [],
+  "active": true,
+  "hyperspace": [{
+    "distance": 100,
+    "planet": "Jedha"
+  }, {
+    "distance": 100, 
+    "planet": "Onderon"
+  }, {
+    "distance": 100,
+    "planet": "Rhen Var"
+  }]
+}

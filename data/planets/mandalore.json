@@ -10,6 +10,9 @@
   "hyperspace": [{
     "distance": 50,
     "planet": "Taris"
+  }, {
+    "distance": 150,
+    "planet": "Onderon"
   }],
   "alignment": ["Mando'ade"],
   "active": true

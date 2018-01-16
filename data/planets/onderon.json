@@ -1,0 +1,16 @@
+{
+  "name": "Onderon",
+  "region": "Inner Rim",
+  "sector": "Japrael",
+  "system": "Japrael",
+  "capital": "Iziz",
+  "inhabitants": ["Mandalorians"],
+  "climate": "Temperate",
+  "coordinates": "O-9",
+  "hyperspace": [{
+    "distance": 150,
+    "planet": "Yavin IV"
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}
