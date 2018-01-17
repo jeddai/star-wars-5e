@@ -4,10 +4,17 @@ import favicon = require('serve-favicon');
 import logger = require('morgan');
 import bodyParser = require('body-parser');
 import cors = require('cors');
+import fs = require('fs');
 import http = require('http');
 import https = require('https');
-
 import { default as routes } from './routes';
+
+let certificate = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/cert.pem', 'utf-8');
+let key = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/privkey.pem', 'utf-8');
+let credentials = {
+  cert: certificate,
+  key: key
+}
 
 const app = express();
 
@@ -41,12 +48,14 @@ app.use(function(err, req, res, next) {
 var port = normalizePort(process.env.PORT || '3000');
 
 var server = null;
-if(process.env === 'prod') {
+if(process.env.ENV === 'prod') {
   app.set('port', 443);
-  server = https.createServer(app);
+  server = https.createServer(credentials, app);
+  console.log('Starting secure web server.');
 } else {
   app.set('port', port);
   server = http.createServer(app);
+  console.log('Starting web server.');
 }
 
 server.listen(port);
