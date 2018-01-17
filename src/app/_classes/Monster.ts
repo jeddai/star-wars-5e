@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 
-import { MonsterAbility, MonsterAction } from 'contracts/interfaces';
-import { AbilityScores, Skills } from 'contracts/classes';
+import { MonsterAbility, MonsterAction } from '../_interfaces';
+import { AbilityScores, Skills } from '../_classes';
 
 export class Monster {
   constructor() {

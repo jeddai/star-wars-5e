@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 
-import { Class, Race } from 'contracts/interfaces';
-import { Player } from 'contracts/classes';
+import { Class, Race } from '../_interfaces';
+import { Player } from '../_classes';
 import { CharacterCreatorService } from './character-creator.service';
 
 @Component({

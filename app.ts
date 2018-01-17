@@ -4,6 +4,8 @@ import favicon = require('serve-favicon');
 import logger = require('morgan');
 import bodyParser = require('body-parser');
 import cors = require('cors');
+import http = require('http');
+import https = require('https');
 
 import { default as routes } from './routes';
 
@@ -32,8 +34,71 @@ app.use(function(err, req, res, next) {
   res.send('error');
 });
 
-app.listen(3000, () => {
-    console.log('Star Wars app listening on port 3000');
-});
+/*
+ * Start Server
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+
+var server = null;
+if(process.env === 'prod') {
+  app.set('port', 443);
+  server = https.createServer(app);
+} else {
+  app.set('port', port);
+  server = http.createServer(app);
+}
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  console.log(`Server started on port ${addr.port}`);
+}
 
 module.exports = app;

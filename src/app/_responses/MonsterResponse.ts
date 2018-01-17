@@ -1,4 +1,4 @@
-import { Monster } from 'contracts/classes';
+import { Monster } from '../_classes';
 
 export interface MonsterResponse {
     Response: Monster

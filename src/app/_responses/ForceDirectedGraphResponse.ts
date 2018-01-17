@@ -1,4 +1,4 @@
-import { ForceDirectedGraphData } from 'contracts/interfaces';
+import { ForceDirectedGraphData } from '../_interfaces';
 
 export interface ForceDirectedGraphResponse {
   Response: ForceDirectedGraphData

@@ -1,4 +1,4 @@
-import { ForceDirectedLink, ForceDirectedNode } from 'contracts/interfaces';
+import { ForceDirectedLink, ForceDirectedNode } from '../_interfaces';
 
 export interface ForceDirectedGraphData {
   nodes: ForceDirectedNode[]

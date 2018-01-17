@@ -1,4 +1,4 @@
-import { Ability } from 'contracts/interfaces';
+import { Ability } from '../_interfaces';
 
 export interface Discipline {
     name: string

@@ -27,7 +27,6 @@
     "body-parser": "^1.17.2",
     "bootstrap": "4.0.0-beta.2",
     "code-point-at": "^1.1.0",
-    "contracts": "file:./contracts",
     "core-js": "^2.4.1",
     "cors": "^2.8.4",
     "d3": "^4.10.0",

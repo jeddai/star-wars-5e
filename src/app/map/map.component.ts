@@ -3,9 +3,9 @@ import { Message } from 'primeng/primeng';
 import * as d3 from 'd3';
 import * as _ from 'lodash';
 
-import { Colors } from 'contracts/Colors';
-import { ForceDirectedGraphData, ForceDirectedNode } from 'contracts/interfaces';
-import { ShortestHyperspaceLane } from 'contracts/classes';
+import { Colors } from '../Colors';
+import { ForceDirectedGraphData, ForceDirectedNode } from '../_interfaces';
+import { ShortestHyperspaceLane } from '../_classes';
 import { MapService } from './map.service';
 
 const baseLineColor = '#aaa',

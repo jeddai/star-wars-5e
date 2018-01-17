@@ -2,8 +2,8 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { ForceDirectedGraphResponse } from 'contracts/responses';
-import { ForceDirectedGraphData, ForceDirectedLink, ForceDirectedNode } from 'contracts/interfaces';
+import { ForceDirectedGraphResponse } from '../src/app/_responses';
+import { ForceDirectedGraphData, ForceDirectedLink, ForceDirectedNode } from '../src/app/_interfaces';
 
 const filePath = path.join(__dirname, '../data');
 const router = express.Router();

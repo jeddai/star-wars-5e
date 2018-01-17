@@ -2,8 +2,8 @@ import express = require('express');
 import * as fs from 'fs';
 import path = require('path');
 
-import { Monster } from 'contracts/classes';
-import { MonsterResponse, MonsterManualResponse } from 'contracts/responses';
+import { Monster } from '../src/app/_classes';
+import { MonsterResponse, MonsterManualResponse } from '../src/app/_responses';
 
 var filePath = path.join(__dirname, '../data/monsters');
 var router = express.Router();

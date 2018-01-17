@@ -1,4 +1,4 @@
-import { Discipline } from 'contracts/interfaces';
+import { Discipline } from '../_interfaces';
 
 export interface DisciplineResponse {
     Response: Discipline[]

@@ -1,4 +1,4 @@
-import { ForceDirectedNode } from 'contracts/interfaces';
+import { ForceDirectedNode } from '../_interfaces';
 
 export interface ForceDirectedLink {
   distance: number

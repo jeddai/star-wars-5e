@@ -1,4 +1,4 @@
-import { MagicalItem } from 'contracts/interfaces';
+import { MagicalItem } from '../_interfaces';
 
 export interface MagicalItemResponse {
     Response: MagicalItem[]

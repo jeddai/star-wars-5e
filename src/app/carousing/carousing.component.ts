@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import * as _ from 'lodash';
 
-import { CarousingResult } from 'contracts/interfaces';
-import { CarousingRolls } from 'contracts/classes';
+import { CarousingResult } from '../_interfaces';
+import { CarousingRolls } from '../_classes';
 
 @Component({
   selector: 'app-carousing',

@@ -2,8 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SelectItem, MenuItem } from 'primeng/primeng';
 import * as _ from 'lodash';
 
-import { CRSelectItem, Difficulty } from 'contracts/interfaces';
-import { AbilityScores, Combat, Combatant, Monster } from 'contracts/classes';
+import { CRSelectItem, Difficulty } from '../_interfaces';
+import { AbilityScores, Combat, Combatant, Monster } from '../_classes';
 import { MonsterManualService } from '../monster-manual/monster-manual.service';
 
 @Component({

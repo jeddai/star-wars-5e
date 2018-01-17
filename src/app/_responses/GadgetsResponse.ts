@@ -1,4 +1,4 @@
-import { Gadget } from '../classes/Gadget';
+import { Gadget } from '../_classes';
 
 export interface GadgetsResponse {
     Response: Gadget[]

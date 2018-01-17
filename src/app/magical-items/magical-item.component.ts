@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng/primeng';
 
-import { MagicalItem } from 'contracts/interfaces';
+import { MagicalItem } from '../_interfaces';
 import { MagicalItemService } from './magical-item.service';
 
 @Component({

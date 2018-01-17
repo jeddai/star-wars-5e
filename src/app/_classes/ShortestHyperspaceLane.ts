@@ -1,4 +1,4 @@
-import { ForceDirectedNode, ForceDirectedLink } from 'contracts/interfaces';
+import { ForceDirectedNode, ForceDirectedLink } from '../_interfaces';
 
 export class ShortestHyperspaceLane {
   constructor(nodes, paths, safe, alignment) {

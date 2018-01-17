@@ -1,4 +1,4 @@
-import { CRSelectItem } from 'contracts/interfaces';
+import { CRSelectItem } from '../_interfaces';
 
 export class Combat {
   public static XPThresholds = {
