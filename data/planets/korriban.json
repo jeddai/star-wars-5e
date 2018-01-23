@@ -5,18 +5,10 @@
   "system": "Horuset",
   "capital": "Dreshdae",
   "inhabitants": ["Humans", "Sith", "Rakata"],
-  "climate": "Arid",
+  "landscape": "Arid",
   "coordinates": "R-5",
-  "hyperspace": [{
-    "planet": "Mandalore",
-    "distance": 200
-  }, {
-    "planet": "Thule",
-    "distance": 30
-  }, {
-    "planet": "Yavin IV",
-    "distance": 120
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["None"],
   "active": true
 }

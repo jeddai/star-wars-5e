@@ -1,0 +1,17 @@
+{
+  "name": "Krownest",
+  "region": "Outer Rim Territories",
+  "sector": "Mandalore",
+  "system": "Krownest",
+  "capital": "Wren Stronghold",
+  "inhabitants": ["Humans"],
+  "landscape": "Frozen",
+  "coordinates": "O-7",
+  "size": 5,
+  "hyperspace": [{
+    "planet": "Mandalore",
+    "distance": 50
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

@@ -5,11 +5,12 @@
   "system": "Sullust",
   "capital": "Byllurun",
   "inhabitants": ["Sullustans"],
-  "climate": "Volcanic",
+  "landscape": "Volcanic",
   "coordinates": "M-17",
+  "size": 8,
   "hyperspace": [{
-    "distance": 150,
-    "planet": "Thyferra"
+    "planet": "Thyferra",
+    "distance": 250
   }],
   "alignment": [],
   "active": true

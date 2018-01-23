@@ -5,23 +5,18 @@
   "system": "Eriadu",
   "capital": "Eriadu City",
   "inhabitants": ["Humans"],
-  "climate": "Polluted",
+  "landscape": "Urban",
   "coordinates": "M-18",
+  "size": 8,
   "hyperspace": [{
-    "distance": 80,
-    "planet": "Polis Massa"
+    "planet": "Sullust",
+    "distance": 60
   }, {
-    "distance": 70,
-    "planet": "Mustafar"
+    "planet": "Malastare",
+    "distance": 120
   }, {
-    "distance": 20,
-    "planet": "Sullust"
-  }, {
-    "distance": 60,
-    "planet": "Utapau"
-  }, {
-    "distance": 600,
-    "planet": "Taris"
+    "planet": "Terminus",
+    "distance": 150
   }],
   "alignment": [],
   "active": true

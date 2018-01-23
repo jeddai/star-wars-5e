@@ -1,12 +1,13 @@
 {
-  "name": "Nal Hutta/Nar Shaddaa",
+  "name": "Nar Shaddaa",
   "region": "Mid Rim",
   "sector": "Hutt Space",
   "system": "Y'Toub",
-  "capital": "Bilbousa",
+  "capital": "New Vertica",
   "inhabitants": ["Hutts", "Humans"],
-  "climate": "Arid",
+  "landscape": "City",
   "coordinates": "S-12",
+  "size": 4,
   "hyperspace": [],
   "alignment": ["Black Sun"],
   "active": true

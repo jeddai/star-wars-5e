@@ -5,11 +5,11 @@
   "system": "Ryloth",
   "capital": "Kala'uun",
   "inhabitants": ["Twi-Lek"],
-  "climate": "Arid",
+  "landscape": "Rocky",
   "coordinates": "R-17",
   "hyperspace": [{
-    "distance": 30,
-    "planet": "Tatooine"
+    "planet": "Tatooine",
+    "distance": 60
   }],
   "alignment": ["Black Sun"],
   "active": true

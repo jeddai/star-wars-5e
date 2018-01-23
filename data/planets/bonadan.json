@@ -1,0 +1,17 @@
+{
+  "name": "Bonadan",
+  "region": "Outer Rim Territories",
+  "sector": "Corporate",
+  "system": "Bonadan",
+  "capital": "",
+  "inhabitants": ["Duros", "Humans"],
+  "landscape": "Urban",
+  "coordinates": "S-3",
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 500
+  }],
+  "alignment": [],
+  "active": true
+}

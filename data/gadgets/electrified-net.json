@@ -2,8 +2,8 @@
   "name": "Electrified Net",
   "type": "weapon",
   "subtype": "net",
-  "activation": "continuous",
-  "desc": "This is a normal net for all intents and purposes, except it is electrified. Creatures stuck in the net will be shocked into submission until they escape or are released.<br/><br/>***Ensnare.*** *Ranged Weapon Attack* thrown 5/15. On a hit, the target is ensnared by the net. When the target becomes ensnared and at the beginning of each of its turns while still in the net, it must make a DC 12 Constitution saving throw or it is stunned until the beginning of its next turn.",
+  "activation": "constant",
+  "desc": "This is a normal net for all intents and purposes, except it is electrified. Creatures stuck in the net will be shocked into submission until they escape or are released.<br/><br/>***Ensnare.*** *Ranged Weapon Attack* thrown 15/30. On a hit, the target is ensnared by the net. When the target becomes ensnared and at the beginning of each of its turns while still in the net, it must make a DC 12 Constitution saving throw or it is stunned until the beginning of its next turn.",
   "level": 2,
   "restrictions": "Engineer, Mercenary",
   "cost": 200

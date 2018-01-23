@@ -3,6 +3,22 @@ body {
   padding-bottom: 60px;
 }
 
+.loading {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+app-root:empty + .loading {
+  opacity: 1 !important;
+  z-index: 100;
+}
+
 .title {
   padding-left: 15px;
 }

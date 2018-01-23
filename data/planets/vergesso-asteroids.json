@@ -5,8 +5,9 @@
   "system": "Lybeya",
   "capital": "",
   "inhabitants": ["Humans", "Dianoga"],
-  "climate": "Asteroid",
+  "landscape": "Asteroid",
   "coordinates": "P-18",
+  "size": 15,
   "hyperspace": [],
   "alignment": [],
   "active": true

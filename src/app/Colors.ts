@@ -1,19 +1,21 @@
 export class Colors {
-  public static climateColors = {
+  public static landscapeColors = {
     Arid: '#fd8',
     Asteroid: '#777',
+    Barren: '#ddd',
     City: '#ee5',
-    Dry: '#dc8',
+    Desert: '#dc8',
     Forest: '#070',
-    Frozen: '#ddd',
+    Frozen: '#bbf',
     Gas: '#fb4',
     Hot: '#d00',
     Moist: '#69a',
     Murky: '#990',
-    Polluted: '#aaa',
+    Rocky: '#a66',
     Station: '#333',
     Temperate: '#4b4',
     Tropical: '#0aa',
+    Urban: '#aaa',
     Volcanic: '#900',
     Water: '#00f'
   };

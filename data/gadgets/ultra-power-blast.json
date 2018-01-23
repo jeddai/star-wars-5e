@@ -3,7 +3,7 @@
   "type": "weapon",
   "subtype": "starship",
   "activation": "action",
-  "desc": "The ultra-power blast is a weapon that can be added to any small or larger starship. It is capable of dealing immense amounts of ion damage and can even disable Star Destroyers.<br/><br/>When equipped on a ship, you can make an weapon attack with the ultra power blast. If it hits, it deals 5,000 ion damage",
+  "desc": "The ultra-power blast is a weapon that can be added to any small or larger starship. It is capable of dealing immense amounts of ion damage and can even disable Star Destroyers.<br/><br/>When equipped on a ship, you can make an weapon attack with the ultra power blast. If it hits, it deals 5,000 ion damage.",
   "level": 4,
   "restrictions": "",
   "cost": 10000

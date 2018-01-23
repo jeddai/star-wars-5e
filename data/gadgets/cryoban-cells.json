@@ -3,7 +3,7 @@
   "type": "charge pack",
   "subtype": "",
   "activation": "bonus",
-  "desc": "When equipped, the user can load a CryoBan cell into their weapon. When they do so, the damage type of their weapon is converted to cold and gains the effect of Freeze. The amount of use would be only one cartridge worth of ammunition and once used must be recharged through a long rest.<br/><br/>Freeze. When a creature is hit with CryoBan Cells it must make a constitution saving throw (DC 15) or it is frozen.<br/><br/>When you are frozen your movement speed becomes 0, you cannot make any actions or reactions, and at the end of your turn you may make the DC save again. If you keep hitting them with the cells it stacks the effect. If a creature remains frozen for more than 1 minutes it dies.",
+  "desc": "When equipped, the user can load a CryoBan Cell into their weapon. When they do so, the damage type of their weapon is converted to cold and gains the effect of Freeze. The amount of use would be only one cartridge worth of ammunition and once used must be recharged through a long rest.<br/><br/>***Freeze.*** When a creature is hit with CryoBan Cells it must make a constitution saving throw (DC 15) or it is frozen. When you are frozen your movement speed becomes 0, you cannot make any actions or reactions, and at the end of your turn you may make the DC save again. If you hit them with the cells multiple times the effect stacks. If a creature remains frozen for more than 1 minutes it dies.",
   "level": 3,
   "restrictions": "",
   "cost": 800

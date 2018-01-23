@@ -4,8 +4,9 @@
   "sector": "Mytaranor",
   "system": "Kashyyyk",
   "capital": "Rwookrrorro",
-  "climate": "Forest",
+  "landscape": "Forest",
   "coordinates": "P-9",
+  "size": 8,
   "inhabitants": ["Wookiees", "Terentatek"],
   "alignment": ["Republic"],
   "active": true,
@@ -14,9 +15,6 @@
     "distance": 15
   }, {
     "planet": "Umbara",
-    "distance": 70
-  }, {
-    "planet": "Nal Hutta/Nar Shaddaa",
-    "distance": 80
+    "distance": 150
   }]
 }

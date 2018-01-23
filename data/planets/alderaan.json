@@ -5,20 +5,24 @@
   "system": "Alderaan",
   "capital": "Oroboro",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "M-10",
+  "size": 8,
   "hyperspace": [{
-    "distance": 30,
-    "planet": "Coruscant"
+    "planet": "Arcadia",
+    "distance": 50
   }, {
-    "distance": 15,
-    "planet": "Kuat"
+    "planet": "Corellia",
+    "distance": 180
   }, {
-    "distance": 50,
-    "planet": "Corellia"
+    "planet": "Kuat", 
+    "distance": 50
   }, {
-    "distance": 35,
-    "planet": "Empress Teta"
+    "planet": "Empress Teta",
+    "distance": 100
+  }, {
+    "planet": "Byss",
+    "distance": 200
   }],
   "alignment": ["Republic"],
   "active": true

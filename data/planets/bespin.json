@@ -5,22 +5,17 @@
   "system": "Bespin",
   "capital": "Cloud City",
   "inhabitants": ["Ugnaughts", "Humans", "Aqualish"],
-  "climate": "Gas",
+  "landscape": "Gas",
   "coordinates": "K-18",
+  "size": 15,
   "hyperspace": [{
-    "distance": 15,
-    "planet": "Hoth"
+    "planet": "Thyferra",
+    "distance": 300
   }, {
-    "distance": 40,
-    "planet": "Mustafar"
+    "planet": "Hoth",
+    "distance": 50
   }, {
-    "distance": 60,
-    "planet": "Polis Massa"
-  }, {
-    "distance": 250,
-    "planet": "Corellia"
-  }, {
-    "planet": "Bestine",
+    "planet": "Terminus",
     "distance": 120
   }],
   "alignment": ["Republic"],

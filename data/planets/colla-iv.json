@@ -4,19 +4,17 @@
   "sector": "",
   "system": "Colla",
   "capital": "",
-  "climate": "Polluted",
+  "landscape": "Urban",
   "coordinates": "N-9",
+  "size": 8,
   "inhabitants": ["Colicoids"],
   "alignment": [],
-  "active": true,
   "hyperspace": [{
-    "distance": 100,
-    "planet": "Jedha"
+    "planet": "Kuat",
+    "distance": 200
   }, {
-    "distance": 100, 
-    "planet": "Onderon"
-  }, {
-    "distance": 100,
-    "planet": "Rhen Var"
-  }]
+    "planet": "Onderon",
+    "distance": 200
+  }],
+  "active": true
 }

@@ -5,11 +5,12 @@
   "system": "Tobali",
   "capital": "",
   "inhabitants": [],
-  "climate": "Frozen",
+  "landscape": "Frozen",
   "coordinates": "R-6",
+  "size": 7,
   "hyperspace": [{
     "planet": "Yavin IV",
-    "distance": 70
+    "distance": 200
   }],
   "alignment": ["Mando'ade"],
   "active": true

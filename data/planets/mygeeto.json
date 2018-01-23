@@ -5,12 +5,10 @@
   "system": "Mygeeto",
   "capital": "Jygat",
   "inhabitants": ["Muuns"],
-  "climate": "Frozen",
+  "landscape": "Frozen",
   "coordinates": "K-5",
-  "hyperspace": [{
-    "planet": "Taris",
-    "distance": 80
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["None"],
   "active": true
 }

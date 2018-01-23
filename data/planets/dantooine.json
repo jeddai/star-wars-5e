@@ -5,14 +5,18 @@
   "system": "Dantooine",
   "capital": "Garang",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "L-4",
+  "size": 7,
   "hyperspace": [{
-    "planet": "Mygeeto",
-    "distance": 40
+    "planet": "Taris",
+    "distance": 300
   }, {
-    "planet": "Muunilinst",
-    "distance": 30
+    "planet": "Mygeeto",
+    "distance": 120
+  }, {
+    "planet": "Muunilinst", 
+    "distance": 80
   }],
   "alignment": ["Jedi"],
   "active": true

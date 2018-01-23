@@ -1,0 +1,14 @@
+{
+  "name": "Terminus",
+  "region": "Outer Rim Territories",
+  "sector": "Kallea",
+  "system": "Terminus",
+  "capital": "Trantor",
+  "inhabitants": [],
+  "landscape": "Urban",
+  "coordinates": "K-20",
+  "size": 8,
+  "hyperspace": [],
+  "alignment": ["Republic"],
+  "active": true
+}

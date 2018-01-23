@@ -1,0 +1,20 @@
+{
+  "name": "Brentaal IV",
+  "region": "Core Worlds",
+  "sector": "Bormea",
+  "system": "Bormea",
+  "capital": "Cormond",
+  "inhabitants": ["Human"],
+  "landscape": "Arid",
+  "coordinates": "L-9",
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 300
+  }, {
+    "planet": "Malastare",
+    "distance": 800
+  }],
+  "alignment": [],
+  "active": true
+}

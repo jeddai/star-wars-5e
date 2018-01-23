@@ -3,12 +3,10 @@
   "region": "Inner Rim",
   "system": "Pyrshak",
   "capital": "Ahto City",
-  "climate": "Water",
+  "landscape": "Water",
   "coordinates": "O-11",
-  "hyperspace": [{
-    "planet": "Umbara",
-    "distance": 90
-  }],
+  "size": 9,
+  "hyperspace": [],
   "active": true,
   "inhabitants": ["Aqualish"]
 }

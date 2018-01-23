@@ -5,11 +5,12 @@
   "system": "Kuat",
   "capital": "Kuat City",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "M-10",
+  "size": 8,
   "hyperspace": [{
     "planet": "Rendili",
-    "distance": 50
+    "distance": 100
   }],
   "alignment": ["Republic"],
   "active": true

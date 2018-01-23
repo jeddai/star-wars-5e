@@ -5,15 +5,10 @@
   "system": "Jabiim",
   "capital": "Choal",
   "inhabitants": ["Jabiimi"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "S-7",
-  "hyperspace": [{
-    "planet": "Rhen Var",
-    "distance": 100
-  }, {
-    "distance": 40,
-    "planet": "Teth"
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["None"],
   "active": true
 }

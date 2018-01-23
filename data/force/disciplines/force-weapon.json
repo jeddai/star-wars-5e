@@ -22,7 +22,7 @@
       "target":["item"],
       "range":"touch",
       "damage":"nd10 psychic",
-      "description":"As a bonus action, you imbue a weapon you’re holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 psychic damage per point spent."
+      "description":"As a bonus action, you imbue a weapon you’re holding or your unarmed strike with force energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 damage of the weapon's damage type per point spent. The damage type can be chosen between cold, fire, force, lightning, or radiant at the cost of an additional force point."
     }, {
       "name":"Augmented Weapon",
       "cost":"5",

@@ -5,11 +5,12 @@
   "system": "Japrael",
   "capital": "Iziz",
   "inhabitants": ["Mandalorians"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "O-9",
+  "size": 8,
   "hyperspace": [{
-    "distance": 150,
-    "planet": "Yavin IV"
+    "planet": "Umbara",
+    "distance": 150
   }],
   "alignment": ["Mando'ade"],
   "active": true

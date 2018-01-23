@@ -5,23 +5,18 @@
   "system": "Abregado",
   "capital": "Abregado-Rae Spaceport",
   "inhabitants": ["Gados"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "K-13",
+  "size": 8,
   "hyperspace": [{
-    "distance": 50,
-    "planet": "Duro"
+    "planet": "Thyferra",
+    "distance": 100
   }, {
-    "distance": 20,
-    "planet": "Thyferra"
+    "planet": "Fondor",
+    "distance": 100
   }, {
-    "distance": 20,
-    "planet": "Fondor"
-  }, {
-    "distance": 40,
-    "planet": "Byss"
-  }, {
-    "distance": 200,
-    "planet": "Sullust"
+    "planet": "Byss",
+    "distance": 200
   }],
   "alignment": [],
   "active": true

@@ -3,7 +3,7 @@
   "type": "weapon",
   "subtype": "ranged",
   "activation": "action, object",
-  "desc": "When this gadget is equipped, the firearm that the gadget is integrated into gains the Burst Fire property. You can use the weapon to take a normal attack action, or you can use an object interaction in conjunction with an attack action to spray a 30 foot cone area within normal range with plasma rounds. Each Creature in the area must succeed on a Dexterity saving throw (DC 15)or take 8 die of the weapon's normal damage die radiant damage. On a failed save a creature takes half as much damage. This action consumes eight pieces of ammunition. ",
+  "desc": "When this gadget is equipped, the firearm that the gadget is integrated into gains the Burst Fire property. You can use the weapon to take a normal attack action, or you can use an object interaction in conjunction with an attack action to spray a 30 foot cone area within normal range with plasma rounds. Each creature in the area must succeed on a Dexterity saving throw (DC 15)or take 8 die of the weapon's normal damage die of radiant damage. On a failed save a creature takes half as much damage. This action consumes eight rounds of ammunition.",
   "level": 4,
   "restrictions": "engineer, mercenary",
   "cost": 1800

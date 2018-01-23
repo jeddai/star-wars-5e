@@ -5,14 +5,12 @@
   "system": "Fondor",
   "capital": "Fondor City",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Desert",
   "coordinates": "L-13",
+  "size": 7,
   "hyperspace": [{
-    "distance": 40,
-    "planet": "Thyferra"
-  }, {
-    "distance": 180,
-    "planet": "Sullust"
+    "planet": "Thyferra",
+    "distance": 100
   }],
   "alignment": ["Republic"],
   "active": true

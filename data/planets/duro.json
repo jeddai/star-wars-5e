@@ -5,12 +5,10 @@
   "system": "Duro",
   "capital": "Bburru Station",
   "inhabitants": ["Duros"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "M-11",
-  "hyperspace": [{
-    "distance": 60,
-    "planet": "Fondor"
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["Republic"],
   "active": true
 }

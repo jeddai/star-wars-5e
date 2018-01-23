@@ -1,0 +1,10 @@
+{
+  "name": "Cape of the Mynock",
+  "type": "clothing",
+  "subtype": "cloak",
+  "activation": "object",
+  "desc": "When you take an object interaction to activate this gadget, your cloak becomes rigid, allowing you to glide down from a high place. You can fly at a speed of 30 feet for a maximum distance of up to three times the height of your starting point (If you begin at a height of 30 feet, you can glide a maximum of 90 feet from your starting point). If you are still airborne when you reach the maximum distance, you fall. Once used, the gadget must be reset and this effect cannot be used again until you complete a short or long rest.",
+  "level": 3,
+  "restrictions": "engineer",
+  "cost": 800
+}

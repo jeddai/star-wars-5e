@@ -3,7 +3,7 @@
   "type": "weapon",
   "subtype": "ranged",
   "activation": "constant",
-  "desc": "When this weapon is equipped, you can equpt a gatling laser onto your turret. Your turret is proficient with this weapon and gains and the bonuses and benefits using it.",
+  "desc": "When this mod is equipped, you can equip a gatling laser onto your turret. Your turret is proficient with this weapon and gains and the bonuses and benefits using it.",
   "level": 3,
   "restrictions": "engineer",
   "cost": 600

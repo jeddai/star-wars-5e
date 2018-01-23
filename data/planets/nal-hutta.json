@@ -1,0 +1,23 @@
+{
+  "name": "Nal Hutta",
+  "region": "Mid Rim",
+  "sector": "Hutt Space",
+  "system": "Y'Toub",
+  "capital": "Bilbousa",
+  "inhabitants": ["Hutts", "Humans"],
+  "landscape": "Arid",
+  "coordinates": "S-12",
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Nar Shaddaa",
+    "distance": 15
+  }, {
+    "planet": "Umbara",
+    "distance": 400
+  }, {
+    "planet": "Teth",
+    "distance": 200
+  }],
+  "alignment": ["Black Sun"],
+  "active": true
+}

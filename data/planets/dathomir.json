@@ -5,14 +5,12 @@
   "system": "Dathomir",
   "capital": "Aurilia",
   "inhabitants": ["Zabrak", "Dathomirians"],
-  "climate": "Temperate",
+  "landscape": "Murky",
   "coordinates": "O-6",
+  "size": 8,
   "hyperspace": [{
     "planet": "Taris",
-    "distance": 40
-  }, {
-    "planet": "Mandalore",
-    "distance": 40
+    "distance": 100
   }],
   "alignment": ["None"],
   "active": true

@@ -5,14 +5,15 @@
   "system": "Mandalore",
   "capital": "Keldabe",
   "inhabitants": ["Humans", "Taung"],
-  "climate": "Forest",
+  "landscape": "Forest",
   "coordinates": "O-7",
+  "size": 7,
   "hyperspace": [{
-    "distance": 50,
-    "planet": "Taris"
+    "planet": "Ordo",
+    "distance": 40
   }, {
-    "distance": 150,
-    "planet": "Onderon"
+    "planet": "Onderon",
+    "distance": 200
   }],
   "alignment": ["Mando'ade"],
   "active": true

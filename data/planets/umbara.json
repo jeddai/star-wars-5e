@@ -3,8 +3,9 @@
   "region": "Expansion Region",
   "sector": "Ghost Nebula",
   "system": "Umbara",
-  "climate": "Temperate",
+  "landscape": "Murky",
   "coordinates": "P-10",
+  "size": 8,
   "inhabitants": ["Umbarans"],
   "alignment": ["Republic"],
   "active": true

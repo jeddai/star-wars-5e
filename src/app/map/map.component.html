@@ -3,23 +3,34 @@
 
 <p-growl class="growl" [(value)]="messages" [life]="300"></p-growl>
 
-<div class="ui-grid ui-grid-responsive">
-  <div class="ui-grid-row">
-    <div id="main" class="ui-grid-col-6" style="text-align:right">
-      <svg width="960px" height="960px" style="max-width: 100%; max-height: 100%"></svg>
+<div class="container-fluid">
+  <div class="row">
+    <div id="main" style="position: absolute;">
+      <svg width="100vw" height="85vh"></svg>
     </div>
-    <div class="ui-grid-col-6">
+    <div class="col-lg-2 offset-10">
       <div class="form-group">
         <label for="group">Group By:</label>
-        <select class="form-control" id="group" [(ngModel)]="groupBy" (change)="initializeForceDirectedGraph()">
-          <option value="climate">Climate</option>
-          <option value="alignment">Alignment</option>
-        </select>
+        <div class="col-12">
+          <select class="form-control" id="group" [(ngModel)]="groupBy" (change)="initializeForceDirectedGraph()">
+            <option value="landscape">Landscape</option>
+            <option value="alignment">Alignment</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dijkstra">Shortest Path:</label>
+        <div class="col-12">
+          <p-autoComplete placeholder="Planet 1" [(ngModel)]="p1" [suggestions]="planets1" (completeMethod)="search('planets1', $event)"></p-autoComplete>
+        </div>
+        <div class="col-12">
+          <p-autoComplete placeholder="Planet 2" [(ngModel)]="p2" [suggestions]="planets2" (completeMethod)="search('planets2', $event)"></p-autoComplete>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="button" (click)="getDirections(p1, p2)">Find Path</button>
+        </div>
       </div>
       <small id="legend"></small>
-      <p-autoComplete placeholder="Planet 1" [(ngModel)]="p1" [suggestions]="planets1" (completeMethod)="search('planets1', $event)"></p-autoComplete>
-      <p-autoComplete placeholder="Planet 2" [(ngModel)]="p2" [suggestions]="planets2" (completeMethod)="search('planets2', $event)"></p-autoComplete>
-      <button type="button" pButton label="Find Path" (click)="getDirections(p1, p2)"></button>
     </div>
   </div>
 </div>

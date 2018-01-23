@@ -2,8 +2,9 @@
   "name": "Ilum",
   "region": "Unknown Regions",
   "system": "Ilum",
-  "climate": "Frozen",
+  "landscape": "Frozen",
   "coordinates": "G-7",
+  "size": 6,
   "hyperspace": [],
   "alignment": ["Jedi"],
   "active": true

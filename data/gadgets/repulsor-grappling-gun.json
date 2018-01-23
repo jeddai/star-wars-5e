@@ -3,7 +3,7 @@
   "type": "weapon",
   "subtype": "attachment",
   "activation": "action",
-  "desc": "The repulsor grappling gun is a rifle containing 200 meters of molecularly reinforced line that can pull up to 200 kilograms at 20 meters per second. As an action, the user can aim the grappling gun at a surface and make a weapon attack. On a hit, the hook becomes attached to the surface and the user can climb up to 390 ft per round. The hook cannot be used on flat ground and the user must have both hands holding the gun while climbing.",
+  "desc": "The repulsor grappling gun is a modification containing 1000ft of molecularly reinforced line that can pull up to 200 kilograms at 60ft per second. As an action, the user can aim the grappling gun at a surface and make a weapon attack. On a hit, the hook becomes attached to the surface and the user can climb up to 360 ft on their turn. The hook cannot be used on flat ground and the user must have both hands holding the gun while climbing.",
   "level": 3,
   "restrictions": "",
   "cost": 500

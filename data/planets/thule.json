@@ -5,8 +5,9 @@
   "system": "Thurra",
   "capital": "Hurom",
   "inhabitants": ["Humans", "Sith"],
-  "climate": "Arid",
+  "landscape": "Arid",
   "coordinates": "Q-5",
+  "size": 9,
   "hyperspace": [],
   "alignment": ["None"],
   "active": true

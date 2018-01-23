@@ -5,8 +5,9 @@
   "system": "Teth",
   "capital": "Inner Teth",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "U-12",
+  "size": 6,
   "hyperspace": [],
   "alignment": ["None"],
   "active": true

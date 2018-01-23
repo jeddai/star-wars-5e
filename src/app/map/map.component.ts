@@ -8,8 +8,8 @@ import { ForceDirectedGraphData, ForceDirectedNode } from '../_interfaces';
 import { ShortestHyperspaceLane } from '../_classes';
 import { MapService } from './map.service';
 
-const baseLineColor = '#aaa',
-      highlightLineColor = '#777',
+const baseLineColor = '#eee',
+      highlightLineColor = '#aaa',
       mapLineColor = '#e00';
 
 @Component({
@@ -20,7 +20,7 @@ const baseLineColor = '#aaa',
 export class MapComponent implements OnInit {
   public messages: Message[] = [];
   public groupings: string[] = ['hyperspace'];
-  public groupBy = 'climate';
+  public groupBy = 'landscape';
   public alignment = 'Republic';
   public safe = 'false';
   public highlighted: any;
@@ -48,8 +48,8 @@ export class MapComponent implements OnInit {
   ngOnInit() {
     this.main = document.getElementById('main');
     this.svg = d3.select('svg');
-    this.width = parseInt(this.svg.attr('width'));
-    this.height = parseInt(this.svg.attr('height'));
+    this.width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    this.height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * .85;
     this.aspect = this.width / this.height;
     this.transform = d3.zoomIdentity;
 
@@ -120,11 +120,13 @@ export class MapComponent implements OnInit {
     .data(component.data.nodes)
     .enter()
     .append('circle')
-    .attr('r', 7)
+    .attr('r', p => {
+      return p.size || 8;
+    })
     .attr('fill', function (p) {
       move(p);
-      if (component.groupBy === 'climate') {
-        return Colors.climateColors[p.climate];
+      if (component.groupBy === 'landscape') {
+        return Colors.landscapeColors[p.landscape];
       } else if (component.groupBy === 'alignment') {
         if (typeof p.alignment !== 'object') return Colors.alignmentColors['None'];
         const mainAlignment = p.alignment[0];
@@ -148,8 +150,8 @@ export class MapComponent implements OnInit {
       }
 
       function getCoords(mapCoord, axis) {
-        if (axis === 'x') return (mapCoord.charCodeAt(0) - 64) * 75;
-        else if (axis === 'y') return (parseInt(mapCoord.slice(mapCoord.search('-') + 1, 4))) * 75;
+        if (axis === 'x') return (mapCoord.charCodeAt(0) - 64) * 100;
+        else if (axis === 'y') return (parseInt(mapCoord.slice(mapCoord.search('-') + 1, 4))) * 100;
       }
 
       function getAttachedLinks(currCircle, line) {
@@ -249,12 +251,12 @@ export class MapComponent implements OnInit {
       }
 
       function redraw(){
-        if (component.main.clientHeight < component.main.clientWidth)
+        /*if (component.main.clientHeight < component.main.clientWidth)
           component.svg.attr('width', Math.min(component.main.clientWidth, component.width))
           .attr('height', Math.min(component.main.clientWidth, component.width));
         else
           component.svg.attr('width', Math.min(component.main.clientHeight, component.height))
-          .attr('height', Math.min(component.main.clientHeight, component.height));
+          .attr('height', Math.min(component.main.clientHeight, component.height));*/
       }
 
       // Draw for the first time to initialize.
@@ -266,10 +268,10 @@ export class MapComponent implements OnInit {
 
   private legendHtml(p: ForceDirectedNode): string {
     let html = '';
-    if (this.groupBy === 'climate') {
-      html += '<h5>Climates:</h5><ul>';
-      for (const key in Colors.climateColors) {
-        html += '<li style="color:' + Colors.climateColors[key] + ';">' + key
+    if (this.groupBy === 'landscape') {
+      html += '<h5>Landscapes:</h5><ul>';
+      for (const key in Colors.landscapeColors) {
+        html += '<li style="color:' + Colors.landscapeColors[key] + ';">' + key
             + '</li>';
       }
       html += '</ul>';
@@ -300,7 +302,7 @@ export class MapComponent implements OnInit {
     if (!!p.sector) html += '<br/>Sector: ' + p.sector;
     if (!!p.system) html += '<br/>System: ' + p.system;
     if (!!p.capital) html += '<br/>Capital: ' + p.capital;
-    if (!!p.climate) html += '<br/>Climate: ' + p.climate;
+    if (!!p.landscape) html += '<br/>Landscape: ' + p.landscape;
     if (!!p.alignment && !!p.alignment.length) {
       html += '<br/>Alignment: ';
       p.alignment.forEach((group, index) => {

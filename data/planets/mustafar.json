@@ -5,8 +5,9 @@
   "system": "Mustafar",
   "capital": "Fralideja",
   "inhabitants": ["Mustafarians"],
-  "climate": "Hot",
+  "landscape": "Hot",
   "coordinates": "L-19",
+  "size": 6,
   "hyperspace": [],
   "alignment": ["Black Sun"],
   "active": true

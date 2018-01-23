@@ -5,8 +5,9 @@
   "system": "Japrael",
   "capital": "",
   "inhabitants": [],
-  "climate": "Forest",
+  "landscape": "Forest",
   "coordinates": "O-9",
+  "size": 4,
   "hyperspace": [{
     "planet": "Onderon",
     "distance": 15

@@ -5,12 +5,10 @@
   "system": "Utapau",
   "capital": "Pau City",
   "inhabitants": ["Pau'ans", "Utai"],
-  "climate": "Arid",
+  "landscape": "Desert",
   "coordinates": "N-19",
-  "hyperspace": [{
-    "distance": 80,
-    "planet": "Vergesso Asteroids"
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["Republic"],
   "active": true
 }

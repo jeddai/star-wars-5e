@@ -4,16 +4,11 @@
   "sector": "Terrabe",
   "system": "Jedha",
   "capital": "Jedha City",
-  "climate": "Arid",
+  "landscape": "Desert",
   "inhabitants": ["Humans"],
   "alignment": ["Jedi"],
   "active": true,
-  "coordinates": "Q-8",
-  "hyperspace": [{
-    "planet": "Kashyyyk",
-    "distance": 80
-  }, {
-    "planet": "Umbara",
-    "distance": 80
-  }]
+  "coordinates": "H-10",
+  "size": 8,
+  "hyperspace": []
 }

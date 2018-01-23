@@ -5,21 +5,10 @@
   "system": "Beshqek System",
   "capital": "Imperial Citadel",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "K-11",
-  "hyperspace": [{
-    "distance": 30,
-    "planet": "Coruscant"
-  }, {
-    "distance": 50,
-    "planet": "Corellia"
-  }, {
-    "distance": 60,
-    "planet": "Kuat"
-  }, {
-    "distance": 30,
-    "planet": "Empress Teta"
-  }],
+  "size": 9,
+  "hyperspace": [],
   "alignment": ["Republic"],
   "active": true
 }

@@ -5,14 +5,15 @@
   "system": "Felucia",
   "capital": "Kway Teow",
   "inhabitants": ["Sith"],
-  "climate": "Forest",
+  "landscape": "Forest",
   "coordinates": "R-6",
+  "size": 7,
   "hyperspace": [{
-    "planet": "Yavin IV",
-    "distance": 50
-  }, {
     "planet": "Rhen Var",
-    "distance": 20
+    "distance": 130
+  }, {
+    "planet": "Jabiim",
+    "distance": 130
   }],
   "alignment": ["None"],
   "active": true

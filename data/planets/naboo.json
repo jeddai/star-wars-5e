@@ -5,20 +5,12 @@
   "system": "Naboo",
   "capital": "Theed",
   "inhabitants": ["Humans", "Gungans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "O-17",
+  "size": 8,
   "hyperspace": [{
-    "distance": 90,
-    "planet": "Tatooine"
-  }, {
-    "distance": 60,
-    "planet": "Sullust"
-  }, {
-    "distance": 120,
-    "planet": "Utapau"
-  }, {
-    "distance": 80,
-    "planet": "Vergesso Asteroids"
+    "planet": "Tatooine",
+    "distance": 200
   }],
   "alignment": ["Republic"],
   "active": true

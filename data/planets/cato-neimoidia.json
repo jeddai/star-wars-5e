@@ -5,17 +5,15 @@
   "system": "Cato Neimoidia",
   "capital": "",
   "inhabitants": ["Neimoidians"],
-  "climate": "Moist",
+  "landscape": "Moist",
   "coordinates": "N-11",
+  "size": 8,
   "hyperspace": [{
-    "distance": 10,
-    "planet": "Rendili"
-  }, {
-    "distance": 25,
-    "planet": "Corellia"
+    "planet": "Corellia",
+    "distance": 200
   }, {
     "planet": "Manaan",
-    "distance": 100
+    "distance": 150
   }],
   "alignment": [],
   "active": true

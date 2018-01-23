@@ -3,7 +3,7 @@
   "type": "armor",
   "subtype": "shield",
   "activation": "constant",
-  "desc": "When equipped, this shield has an AC of 13, HP equal to 10 + your int mod + twice your engineer level, and resistance against all melee weapons and energy based weapons. When its HP hits 0, it can only be recharged through a long or short rest. You may only have one personal shield equipped at a time.",
+  "desc": "When equipped, this shield has an AC of 13, HP equal to 10 + your int mod + twice your engineer level, and resistance against all melee weapons and energy based weapons. When its HP hits 0, it can only be recharged by taking a short or long rest. You may only have one personal shield equipped at a time.",
   "level": 4,
   "restrictions": "engineer, mercenary",
   "cost": 2500

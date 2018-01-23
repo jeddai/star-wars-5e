@@ -5,26 +5,21 @@
   "system": "Corellian",
   "capital": "Coronet City",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "M-11",
+  "size": 8,
   "hyperspace": [{
-    "distance": 20,
-    "planet": "Duro"
+    "planet": "Coruscant",
+    "distance": 400
   }, {
-    "distance": 200,
-    "planet": "Ryloth"
+    "planet": "Ryloth",
+    "distance": 600
   }, {
-    "distance": 60,
-    "planet": "Coruscant"
+    "planet": "Duro",
+    "distance": 40
   }, {
-    "distance": 250,
-    "planet": "Eriadu"
-  }, {
-    "distance": 230,
-    "planet": "Sullust"
-  }, {
-    "distance": 350,
-    "planet": "Taris"
+    "planet": "Umbara",
+    "distance": 300
   }],
   "alignment": ["Republic"],
   "active": true

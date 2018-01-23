@@ -5,17 +5,18 @@
   "system": "Dagobah",
   "capital": "",
   "inhabitants": [],
-  "climate": "Murky",
+  "landscape": "Murky",
   "coordinates": "M-19",
+  "size": 7,
   "hyperspace": [{
-    "distance": 40,
-    "planet": "Utapau"
+    "planet": "Eriadu",
+    "distance": 150
   }, {
-    "distance": 50,
-    "planet": "Eriadu"
+    "planet": "Mustafar", 
+    "distance": 100
   }, {
-    "planet": "Naboo",
-    "distance": 70
+    "planet": "Utapau",
+    "distance": 100
   }],
   "alignment": [],
   "active": true

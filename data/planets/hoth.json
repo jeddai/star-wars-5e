@@ -5,12 +5,10 @@
   "system": "Hoth",
   "capital": "",
   "inhabitants": ["Humans"],
-  "climate": "Frozen",
+  "landscape": "Frozen",
   "coordinates": "K-18",
-  "hyperspace": [{
-    "distance": 40,
-    "planet": "Mustafar"
-  }],
+  "size": 6,
+  "hyperspace": [],
   "alignment": [],
   "active": true
 }

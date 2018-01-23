@@ -1,7 +1,7 @@
 {
   "name": "Electromagnetic Gloves",
-  "type": "gloves",
-  "subtype": "",
+  "type": "clothing",
+  "subtype": "gloves",
   "activation": "action",
   "desc": "When this gadget is equipped, you can take an action to target a creature within 30 feet of you that is wielding a weapon or holding an object made of metal that weighs 9 pounds or less. The target must make a Strength saving throw. On a failed save, they drop the object, which flies through the air and into your hands. Once used, the effect must be recharged and cannot be used again until you complete a short or long rest.",
   "level": 2,

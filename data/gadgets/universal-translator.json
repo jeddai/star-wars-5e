@@ -3,7 +3,7 @@
   "type": "headgear",
   "subtype": "",
   "activation": "constant",
-  "desc": "As you have this gadget equipped, you constantly understand and can speak almost any language.",
+  "desc": "While you have this gadget equipped, you understand and can speak any known language.",
   "level": 1,
   "restrictions": "",
   "cost": 150

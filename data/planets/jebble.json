@@ -1,0 +1,17 @@
+{
+  "name": "Jebble",
+  "region": "Outer Rim Territories",
+  "sector": "Ojoster",
+  "system": "Jebble",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "landscape": "Frozen",
+  "coordinates": "N-7",
+  "size": 6,
+  "hyperspace": [{
+    "planet": "Taris",
+    "distance": 60
+  }],
+  "alignment": [],
+  "active": true
+}

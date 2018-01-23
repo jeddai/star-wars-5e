@@ -5,17 +5,12 @@
   "system": "Coruscant",
   "capital": "Galactic City",
   "inhabitants": ["Humans"],
-  "climate": "City",
+  "landscape": "City",
   "coordinates": "L-9",
+  "size": 8,
   "hyperspace": [{
-    "planet": "Kuat",
-    "distance": 60
-  }, {
-    "distance": 15,
-    "planet": "Empress Teta"
-  }, {
-    "planet": "Csilla",
-    "distance": 500
+    "planet": "Anaxes",
+    "distance": 40
   }],
   "alignment": ["Republic"],
   "active": true

@@ -3,7 +3,7 @@
   "type": "turret",
   "subtype": "",
   "activation": "constant",
-  "desc": "When this gadget is equipped to your turret, it increase the number of charge pack it can carry by two.",
+  "desc": "When this gadget is equipped to your turret, it multiplies the number of charge packs it can carry by two.",
   "level": 2,
   "restrictions": "engineer",
   "cost": 300

@@ -4,8 +4,9 @@
   "sector": "Mytaranor",
   "system": "Kashyyyk",
   "capital": "Hsskhor",
-  "climate": "Arid",
+  "landscape": "Arid",
   "coordinates": "P-9",
+  "size": 4,
   "inhabitants": ["Trandoshans"],
   "alignment": ["Black Sun"],
   "active": true

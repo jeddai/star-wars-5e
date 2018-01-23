@@ -5,14 +5,12 @@
   "system": "Calamari",
   "capital": "Coral City",
   "inhabitants": ["Mon Calamari", "Quarren"],
-  "climate": "Water",
+  "landscape": "Water",
   "coordinates": "U-6",
+  "size": 8,
   "hyperspace": [{
-    "planet": "Rhen Var",
-    "distance": 150
-  }, {
-    "planet": "Malachor",
-    "distance": 150
+    "planet": "Jabiim",
+    "distance": 200
   }],
   "alignment": ["None"],
   "active": true

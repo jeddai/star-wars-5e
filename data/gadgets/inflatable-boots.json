@@ -1,8 +1,8 @@
 {
   "name": "Inflatable Boots",
-  "type": "boots",
-  "subtype": "",
-  "activation": "interaction",
+  "type": "clothing",
+  "subtype": "boots",
+  "activation": "object",
   "desc": "When this gadget is equipped, you gain the ability to move across any liquid (water, quicksand, lava etc.) as if it were solid ground. If the liquid is harmful (such as acid or lava) you still take damage for coming into contact with it.",
   "level": 2,
   "restrictions": "",

@@ -5,18 +5,10 @@
   "system": "Empress Teta",
   "capital": "Cinnagar",
   "inhabitants": ["Humans"],
-  "climate": "City",
+  "landscape": "City",
   "coordinates": "L-10",
-  "hyperspace": [{
-    "planet": "Mandalore",
-    "distance": 400
-  }, {
-    "planet": "Korriban",
-    "distance": 600
-  }, {
-    "planet": "Yavin IV",
-    "distance": 480
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["Republic"],
   "active": true
 }

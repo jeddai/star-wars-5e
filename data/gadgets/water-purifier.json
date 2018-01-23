@@ -2,8 +2,8 @@
   "name": "Water Purifier",
   "type": "backpack",
   "subtype": "",
-  "activation": "object",
-  "desc": "The Water purifier is a tool that is placed within a body of water and can be used to pull out water and purify it to become drinkable.",
+  "activation": "1hr",
+  "desc": "The Water purifier is a tool that is placed within a body of water and can be used to pull out water and purify it to become drinkable. This process takes 1hr",
   "level": 1,
   "restrictions": "",
   "cost": 150

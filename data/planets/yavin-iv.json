@@ -5,8 +5,9 @@
   "system": "Yavin",
   "capital": "",
   "inhabitants": ["Sith"],
-  "climate": "Forest",
+  "landscape": "Forest",
   "coordinates": "P-6",
+  "size": 8,
   "hyperspace": [],
   "alignment": ["Mando'ade"],
   "active": true

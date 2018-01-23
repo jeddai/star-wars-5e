@@ -1,0 +1,20 @@
+{
+  "name": "Flashpoint",
+  "region": "Outer Rim Territories",
+  "sector": "Meerian",
+  "system": "Flashpoint",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "landscape": "Barren",
+  "coordinates": "O-7",
+  "size": 4,
+  "hyperspace": [{
+    "planet": "Vanquo",
+    "distance": 30
+  }, {
+    "planet": "Ordo",
+    "distance": 80
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

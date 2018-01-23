@@ -1,7 +1,7 @@
 {
   "name": "Zakuul",
   "region": "Unknown Regions",
-  "climate": "Murky",
+  "landscape": "Murky",
   "coordinates": "D-13",
   "alignment": ["Eternal Empire"],
   "inhabitants": ["Humans"],

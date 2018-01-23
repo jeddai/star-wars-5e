@@ -5,14 +5,15 @@
   "system": "Bothawui",
   "capital": "Prosperity",
   "inhabitants": ["Bothans"],
-  "climate": "Dry",
-  "coordinates": "O-17",
+  "landscape": "Desert",
+  "coordinates": "R-14",
+  "size": 7,
   "hyperspace": [{
-    "distance": 60,
-    "planet": "Tatooine"
+    "planet": "Ryloth",
+    "distance": 200
   }, {
-    "distance": 80,
-    "planet": "Ryloth"
+    "planet": "Nal Hutta",
+    "distance": 400
   }],
   "alignment": [],
   "active": true

@@ -3,11 +3,15 @@
   "region": "Outer Rim Territories",
   "sector": "Ojoster",
   "system": "Taris",
-  "capital": "Ecumenopolis",
+  "capital": "",
   "inhabitants": ["Nekghoul"],
-  "climate": "City",
+  "landscape": "City",
   "coordinates": "N-7",
-  "hyperspace": [],
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Vanquo",
+    "distance": 80
+  }],
   "alignment": ["Contested"],
   "active": true
 }

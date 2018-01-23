@@ -5,6 +5,6 @@
   "activation": "constant",
   "desc": "The targeting assistance mem-stick is a reformatted memory stick that when plugged into a datapad gives the user constant updates on hostile target positions. The mem-stick allows the user to use a bonus action to begin tracking up to 10 targets. You know a tracked target's position within 600 feet of you, and have advantage on attack rolls against tracked enemies.",
   "level": 4,
-  "restrictions": "",
+  "restrictions": "Engineer",
   "cost": 5500
 }

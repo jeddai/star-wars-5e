@@ -1,0 +1,17 @@
+{
+  "name": "Anaxes",
+  "region": "Core Worlds",
+  "sector": "Azure",
+  "system": "Axum",
+  "capital": "Pols Anaxes",
+  "inhabitants": ["Humans"],
+  "landscape": "Temperate",
+  "coordinates": "L-9",
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Chandrila",
+    "distance": 40
+  }],
+  "alignment": ["Republic"],
+  "active": true
+}

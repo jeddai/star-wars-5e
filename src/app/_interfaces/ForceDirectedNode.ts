@@ -5,8 +5,9 @@ export interface ForceDirectedNode {
   system: string
   capital: string
   inhabitants: string[]
-  climate: string
+  landscape: string
   coordinates: string
+  size: number
   hyperspace: {
     distance: number
     planet: string

@@ -3,7 +3,7 @@
   "type": "turret",
   "subtype": "",
   "activation": "constant",
-  "desc": "When this gadget is equipped, your turret gains a +2 to their AC.",
+  "desc": "When this gadget is equipped, your turret gains a +2 to its AC.",
   "level": 2,
   "restrictions": "engineer",
   "cost": 300

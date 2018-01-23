@@ -5,17 +5,15 @@
   "system": "Bestine",
   "capital": "Barlata",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
-  "coordinates": "P-18",
+  "landscape": "Water",
+  "coordinates": "M-11",
+  "size": 5,
   "hyperspace": [{
-    "planet": "Corellia",
-    "distance": 140
-  }, {
     "planet": "Duro",
-    "distance": 120
+    "distance": 60
   }, {
-    "planet": "Thyferra",
-    "distance": 40
+    "planet": "Terminus",
+    "distance": 600
   }],
   "alignment": ["Republic"],
   "active": true

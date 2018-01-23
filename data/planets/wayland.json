@@ -5,15 +5,10 @@
   "system": "Wayland",
   "capital": "Nystao",
   "inhabitants": ["Humans", "Noghri"],
-  "climate": "Temperate",
+  "landscape": "Forest",
   "coordinates": "N-7",
-  "hyperspace": [{
-    "planet": "Taris",
-    "distance": 30
-  }, {
-    "planet": "Mandalore",
-    "distance": 30
-  }],
+  "size": 6,
+  "hyperspace": [],
   "alignment": ["Mando'ade"],
   "active": true
 }

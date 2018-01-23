@@ -1,0 +1,10 @@
+{
+  "name": "Repairpac",
+  "type": "consumable",
+  "subtype": "",
+  "activation": "action",
+  "desc": "When equipped, as an action, you can use it to give you advantage and +5 to your repair check. Whenever you use this item its resources are expended and can be recharged after taking a long rest.",
+  "level": 2,
+  "restrictions": "",
+  "cost": 150
+}

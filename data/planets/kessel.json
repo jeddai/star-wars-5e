@@ -5,14 +5,12 @@
   "system": "Kessel",
   "capital": "Kessendra",
   "inhabitants": ["Energy Spiders"],
-  "climate": "Asteroid",
+  "landscape": "Asteroid",
   "coordinates": "T-10",
+  "size": 6,
   "hyperspace": [{
-    "planet": "Teth",
-    "distance": 100
-  }, {
-    "distance": 120,
-    "planet": "Nal Hutta/Nar Shaddaa"
+    "planet": "Nal Hutta",
+    "distance": 200
   }],
   "alignment": ["Black Sun"],
   "active": true

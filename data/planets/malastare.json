@@ -5,14 +5,12 @@
   "system": "Malastare",
   "capital": "Pixelito",
   "inhabitants": ["Humans"],
-  "climate": "Temperate",
+  "landscape": "Arid",
   "coordinates": "N-16",
+  "size": 9,
   "hyperspace": [{
-    "distance": 50,
-    "planet": "Naboo"
-  }, {
-    "distance": 40,
-    "planet": "Sullust"
+    "planet": "Naboo",
+    "distance": 150
   }],
   "alignment": ["Black Sun"],
   "active": true

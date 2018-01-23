@@ -1,0 +1,17 @@
+{
+  "name": "Chandrila",
+  "region": "Core Worlds",
+  "sector": "Bormea",
+  "system": "Chandrila",
+  "capital": "Hanna City",
+  "inhabitants": ["Human"],
+  "landscape": "Temperate",
+  "coordinates": "L-9",
+  "size": 8,
+  "hyperspace": [{
+    "planet": "Brentaal IV",
+    "distance": 40
+  }],
+  "alignment": [],
+  "active": true
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Vanquo",
+  "region": "Outer Rim Territories",
+  "sector": "Meerian",
+  "system": "Vanquo",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "landscape": "Temperate",
+  "coordinates": "O-6",
+  "size": 6,
+  "hyperspace": [{
+    "planet": "Wayland",
+    "distance": 80
+  }, {
+    "planet": "Yavin IV",
+    "distance": 180
+  }],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

@@ -5,15 +5,10 @@
   "system": "Kamino",
   "capital": "Tipoca City",
   "inhabitants": ["Kaminoans"],
-  "climate": "Water",
+  "landscape": "Water",
   "coordinates": "S-15",
-  "hyperspace": [{
-    "planet": "Ryloth",
-    "distance": 300
-  }, {
-    "distance": 150,
-    "planet": "Nal Hutta/Nar Shaddaa"
-  }],
+  "size": 10,
+  "hyperspace": [],
   "alignment": [],
   "active": true
 }

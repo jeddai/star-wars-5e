@@ -5,15 +5,10 @@
   "system": "Muunilinst",
   "capital": "Harnaidan",
   "inhabitants": ["Muuns", "Sullustans", "Humans", "Bothans", "Rakata"],
-  "climate": "Temperate",
+  "landscape": "Temperate",
   "coordinates": "K-4",
-  "hyperspace": [{
-    "planet": "Taris",
-    "distance": 100
-  }, {
-    "planet": "Mygeeto",
-    "distance": 30
-  }],
+  "size": 8,
+  "hyperspace": [],
   "alignment": ["None"],
   "active": true
 }

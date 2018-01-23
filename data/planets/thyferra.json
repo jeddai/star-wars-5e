@@ -5,8 +5,9 @@
   "system": "Polith",
   "capital": "Xozhixi",
   "inhabitants": ["Human"],
-  "climate": "Tropical",
+  "landscape": "Tropical",
   "coordinates": "L-14",
+  "size": 8,
   "hyperspace": [],
   "alignment": [],
   "active": true

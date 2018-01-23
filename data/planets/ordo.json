@@ -1,0 +1,14 @@
+{
+  "name": "Ordo",
+  "region": "Outer Rim Territories",
+  "sector": "Mandalore",
+  "system": "Ordo",
+  "capital": "",
+  "inhabitants": ["Humans"],
+  "landscape": "Desert",
+  "coordinates": "O-7",
+  "size": 6,
+  "hyperspace": [],
+  "alignment": ["Mando'ade"],
+  "active": true
+}

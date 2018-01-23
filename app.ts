@@ -9,11 +9,16 @@ import http = require('http');
 import https = require('https');
 import { default as routes } from './routes';
 
-let certificate = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/cert.pem', 'utf-8');
-let key = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/privkey.pem', 'utf-8');
-let credentials = {
-  cert: certificate,
-  key: key
+let certificate, key, credentials;
+try {
+  certificate = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/cert.pem', 'utf-8');
+  key = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/privkey.pem', 'utf-8');
+  credentials = {
+    cert: certificate,
+    key: key
+  }
+} catch(e) {
+  console.log('Unable to locate resources for SSL');
 }
 
 const app = express();
@@ -49,13 +54,13 @@ var port = normalizePort(process.env.PORT || '3000');
 
 var server = null;
 if(process.env.ENV === 'prod') {
+  console.log('Starting secure web server.');
   app.set('port', 443);
   server = https.createServer(credentials, app);
-  console.log('Starting secure web server.');
 } else {
+  console.log('Starting web server.');
   app.set('port', port);
   server = http.createServer(app);
-  console.log('Starting web server.');
 }
 
 server.listen(port);

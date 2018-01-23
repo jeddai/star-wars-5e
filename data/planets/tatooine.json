@@ -5,8 +5,9 @@
   "system": "Tatoo",
   "capital": "Bestine",
   "inhabitants": ["Human"],
-  "climate": "Arid",
+  "landscape": "Desert",
   "coordinates": "R-16",
+  "size": 8,
   "hyperspace": [],
   "alignment": ["Black Sun"],
   "active": true
