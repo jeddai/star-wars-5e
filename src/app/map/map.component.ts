@@ -255,16 +255,18 @@ export class MapComponent implements OnInit, OnDestroy {
     if (this.groupBy === 'landscape') {
       html += '<h5>Landscapes:</h5><ul>';
       for (const key in Colors.landscapeColors) {
-        html += '<li style="color:' + Colors.landscapeColors[key] + ';">' + key
-            + '</li>';
+        if (Colors.landscapeColors.hasOwnProperty(key)) {
+          html += `<li style="color:${Colors.landscapeColors[key]};">${key}</li>`;
+        }
       }
       html += '</ul>';
     }
     if (this.groupBy === 'alignment') {
       html += '<h5>Alignments:</h5><ul>';
       for (const key in Colors.alignmentColors) {
-        html += '<li style="color:' + Colors.alignmentColors[key] + ';">' + key
-            + '</li>';
+        if (Colors.alignmentColors.hasOwnProperty(key)) {
+          html += `<li style="color:${Colors.landscapeColors[key]};">${key}</li>`;
+        }
       }
       html += '</ul>';
     }
@@ -281,27 +283,27 @@ export class MapComponent implements OnInit, OnDestroy {
   private getPlanetTooltip(p: ForceDirectedNode): string {
     let html = '';
 
-    if (!!p.name) html += '<b>' + p.name + '</b><br/>';
-    if (!!p.region) html += 'Region: ' + p.region;
-    if (!!p.sector) html += '<br/>Sector: ' + p.sector;
-    if (!!p.system) html += '<br/>System: ' + p.system;
-    if (!!p.capital) html += '<br/>Capital: ' + p.capital;
-    if (!!p.landscape) html += '<br/>Landscape: ' + p.landscape;
+    if (!!p.name) { html += '<b>' + p.name + '</b><br/>'; }
+    if (!!p.region) { html += 'Region: ' + p.region; }
+    if (!!p.sector) { html += '<br/>Sector: ' + p.sector; }
+    if (!!p.system) { html += '<br/>System: ' + p.system; }
+    if (!!p.capital) { html += '<br/>Capital: ' + p.capital; }
+    if (!!p.landscape) { html += '<br/>Landscape: ' + p.landscape; }
     if (!!p.alignment && !!p.alignment.length) {
       html += '<br/>Alignment: ';
       p.alignment.forEach((group, index) => {
         html += group;
-        if(index !== p.alignment.length - 1) html += ', ';
+        if (index !== p.alignment.length - 1) { html += ', '; }
       });
     }
     if (!!p.inhabitants && !!p.inhabitants.length) {
       html += '<br/>Inhabitants: ';
       p.inhabitants.forEach((inhab, i) => {
         html += inhab;
-        if (i != p.inhabitants.length - 1) html += ', ';
+        if (i != p.inhabitants.length - 1) { html += ', '; }
       });
     }
-    if (!!p.coordinates) html += '<br/>Coordinates: ' + p.coordinates;
+    if (!!p.coordinates) { html += '<br/>Coordinates: ' + p.coordinates; }
     return html;
   }
 
@@ -327,8 +329,9 @@ export class MapComponent implements OnInit, OnDestroy {
       d3.selectAll('line')
         .filter(function(line) {
           for (let i = 0; i < path.length; i++) {
-            if (line.id.includes(path[i].source) && line.id.includes(path[i].target))
+            if (line.id.includes(path[i].source) && line.id.includes(path[i].target)) {
               return true;
+            }
           }
           return false;
         })
