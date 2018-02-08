@@ -14,6 +14,8 @@ export class MonsterManualService {
   private readonly monsterManualSWEndpoint: string = URL.api + '/monster-manual/get-monsters-sw';
   private readonly monsterEndpoint: string = URL.api + '/monster-manual/get-monster/';
 
+  private data: MonsterManualResponse;
+
   public hit_die = {
     tiny: { die: 4, half: 2.5 },
     small: { die: 6, half: 3.5 },
@@ -27,11 +29,15 @@ export class MonsterManualService {
 
   constructor(private http: Http) {}
   public GetMonsters(): Promise <MonsterManualResponse> {
+    if (this.data) {
+      return Promise.resolve(this.data);
+    }
     return this
       .http
       .get(this.monsterManualEndpoint)
       .map(value => {
         const response = value.json() as MonsterManualResponse;
+        this.data = response;
         response.Response.forEach((m: Monster): void => {
           m.ability_scores = AbilityScores.ParseScores(m.ability_scores);
           m.saving_throws = AbilityScores.ParseScores(m.saving_throws);
