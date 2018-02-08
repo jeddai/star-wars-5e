@@ -1,0 +1,12 @@
+{
+  "name":"Exar Kun's Sith Holocron",
+  "description":"While attuned to this holocron, you have a bonus to damage dealt by force abilities equal to your force ability modifier.<br/><br/>",
+  "type": "holocron",
+  "sub_type": "",
+  "rarity": "legendary",
+  "attunement": true,
+  "notes": "",
+  "tags": [
+    "holocron"
+  ]
+}

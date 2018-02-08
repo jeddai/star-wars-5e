@@ -8,7 +8,7 @@ import { CharacterCreatorService } from './character-creator.service';
 @Component({
   selector: 'app-character-creator',
   templateUrl: './character-creator.component.html',
-  styleUrls: ['./character-creator.component.css']
+  styleUrls: ['./character-creator.component.scss']
 })
 export class CharacterCreatorComponent implements OnInit {
 

@@ -7,7 +7,7 @@ import { CarousingRolls } from '../_classes';
 @Component({
   selector: 'app-carousing',
   templateUrl: './carousing.component.html',
-  styleUrls: ['./carousing.component.css']
+  styleUrls: ['./carousing.component.scss']
 })
 export class CarousingComponent {
 
@@ -19,9 +19,11 @@ export class CarousingComponent {
 
   public roll(): void {
     this.res.unshift(this.getCarousingResult());
-    if (!!this.limitResults && this.res.length > this.limitResults)
-      while (this.res.length > this.limitResults)
+    if (!!this.limitResults && this.res.length > this.limitResults) {
+      while (this.res.length > this.limitResults) {
         this.res.pop();
+      }
+    }
   }
 
   private getCarousingResult(): CarousingResult {
@@ -34,28 +36,27 @@ export class CarousingComponent {
     }
     let result = CarousingRolls[this.numPlayers][randomNumber];
     if (this.numPlayers !== 1) {
-      let arr = this.shuffle(_.cloneDeep(this.players));
+      const arr = this.shuffle(_.cloneDeep(this.players));
       for (i = 1; i <= this.numPlayers; i++) {
         result = this.replaceAll(result, '&' + i, arr[i - 1]);
       }
     }
     if (result.search('{') !== -1) {
-      let matches = result.match(/{[^}]*}/g);
+      const matches = result.match(/{[^}]*}/g);
       for (i = 0; i < matches.length; i++) {
-        let val = matches[i].substr(1, matches[i].length - 2);
+        const val = matches[i].substr(1, matches[i].length - 2);
         if (val.search('return') !== -1) {
-          let func = new Function(val);
+          const func = new Function(val);
           result = result.replace(matches[i], func());
-        }
-        else {
+        } else {
           result = result.replace(matches[i], eval(val));
         }
       }
     }
     if (result.search('~') !== -1) {
-      let die = result.match(/~(.*?)~/);
-      let numberOfDice = parseInt(die[1].match(/^(.*?)d/)[1]);
-      let maxNumber = parseInt(die[1].match(/d(.*)/)[1]);
+      const die = result.match(/~(.*?)~/);
+      const numberOfDice = parseInt(die[1].match(/^(.*?)d/)[1], 10);
+      const maxNumber = parseInt(die[1].match(/d(.*)/)[1], 10);
       result = result.replace(/~(.*?)~/, this.rollDice(numberOfDice, maxNumber));
     }
     return <CarousingResult>{
@@ -79,8 +80,7 @@ export class CarousingComponent {
       for (let i = 0; i < dice; i++) {
         total += Math.floor((Math.random() * number) + 1);
       }
-    }
-    else {
+    } else {
       total = Math.floor(((Math.random() * number) + 1) * dice);
     }
     return total;

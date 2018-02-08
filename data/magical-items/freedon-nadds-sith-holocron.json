@@ -1,0 +1,12 @@
+{
+  "name":"Freedon Nadd's Sith Holocron",
+  "description":"Freedon Nadd was an Old Republic Jedi prodigy whose conscious decision to embrace the dark side of the Force had a significant impact on galactic events for many generations after his death.<br/><br/>While you are attuned to this artifact, you can use the Shadows of the Sith force ability as described below. Each morning at dawn, you must make a DC 15 Force saving throw (Your Force ability or Wisdom). If you fail, the first time you enter combat that day you are frightened for 1 minute. You may attempt to make the save again at the end of each of your turns.<br/><br/>***Shadows of the Sith (5 force, conc., 1 min).*** Flame-like shadows wreath your body until the force ability ends, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.<br/><br/>Until the spell ends, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.",
+  "type": "holocron",
+  "sub_type": "",
+  "rarity": "legendary",
+  "attunement": true,
+  "notes": "",
+  "tags": [
+    "holocron"
+  ]
+}

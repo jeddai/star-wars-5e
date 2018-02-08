@@ -104,5 +104,5 @@
     "desc":"The Lord of Hunger can use Psychic Backlash as a legendary action.",
     "attack_bonus": 0
   }],
-  "from":"star-wars"
+  "source":"star-wars"
 }

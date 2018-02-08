@@ -1,0 +1,78 @@
+{
+  "name": "Zakkeg",
+  "size": "huge",
+  "type": "beast",
+  "subtype":"",
+  "alignment": "unaligned",
+  "armor_class": 17,
+  "hit_points": "20",
+  "speed": "30 ft.",
+  "ability_scores": {
+    "strength": 22,
+    "dexterity": 16,
+    "constitution": 18,
+    "intelligence": 10,
+    "wisdom": 14,
+    "charisma": 10
+  },
+  "saving_throws": {
+    "strength": 9,
+    "dexterity": null,
+    "constitution": 7,
+    "intelligence": null,
+    "wisdom": null,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": 9,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": null,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": 6,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "radiant",
+  "damage_immunities": "fire",
+  "condition_immunities": "",
+  "senses": "passive Perception 12",
+  "languages": "",
+  "challenge": "8",
+  "special_abilities": [],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Zakkeg attacks twice with its claws.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Charge (Recharge 5-6)",
+    "desc": "When the Zakkeg moves at least 10ft in its turn, it can use its remaining movement to move the same direction, through squares occupied by any creature of size large or smaller. When it does so, creatures in those squares must make a DC 15 Dexterity saving throw. On a failed save, a creature takes 47 (6d12 + 6) bludgeoning damage, and half as much on a successful save.",
+    "attack_bonus": 0,
+    "damage_dice": "6d12",
+    "damage_bonus": 0
+  }, {
+    "name": "Claws",
+    "desc": "Melee Weapon Attack: +6 to hit, one target. Hit 23 (3d10 + 6) slashing damage.",
+    "attack_bonus": 6,
+    "damage_dice": "2d8",
+    "damage_bonus": 6
+  }],
+  "legendary_actions": [],
+  "source":"star-wars"
+}

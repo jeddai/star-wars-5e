@@ -50,6 +50,8 @@ import { GadgetsService } from './gadgets/gadgets.service';
 import { MapService } from './map/map.service';
 import { MagicalItemService } from './magical-items/magical-item.service';
 import { MonsterManualService } from './monster-manual/monster-manual.service';
+import { FilterService } from './_services/filter.service';
+import { FilterInputComponent } from './_components/filter-input/filter-input.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,8 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
     CapitalizePipe,
     CommaSplitPipe,
     MarkdownPipe,
-    NonePipe
+    NonePipe,
+    FilterInputComponent
   ],
   imports: [
     AccordionModule,
@@ -130,6 +133,7 @@ import { MonsterManualService } from './monster-manual/monster-manual.service';
   ],
   providers: [
     CharacterCreatorService,
+    FilterService,
     ForceService,
     GadgetsService,
     MapService,

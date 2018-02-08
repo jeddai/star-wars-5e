@@ -26,7 +26,7 @@ export class Monster {
     monster.special_abilities = []
     monster.actions = []
     monster.legendary_actions = []
-    monster.from = ''
+    monster.source = ''
   }
 
   name: string = ''
@@ -52,7 +52,7 @@ export class Monster {
   actions: MonsterAction[] = []
   legendary_actions: MonsterAbility[] = []
   initiative: number = null;
-  from: string = ''
+  source: string = ''
 
   public static MakeMonster(monster: any): Monster {
     let newMonster: Monster = new Monster();

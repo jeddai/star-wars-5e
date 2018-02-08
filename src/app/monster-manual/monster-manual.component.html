@@ -1,47 +1,71 @@
-<h1 class="title">Monster Manual</h1>
-<p-dataTable [value]="monsters" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
-  <p-header>List of Star Wars Monsters/Enemies</p-header>
-  <p-column field="challenge" header="CR" [sortable]="true" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
-    <ng-template pTemplate="filter" let-col>
-      <p-dropdown [options]="monsterManualService.crs" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
-    </ng-template>
-    <ng-template let-col let-monster="rowData" pTemplate="body">
-      <span >{{ monsterManualService.GetChallenge(monster[col.field]).label }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-  <p-column field="type" header="Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
-    <ng-template let-col let-monster="rowData" pTemplate="body">
-      <span >{{ monster[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="size" header="Size" [sortable]="true" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
-    <ng-template pTemplate="filter" let-col>
-      <p-dropdown [options]="sizeFilter" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
-    </ng-template>
-    <ng-template let-col let-monster="rowData" pTemplate="body">
-      <span>{{ monster[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="alignment" header="Alignment" [sortable]="true" [filter]="true" filterPlaceholder="Search">
-    <ng-template let-col let-monster="rowData" pTemplate="body">
-      <span>{{ monster[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="from" header="Monster From" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
-    <ng-template pTemplate="filter" let-col>
-      <p-dropdown [options]="[{ 'label':'All', 'value':null}, { 'label':'SRD', 'value':'srd' }, { 'label':'Star Wars', 'value':'star-wars' }]" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
-    </ng-template>
-    <ng-template let-col let-monster="rowData" pTemplate="body">
-      <span>{{ monster[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <ng-template let-monster pTemplate="rowexpansion">
-    <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
-      <div class="ui-g-2"></div>
-      <div class="ui-g-8">
-        <app-monster [monster]="monster"></app-monster>
-      </div>
-    </div>
-  </ng-template>
-</p-dataTable>
+<div class="col row justify-content-between">
+  <h1 class="title">Monster Manual</h1>
+  <div style="padding-top:5px;">
+    <button class="btn btn-success btn-sm" (click)="filter = 'srd; '">
+      SRD Monsters
+      <i class="fab fa-fw fa-d-and-d"></i>
+    </button>
+    <button class="btn btn-success btn-sm" (click)="filter = 'star-wars; '">
+      Star Wars Monsters
+      <i class="fab fa-fw fa-rebel"></i>
+    </button>
+    <button class="btn btn-danger btn-sm" (click)="filter = ''">
+      Clear
+      <i class="fal fa-fw fa-times"></i>
+    </button>
+  </div>
+</div>
+
+<app-filter-input [(filter)]="filter" [filterOptions]="filterOptions"></app-filter-input>
+
+<div class="table-responsive col-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>CR</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Alignment</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let monster of pagedMonsters()" >
+      <tr (click)="monster.visible = !monster.visible">
+        <td>{{ monsterManualService.GetChallenge(monster.challenge).label }}</td>
+        <td>{{ monster.name | capitalize }}</td>
+        <td>{{ monster.type | capitalize }}</td>
+        <td>{{ monster.size | capitalize }}</td>
+        <td>{{ monster.alignment | capitalize }}</td>
+        <td><i class="fab fa-fw"
+          [class.fa-d-and-d]="monster.source === 'srd'"
+          [class.fa-rebel]="monster.source === 'star-wars'"></i></td>
+      </tr>
+      <tr *ngIf="monster.visible">
+        <td colspan="6">
+          <div class="col-6 offset-0 col-md-8 offset-md-2">
+            <app-monster [monster]="monster"></app-monster>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul class="pagination justify-content-center">
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);" (click)="page = page - 1">
+      <i class="fal fa-fw fa-chevron-left"></i>
+    </a>
+  </li>
+  <li class="page-item" *ngFor="let num of _.range(0, pages)" [class.active]="page === num">
+    <a class="page-link" href="javascript:void(0);" (click)="page = num">{{ num + 1 }}</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);" (click)="page = page + 1">
+      <i class="fal fa-fw fa-chevron-right"></i>
+    </a>
+  </li>
+</ul>
+
+<small>Monsters with source marked as <i class="fab fa-fw fa-d-and-d"></i> were taken from the <a href="http://dnd.wizards.com/articles/features/systems-reference-document-srd" target="_blank">Wizards of the Coast, LLC SRD5</a>.</small>

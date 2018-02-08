@@ -1,70 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, SelectItem } from 'primeng/primeng';
+import * as _ from 'lodash';
 
 import { Ability, Discipline } from '../_interfaces';
 import { ForceService } from './force.service';
+import { FilterService } from '../_services/filter.service';
 
 @Component({
   selector: 'app-force',
   templateUrl: './force.component.html',
-  styleUrls: ['./force.component.css']
+  styleUrls: ['./force.component.scss']
 })
 export class ForceComponent implements OnInit {
+  _ = _;
   disciplines: Discipline[];
   abilities: Ability[];
-
-  items: MenuItem[];
+  view = 'abilities';
   stacked;
-  activeItem: MenuItem;
-  selectDisciplines: SelectItem[] = [];
   selectedDisciplines: string[] = ['Adaptive Body'];
+  limit = 15;
+  pages = 0;
+  page = 0;
+  filter = '';
+  filterOptions: string[] = ['name', 'discipline', 'order', 'cost', 'casting_time', 'duration'];
 
-  castingTimeOptions: SelectItem[] = [{
-      label: 'All',
-      value: null
-    }, {
-      label: 'Action',
-      value: 'action'
-    }, {
-      label: 'Bonus Action',
-      value: 'bonus'
-    }, {
-      label: 'Instant',
-      value: 'instant'
-    }, {
-      label: 'Reaction',
-      value: 'reaction'
-    }
-  ];
-
-  rangeOptions: SelectItem[] = [{
-      label: 'All',
-      value: null
-    }, {
-      label: '30ft',
-      value: '30ft'
-    }, {
-      label: '60ft',
-      value: '60ft'
-    }, {
-      label: '90ft',
-      value: '90ft'
-    }, {
-      label: '120ft',
-      value: '120ft'
-    }, {
-      label: 'Telepathy',
-      value: 'telepathy'
-    }, {
-      label: 'Touch',
-      value: 'touch'
-    }, {
-      label: 'Sight',
-      value: 'sight'
-    }
-  ];
-
-  constructor(private forceService: ForceService) { }
+  constructor(private forceService: ForceService, private filterService: FilterService) { }
 
   ngOnInit() {
     this.forceService
@@ -80,25 +39,27 @@ export class ForceComponent implements OnInit {
         }
       }
       this.abilities = abilities;
-      this.selectDisciplines = disciplines;
     })
     .catch(e => console.log(e));
 
     this.selectedDisciplines = !!localStorage.disciplines ? localStorage.disciplines.split(',') : ['Adaptive Body'];
-
-    this.items = [
-      { label: 'Select Disciplines', icon: 'fa-list-ol', command: () => {
-        this.activeItem = this.items[0];
-      }},
-      { label: 'Ability Table', icon: 'fa-bar-chart', command: () => {
-        this.activeItem = this.items[1];
-      }}
-    ];
-
-    this.activeItem = this.items[0];
   }
 
   public saveSelectedDisciplines(): void {
     localStorage.setItem('disciplines', this.selectedDisciplines.toString());
+  }
+
+  pagedAbilities(): Discipline[] {
+    const filtered = this.filterService.filterArray(this.abilities, this.filter);
+    this.setPages(filtered);
+    if (this.page < 0) { this.page = 0; } else
+    if (this.page >= this.pages) { this.page = this.pages - 1; }
+    return _.take(_.drop(filtered, this.limit * this.page), this.limit);
+  }
+
+  private setPages(val: any[]) {
+    const pages = _.ceil(val.length / this.limit);
+    if (this.page >= pages) { this.page = pages - 1; }
+    this.pages = pages;
   }
 }

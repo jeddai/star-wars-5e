@@ -1,51 +1,70 @@
 <h1 class="title">Magical Items</h1>
-<p-dataTable [value]="items" expandableRows="true" #dt (onRowClick)="dt.toggleRow($event.data)" [rows]="15" [paginator]="true" [pageLinks]="5" [responsive]="true" [stacked]="stacked">
-  <p-header>List of Magical Items</p-header>
-  <p-column field="name" header="Name" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-  <p-column field="rarity" header="Rarity" [sortable]="true" [filter]="true" filterPlaceholder="Search">
-    <ng-template let-col let-item="rowData" pTemplate="body">
-      <span [style.color]="colors[item[col.field]]">{{ item[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="type" header="Type" [sortable]="true" [filter]="true" filterPlaceholder="Search">
-    <ng-template let-col let-item="rowData" pTemplate="body">
-      <span>{{ item[col.field] | capitalize }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="attunement" header="Attunement" [filter]="true" filterMatchMode="equals" [style]="{'overflow':'visible'}">
-    <ng-template pTemplate="filter" let-col>
-      <p-dropdown [options]="attunementOptions" [style]="{'width':'100%'}" (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" styleClass="ui-column-filter"></p-dropdown>
-    </ng-template>
-    <ng-template let-col let-item="rowData" pTemplate="body">
-      <span>{{ !!item[col.field] ? 'Required' : '–' }}</span>
-    </ng-template>
-  </p-column>
-  <p-column field="notes" header="Notes"></p-column>
-  <ng-template let-item pTemplate="rowexpansion">
-    <div class="ui-g ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
-      <div class="ui-g-2"></div>
-      <div class="ui-g-8">
-        <h3>{{ item.name }}</h3>
-        <div class="ui-grid-row">
-          <em>
-            {{ item.type | capitalize }}
-            <span *ngIf="!!item.sub_type">({{ item.sub_type }})</span>, {{ item.rarity }}
-            <span *ngIf="item.attunement"> (requires attunement)</span>
-          </em>
-        </div>
-        <hr/>
-        <div class="ui-grid-row" [innerHtml]="item.description | markdown">
 
-        </div>
-        <br/>
-        <div class="ui-grid-row">
-          <p>
-            <em>Notes: {{ item.notes }}</em>&nbsp;
-            <div *ngFor="let tag of item.tags">
-              <span class="badge badge-default">{{ tag }}</span>&nbsp;
+<app-filter-input [(filter)]="filter" [filterOptions]="filterOptions"></app-filter-input>
+
+<div class="table-responsive col-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Rarity</th>
+        <th>Type</th>
+        <th>Attunement</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of pagedItems()" >
+      <tr (click)="item.visible = !item.visible">
+        <td>{{ item.name }}</td>
+        <td><span [style.color]="colors[item.rarity]">{{ item.rarity | capitalize }}</span></td>
+        <td>{{ item.type | capitalize }}</td>
+        <td><span>{{ !!item.attunement ? 'Required' : '–' }}</span></td>
+        <td>{{ item.notes }}</td>
+      </tr>
+      <tr *ngIf="item.visible">
+        <td colspan="6">
+          <div class="col-6 offset-0 col-md-8 offset-md-2">
+            <div class="row">
+              <h3>{{ item.name }}</h3>
             </div>
-        </div>
-      </div>
-    </div>
-  </ng-template>
-</p-dataTable>
+            <div class="row">
+              <em>
+                {{ item.type | capitalize }}
+                <span *ngIf="!!item.sub_type">({{ item.sub_type }})</span>, {{ item.rarity }}
+                <span *ngIf="item.attunement"> (requires attunement)</span>
+              </em>
+            </div>
+            <hr/>
+            <div class="row" [innerHtml]="item.description | markdown">
+
+            </div>
+            <br/>
+            <div class="row">
+              <p>
+                <em>Notes: {{ item.notes }}</em>&nbsp;
+                <div *ngFor="let tag of item.tags">
+                  <span class="badge badge-pill badge-primary">{{ tag }}</span>&nbsp;
+                </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul class="pagination justify-content-center">
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);" (click)="page = page - 1">
+      <i class="fal fa-fw fa-chevron-left"></i>
+    </a>
+  </li>
+  <li class="page-item" *ngFor="let num of _.range(0, pages)" [class.active]="page === num">
+    <a class="page-link" href="javascript:void(0);" (click)="page = num">{{ num + 1 }}</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);" (click)="page = page + 1">
+      <i class="fal fa-fw fa-chevron-right"></i>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,82 @@
+{
+  "name": "Maalraas",
+  "size": "large",
+  "type": "beast",
+  "subtype":"",
+  "alignment": "unaligned",
+  "armor_class": 14,
+  "hit_points": "16",
+  "speed": "40 ft.",
+  "ability_scores": {
+    "strength": 18,
+    "dexterity": 20,
+    "constitution": 14,
+    "intelligence": 10,
+    "wisdom": 16,
+    "charisma": 10
+  },
+  "saving_throws": {
+    "strength": 7,
+    "dexterity": 8,
+    "constitution": null,
+    "intelligence": null,
+    "wisdom": 6,
+    "charisma": null
+  },
+  "skills": {
+    "athletics": 7,
+    "acrobatics": null,
+    "sleight_of_hand": null,
+    "stealth": 8,
+    "demolitions": null,
+    "history": null,
+    "investigation": null,
+    "nature": null,
+    "religion": null,
+    "repair": null,
+    "security": null,
+    "arcana": null,
+    "animal_handling": null,
+    "insight": null,
+    "medicine": null,
+    "perception": 6,
+    "survival": null,
+    "deception": null,
+    "intimidation": null,
+    "performance": null,
+    "persuasion": null
+  },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "radiant",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "passive Perception 16",
+  "languages": "",
+  "challenge": "5",
+  "special_abilities": [{
+    "name": "Imperceptible",
+    "desc": "The Maalraas utilize the force as a type of camouflage. Only an exceptionally high perception check (DC20+) would be able to discern its presence. When in combat, any creature attacking the Maalraas has disadvantage on attack rolls unless the creature is force sensitive.",
+    "attack_bonus": ""
+  }],
+  "actions": [{
+    "name": "Multiattack",
+    "desc": "The Maalraas attacks once with its claws and once with its tusks.",
+    "attack_bonus": 0,
+    "damage_dice": "",
+    "damage_bonus": 0
+  }, {
+    "name": "Claws",
+    "desc": "Melee Weapon Attack: +6 to hit, one target. Hit 15 (2d8 + 6) slashing damage.",
+    "attack_bonus": 6,
+    "damage_dice": "2d8",
+    "damage_bonus": 6
+  }, {
+    "name": "Tusks",
+    "desc": "Melee Weapon Attack: +6 to hit, one target. Hit 17 (2d10 + 6) bludgeoning damage.",
+    "attack_bonus": 6,
+    "damage_dice": "2d10",
+    "damage_bonus": 6
+  }],
+  "legendary_actions": [],
+  "source":"star-wars"
+}

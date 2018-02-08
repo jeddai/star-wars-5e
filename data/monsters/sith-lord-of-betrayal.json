@@ -100,5 +100,5 @@
     "desc": "The Lord of Betrayal can use Psychic Domination as a legendary action.",
     "attack_bonus": 0
   }],
-  "from":"star-wars"
+  "source":"star-wars"
 }

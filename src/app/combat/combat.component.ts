@@ -9,7 +9,7 @@ import { MonsterManualService } from '../monster-manual/monster-manual.service';
 @Component({
   selector: 'app-combat',
   templateUrl: './combat.component.html',
-  styleUrls: ['./combat.component.css']
+  styleUrls: ['./combat.component.scss']
 })
 export class CombatComponent implements OnInit {
   _ = _;
@@ -64,7 +64,6 @@ export class CombatComponent implements OnInit {
       this.addMonsterSync(monster);
     })
     .catch(e => console.log(e));
-    // this.addMonster('acklay', true, true);
   }
 
   public addMonsterSync(monster: Monster) {
@@ -141,23 +140,23 @@ export class CombatComponent implements OnInit {
     function getChallengeNumber(challenge: string | number) {
       try {
         return +challenge;
-      } catch(e) {
-        if(challenge === '1/2') return 0.5;
-        if(challenge === '1/4') return 0.25;
-        if(challenge === '1/8') return 0.125;
+      } catch (e) {
+        if (challenge === '1/2') { return 0.5; }
+        if (challenge === '1/4') { return 0.25; }
+        if (challenge === '1/8') { return 0.125; }
       }
     }
 
     this.encounter.forEach((c) => {
       if (Monster.IsMonster(c)) {
-        if(getChallengeNumber(c.challenge) > maxCr) maxCr = getChallengeNumber(c.challenge);
+        if (getChallengeNumber(c.challenge) > maxCr) { maxCr = getChallengeNumber(c.challenge); }
       }
     });
 
     this.encounter.forEach((c) => {
       if (Monster.IsMonster(c)) {
         xp += Combat.ChallengeRatings[_.findIndex(Combat.ChallengeRatings, (cr) => cr.label == c.challenge)].xp;
-        if(getChallengeNumber(c.challenge) + 5 > maxCr) {
+        if (getChallengeNumber(c.challenge) + 5 > maxCr) {
           numMonsters += 1;
         }
       } else {
@@ -169,8 +168,14 @@ export class CombatComponent implements OnInit {
       }
     });
     xp *= Combat.GetMonsterMultiplier(numMonsters, numPlayers);
-    diff = xp < threshold.easy ? 'Trivial' : xp < threshold.medium ? 'Easy' : xp < threshold.hard ? 'Medium' : xp < threshold.deadly ? 'Hard' : 'Deadly';
-    pxp = xp < threshold.easy ? 0 : xp < threshold.medium ? threshold.easy : xp < threshold.hard ? threshold.medium : xp < threshold.deadly ? threshold.hard : threshold.deadly;
+    diff = xp < threshold.easy ? 'Trivial' :
+           xp < threshold.medium ? 'Easy' :
+           xp < threshold.hard ? 'Medium' :
+           xp < threshold.deadly ? 'Hard' : 'Deadly';
+    pxp = xp < threshold.easy ? 0 :
+          xp < threshold.medium ? threshold.easy :
+          xp < threshold.hard ? threshold.medium :
+          xp < threshold.deadly ? threshold.hard : threshold.deadly;
     this.diff = { xp: xp, pxp: pxp, diff: diff };
   }
 
@@ -199,7 +204,7 @@ export class CombatComponent implements OnInit {
   }
 
   private checkEncounterForConflicts(name: string): string {
-    let conflictIndex =  _.findIndex(this.encounter, ({ 'name': name }));
+    const conflictIndex =  _.findIndex(this.encounter, ({ 'name': name }));
     if (conflictIndex !== -1) {
       name = _.trim(name, ' 1234567890') + ' ' + (parseInt(this.encounter[conflictIndex].name.substr(-1), 10) + 1 || 1);
     }

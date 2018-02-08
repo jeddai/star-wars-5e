@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "node_modules/@angular/cli/bin/ng",
-    "start": "nodemon --exec ts-node app.ts",
+    "start": "ts-node app.ts",
+    "start-watch": "nodemon --exec ts-node app.ts",
     "build": "node_modules/@angular/cli/bin/ng build",
     "build-prod": "node_modules/@angular/cli/bin/ng build --prod",
     "test": "node_modules/@angular/cli/bin/ng test",

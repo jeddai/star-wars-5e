@@ -6,7 +6,7 @@ import { MonsterManualService } from '../monster-manual/monster-manual.service';
 @Component({
   selector: 'app-monster-overlay',
   templateUrl: './monster-overlay.component.html',
-  styleUrls: ['./monster-overlay.component.css']
+  styleUrls: ['./monster-overlay.component.scss']
 })
 export class MonsterOverlayComponent implements OnInit {
   monster: Monster = new Monster();

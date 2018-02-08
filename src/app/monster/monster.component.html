@@ -1,96 +1,91 @@
-<div class="ui-grid" [style.font-size.px]="size.font_size">
-  <h1 [style.font-size.px]="size.font_size+18">{{ monster.name | capitalize }}</h1>
-  <div class="ui-grid-row">
-    <div class="ui-g-6 ui-md-2 center-text" *ngFor="let sc of ascores">
-      <small><strong>{{ sc.toUpperCase() }}</strong></small>
-      <h2 [style.font-size.px]="size.font_size+12">{{ monster.ability_scores[sc] }}({{ (score(monster.ability_scores[sc]) >= 0 ? '+' : '') + score(monster.ability_scores[sc]) }})</h2>
+<div [style.font-size.px]="size.font_size">
+  <div class="col row justify-content-between">
+    <div>
+      <h3 [style.font-size.px]="size.font_size+18">{{ monster?.name }}</h3>
+      <em>
+        <span>{{ _.capitalize(monster.type) }}, </span>
+        <span *ngIf="monster.subtype">{{ _.capitalize(monster.subtype) }}, </span>
+        <span>{{ _.capitalize(monster.alignment) }}</span>
+      </em>
     </div>
   </div>
+
   <hr/>
-  <div class="ui-grid-row center-text">
-    <div class="ui-g-12 ui-md-1"></div>
-    <div class="ui-g-6 ui-md-2">
-      <small><strong>Challenge Rating</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{
-      monsterManualService.GetChallenge(monster.challenge).label }}</h3><small>({{
-      monsterManualService.GetChallenge(monster.challenge).xp }}xp)</small>
-    </div>
-    <div class="ui-g-6 ui-md-2">
-      <small><strong>Size</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ _.capitalize(monster.size) }}</h3>
-    </div>
-    <div class="ui-g-6 ui-md-2">
-      <small><strong>Armor Class</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ monster.armor_class }}</h3>
-    </div>
-    <div class="ui-g-6 ui-md-2">
-      <small><strong>Hit Points</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ monsterManualService.GetHP(monster) }}</h3><small>({{
-      monster.hit_points }}d{{ monsterManualService.hit_die[monster.size].die }} + {{
-      monster.hit_points * score(monster.ability_scores.constitution) }})</small>
-    </div>
-    <div class="ui-g-6 ui-md-2">
-      <small><strong>Speed</strong></small>
-      <h3 [style.font-size.px]="size.font_size+6">{{ monster.speed }}</h3>
+
+  <div class="col row text-center">
+    <div class="col" *ngFor="let absc of abilityScores">
+      <small>
+        <strong>{{ absc.label }}</strong>
+      </small>
+      <br/>
+      <span [style.font-size.px]="size.font_size+12">{{ getAbilityScoreModifier(absc.name).string }}</span>
     </div>
   </div>
+
   <hr/>
-  <div class="ui-grid-row">
-    <div class="ui-g-6 ui-md-3" *ngIf="!monster.saving_throws.isEmpty()">
-      <small><strong>Saving Throws</strong></small><br/>
-      {{ monster.saving_throws.print() }}
+
+  <div class="col row text-center">
+    <div class="col">
+      <small>
+        <strong>Challenge Rating</strong>
+      </small>
+      <br/>
+      <span [style.font-size.px]="size.font_size+6">{{ getChallengeRating() }}</span>
     </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!monster.skills.isEmpty()">
-      <small><strong>Skills</strong></small><br/>
-      {{ monster.skills.print() }}
+    <div class="col">
+      <small>
+        <strong>Size</strong>
+      </small>
+      <br/>
+      <small [style.font-size.px]="size.font_size+6">{{ _.capitalize(monster.size) }}</small>
     </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_vulnerabilities)">
-      <small><strong>Damage Vulnerabilities</strong></small><br/>
-      {{ monster.damage_vulnerabilities }}
+    <div class="col">
+      <small>
+        <strong>Armor Class</strong>
+      </small>
+      <br/>
+      <span [style.font-size.px]="size.font_size+6">{{ monster.armor_class }}</span>
     </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_resistances)">
-      <small><strong>Damage Resistances</strong></small><br/>
-      {{ monster.damage_resistances }}
+    <div class="col">
+      <small>
+        <strong>Hit Points</strong>
+      </small>
+      <br/>
+      <small [style.font-size.px]="size.font_size+6">{{ getHP() }}</small>
     </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.damage_immunities)">
-      <small><strong>Damage Immunities</strong></small><br/>
-      {{ monster.damage_immunities }}
-    </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.condition_immunities)">
-      <small><strong>Condition Immunities</strong></small><br/>
-      {{ monster.condition_immunities }}
-    </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.senses)">
-      <small><strong>Senses</strong></small><br/>
-      {{ monster.senses }}
-    </div>
-    <div class="ui-g-6 ui-md-3" *ngIf="!_.isEmpty(monster.languages)">
-      <small><strong>Languages</strong></small><br/>
-      {{ monster.languages }}
-    </div>
-  </div>
-  <div *ngIf="!_.isEmpty(monster.special_abilities)">
-    <hr/>
-    <h3 [style.font-size.px]="size.font_size+6">Special Abilities</h3>
-    <div class="ui-grid-row" *ngFor="let abl of monster.special_abilities">
-      <strong class="ui-g-2"><em>{{ abl.name }}.</em></strong>
-      <span class="ui-g-12 ui-md-10" [innerHtml]="abl.desc | markdown"></span>
+    <div class="col">
+      <small>
+        <strong>Speed</strong>
+      </small>
+      <br/>
+      <small [style.font-size.px]="size.font_size+6">{{ monster.speed }}</small>
     </div>
   </div>
-  <div *ngIf="!_.isEmpty(monster.actions) || !_.isEmpty(monster.actions)">
-    <hr/>
-    <h3 [style.font-size.px]="size.font_size+6">Actions</h3>
-    <div class="ui-grid-row" *ngFor="let act of monster.actions">
-      <strong class="ui-g-2"><em>{{ act.name }}.</em></strong>
-      <span class="ui-g-12 ui-md-10" [innerHtml]="act.desc | markdown"></span>
+
+  <hr/>
+
+  <div class="col row">
+    <div class="col-4" *ngFor="let ability of abilities()">
+      <small>
+        <strong>{{ ability.name }}</strong>
+      </small>
+      <br>
+      <small>{{ ability.value }}</small>
     </div>
   </div>
-  <div *ngIf="!_.isEmpty(monster.legendary_actions)">
-    <hr/>
-    <h3 [style.font-size.px]="size.font_size+6">Legendary Actions</h3>
-    <div class="ui-grid-row" *ngFor="let act of monster.legendary_actions">
-      <strong class="ui-g-2"><em>{{ act.name }}.</em></strong>
-      <span class="ui-g-12 ui-md-10" [innerHtml]="act.desc | markdown"></span>
+
+  <hr/>
+
+  <div *ngFor="let actionList of actions()">
+    <div class="col">
+      <h5>{{ actionList.name }}</h5>
+      <small class="action row" *ngFor="let action of actionList.value">
+        <em class="col-3">
+          <strong>{{ action.name }}</strong>
+        </em>
+        <span class="col-9">{{ action.desc }}</span>
+      </small>
     </div>
+    <hr/>
   </div>
 </div>

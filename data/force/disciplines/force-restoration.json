@@ -24,6 +24,16 @@
       "damage":"",
       "description":"As an action, you touch one creature and remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. Alternatively, you remove one disease from the creature."
     }, {
+      "name": "Ritual of Healing",
+      "cost": "4-7",
+      "conc": true,
+      "casting_time": "10 min.",
+      "duration": "instant",
+      "target": ["creatures"],
+      "range": "60ft",
+      "damage": "n x 15",
+      "description": "As an action, you spend ten minutes focusing your force energy to heal injuries. At the end of the 10 minutes, you have a pool of hit points equal to fifteen times the number of force points spent. You can give out any number of these hit points to any creature within 60 feet of you."
+    }, {
       "name":"Restore Life",
       "cost":"5",
       "conc":false,
