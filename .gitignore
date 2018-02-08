@@ -27,6 +27,7 @@ scripts/**/*.js
 *.launch
 .settings/
 *.sublime-workspace
+.npmrc
 
 # IDE - VSCode
 .vscode/*
