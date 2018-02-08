@@ -24,7 +24,7 @@ try {
 const app = express();
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -32,7 +32,7 @@ app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 for (const route in routes) {
-    app.use('/' + route, routes[route]);
+  app.use('/' + route, routes[route]);
 }
 
 // error handler
@@ -50,10 +50,10 @@ app.use(function(err, req, res, next) {
  * Start Server
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 
-var server = null;
-if(process.env.ENV === 'prod') {
+let server = null;
+if (process.env.ENV === 'prod') {
   console.log('Starting secure web server.');
   app.set('port', 443);
   server = https.createServer(credentials, app);
@@ -68,7 +68,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  const port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -88,7 +88,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
+  const bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -108,8 +108,8 @@ function onError(error) {
 }
 
 function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
+  const addr = server.address();
+  const bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   console.log(`Server started on port ${addr.port}`);

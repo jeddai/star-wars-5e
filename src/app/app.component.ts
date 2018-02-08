@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/primeng';
 
+import fontawesome from '@fortawesome/fontawesome';
+import light from '@fortawesome/fontawesome-pro-light';
+import brands from '@fortawesome/fontawesome-free-brands';
+
+fontawesome.library.add(light, brands);
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
