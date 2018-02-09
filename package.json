@@ -7,7 +7,7 @@
     "start": "ts-node app.ts",
     "start-watch": "nodemon --exec ts-node app.ts",
     "build": "node_modules/@angular/cli/bin/ng build",
-    "build-prod": "node_modules/@angular/cli/bin/ng build --prod",
+    "build-prod": "node_modules/@angular/cli/bin/ng build --prod --build-optimizer=false",
     "test": "node_modules/@angular/cli/bin/ng test",
     "lint": "node_modules/@angular/cli/bin/ng lint",
     "e2e": "node_modules/@angular/cli/bin/ng e2e"
@@ -15,8 +15,10 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.4",
+    "@angular/cli": "^1.6.8",
     "@angular/common": "^5.2.4",
     "@angular/compiler": "^5.2.4",
+    "@angular/compiler-cli": "^5.2.4",
     "@angular/core": "^5.2.4",
     "@angular/forms": "^5.2.4",
     "@angular/http": "^5.2.4",
@@ -34,7 +36,11 @@
     "core-js": "^2.5.3",
     "cors": "^2.8.4",
     "d3": "^4.12.2",
+    "express": "^4.16.2",
     "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.4",
     "marked": "^0.3.12",
@@ -51,8 +57,6 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.8",
-    "@angular/compiler-cli": "^5.2.4",
     "@angular/language-service": "^5.2.4",
     "@types/jasmine": "2.5.45",
     "@types/node": "^6.0.96",

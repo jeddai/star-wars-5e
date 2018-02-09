@@ -11,8 +11,8 @@ import { default as routes } from './routes';
 
 let certificate, key, credentials;
 try {
-  certificate = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/cert.pem', 'utf-8');
-  key = fs.readFileSync('/etc/letsencrypt/live/dnd.jeddai.com/privkey.pem', 'utf-8');
+  certificate = fs.readFileSync('/ssl/cert1.pem', 'utf-8');
+  key = fs.readFileSync('/ssl/privkey1.pem', 'utf-8');
   credentials = {
     cert: certificate,
     key: key
@@ -28,7 +28,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 for (const route in routes) {
