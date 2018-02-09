@@ -1,0 +1,1 @@
+sudo docker run -p 443:443 -d jeddai/star-wars-5e
